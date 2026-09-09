@@ -57,9 +57,29 @@ export function LocalizedAboutPageContent() {
             <div className={`space-y-5 sm:space-y-6 ${ui.body}`}>
               {isEn
                 ? [
-                    "Studio Capoferri is an independent technical practice born from a passion for construction in all its forms and facets. With solid experience developed directly in the field, we work alongside contractors, architects and technical practices to deliver structural solutions that are reliable, innovative and always fully compliant with regulations.",
-                    "Our method is based on precision, efficiency and attention to detail. We believe collaboration is a key factor in project success, combining multidisciplinary expertise to address every structural challenge with a practical and tailored approach.",
-                    "From small local interventions to major industrial facilities, we apply the same level of dedication to guarantee quality and safety in every project.",
+                    <>
+                      <strong>Studio Capoferri</strong> is a <strong>civil engineering</strong> practice based in Adro, near Brescia, Italy, with more than
+                      forty years of experience in <strong>structural engineering, architecture and urban planning</strong> and in{" "}
+                      <strong>steel structures</strong> across Franciacorta and, more broadly, Northern and Central Italy. Our team is made up of
+                      qualified professionals, each with specific multidisciplinary expertise, able to guarantee quality and precision in every aspect
+                      of the design process. Thanks to the synergy between different areas of knowledge and the consolidated experience built up over
+                      the years, we provide innovative, tailored solutions for every type of intervention, ensuring an integrated and comprehensive
+                      approach for all projects entrusted to our practice.
+                    </>,
+                    <>
+                      We work across several sectors, especially <strong>residential and industrial projects</strong>, providing advanced technical
+                      solutions that respond to functional, aesthetic and regulatory requirements. Our presence throughout Northern and North-Central
+                      Italy (Lombardy, Veneto, Piedmont, Emilia-Romagna and Tuscany), particularly in the provinces of Brescia, Bergamo and Milan as
+                      well as neighbouring areas, allows us to fully understand the regulatory and planning specificities of each location. In
+                      addition, we have developed specialised expertise in fire-safety design, offering consultancy and technical design in line with
+                      the most recent legislative and technical provisions.
+                    </>,
+                    <>
+                      From small local interventions to major industrial facilities, we apply the same level of dedication to guarantee quality and
+                      safety in every project. We work alongside contractors, architects and technical practices to deliver structural solutions that
+                      are reliable, innovative and always fully compliant with regulations — and we support international clients on projects in Italy
+                      in English.
+                    </>,
                   ].map((p, i) => <p key={i}>{p}</p>)
                 : chiSiamoPage.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
             </div>
