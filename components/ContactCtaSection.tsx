@@ -1,31 +1,25 @@
-"use client";
-
 import Link from "next/link";
-import { useLocale } from "@/components/LocaleProvider";
 import { fontDisplay } from "@/lib/fonts";
-import { chromeCopy, localizeHref } from "@/lib/i18n";
+import { chromeCopy, localizeHref, type Locale } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { ui } from "@/lib/ui";
 
 type Props = {
+  locale: Locale;
   title?: string;
   description?: string;
   className?: string;
 };
 
-const defaultItalianTitle = "Hai un progetto in mente?";
-const defaultItalianDescription =
-  "Raccontaci la tua esigenza: analizziamo fattibilità, costi e tempi e ti proponiamo la soluzione strutturale più adatta.";
-
 export function ContactCtaSection({
-  title = defaultItalianTitle,
-  description = defaultItalianDescription,
+  locale,
+  title,
+  description,
   className = "mt-10",
 }: Props) {
-  const locale = useLocale();
   const copy = chromeCopy[locale].cta;
-  const resolvedTitle = title === defaultItalianTitle ? copy.defaultTitle : title;
-  const resolvedDescription = description === defaultItalianDescription ? copy.defaultDescription : description;
+  const resolvedTitle = title ?? copy.defaultTitle;
+  const resolvedDescription = description ?? copy.defaultDescription;
 
   return (
     <section className={className}>

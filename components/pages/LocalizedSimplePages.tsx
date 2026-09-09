@@ -152,6 +152,7 @@ export function LocalizedServicesPageContent() {
               </ul>
 
               <ContactCtaSection
+                locale="it"
                 title="Cerchi supporto tecnico per il tuo progetto?"
                 description="Contattaci per una valutazione preliminare: ti indichiamo tempi, iter autorizzativi e il percorso progettuale più adatto."
                 className="mt-14"
@@ -241,6 +242,7 @@ export function LocalizedServicesPageContent() {
                 </ul>
 
                 <ContactCtaSection
+                  locale="en"
                   title="Need technical support for your project?"
                   description="Contact us in English for an initial assessment: we can outline timing, design scope and the most suitable engineering path."
                   className="mt-14"
@@ -368,6 +370,7 @@ export function LocalizedServicesPageContent() {
                 </ul>
 
                 <ContactCtaSection
+                  locale="it"
                   title="Cerchi supporto tecnico per il tuo progetto?"
                   description="Contattaci per una valutazione preliminare: ti indichiamo tempi, iter autorizzativi e il percorso progettuale più adatto."
                   className="mt-14"
@@ -567,7 +570,7 @@ export function LocalizedProjectsPageContent() {
                 </Link>
               ))}
             </div>
-            <ContactCtaSection title="Vuoi realizzare un progetto con noi?" description="Dalla fattibilità al cantiere: raccontaci obiettivi, tempi e vincoli del tuo intervento." />
+            <ContactCtaSection locale="it" title="Vuoi realizzare un progetto con noi?" description="Dalla fattibilità al cantiere: raccontaci obiettivi, tempi e vincoli del tuo intervento." />
           </div>
         </div>
       </main>
@@ -593,6 +596,7 @@ export function LocalizedProjectsPageContent() {
             ))}
           </div>
           <ContactCtaSection
+            locale={isEn ? "en" : "it"}
             title={isEn ? "Would you like to develop a project with us?" : "Vuoi realizzare un progetto con noi?"}
             description={isEn ? "From feasibility to construction: tell us about the objectives, timing and constraints of your intervention." : "Dalla fattibilità al cantiere: raccontaci obiettivi, tempi e vincoli del tuo intervento."}
           />

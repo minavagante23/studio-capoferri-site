@@ -34,7 +34,7 @@ export default async function EnglishMirrorPage({ params }: Props) {
 
   switch (route.kind) {
     case "home":
-      return <HomePage />;
+      return <HomePage locale="en" />;
     case "static":
       switch (route.key) {
         case "chi-siamo":

@@ -1,9 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { useLocale } from "@/components/LocaleProvider";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { StatsSection } from "@/components/home/StatsSection";
 import { IconUrban, ServiceIcon } from "@/components/home/ServiceIcons";
@@ -21,7 +18,7 @@ import {
 } from "@/lib/content";
 import { fontDisplay } from "@/lib/fonts";
 import { homeChiSiamoImages } from "@/lib/images";
-import { localizeHref } from "@/lib/i18n";
+import { localizeHref, type Locale } from "@/lib/i18n";
 import { chiSiamoEnIntro, chiSiamoEnParagraphs } from "@/lib/about-copy";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site } from "@/lib/site";
@@ -182,8 +179,7 @@ const previews = {
   ],
 } as const;
 
-export function LocalizedHomeSections() {
-  const locale = useLocale();
+export function LocalizedHomeSections({ locale }: { locale: Locale }) {
   const t = copy[locale];
 
   return (

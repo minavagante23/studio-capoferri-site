@@ -427,7 +427,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 </article>
 
                 <ProjectImageLightbox images={cs.gallery} className="mt-10" />
-                <ContactCtaSection title="Hai un progetto simile?" />
+                <ContactCtaSection locale="it" title="Hai un progetto simile?" />
               </div>
             </div>
           </div>
@@ -489,7 +489,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 )}
               </article>
               <ProjectImageLightbox images={gallery} className="mt-10" />
-              <ContactCtaSection title={locale === "en" ? "Do you have a similar project?" : "Hai un progetto simile?"} />
+              <ContactCtaSection locale={locale} title={locale === "en" ? "Do you have a similar project?" : "Hai un progetto simile?"} />
             </div>
           </div>
         </div>
