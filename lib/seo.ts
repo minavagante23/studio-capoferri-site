@@ -76,13 +76,13 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "": {
     title: "Civil engineering, architecture and steel structures",
     description:
-      "Studio Capoferri in Adro, near Brescia: civil engineering, architecture and steel structures with over 40 years of experience across Brescia, Bergamo and Milan.",
+      "Studio Capoferri in Adro, near Brescia, Italy: civil engineering, architecture and steel structures with over 40 years of experience across Brescia, Bergamo and Milan.",
     path: "/",
   },
   "chi-siamo": {
     title: "About",
     description:
-      "Learn more about Studio Capoferri, our team of professionals, our history and the design approach that guides our engineering and architectural work in Adro, near Brescia.",
+      "Learn more about Studio Capoferri, our team of professionals, our history and the design approach that guides our engineering and architectural work in Adro, near Brescia, Italy.",
     path: "/chi-siamo",
   },
   servizi: {
@@ -94,13 +94,13 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   progetti: {
     title: "Projects",
     description:
-      "A selection of Studio Capoferri projects: residential, industrial and public-venue structures designed from our base in Adro, near Brescia.",
+      "A selection of Studio Capoferri projects: residential, industrial and public-venue structures designed from our base in Adro, near Brescia, Italy.",
     path: "/progetti",
   },
   contatti: {
     title: "Contact",
     description:
-      "Contact Studio Capoferri to request a quotation or schedule a meeting. Office details, address and opening hours in Adro, near Brescia.",
+      "Contact Studio Capoferri to request a quotation or schedule a meeting. Office details, address and opening hours in Adro, near Brescia, Italy.",
     path: "/contatti",
   },
   "privacy-policy": {
