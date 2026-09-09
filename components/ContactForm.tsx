@@ -73,6 +73,8 @@ export function ContactForm({
             subject: subject || copy.noSubject,
             city: city || "",
             message,
+            locale,
+            language: locale === "en" ? "English" : "Italian",
           }),
         });
         if (res.ok) {
@@ -91,7 +93,7 @@ export function ContactForm({
         setStatus("error");
       }
     },
-    [city, copy.noSubject, defaultCity, defaultSubject, email, message, name, subject, valid]
+    [city, copy.noSubject, defaultCity, defaultSubject, email, locale, message, name, subject, valid]
   );
 
   if (status === "success") {
