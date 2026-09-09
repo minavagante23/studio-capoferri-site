@@ -82,7 +82,7 @@ export function LocalizedAboutPageContent() {
 export function LocalizedServicesPageContent() {
   const locale = useLocale();
   const isEn = locale === "en";
-  const sectionHeading = `${fontDisplay.className} ${ui.sectionHeadingAccent} mt-14 ${scrollAnchorClass}`;
+  const sectionHeading = `${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
 
   if (!isEn) {
     return (
