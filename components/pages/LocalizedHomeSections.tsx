@@ -22,6 +22,7 @@ import {
 import { fontDisplay } from "@/lib/fonts";
 import { homeChiSiamoImages } from "@/lib/images";
 import { localizeHref } from "@/lib/i18n";
+import { chiSiamoEnIntro, chiSiamoEnParagraphs } from "@/lib/about-copy";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site } from "@/lib/site";
 import { ui } from "@/lib/ui";
@@ -67,36 +68,15 @@ const copy = {
   },
   en: {
     aboutTitle: "About",
-    aboutIntro:
-      "A civil engineering practice in Adro, near Brescia, Italy: architecture, structural design and steel structures with more than forty years of experience.",
+    aboutIntro: chiSiamoEnIntro,
     aboutBlocks: [
       {
-        text: (
-          <>
-            <strong>Studio Capoferri</strong> is a <strong>civil engineering</strong> practice based in Adro, near Brescia, Italy, with more than forty years of
-            experience in <strong>structural engineering, architecture and urban planning</strong> and in <strong>steel structures</strong> across
-            Franciacorta and, more broadly, Northern and Central Italy. Our team is made up of qualified professionals, each with specific
-            multidisciplinary expertise, able to guarantee quality and precision in every aspect of the design process. Thanks to the synergy between
-            different areas of knowledge and the consolidated experience built up over the years, we provide innovative, tailored solutions for every
-            type of intervention, ensuring an integrated and comprehensive approach for all projects entrusted to our practice.
-          </>
-        ),
+        text: chiSiamoEnParagraphs[0],
         image: "team",
         imageFirst: false,
       },
       {
-        text: (
-          <>
-            We work across several sectors, especially <strong>residential and industrial projects</strong>, providing advanced technical solutions
-            that respond to functional, aesthetic and regulatory requirements. Our presence throughout Northern and North-Central Italy
-            (Lombardy, Veneto, Piedmont, Emilia-Romagna and Tuscany), particularly in the provinces of Brescia, Bergamo and Milan as well as
-            neighbouring areas, allows us to fully understand the regulatory
-            and planning specificities of each location. In addition, we have developed specialised expertise in fire-safety design, offering
-            consultancy and technical design in line with the most recent legislative and technical provisions. This breadth of competence enables us
-            to approach every project with a broad, fully informed perspective, delivering high-quality results that meet both client expectations and
-            current regulations.
-          </>
-        ),
+        text: chiSiamoEnParagraphs[1],
         image: "cantiere",
         imageFirst: true,
       },
