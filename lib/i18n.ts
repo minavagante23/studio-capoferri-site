@@ -79,11 +79,11 @@ export const chromeCopy = {
       dialogLabel: "Informativa sui cookie",
     },
     contactForm: {
-      success: "Messaggio inviato. Ti risponderemo al piu presto.",
+      success: "Messaggio inviato. Ti risponderemo al più presto.",
       name: "Nome e cognome",
       email: "Email",
       subject: "Oggetto",
-      city: "Citta / zona di interesse",
+      city: "Città / zona di interesse",
       cityPlaceholder: "Es. Brescia, Bergamo, Milano",
       message: "Messaggio",
       privacyLead: "Ho letto e accetto la",
@@ -102,7 +102,7 @@ export const chromeCopy = {
     cta: {
       defaultTitle: "Hai un progetto in mente?",
       defaultDescription:
-        "Raccontaci la tua esigenza: analizziamo fattibilita, costi e tempi e ti proponiamo la soluzione strutturale piu adatta.",
+        "Raccontaci la tua esigenza: analizziamo fattibilità, costi e tempi e ti proponiamo la soluzione strutturale più adatta.",
       requestConsultation: "Richiedi una consulenza",
       discoverServices: "Scopri i servizi",
     },

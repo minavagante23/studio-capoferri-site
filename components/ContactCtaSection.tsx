@@ -15,7 +15,7 @@ type Props = {
 
 const defaultItalianTitle = "Hai un progetto in mente?";
 const defaultItalianDescription =
-  "Raccontaci la tua esigenza: analizziamo fattibilita, costi e tempi e ti proponiamo la soluzione strutturale piu adatta.";
+  "Raccontaci la tua esigenza: analizziamo fattibilità, costi e tempi e ti proponiamo la soluzione strutturale più adatta.";
 
 export function ContactCtaSection({
   title = defaultItalianTitle,

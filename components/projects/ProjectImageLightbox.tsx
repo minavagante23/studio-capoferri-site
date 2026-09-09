@@ -36,7 +36,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
         next: "Immagine successiva",
         select: "Seleziona immagine",
         open: "Apri nella galleria",
-        help: "Scorri col dito, usa le frecce o Maiusc piu rotellina per cambiare immagine. Esci con Esc o clic sullo sfondo.",
+        help: "Scorri col dito, usa le frecce o Maiusc più rotellina per cambiare immagine. Esci con Esc o clic sullo sfondo.",
       };
   const [open, setOpen] = useState<number | null>(null);
   const [portalNode, setPortalNode] = useState<HTMLElement | null>(null);

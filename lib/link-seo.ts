@@ -16,7 +16,7 @@ export const linkTitles = {
   consulenza: (locale: SeoLocale = "it") => (locale === "en" ? "Request a consultation - Studio Capoferri Contact" : "Richiedi una consulenza - Contatti Studio Capoferri"),
   contatti: (locale: SeoLocale = "it") => (locale === "en" ? "Contact us - Studio Capoferri" : "Contattaci - Studio Capoferri"),
   scopriServizi: (locale: SeoLocale = "it") => (locale === "en" ? "Explore all services - Studio Capoferri" : "Scopri tutti i servizi - Studio Capoferri"),
-  scopriServizio: (name: string, locale: SeoLocale = "it") => linkTitle(locale === "en" ? `Learn more: ${name}` : `Scopri di piu: ${name}`, locale === "en" ? "Services" : "Servizi"),
+  scopriServizio: (name: string, locale: SeoLocale = "it") => linkTitle(locale === "en" ? `Learn more: ${name}` : `Scopri di più: ${name}`, locale === "en" ? "Services" : "Servizi"),
   tuttiProgetti: (locale: SeoLocale = "it") => (locale === "en" ? "Explore all projects - Studio Capoferri" : "Esplora tutti i progetti - Studio Capoferri"),
   formContatti: (locale: SeoLocale = "it") => (locale === "en" ? "Write to us using the contact form - Studio Capoferri" : "Scrivici dal form contatti - Studio Capoferri"),
   privacy: "Privacy policy - Studio Capoferri",

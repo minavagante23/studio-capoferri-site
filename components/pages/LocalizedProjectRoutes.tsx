@@ -513,11 +513,11 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
         [landingCopy.en.faqFixed[3][0], landingCopy.en.faqFixed[3][1]],
       ]
     : [
-        [config.faqCostQuestion, "Il costo dipende da dimensioni, complessita e destinazione d'uso dell'edificio. Dopo un primo sopralluogo o un colloquio tecnico forniamo un preventivo dettagliato e senza impegno per la progettazione strutturale, i disegni costruttivi d'officina e la direzione lavori."],
-        ["Quali vantaggi offre una struttura in acciaio rispetto al cemento armato?", "L'acciaio garantisce leggerezza, resistenza sismica, tempi di cantiere ridotti grazie alla prefabbricazione in officina e grande flessibilita architettonica."],
+        [config.faqCostQuestion, "Il costo dipende da dimensioni, complessità e destinazione d'uso dell'edificio. Dopo un primo sopralluogo o un colloquio tecnico forniamo un preventivo dettagliato e senza impegno per la progettazione strutturale, i disegni costruttivi d'officina e la direzione lavori."],
+        ["Quali vantaggi offre una struttura in acciaio rispetto al cemento armato?", "L'acciaio garantisce leggerezza, resistenza sismica, tempi di cantiere ridotti grazie alla prefabbricazione in officina e grande flessibilità architettonica."],
         ["Progettate strutture in acciaio in tutta la Lombardia?", config.faqAreaAnswer],
-        ["Seguite anche la direzione lavori e il montaggio della carpenteria metallica?", "Si. Seguiamo l'intero processo, dal calcolo strutturale alla direzione lavori strutturale fino al collaudo."],
-        ["E possibile realizzare una sopraelevazione in acciaio su un edificio esistente?", "Si, la leggerezza dell'acciaio lo rende il materiale ideale per le sopraelevazioni."],
+        ["Seguite anche la direzione lavori e il montaggio della carpenteria metallica?", "Sì. Seguiamo l'intero processo, dal calcolo strutturale alla direzione lavori strutturale fino al collaudo."],
+        ["È possibile realizzare una sopraelevazione in acciaio su un edificio esistente?", "Sì, la leggerezza dell'acciaio lo rende il materiale ideale per le sopraelevazioni."],
       ];
 
   const serviceJsonLd = {
