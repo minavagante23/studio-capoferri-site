@@ -145,11 +145,11 @@ export function HeroHome() {
             className={`${fontDisplay.className} section-title text-[clamp(2rem,7vw,3.85rem)] leading-[0.98] text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]`}
             aria-live="polite"
           >
-            <span className="block whitespace-nowrap">{s.line1}</span>
-            <span className="mt-1 block whitespace-nowrap text-white/95">{s.line2}</span>
+            <span className="block sm:whitespace-nowrap">{s.line1}</span>
+            <span className="mt-1 block text-white/95 sm:whitespace-nowrap">{s.line2}</span>
           </h1>
 
-          <p className="mt-4 whitespace-nowrap text-[0.85rem] leading-snug tracking-[0.01em] text-white/82 sm:text-[0.9rem] md:ml-auto md:text-[1rem]">
+          <p className="mt-4 text-[0.85rem] leading-snug tracking-[0.01em] text-white/82 sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:text-[1rem]">
             {copy.support}
           </p>
 
