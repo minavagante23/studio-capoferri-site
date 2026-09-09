@@ -63,7 +63,7 @@ const copy = {
     contactsIntro: originalContattiIntro,
     office: "Sede",
     phone: "Telefono",
-    writeUs: "Scrivici direttamente",
+    writeUs: "Richiedi una consulenza",
   },
   en: {
     aboutTitle: "About",
@@ -182,10 +182,10 @@ const copy = {
     ),
     contactsTitle: "Contact",
     contactsIntro:
-      "For information, quotations or technical consultancy — including English-speaking international clients — our team is available to respond to every requirement.",
+      "For quotations, technical consultancy or an initial assessment — including English-speaking international clients — get in touch. We reply in English.",
     office: "Office",
     phone: "Phone",
-    writeUs: "Write to us directly",
+    writeUs: "Request a consultation",
   },
 } as const;
 
@@ -359,7 +359,7 @@ export function LocalizedHomeSections() {
             <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{site.addressLine}</p></article>
           </div>
           <p className="mt-8 sm:mt-12">
-            <Link href={localizeHref("/contatti#form-contatti", locale)} className={`${ui.btnOutline} inline-flex w-full sm:w-auto`} title={linkTitles.formContatti(locale)}>
+            <Link href={localizeHref("/contatti#form-contatti", locale)} className={`${ui.btnPrimary} inline-flex w-full sm:w-auto`} title={linkTitles.formContatti(locale)}>
               {t.writeUs}
             </Link>
           </p>
