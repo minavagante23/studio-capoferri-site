@@ -184,6 +184,7 @@ export function SiteHeader() {
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
         aria-hidden={!open}
+        inert={!open ? true : undefined}
       >
         <div className={`flex flex-1 items-center justify-center overflow-y-auto ${layoutGutterXClass}`}>
           <ul className={`${layoutContentMaxClass} flex flex-col gap-3 py-8`}>
