@@ -9,7 +9,7 @@
     "prebuild:static": "node scripts/sync-static.cjs",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "build:static": "cross-env STATIC_EXPORT=1 next build",
+    "build:static": "cross-env STATIC_EXPORT=1 next build && node scripts/fix-en-html-lang.cjs",
     "start": "next start",
     "lint": "eslint"
   },
