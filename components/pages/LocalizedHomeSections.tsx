@@ -80,7 +80,7 @@ const copy = {
     ] as AboutBlock[],
     servicesTitle: "Services",
     servicesIntro:
-      "Structural and steel engineering first: FEM analysis, fabrication drawings and site supervision. Architecture, planning and Italy-based administrative services when the project requires them.",
+      "Steel and structural design, shop drawings and site supervision first. Architecture, planning and Italian permits when the project needs them.",
     serviceCards: [
       ["Structural design", "Steel structures, reinforced concrete and masonry. FEM analysis, seismic checks and fire design.", "/servizi#progettazione-strutturale"],
       ["Construction supervision", "Technical supervision, site support, structural assessments and technical reports.", "/servizi#direzione-lavori"],
@@ -92,7 +92,7 @@ const copy = {
     allServices: "Explore all services",
     projectsTitle: "Projects",
     projectsIntro:
-      "We have solid experience in delivering structures for a wide range of applications, including industrial buildings, residential developments, vertical extensions and specialist steelwork. Every intervention is approached through a tailored process, developing technical solutions specifically designed to answer the exact requirements of the project.",
+      "Industrial buildings, steel residences, vertical extensions and specialist steelwork — selected work that shows how we design and support construction.",
     projectsCta: "Explore all completed projects",
     certificationsTitle: "Professional qualifications",
     certificationsIntro: "All activities are carried out by professionals holding the qualifications required by sector regulations.",
@@ -137,12 +137,12 @@ const copy = {
     ),
     zoneFooter: (
       <>
-        We support international clients on projects in Italy with Eurocode-compliant structural and steel design — contact us in English. We also work
-        throughout Italy and across Northern and North-Central provinces.{" "}
+        International contractors and EU partners: speak with our <strong>engineers in English</strong> on scope, drawings and site issues, and we
+        interface with <strong>Italian and EU fabricators</strong> through fabrication drawings and erection support.{" "}
         <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
           Get in touch
         </Link>{" "}
-        to confirm coverage for your area, or see{" "}
+        or see{" "}
         <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")} title={linkTitles.acciaio("Brescia", "en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
           steel design in Brescia
         </Link>
@@ -159,7 +159,7 @@ const copy = {
     ),
     contactsTitle: "Contact",
     contactsIntro:
-      "For quotations, technical consultancy or an initial assessment — including English-speaking international clients — get in touch. We reply in English.",
+      "Write in English for a technical first reply from our engineering team — quotations, shop-drawing scope and site support for projects in Italy.",
     office: "Office",
     phone: "Phone",
     writeUs: "Request a consultation",

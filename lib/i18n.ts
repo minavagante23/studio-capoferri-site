@@ -175,7 +175,7 @@ export const chromeCopy = {
     hero: {
       introLabel: "Introduction",
       location: "Studio Capoferri · Adro (BS) - Italy",
-      support: "Civil engineering, architecture and steel structures.",
+      support: "Steel structures + site support in Northern Italy — talk to us in English.",
       cta: "Request a quote",
       slidePicker: "Select hero slide",
     },

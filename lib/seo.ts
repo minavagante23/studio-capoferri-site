@@ -74,9 +74,9 @@ export function buildPageMetadata({
 
 const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "": {
-    title: "Civil engineering, architecture and steel structures",
+    title: "Steel structures and site support in Northern Italy",
     description:
-      "Studio Capoferri in Adro, near Brescia, Italy: civil engineering, architecture and steel structures with over 40 years of experience across Brescia, Bergamo and Milan.",
+      "Studio Capoferri in Adro, near Brescia, Italy: steel structures, shop drawings and site support for projects in Northern Italy. Talk to our engineers in English.",
     path: "/",
   },
   "chi-siamo": {

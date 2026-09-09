@@ -44,20 +44,20 @@ const heroSlidesByLocale = {
     {
       src: "/assets/superstudio-village-acciaio-pre-fabbricato.webp",
       alt: "Prefabricated steel structures - Studio Capoferri projects in Northern Italy",
-      line1: "Integrated design",
-      line2: "from feasibility to construction",
+      line1: "Steel structures",
+      line2: "and site support",
     },
     {
       src: "/assets/superstudio-village-sala-proiezione.webp",
       alt: "Steel structures for residential and industrial buildings - Studio Capoferri Lombardy",
-      line1: "Technical expertise",
-      line2: "for tailored solutions",
+      line1: "Shop drawings",
+      line2: "to erection assistance",
     },
     {
       src: "/assets/hero-struttura-new.webp",
       alt: "Steel structures - efficiency and speed",
-      line1: "Steel structures",
-      line2: "efficiency and speed",
+      line1: "Northern Italy",
+      line2: "talk to us in English",
     },
   ],
 } as const;
