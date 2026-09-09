@@ -12,6 +12,7 @@ import { localizeHref } from "@/lib/i18n";
 import { caseStudyJsonLd } from "@/lib/jsonld";
 import { linkTitles } from "@/lib/link-seo";
 import { projectCaseStudies, projectCategories, type ProjectArea } from "@/lib/projects";
+import { galleryAltEnBySrc } from "@/lib/gallery-alts-en";
 import { getEnglishCaseMetadata, getEnglishSteelDescription, pageUrl as seoPageUrl } from "@/lib/seo";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site } from "@/lib/site";
 import type { SteelLandingConfig } from "@/lib/steel-landing";
@@ -368,9 +369,9 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
   const body = locale === "en" && key in caseCopy.en ? caseCopy.en[key] : null;
   const gallery =
     locale === "en"
-      ? cs.gallery.map((img, index) => ({
+      ? cs.gallery.map((img) => ({
           ...img,
-          alt: `${heading} - photo ${index + 1}`,
+          alt: galleryAltEnBySrc[img.src] ?? img.alt,
         }))
       : cs.gallery;
 
