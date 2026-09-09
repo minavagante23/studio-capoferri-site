@@ -68,12 +68,12 @@ const copy = {
   en: {
     aboutTitle: "About",
     aboutIntro:
-      "A civil engineering practice in Adro near Brescia: architecture, structural design and steel structures with more than forty years of experience.",
+      "A civil engineering practice in Adro, near Brescia, Italy: architecture, structural design and steel structures with more than forty years of experience.",
     aboutBlocks: [
       {
         text: (
           <>
-            <strong>Studio Capoferri</strong> is a <strong>civil engineering</strong> practice based in Adro, near Brescia, with more than forty years of
+            <strong>Studio Capoferri</strong> is a <strong>civil engineering</strong> practice based in Adro, near Brescia, Italy, with more than forty years of
             experience in <strong>structural engineering, architecture and urban planning</strong> and in <strong>steel structures</strong> across
             Franciacorta and, more broadly, Northern and Central Italy. Our team is made up of qualified professionals, each with specific
             multidisciplinary expertise, able to guarantee quality and precision in every aspect of the design process. Thanks to the synergy between
@@ -154,7 +154,7 @@ const copy = {
         >
           Milan
         </Link>
-        . Our office in Adro, near Brescia, allows us to serve these areas and the surrounding territories effectively, ensuring rapid response times
+        . Our office in Adro, near Brescia, Italy, allows us to serve these areas and the surrounding territories effectively, ensuring rapid response times
         and in-depth knowledge of local regulations.
       </>
     ),
