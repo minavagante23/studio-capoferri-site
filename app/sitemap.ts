@@ -6,12 +6,24 @@ export const dynamic = "force-static";
 
 const lastModified = new Date("2026-07-19");
 
-function entry(path: string, locale: "it" | "en", priority: number, changefreq: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly") {
+function entry(
+  path: string,
+  locale: "it" | "en",
+  priority: number,
+  changefreq: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly"
+): MetadataRoute.Sitemap[number] {
   return {
     url: pageUrl(path, locale),
     lastModified,
     changeFrequency: changefreq,
     priority,
+    alternates: {
+      languages: {
+        it: pageUrl(path, "it"),
+        en: pageUrl(path, "en"),
+        "x-default": pageUrl(path, "it"),
+      },
+    },
   };
 }
 
