@@ -175,9 +175,9 @@ const englishProjectCaseMetadata: Record<string, BaseMetadataInput> = {
     path: "/progetti/industriali/ampliamento-complesso-zootecnico",
   },
   "industriali/centro-direzionale-provaglio-diseo": {
-    title: "Office centre - Provaglio d'Iseo",
+    title: "Headquarters - Provaglio d'Iseo (BS)",
     description:
-      "Redevelopment of an industrial building with a steel mezzanine of more than 5,000 square metres for offices, laboratories and workspaces.",
+      "Redevelopment of an industrial building in Provaglio d'Iseo (BS) as the main headquarters of a major listed electronics company — steel mezzanine of more than 5,000 square metres.",
     path: "/progetti/industriali/centro-direzionale-provaglio-diseo",
   },
   "ricettivi/superstudio-village": {

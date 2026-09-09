@@ -99,10 +99,10 @@ export const projectCategories: Record<
       },
       {
         slug: "centro-direzionale-provaglio-diseo",
-        title: "Centro direzionale — Provaglio d'Iseo",
-        caption: "Centro direzionale - Provaglio d'Iseo",
+        title: "Centro direzionale — Provaglio d'Iseo (BS)",
+        caption: "Centro direzionale - Provaglio d'Iseo (BS)",
         cover: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp",
-        alt: "Soppalco in carpenteria metallica in fase di montaggio — centro direzionale a Provaglio d'Iseo",
+        alt: "Soppalco in carpenteria metallica in fase di montaggio — centro direzionale a Provaglio d'Iseo (BS)",
         href: "/progetti/industriali/centro-direzionale-provaglio-diseo",
       },
     ],
@@ -411,15 +411,16 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/centro-direzionale-provaglio-diseo": {
-    metaTitle: "Centro direzionale — Provaglio d'Iseo",
+    metaTitle: "Centro direzionale — Provaglio d'Iseo (BS)",
     metaDescription:
-      "Riqualificazione di edificio industriale con soppalco in carpenteria metallica di oltre 5.000 mq — progettazione strutturale Studio Capoferri.",
-    heading: "Centro direzionale — Provaglio d'Iseo",
+      "Riqualificazione di edificio industriale a Provaglio d'Iseo (BS) come sede principale di un'importante azienda elettronica quotata in borsa — soppalco metallico oltre 5.000 mq.",
+    heading: "Centro direzionale — Provaglio d'Iseo (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          L&apos;intervento riguarda la riqualificazione di un edificio industriale a <strong>Provaglio d&apos;Iseo</strong>, trasformato in un nuovo{" "}
-          <strong>centro direzionale</strong> con uffici, laboratori e spazi di lavoro.
+          L&apos;intervento riguarda la riqualificazione di un edificio industriale a <strong>Provaglio d&apos;Iseo (BS)</strong>, destinato a diventare
+          la <strong>sede principale</strong> di un&apos;importante azienda del settore elettronica quotata in borsa, con uffici, laboratori e spazi di
+          lavoro.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Il progetto è partito da una base definitiva sviluppata dal progettista generale. Lo Studio Capoferri ha concentrato il proprio contributo su
@@ -451,23 +452,23 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp",
-        alt: "Vista generale del soppalco in carpenteria metallica integrato nell'edificio esistente — Provaglio d'Iseo",
+        alt: "Vista generale del soppalco in carpenteria metallica integrato nell'edificio esistente — Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/carpenteria-metallica-soppalco-provaglio-diseo.webp",
-        alt: "Montaggio del soppalco in acciaio con connessioni strutturali e lamiera grecata — centro direzionale Provaglio d'Iseo",
+        alt: "Montaggio del soppalco in acciaio con connessioni strutturali e lamiera grecata — centro direzionale Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/progettazione-strutture-acciaio-industriali.jpeg",
-        alt: "Apertura in copertura e carpenteria metallica sul piano del soppalco — centro direzionale Provaglio d'Iseo",
+        alt: "Apertura in copertura e carpenteria metallica sul piano del soppalco — centro direzionale Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/strutture-in-acciaio-soppalco-direzionale.jpeg",
-        alt: "Travi e capriate in acciaio integrate nella struttura preesistente — soppalco Provaglio d'Iseo",
+        alt: "Travi e capriate in acciaio integrate nella struttura preesistente — soppalco Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-copertura-progettazione-acciaio.jpeg",
-        alt: "Vista dal basso dell'orditura metallica in fase di montaggio — centro direzionale Provaglio d'Iseo",
+        alt: "Vista dal basso dell'orditura metallica in fase di montaggio — centro direzionale Provaglio d'Iseo (BS)",
       },
     ],
   },

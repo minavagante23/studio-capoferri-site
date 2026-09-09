@@ -134,7 +134,7 @@ export function HeroHome() {
         className={`relative z-10 mx-auto flex min-h-[calc(100svh-72px)] flex-col justify-end gap-5 px-4 pb-10 pt-20 sm:min-h-[calc(100svh-78px)] sm:gap-7 sm:px-5 sm:pb-12 sm:pt-24 md:min-h-[calc(100svh-94px)] md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
       >
         <motion.div
-          className="max-w-[22rem] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
+          className="max-w-[min(100%,28rem)] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
           initial={reduceMotion ? false : { opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.72, ease: subtleEase }}
@@ -149,7 +149,7 @@ export function HeroHome() {
             <span className="mt-1 block whitespace-nowrap text-white/95">{s.line2}</span>
           </h1>
 
-          <p className="mt-4 max-w-[32ch] text-[0.9rem] leading-snug tracking-[0.01em] text-white/82 md:ml-auto md:text-[1rem]">
+          <p className="mt-4 whitespace-nowrap text-[0.85rem] leading-snug tracking-[0.01em] text-white/82 sm:text-[0.9rem] md:ml-auto md:text-[1rem]">
             {copy.support}
           </p>
 

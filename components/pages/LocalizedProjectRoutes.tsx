@@ -131,9 +131,9 @@ const caseCopy = {
       ],
     },
     "industriali/centro-direzionale-provaglio-diseo": {
-      heading: "Office centre - Provaglio d'Iseo",
+      heading: "Headquarters - Provaglio d'Iseo (BS)",
       body: [
-        "The project concerns the redevelopment of an industrial building in Provaglio d'Iseo, converted into a new office centre with offices, laboratories and workspaces.",
+        "The project concerns the redevelopment of an industrial building in Provaglio d'Iseo (BS), converted into the main headquarters of a major listed electronics company, with offices, laboratories and workspaces.",
         "It started from an approved base scheme developed by the lead designer. Studio Capoferri focused its contribution on full optimisation, adapting the design solutions to the real construction dynamics of the site.",
         "The core of the intervention is a steel mezzanine of more than 5,000 square metres, integrated into the existing structure to expand the usable floor area.",
         "Constant dialogue between design and construction made it possible to develop solutions that are efficient and consistent with site reality.",

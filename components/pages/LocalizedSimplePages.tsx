@@ -176,14 +176,15 @@ export function LocalizedServicesPageContent() {
             {isEn ? (
               <>
                 <p className={ui.body}>
-                  <strong>Studio Capoferri</strong> provides a complete range of engineering, architecture and technical consultancy services on a
-                  full-spectrum basis. We support clients through every phase of a project, ensuring quality, precision and tailored solutions.
+                  <strong>Studio Capoferri</strong> specialises in <strong>structural and steel engineering</strong>: FEM analysis, Eurocode-compliant
+                  design, fabrication shop drawings and construction supervision for industrial and civil projects. Architecture, planning and
+                  Italy-based administrative services are available when the brief requires them.
                 </p>
 
                 <h2 id="progettazione-strutturale" className={sectionHeading}>Structural design</h2>
                 <p className={`mb-4 ${ui.bodyMuted}`}>
-                  We design steel, reinforced-concrete and masonry structures for clients across Lombardy and Northern Italy. Area-specific insights:
-                  {" "}
+                  We design steel, reinforced-concrete and masonry structures for clients across Lombardy, Northern Italy and international partners
+                  working on projects in Italy. Area-specific insights:{" "}
                   {steelLandingPages.map((page, index) => (
                     <span key={page.href}>
                       {index > 0 ? (index === steelLandingPages.length - 1 ? " and " : ", ") : null}
@@ -195,20 +196,14 @@ export function LocalizedServicesPageContent() {
                   .
                 </p>
                 <ul className="list-none space-y-3 pl-0">
-                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Steel, reinforced-concrete and masonry structures</strong> - Structural design to NTC standards and Eurocodes.</li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Steel structures</strong> - Structural design of steel buildings and specialist steelwork to NTC standards and Eurocodes.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>FEM modelling</strong> - Finite-element analysis for static and dynamic assessment of complex structures.</li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Fabrication shop drawings</strong> - Production of executive drawings for the fabrication and erection of steel structures.</li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Reinforced-concrete and masonry structures</strong> - Structural design for civil and industrial buildings alongside steel solutions.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Design in fire conditions</strong> - Fire-resistance verification for load-bearing structures in accordance with current regulations.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Seismic strengthening and upgrading</strong> - Structural strengthening and seismic-improvement works for existing buildings, designed to increase safety, seismic resistance and service life in accordance with current technical regulations.</li>
-                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Civil and industrial structures</strong> - Development of structural solutions for residential, commercial and industrial buildings, as well as infrastructure works.</li>
-                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Fabrication shop drawings</strong> - Production of executive drawings for the fabrication and erection of steel structures.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Structural testing and certification</strong> - Verification of structural compliance for new and existing works.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Structural certification for workplaces</strong> - Safety analysis and validation for structures subject to workplace regulations.</li>
-                </ul>
-
-                <h2 id="urbanistica-architettura" className={sectionHeading}>Planning and architecture</h2>
-                <ul className="list-none space-y-3 pl-0">
-                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Architectural design</strong> - Development of aesthetic and functional solutions for new buildings, refurbishments and redevelopment works.</li>
-                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Urban planning</strong> - Implementation plans, planning variations and compliance analysis against local planning instruments.</li>
                 </ul>
 
                 <h2 id="direzione-lavori" className={sectionHeading}>Construction supervision and consultancy</h2>
@@ -219,7 +214,21 @@ export function LocalizedServicesPageContent() {
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Technical reports and expert assessments</strong> - Preparation of certified reports, sworn expert opinions and party-appointed technical consultancy.</li>
                 </ul>
 
-                <h2 id="servizi-tecnici" className={sectionHeading}>Technical and cadastral services</h2>
+                <h2 id="sicurezza-cantieri" className={sectionHeading}>Site safety</h2>
+                <ul className="list-none space-y-3 pl-0">
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Site safety</strong> - Safety coordination during both design and construction phases (CSP and CSE), safety plans and risk management.</li>
+                </ul>
+
+                <h2 id="urbanistica-architettura" className={sectionHeading}>Planning and architecture</h2>
+                <ul className="list-none space-y-3 pl-0">
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Architectural design</strong> - Development of aesthetic and functional solutions for new buildings, refurbishments and redevelopment works.</li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Urban planning</strong> - Implementation plans, planning variations and compliance analysis against local planning instruments.</li>
+                </ul>
+
+                <h2 id="servizi-tecnici" className={sectionHeading}>Italy-based technical and cadastral services</h2>
+                <p className={`mb-4 ${ui.bodyMuted}`}>
+                  These procedures apply to projects located in Italy (building permits, cadastre and related filings):
+                </p>
                 <ul className="list-none space-y-3 pl-0">
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Building applications</strong> - Preparation of permit applications, SCIA, CILA and retrospective regularisation files.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Cadastral procedures</strong> - Transfers, subdivisions, registrations, cadastral updates and data corrections.</li>
@@ -229,11 +238,6 @@ export function LocalizedServicesPageContent() {
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Energy performance certificates (APE)</strong> - Preparation of building energy performance certificates, assessment of energy performance and energy classification in accordance with current regulations.</li>
                 </ul>
 
-                <h2 id="sicurezza-cantieri" className={sectionHeading}>Site safety</h2>
-                <ul className="list-none space-y-3 pl-0">
-                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Site safety</strong> - Safety coordination during both design and construction phases (CSP and CSE), safety plans and risk management.</li>
-                </ul>
-
                 <h2 id="assistenza-immobiliare" className={sectionHeading}>Property support</h2>
                 <ul className="list-none space-y-3 pl-0">
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Property support</strong> - Technical assistance for transactions, expert valuations, property appraisals and assessment of the existing condition.</li>
@@ -241,7 +245,7 @@ export function LocalizedServicesPageContent() {
 
                 <ContactCtaSection
                   title="Need technical support for your project?"
-                  description="Contact us for an initial assessment: we can outline timing, approvals and the most suitable design path."
+                  description="Contact us in English for an initial assessment: we can outline timing, design scope and the most suitable engineering path."
                   className="mt-14"
                 />
               </>
@@ -448,7 +452,7 @@ export function LocalizedContactsPageContent() {
             <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-3 sm:mb-4`}>{isEn ? "Contact" : "Contatti"}</h1>
             <p className={ui.body}>
               {isEn
-                ? "We are available for preliminary assessments, quotations and technical support on steel structural design, site supervision and specialist consultancy."
+                ? "We support international clients on projects in Italy with Eurocode-compliant structural and steel design. Contact us in English for preliminary assessments, quotations and technical consultancy."
                 : "Siamo disponibili per valutazioni preliminari, preventivi e supporto tecnico su progettazione strutturale in acciaio, direzione lavori e consulenza specialistica."}
             </p>
           </div>
@@ -515,7 +519,7 @@ export function LocalizedContactsPageContent() {
               <h2 className={`${fontDisplay.className} ${ui.cardHeading} mb-2 sm:mb-3`}>{isEn ? "Contact us" : "Contattaci"}</h2>
               <p className="copy-rhythm mb-6 w-full text-[0.95rem] leading-relaxed text-[#444] sm:mb-8 sm:text-[1.03rem]">
                 {isEn
-                  ? "Complete the form with the details of your project. You will receive a focused technical response from our team."
+                  ? "Complete the form with the details of your project — we reply in English. You will receive a focused technical response from our team."
                   : "Compila il form con i dettagli del tuo intervento. Riceverai un riscontro tecnico puntuale dal nostro team."}
               </p>
               <ContactForm />

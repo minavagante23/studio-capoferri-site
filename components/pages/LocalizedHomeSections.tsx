@@ -103,13 +103,13 @@ const copy = {
     ] as AboutBlock[],
     servicesTitle: "Services",
     servicesIntro:
-      "We provide a complete range of engineering, architecture and technical consultancy services, ensuring innovative solutions that comply with current regulations.",
+      "Structural and steel engineering first: FEM analysis, fabrication drawings and site supervision. Architecture, planning and Italy-based administrative services when the project requires them.",
     serviceCards: [
-      ["Structural design", "Steel, reinforced concrete and masonry structures. FEM analysis, seismic checks and fire design.", "/servizi#progettazione-strutturale"],
-      ["Planning and architecture", "Architectural design, implementation plans, planning amendments and compliance analysis.", "/servizi#urbanistica-architettura"],
+      ["Structural design", "Steel structures, reinforced concrete and masonry. FEM analysis, seismic checks and fire design.", "/servizi#progettazione-strutturale"],
       ["Construction supervision", "Technical supervision, site support, structural assessments and technical reports.", "/servizi#direzione-lavori"],
-      ["Technical services", "Building permits, cadastral filings, heritage authority procedures, administrative testing and inheritance matters.", "/servizi#servizi-tecnici"],
       ["Site safety", "Safety coordination (CSP/CSE), safety plans and risk management.", "/servizi#sicurezza-cantieri"],
+      ["Planning and architecture", "Architectural design, implementation plans, planning amendments and compliance analysis.", "/servizi#urbanistica-architettura"],
+      ["Italy-based technical services", "Building permits (SCIA/CILA), cadastral filings and related Italian procedures.", "/servizi#servizi-tecnici"],
       ["Property support", "Technical support for transactions, appraisals, valuations and due diligence.", "/servizi#assistenza-immobiliare"],
     ] as [string, string, string][],
     allServices: "Explore all services",
@@ -160,27 +160,29 @@ const copy = {
     ),
     zoneFooter: (
       <>
-        We also accept commissions throughout Italy and abroad. We serve additional provinces across Northern and North-Central Italy as well.{" "}
+        We support international clients on projects in Italy with Eurocode-compliant structural and steel design — contact us in English. We also work
+        throughout Italy and across Northern and North-Central provinces.{" "}
         <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
-          Contact us
+          Get in touch
         </Link>{" "}
-        to confirm coverage for your area, or consult our dedicated pages for{" "}
+        to confirm coverage for your area, or see{" "}
         <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")} title={linkTitles.acciaio("Brescia", "en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
           steel design in Brescia
         </Link>
         ,{" "}
         <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", "en")} title={linkTitles.acciaio("Bergamo", "en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
-          steel design in Bergamo
+          Bergamo
         </Link>{" "}
         and{" "}
         <Link href={localizeHref("/progettazione-strutture-acciaio-milano", "en")} title={linkTitles.acciaio("Milan", "en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
-          steel design in Milan
+          Milan
         </Link>
         .
       </>
     ),
     contactsTitle: "Contact",
-    contactsIntro: "For information, quotations or technical consultancy, our team is available to respond to every requirement.",
+    contactsIntro:
+      "For information, quotations or technical consultancy — including English-speaking international clients — our team is available to respond to every requirement.",
     office: "Office",
     phone: "Phone",
     writeUs: "Write to us directly",
@@ -352,9 +354,9 @@ export function LocalizedHomeSections() {
             <p className="home-split-header__right">{t.contactsIntro}</p>
           </div>
           <div className="grid gap-5 sm:grid-cols-3 sm:gap-6">
-            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#2a3f54] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
-            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#2a3f54] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
-            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{site.addressLine}</p></article>
+            <article className="reveal-block frost-card rounded-2xl p-5 text-center sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#2a3f54] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
+            <article className="reveal-block frost-card rounded-2xl p-5 text-center sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#2a3f54] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
+            <article className="reveal-block frost-card rounded-2xl p-5 text-center sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{site.addressLine}</p></article>
           </div>
           <p className="mt-8 sm:mt-12">
             <Link href={localizeHref("/contatti#form-contatti", locale)} className={`${ui.btnOutline} inline-flex w-full sm:w-auto`} title={linkTitles.formContatti(locale)}>

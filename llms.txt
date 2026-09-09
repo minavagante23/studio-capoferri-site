@@ -77,7 +77,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 - [Steel villa in Salsomaggiore Terme](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-salsomaggiore)
 - [Industrial building in Erbusco](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco)
 - [Livestock complex extension](https://www.studiocapoferri.eu/progetti/industriali/ampliamento-complesso-zootecnico)
-- [Office centre in Provaglio d'Iseo](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo)
+- [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo)
 - [Superstudio Village in Milan Bovisa](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village)
 - [Superstudio Maxi in Famagosta](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi)
 
@@ -86,7 +86,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 - [Steel villa in Salsomaggiore Terme](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-salsomaggiore)
 - [Industrial building in Erbusco](https://www.studiocapoferri.eu/en/projects/industrial/industrial-warehouse-erbusco)
 - [Livestock complex extension](https://www.studiocapoferri.eu/en/projects/industrial/livestock-complex-extension)
-- [Office centre in Provaglio d'Iseo](https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo)
+- [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo)
 - [Superstudio Village in Milan Bovisa](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-village)
 - [Superstudio Maxi in Famagosta](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-maxi)
 
