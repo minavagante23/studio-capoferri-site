@@ -7,12 +7,6 @@ import { fontDisplay } from "@/lib/fonts";
 import { linkTitles } from "@/lib/link-seo";
 import { ui } from "@/lib/ui";
 
-const gridHoverStyle = {
-  backgroundImage:
-    "linear-gradient(to right, rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)",
-  backgroundSize: "28px 28px",
-} as const;
-
 type Props = {
   href: string;
   title: string;
@@ -45,16 +39,10 @@ export function ProjectPreviewCard({
           src={image}
           alt={alt}
           fill
-          className="object-cover transition duration-500 group-hover:scale-[1.03]"
+          className="object-cover transition duration-500 group-hover:scale-[1.02]"
           sizes="(min-width:1024px) 33vw, 100vw"
         />
-        <div className="image-unify-overlay" aria-hidden />
-        <div
-          className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-          style={gridHoverStyle}
-          aria-hidden
-        />
-        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2e3d]/95 to-transparent px-4 py-3 sm:px-5 sm:py-4">
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent px-4 py-3 sm:px-5 sm:py-4">
           <span className={`${fontDisplay.className} ${ui.projectCardCaption}`}>{caption}</span>
         </div>
       </div>

@@ -99,7 +99,7 @@ export function LocalizedServicesPageContent() {
                 {steelLandingPages.map((page, index) => (
                   <span key={page.href}>
                     {index > 0 ? (index === steelLandingPages.length - 1 ? " e " : ", ") : null}
-                    <Link href={localizeHref(page.href, locale)} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+                    <Link href={localizeHref(page.href, locale)} className="link-accent">
                       {page.label.replace("Progettazione acciaio — ", "")}
                     </Link>
                   </span>
@@ -186,7 +186,7 @@ export function LocalizedServicesPageContent() {
                   {steelLandingPages.map((page, index) => (
                     <span key={page.href}>
                       {index > 0 ? (index === steelLandingPages.length - 1 ? " and " : ", ") : null}
-                      <Link href={localizeHref(page.href, locale)} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+                      <Link href={localizeHref(page.href, locale)} className="link-accent">
                         {page.label.replace("Progettazione acciaio — ", "").replace("Milano", "Milan")}
                       </Link>
                     </span>
@@ -263,7 +263,7 @@ export function LocalizedServicesPageContent() {
                   {steelLandingPages.map((page, index) => (
                     <span key={page.href}>
                       {index > 0 ? (index === steelLandingPages.length - 1 ? " e " : ", ") : null}
-                      <Link href={localizeHref(page.href, locale)} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+                      <Link href={localizeHref(page.href, locale)} className="link-accent">
                         {page.label.replace("Progettazione acciaio — ", "")}
                       </Link>
                     </span>
@@ -415,7 +415,7 @@ export function LocalizedContactsPageContent() {
                   <li><strong>Orari:</strong> {site.openingHoursDisplay}</li>
                 </ul>
                 <div className="mt-5 border-t border-[#2a3f54]/10 pt-4 sm:mt-7 sm:pt-6">
-                  <a href={site.linkedin} target="_blank" rel="noopener noreferrer" title={linkTitles.linkedin("it")} className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#2a3f54] underline-offset-2 hover:underline">
+                  <a href={site.linkedin} target="_blank" rel="noopener noreferrer" title={linkTitles.linkedin("it")} className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#2a3f54] underline-offset-2 transition hover:text-[#b87333] hover:underline">
                     Seguici su LinkedIn
                   </a>
                 </div>
@@ -490,7 +490,7 @@ export function LocalizedContactsPageContent() {
                   rel="noopener noreferrer"
                   title={linkTitles.linkedin(isEn ? "en" : "it")}
                   aria-label={isEn ? "Follow us on LinkedIn - Studio Capoferri" : "Seguici su LinkedIn - Studio Capoferri"}
-                  className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#2a3f54] underline-offset-2 hover:underline"
+                  className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#2a3f54] underline-offset-2 transition hover:text-[#b87333] hover:underline"
                 >
                   {isEn ? (
                     <>
@@ -564,7 +564,7 @@ export function LocalizedProjectsPageContent() {
                       }}
                     />
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2e3d]/95 to-transparent px-4 py-3 sm:py-4">
-                      <span className={`${fontDisplay.className} text-base tracking-[0.04em] text-white sm:text-lg`}>{p.caption}</span>
+                      <span className={`${fontDisplay.className} text-base tracking-[0.01em] text-white sm:text-lg`}>{p.caption}</span>
                     </div>
                   </div>
                 </Link>
@@ -616,7 +616,7 @@ export function LocalizedPrivacyPageContent() {
           <article className="max-w-[860px]">
             <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-7 sm:mb-10`}>Privacy policy</h1>
             <p className={`mb-7 sm:mb-10 ${ui.body}`}>
-              <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> Studio Capoferri SRL STP - Via Piave 35, Adro (BS) - VAT 04732710985 - Email: <a href={`mailto:${site.email}`} title={linkTitles.email(site.email, isEn ? "en" : "it")} className="text-[#2a3f54] underline">{site.email}</a>
+              <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> Studio Capoferri SRL STP - Via Piave 35, Adro (BS) - VAT 04732710985 - Email: <a href={`mailto:${site.email}`} title={linkTitles.email(site.email, isEn ? "en" : "it")} className="link-accent">{site.email}</a>
             </p>
             <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-12`}>{isEn ? "Purpose of processing" : "Finalità del trattamento"}</h2>
             <p className={ui.body}>{isEn ? "Personal data collected through the contact form is used exclusively to reply to user requests." : "I dati personali raccolti tramite il modulo di contatto vengono utilizzati esclusivamente per rispondere alle richieste inviate dagli utenti."}</p>

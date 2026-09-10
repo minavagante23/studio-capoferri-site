@@ -113,21 +113,7 @@ export function HeroHome() {
             </div>
           );
         })}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/42 via-black/18 to-black/24" aria-hidden />
-        <motion.div
-          aria-hidden
-          className="absolute inset-0"
-          initial={reduceMotion ? false : { opacity: 0.1 }}
-          animate={reduceMotion ? undefined : { opacity: [0.08, 0.12, 0.08] }}
-          transition={reduceMotion ? undefined : { duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-            maskImage: "radial-gradient(circle at 70% 35%, black 12%, transparent 70%)",
-            WebkitMaskImage: "radial-gradient(circle at 70% 35%, black 12%, transparent 70%)",
-          }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/36 via-black/10 to-black/14" aria-hidden />
       </div>
 
       <div

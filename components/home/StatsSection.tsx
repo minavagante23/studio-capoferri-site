@@ -91,7 +91,7 @@ export function StatsSection() {
               className="reveal-block rounded-xl border border-white/15 bg-white/[0.07] px-3 py-5 text-center shadow-[0_10px_30px_rgba(0,0,0,0.12)] backdrop-blur-sm sm:px-6 sm:py-8"
             >
               <Counter target={s.value} suffix={s.suffix} reduced={reduced} active={inView} />
-              <p className="mt-2 text-[0.72rem] font-medium uppercase tracking-[0.08em] text-white/85 sm:mt-3 sm:text-sm sm:tracking-[0.12em]">
+              <p className="mt-2 text-[0.78rem] font-medium tracking-normal text-white/85 sm:mt-3 sm:text-sm">
                 {copy.labels[index] ?? s.label}
               </p>
             </div>

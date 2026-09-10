@@ -54,10 +54,10 @@ export function LanguageSwitcher({ className = "", onNavigate }: Props) {
             }}
             aria-current={active ? "page" : undefined}
             aria-label={item.locale === "it" ? copy.languageItalian : copy.languageEnglish}
-            className={`focus-ring relative min-w-[56px] rounded-full px-3 py-2 text-center text-[0.72rem] font-semibold uppercase tracking-[0.18em] transition-all duration-300 ${
+            className={`focus-ring relative min-w-[48px] rounded-full px-3 py-2 text-center text-[0.75rem] font-semibold tracking-normal transition-all duration-300 ${
               active
                 ? "bg-[#2a3f54] text-white shadow-[0_10px_24px_rgba(42,63,84,0.24)]"
-                : "text-[#2a3f54] hover:bg-[#2a3f54]/8 hover:text-[#1f2e3d]"
+                : "text-[#2a3f54] hover:bg-[#b87333]/12 hover:text-[#b87333]"
             }`}
           >
             {item.shortLabel}

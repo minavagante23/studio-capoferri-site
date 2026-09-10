@@ -117,7 +117,7 @@ export const zoneDescription = (
     <Link
       href="/progettazione-strutture-acciaio-brescia"
       title="Progettazione strutture in acciaio a Brescia — Studio Capoferri"
-      className="font-semibold text-[#2a3f54] underline underline-offset-2"
+      className="link-accent"
     >
       Brescia
     </Link>
@@ -125,7 +125,7 @@ export const zoneDescription = (
     <Link
       href="/progettazione-strutture-acciaio-bergamo"
       title="Progettazione strutture in acciaio a Bergamo — Studio Capoferri"
-      className="font-semibold text-[#2a3f54] underline underline-offset-2"
+      className="link-accent"
     >
       Bergamo
     </Link>{" "}
@@ -133,7 +133,7 @@ export const zoneDescription = (
     <Link
       href="/progettazione-strutture-acciaio-milano"
       title="Progettazione strutture in acciaio a Milano — Studio Capoferri"
-      className="font-semibold text-[#2a3f54] underline underline-offset-2"
+      className="link-accent"
     >
       Milano
     </Link>
@@ -144,14 +144,14 @@ export const zoneDescription = (
 export const zoneFooter = (
   <>
     Accettiamo commesse in tutta Italia e all&apos;estero. Serviamo anche altre province del Nord e Centro Nord Italia.{" "}
-    <Link href="/contatti#form-contatti" title="Contattaci — Studio Capoferri" className="font-semibold text-[#2a3f54] underline underline-offset-2">
+    <Link href="/contatti#form-contatti" title="Contattaci — Studio Capoferri" className="link-accent">
       Contattaci
     </Link>{" "}
     per verificare la copertura nella tua zona, oppure consulta le nostre pagine dedicate alla{" "}
     <Link
       href="/progettazione-strutture-acciaio-brescia"
       title="Progettazione strutture in acciaio a Brescia — Studio Capoferri"
-      className="font-semibold text-[#2a3f54] underline underline-offset-2"
+      className="link-accent"
     >
       progettazione in acciaio a Brescia
     </Link>
@@ -159,7 +159,7 @@ export const zoneFooter = (
     <Link
       href="/progettazione-strutture-acciaio-bergamo"
       title="Progettazione strutture in acciaio a Bergamo — Studio Capoferri"
-      className="font-semibold text-[#2a3f54] underline underline-offset-2"
+      className="link-accent"
     >
       progettazione in acciaio a Bergamo
     </Link>{" "}
@@ -167,7 +167,7 @@ export const zoneFooter = (
     <Link
       href="/progettazione-strutture-acciaio-milano"
       title="Progettazione strutture in acciaio a Milano — Studio Capoferri"
-      className="font-semibold text-[#2a3f54] underline underline-offset-2"
+      className="link-accent"
     >
       progettazione in acciaio a Milano
     </Link>

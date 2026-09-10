@@ -111,7 +111,7 @@ const copy = {
         <Link
           href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")}
           title={linkTitles.acciaio("Brescia", "en")}
-          className="font-semibold text-[#2a3f54] underline underline-offset-2"
+          className="link-accent"
         >
           Brescia
         </Link>
@@ -119,7 +119,7 @@ const copy = {
         <Link
           href={localizeHref("/progettazione-strutture-acciaio-bergamo", "en")}
           title={linkTitles.acciaio("Bergamo", "en")}
-          className="font-semibold text-[#2a3f54] underline underline-offset-2"
+          className="link-accent"
         >
           Bergamo
         </Link>{" "}
@@ -127,7 +127,7 @@ const copy = {
         <Link
           href={localizeHref("/progettazione-strutture-acciaio-milano", "en")}
           title={linkTitles.acciaio("Milan", "en")}
-          className="font-semibold text-[#2a3f54] underline underline-offset-2"
+          className="link-accent"
         >
           Milan
         </Link>
@@ -139,19 +139,19 @@ const copy = {
       <>
         International contractors and EU partners: speak with our <strong>engineers in English</strong> on scope, drawings and site issues, and we
         interface with <strong>Italian and EU fabricators</strong> through fabrication drawings and erection support.{" "}
-        <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+        <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="link-accent">
           Get in touch
         </Link>{" "}
         or see{" "}
-        <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")} title={linkTitles.acciaio("Brescia", "en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+        <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")} title={linkTitles.acciaio("Brescia", "en")} className="link-accent">
           steel design in Brescia
         </Link>
         ,{" "}
-        <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", "en")} title={linkTitles.acciaio("Bergamo", "en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+        <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", "en")} title={linkTitles.acciaio("Bergamo", "en")} className="link-accent">
           Bergamo
         </Link>{" "}
         and{" "}
-        <Link href={localizeHref("/progettazione-strutture-acciaio-milano", "en")} title={linkTitles.acciaio("Milan", "en")} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+        <Link href={localizeHref("/progettazione-strutture-acciaio-milano", "en")} title={linkTitles.acciaio("Milan", "en")} className="link-accent">
           Milan
         </Link>
         .
@@ -200,18 +200,16 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
                 <div key={idx} className="reveal-block grid gap-6 sm:gap-10 md:grid-cols-2 md:items-stretch">
                   {block.imageFirst ? (
                     <>
-                      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-[#2a3f54]/10 shadow-[0_10px_30px_rgba(0,0,0,0.08)] md:aspect-auto md:min-h-[300px] md:h-full">
+                      <div className="relative aspect-[16/10] overflow-hidden rounded-sm md:aspect-auto md:min-h-[300px] md:h-full">
                         <Image src={img.src} alt={locale === "en" ? img.altEn : img.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
-                        <div className="image-unify-overlay" aria-hidden />
                       </div>
                       <div className="home-section-body copy-rhythm reading-measure text-[0.98rem] sm:text-[1.05rem]">{block.text}</div>
                     </>
                   ) : (
                     <>
                       <div className="home-section-body copy-rhythm reading-measure text-[0.98rem] sm:text-[1.05rem]">{block.text}</div>
-                      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-[#2a3f54]/10 shadow-[0_10px_30px_rgba(0,0,0,0.08)] md:aspect-auto md:min-h-[300px] md:h-full">
+                      <div className="relative aspect-[16/10] overflow-hidden rounded-sm md:aspect-auto md:min-h-[300px] md:h-full">
                         <Image src={img.src} alt={locale === "en" ? img.altEn : img.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
-                        <div className="image-unify-overlay" aria-hidden />
                       </div>
                     </>
                   )}
@@ -237,9 +235,9 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
                 <div className={`${ui.iconBox} mb-4 sm:mb-5`}>
                   <ServiceIcon index={idx} className="h-7 w-7 sm:h-9 sm:w-9" />
                 </div>
-                <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.04em] text-[#2a3f54] sm:mb-3 sm:text-xl`}>{title}</h3>
+                <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.02em] text-[#2a3f54] sm:mb-3 sm:text-xl`}>{title}</h3>
                 <p className="copy-rhythm mb-5 flex-1 text-sm text-[#555] sm:mb-6">{description}</p>
-                <Link href={localizeHref(href, locale)} className="touch-target mt-auto inline-block min-h-[44px] py-2 text-sm font-semibold text-[#2a3f54] underline-offset-4 transition group-hover:underline" title={linkTitles.scopriServizio(title, locale)}>
+                <Link href={localizeHref(href, locale)} className="touch-target mt-auto inline-block min-h-[44px] py-2 text-sm font-semibold text-[#2a3f54] underline-offset-4 transition hover:text-[#b87333] group-hover:underline" title={linkTitles.scopriServizio(title, locale)}>
                   {locale === "en" ? `Explore ${title}` : `Scopri ${title.toLowerCase()}`}
                 </Link>
               </article>
@@ -289,7 +287,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
             {t.certifications.map(([title, text]) => (
               <article key={title} className="reveal-block frost-card rounded-xl p-4 text-left sm:rounded-2xl sm:p-6">
-                <h3 className={`${fontDisplay.className} mb-2 text-base uppercase tracking-[0.06em] text-[#2a3f54] sm:mb-3 sm:text-lg md:text-xl`}>{title}</h3>
+                <h3 className={`${fontDisplay.className} mb-2 text-base tracking-[0.02em] text-[#2a3f54] sm:mb-3 sm:text-lg md:text-xl`}>{title}</h3>
                 <p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem] md:text-base">{text}</p>
               </article>
             ))}
@@ -311,7 +309,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
               <IconUrban className="h-7 w-7 sm:h-9 sm:w-9" />
             </div>
             <div className="min-w-0">
-              <h3 className={`${fontDisplay.className} text-lg tracking-[0.04em] text-[#2a3f54] sm:text-xl`}>{t.zoneHeading}</h3>
+              <h3 className={`${fontDisplay.className} text-lg tracking-[0.02em] text-[#2a3f54] sm:text-xl`}>{t.zoneHeading}</h3>
               <div className="mt-2 text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{t.zoneFooter}</div>
             </div>
           </div>
@@ -330,9 +328,9 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
             <p className="home-split-header__right">{t.contactsIntro}</p>
           </div>
           <div className="grid gap-5 sm:grid-cols-3 sm:gap-6">
-            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#2a3f54] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
-            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#2a3f54] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
-            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.04em] text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{site.addressLine}</p></article>
+            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
+            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
+            <article className="reveal-block frost-card rounded-2xl p-5 sm:p-6"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{site.addressLine}</p></article>
           </div>
           <p className="mt-8 sm:mt-12">
             <Link href={localizeHref("/contatti#form-contatti", locale)} className={`${ui.btnPrimary} inline-flex w-full sm:w-auto`} title={linkTitles.formContatti(locale)}>

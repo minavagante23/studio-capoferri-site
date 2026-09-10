@@ -55,7 +55,7 @@ export function ReadingProgressBar() {
       <div className="relative h-px w-full overflow-hidden">
         <div className="absolute inset-0 bg-[#2a3f54]/12" />
         <div
-          className="absolute inset-0 origin-left bg-gradient-to-r from-[#2a3f54] via-[#355a73] to-[#3d5a7a] transition-[transform] duration-150 ease-out will-change-transform motion-reduce:transition-none"
+          className="absolute inset-0 origin-left bg-gradient-to-r from-[#b87333] via-[#c4844a] to-[#d4a06a] transition-[transform] duration-150 ease-out will-change-transform motion-reduce:transition-none"
           style={{ transform: `scaleX(${progress})` }}
         />
       </div>

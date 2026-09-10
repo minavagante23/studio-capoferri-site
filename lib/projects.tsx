@@ -489,7 +489,7 @@ export const projectCaseStudies: Record<
           href="https://www.superstudioevents.com/it/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-[#2a3f54] underline underline-offset-2"
+          className="link-accent"
         >
           Superstudio Events S.r.l.
         </a>

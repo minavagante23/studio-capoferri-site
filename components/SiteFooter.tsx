@@ -40,7 +40,7 @@ export function SiteFooter() {
         <div className={layoutContentMaxClass}>
           <div className="grid gap-8 sm:gap-10 md:grid-cols-3">
             <div>
-              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.06em] sm:mb-4 sm:text-xl`}>{copy.services}</p>
+              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] sm:mb-4 sm:text-xl`}>{copy.services}</p>
               <ul className="space-y-0.5 text-sm text-white/82">
                 {localizedFooterServices.map((item) => (
                   <li key={item.href}>
@@ -53,7 +53,7 @@ export function SiteFooter() {
             </div>
 
             <div>
-              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.06em] sm:mb-4 sm:text-xl`}>{copy.company}</p>
+              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] sm:mb-4 sm:text-xl`}>{copy.company}</p>
               <ul className="space-y-0.5 text-sm text-white/82">
                 <li>
                   <Link className={ui.footerLink} href={localizeHref("/chi-siamo", locale)} title={linkTitles.pagina(getNavLabel(locale, "about"))}>
@@ -79,7 +79,7 @@ export function SiteFooter() {
             </div>
 
             <div>
-              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.06em] sm:mb-4 sm:text-xl`}>{copy.contacts}</p>
+              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] sm:mb-4 sm:text-xl`}>{copy.contacts}</p>
               <ul className="space-y-0.5 text-sm text-white/82">
                 <li className="py-1.5">{site.addressLine}</li>
                 <li>

@@ -7,7 +7,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLocale } from "@/components/LocaleProvider";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
-import { fontDisplay } from "@/lib/fonts";
 import { chromeCopy, getNavLabel, localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, navItems } from "@/lib/site";
@@ -132,7 +131,7 @@ export function SiteHeader() {
 
             <div className="hidden items-center gap-4 md:flex">
               <nav className="shrink-0" aria-label={copy.mainMenu}>
-                <ul className="flex items-center gap-6 lg:gap-8">
+                <ul className="flex items-center gap-5 lg:gap-7">
                   {navItems.map((item) => {
                     const active = isActivePath(pathname, localizeHref(item.href, locale));
                     const label = getNavLabel(locale, item.key);
@@ -141,10 +140,10 @@ export function SiteHeader() {
                       <li key={item.href}>
                         <Link
                           href={localizeHref(item.href, locale)}
-                          className={`focus-ring ${fontDisplay.className} inline-flex min-h-[44px] items-center justify-center rounded-full px-3 py-2 leading-[0.92] text-[1.05rem] uppercase tracking-[0.09em] transition-all duration-250 lg:text-[1.24rem] ${
+                          className={`focus-ring inline-flex min-h-[44px] items-center justify-center px-1 py-2 text-[0.95rem] font-medium tracking-normal transition-colors duration-200 lg:text-[1rem] ${
                             active
-                              ? "bg-[#2a3f54]/10 text-[#2a3f54]"
-                              : "text-[#2a2a2a] hover:-translate-y-0.5 hover:bg-[#2a3f54]/12 hover:text-[#1f2e3d] hover:shadow-[0_10px_24px_rgba(42,63,84,0.12)] focus-visible:-translate-y-0.5 focus-visible:bg-[#2a3f54]/12 focus-visible:text-[#1f2e3d] focus-visible:shadow-[0_10px_24px_rgba(42,63,84,0.12)]"
+                              ? "text-[#b87333]"
+                              : "text-[#2a2a2a] hover:text-[#b87333]"
                           }`}
                           aria-current={active ? "page" : undefined}
                           title={linkTitles.nav(label, locale)}
@@ -187,7 +186,7 @@ export function SiteHeader() {
         inert={!open ? true : undefined}
       >
         <div className={`flex flex-1 items-center justify-center overflow-y-auto ${layoutGutterXClass}`}>
-          <ul className={`${layoutContentMaxClass} flex flex-col gap-3 py-8`}>
+          <ul className={`${layoutContentMaxClass} flex flex-col gap-1 py-8`}>
             {navItems.map((item) => {
               const label = getNavLabel(locale, item.key);
               const href = localizeHref(item.href, locale);
@@ -197,8 +196,8 @@ export function SiteHeader() {
                 <li key={item.href}>
                   <Link
                     href={href}
-                    className={`focus-ring ${fontDisplay.className} flex min-h-[48px] items-center justify-center py-5 text-center leading-[0.92] text-2xl uppercase tracking-[0.1em] transition sm:text-3xl ${
-                      active ? "text-white" : "text-white/90 hover:text-white/80"
+                    className={`focus-ring flex min-h-[48px] items-center justify-center py-4 text-center text-xl font-medium tracking-normal transition sm:text-2xl ${
+                      active ? "text-[#e8b478]" : "text-white/90 hover:text-[#e8b478]"
                     }`}
                     aria-current={active ? "page" : undefined}
                     title={linkTitles.nav(label, locale)}

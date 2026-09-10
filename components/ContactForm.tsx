@@ -197,7 +197,7 @@ export function ContactForm({
         />
         <label htmlFor="privacy" className="text-[0.82rem] text-[#444] sm:text-sm">
           {copy.privacyLead}{" "}
-          <Link href={localizeHref("/privacy-policy", locale)} title={linkTitles.privacy} className="font-semibold text-[#2a3f54] underline underline-offset-2">
+          <Link href={localizeHref("/privacy-policy", locale)} title={linkTitles.privacy} className="link-accent">
             {copy.privacyLink}
           </Link>
           . <span className="text-red-700">*</span>

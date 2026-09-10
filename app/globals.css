@@ -6,6 +6,9 @@
   --primary: #2a3f54;
   --primary-dark: #1f2e3d;
   --accent: #3d5a7a;
+  /* Acciaio corten — accento sparso (lineette, hover link, focus) */
+  --corten: #b87333;
+  --corten-soft: #c4844a;
   --muted: #fafbfc;
   /* Corpo testo sezioni home / intro (unificato con blocchi Chi siamo) */
   --copy-body: #262626;
@@ -83,8 +86,20 @@ body::before {
 }
 
 .focus-ring:focus-visible {
-  outline: 2px solid rgba(42, 63, 84, 0.45);
+  outline: 2px solid rgba(184, 115, 51, 0.55);
   outline-offset: 2px;
+}
+
+/* Link inline: navy di base, corten al hover */
+.link-accent {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.link-accent:hover {
+  color: var(--corten);
 }
 
 .scroll-anchor {
@@ -144,14 +159,14 @@ body::before {
 
 .eyebrow {
   font-size: 0.74rem;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .section-title {
   line-height: 1.06;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.02em;
 }
 
 /* ═══ Home sections: split-header pattern ═══ */
@@ -204,7 +219,7 @@ body::before {
 .home-section-title {
   font-size: clamp(1.65rem, 1.15rem + 1.35vw, 2.35rem);
   line-height: 1.07;
-  letter-spacing: 0.042em;
+  letter-spacing: 0.018em;
   color: #2a2a2a;
   text-wrap: balance;
 }
@@ -214,11 +229,11 @@ body::before {
   height: 3px;
   border-radius: 9999px;
   margin-top: 0.85rem;
-  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 55%, rgba(61, 90, 122, 0.35) 100%);
+  background: linear-gradient(90deg, var(--corten) 0%, var(--corten-soft) 55%, rgba(184, 115, 51, 0.28) 100%);
 }
 
 .home-section-accent--light {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.28));
+  background: linear-gradient(90deg, rgba(232, 180, 120, 0.95), rgba(184, 115, 51, 0.35));
 }
 
 .home-section-body {
@@ -279,9 +294,7 @@ body::before {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(20, 28, 36, 0.04), rgba(20, 28, 36, 0.22)),
-    radial-gradient(120% 80% at 80% 10%, rgba(61, 90, 122, 0.14), transparent 65%);
+  background: linear-gradient(180deg, transparent 40%, rgba(20, 28, 36, 0.14));
 }
 
 /* ─── touch-target: WCAG 2.2 minimum 44×44px ─── */
@@ -307,11 +320,11 @@ body::before {
   }
 
   .section-title {
-    letter-spacing: 0.048em;
+    letter-spacing: 0.016em;
   }
 
   .home-section-title {
-    letter-spacing: 0.038em;
+    letter-spacing: 0.014em;
   }
 }
 
@@ -338,7 +351,7 @@ body::before {
 
   .eyebrow {
     font-size: 0.68rem;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.1em;
   }
 }
 

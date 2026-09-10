@@ -306,7 +306,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
                     <Image src={p.cover} alt={p.alt} fill className="object-cover transition duration-500 group-hover:scale-[1.03]" sizes="(min-width:1024px) 33vw, 100vw" />
                     <div className="image-unify-overlay" aria-hidden />
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2e3d]/95 to-transparent px-4 py-3 sm:py-4">
-                      <span className={`${fontDisplay.className} text-base tracking-[0.04em] text-white sm:text-lg`}>{p.caption}</span>
+                      <span className={`${fontDisplay.className} text-base tracking-[0.01em] text-white sm:text-lg`}>{p.caption}</span>
                     </div>
                   </div>
                 </Link>
@@ -592,7 +592,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                     <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                       {config.featuredProjects.map((p) => (
                         <li key={p.href} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-                          <Link href={p.href} title={linkTitles.progetto(p.title, "it")} className="font-semibold text-[#2a3f54] underline underline-offset-2">{p.title}</Link> — {p.description}
+                          <Link href={p.href} title={linkTitles.progetto(p.title, "it")} className="link-accent">{p.title}</Link> — {p.description}
                         </li>
                       ))}
                     </ul>
@@ -619,7 +619,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                   <div className="space-y-4">
                     {faq.map(([q, a]) => (
                       <div key={q} className="frost-card rounded-2xl p-5 sm:p-6">
-                        <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.04em] text-[#2a2a2a]`}>{q}</h3>
+                        <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.02em] text-[#2a2a2a]`}>{q}</h3>
                         <p className={`copy-rhythm ${ui.bodyMuted}`}>{a}</p>
                       </div>
                     ))}
@@ -643,7 +643,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                     />
                     <p className={`mt-5 text-center text-sm ${ui.bodyMuted}`}>
                       Preferisci parlare subito?{" "}
-                      <a href={`tel:${site.phoneTel}`} className="font-semibold text-[#2a3f54] underline underline-offset-2" title={linkTitles.telefono(site.phoneDisplay, "it")}>
+                      <a href={`tel:${site.phoneTel}`} className="link-accent" title={linkTitles.telefono(site.phoneDisplay, "it")}>
                         {site.phoneDisplay}
                       </a>
                     </p>
@@ -701,7 +701,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                         }))
                       : config.featuredProjects).map((p) => (
                       <li key={p.href} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-                        <Link href={localizeHref(p.href, locale)} title={linkTitles.progetto(p.title, locale)} className="font-semibold text-[#2a3f54] underline underline-offset-2">{p.title}</Link> - {p.description}
+                        <Link href={localizeHref(p.href, locale)} title={linkTitles.progetto(p.title, locale)} className="link-accent">{p.title}</Link> - {p.description}
                       </li>
                     ))}
                   </ul>
@@ -725,7 +725,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 <div className="space-y-4">
                   {faq.map(([q, a]) => (
                     <div key={q} className="frost-card rounded-2xl p-5 sm:p-6">
-                      <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.04em] text-[#2a2a2a]`}>{q}</h3>
+                      <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.02em] text-[#2a2a2a]`}>{q}</h3>
                       <p className={`copy-rhythm ${ui.bodyMuted}`}>{a}</p>
                     </div>
                   ))}
@@ -748,7 +748,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                   />
                   <p className={`mt-5 text-center text-sm ${ui.bodyMuted}`}>
                     Prefer to call?{" "}
-                    <a href={`tel:${site.phoneTel}`} className="font-semibold text-[#2a3f54] underline underline-offset-2" title={linkTitles.telefono(site.phoneDisplay, locale)}>
+                    <a href={`tel:${site.phoneTel}`} className="link-accent" title={linkTitles.telefono(site.phoneDisplay, locale)}>
                       {site.phoneDisplay}
                     </a>
                   </p>
