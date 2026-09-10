@@ -67,9 +67,9 @@ export const offeredServices = [
     nameIt: "Progettazione strutturale",
     nameEn: "Structural design",
     descriptionIt:
-      "Strutture in acciaio, cemento armato e muratura. Analisi FEM, verifiche sismiche e progettazione antincendio secondo NTC 2018 ed Eurocodici.",
+      "Strutture in acciaio, cemento armato e muratura. Analisi FEM, modellazione BIM, verifiche sismiche e progettazione antincendio secondo NTC 2018 ed Eurocodici.",
     descriptionEn:
-      "Steel, reinforced concrete and masonry structures. FEM analysis, seismic checks and fire design to NTC 2018 and Eurocodes.",
+      "Steel, reinforced concrete and masonry structures. FEM analysis, BIM modelling, seismic checks and fire design to NTC 2018 and Eurocodes.",
     path: "/servizi#progettazione-strutturale",
   },
   {

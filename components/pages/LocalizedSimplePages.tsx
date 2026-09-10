@@ -112,6 +112,7 @@ export function LocalizedServicesPageContent() {
               <ul className="list-none space-y-3 pl-0">
                 <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Strutture metalliche, cemento armato e muratura</strong> - Progettazione strutture NTC ed Eurocodici.</li>
                 <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Modellazione FEM</strong> - Analisi agli elementi finiti per valutazioni statiche e dinamiche di strutture complesse.</li>
+                <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Modellazione BIM</strong> - Modellazione informativa degli edifici per coordinamento progettuale, controllo interferenze e scambio dati con committenti e imprese.</li>
                 <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Progettazione in condizioni di incendio</strong> - Verifiche di resistenza al fuoco per strutture portanti secondo normativa vigente.</li>
                 <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Rinforzo e miglioramento sismico</strong> - Opere di rinforzo strutturale e miglioramento sismico per edifici esistenti. Interventi studiati per aumentare la sicurezza, la resistenza sismica e prolungare la vita utile delle strutture, in conformità con le normative tecniche vigenti.</li>
                 <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Strutture civili e industriali</strong> - Sviluppo di soluzioni strutturali per edifici residenziali, commerciali, industriali e infrastrutture.</li>
@@ -178,7 +179,7 @@ export function LocalizedServicesPageContent() {
             {isEn ? (
               <>
                 <p className={ui.body}>
-                  <strong>Studio Capoferri</strong> specialises in <strong>structural and steel engineering</strong>: FEM analysis, Eurocode-compliant
+                  <strong>Studio Capoferri</strong> specialises in <strong>structural and steel engineering</strong>: FEM analysis, BIM modelling, Eurocode-compliant
                   design, fabrication shop drawings and construction supervision for industrial and civil projects. Architecture, planning and
                   Italy-based administrative services are available when the brief requires them.
                 </p>
@@ -200,6 +201,7 @@ export function LocalizedServicesPageContent() {
                 <ul className="list-none space-y-3 pl-0">
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Steel structures</strong> - Structural design of steel buildings and specialist steelwork to NTC standards and Eurocodes.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>FEM modelling</strong> - Finite-element analysis for static and dynamic assessment of complex structures.</li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>BIM modelling</strong> - Building information modelling for design coordination, clash detection and data exchange with clients and contractors.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Fabrication shop drawings</strong> - Production of executive drawings for the fabrication and erection of steel structures.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Reinforced-concrete and masonry structures</strong> - Structural design for civil and industrial buildings alongside steel solutions.</li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Design in fire conditions</strong> - Fire-resistance verification for load-bearing structures in accordance with current regulations.</li>
@@ -280,6 +282,9 @@ export function LocalizedServicesPageContent() {
                   </li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
                     <strong>Modellazione FEM</strong> - Analisi agli elementi finiti per valutazioni statiche e dinamiche di strutture complesse.
+                  </li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+                    <strong>Modellazione BIM</strong> - Modellazione informativa degli edifici per coordinamento progettuale, controllo interferenze e scambio dati con committenti e imprese.
                   </li>
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
                     <strong>Progettazione in condizioni di incendio</strong> - Verifiche di resistenza al fuoco per strutture portanti secondo normativa vigente.

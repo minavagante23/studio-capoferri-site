@@ -79,9 +79,9 @@ const copy = {
     ] as AboutBlock[],
     servicesTitle: "Services",
     servicesIntro:
-      "Steel and structural design, shop drawings and site supervision first. Architecture, planning and Italian permits when the project needs them.",
+      "Steel and structural design, BIM modelling, shop drawings and site supervision first. Architecture, planning and Italian permits when the project needs them.",
     serviceCards: [
-      ["Structural design", "Steel structures, reinforced concrete and masonry. FEM analysis, seismic checks and fire design.", "/servizi#progettazione-strutturale"],
+      ["Structural design", "Steel structures, reinforced concrete and masonry. FEM analysis, BIM modelling, seismic checks and fire design.", "/servizi#progettazione-strutturale"],
       ["Construction supervision", "Technical supervision, site support, structural assessments and technical reports.", "/servizi#direzione-lavori"],
       ["Site safety", "Safety coordination (CSP/CSE), safety plans and risk management.", "/servizi#sicurezza-cantieri"],
       ["Planning and architecture", "Architectural design, implementation plans, planning amendments and compliance analysis.", "/servizi#urbanistica-architettura"],
@@ -99,7 +99,7 @@ const copy = {
       ["CSP/CSE qualification", "Qualified professionals for the CSP and CSE safety coordination roles on site"],
       ["Fire prevention", "Professionals listed by the Italian Ministry of the Interior under article 16 of Legislative Decree no. 139 of March 8, 2006"],
       ["Energy certification", "Energy certification services for issuing Building Energy Performance Certificates (APE)"],
-      ["Professional software", "We use specialist and dedicated software for every type of design requirement: CAD, FEM structural analysis, structural calculation, 3D modelling and rendering, ensuring precision and regulatory compliance."],
+      ["Professional software", "We use specialist and dedicated software for every type of design requirement: CAD, FEM structural analysis, structural calculation, BIM modelling, 3D modelling and rendering, ensuring precision and regulatory compliance."],
     ] as [string, string][],
     zoneTitle: "Where we work",
     zoneHeading: "Northern Italy",
@@ -141,9 +141,9 @@ const copy = {
         <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="link-accent">
           Get in touch
         </Link>{" "}
-        or see{" "}
+        or see our pages for{" "}
         <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")} title={linkTitles.acciaio("Brescia", "en")} className="link-accent">
-          steel design in Brescia
+          Brescia
         </Link>
         ,{" "}
         <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", "en")} title={linkTitles.acciaio("Bergamo", "en")} className="link-accent">
@@ -305,7 +305,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           </div>
           <div className="home-plate reveal-block">
             <h3 className={`${fontDisplay.className} text-lg tracking-[0.02em] text-[#2a3f54] sm:text-xl`}>{t.zoneHeading}</h3>
-            <div className="mt-2 text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{t.zoneFooter}</div>
+            <div className="mt-2 text-[0.98rem] leading-relaxed text-[#555] sm:text-[1.05rem]">{t.zoneFooter}</div>
           </div>
         </div>
       </section>

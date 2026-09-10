@@ -48,7 +48,7 @@ export const homeServiceCards = [
   {
     title: "Progettazione strutturale",
     description:
-      "Strutture in acciaio, cemento armato e muratura. Analisi FEM, verifiche sismiche e progettazione antincendio.",
+      "Strutture in acciaio, cemento armato e muratura. Analisi FEM, modellazione BIM, verifiche sismiche e progettazione antincendio.",
     href: "/servizi#progettazione-strutturale",
   },
   {
@@ -102,7 +102,7 @@ export const certifications = [
   },
   {
     title: "Software professionali",
-    text: "Utilizziamo software specializzati e dedicati per ogni tipo di necessità progettuale: CAD, analisi strutturale FEM, calcolo strutturale, modellazione 3D e rendering, garantendo precisione e conformità normativa.",
+    text: "Utilizziamo software specializzati e dedicati per ogni tipo di necessità progettuale: CAD, analisi strutturale FEM, calcolo strutturale, modellazione BIM, modellazione 3D e rendering, garantendo precisione e conformità normativa.",
   },
 ] as const;
 
@@ -147,13 +147,13 @@ export const zoneFooter = (
     <Link href="/contatti#form-contatti" title="Contattaci — Studio Capoferri" className="link-accent">
       Contattaci
     </Link>{" "}
-    per verificare la copertura nella tua zona, oppure consulta le nostre pagine dedicate alla{" "}
+    per verificare la copertura nella tua zona, oppure consulta le nostre pagine dedicate a{" "}
     <Link
       href="/progettazione-strutture-acciaio-brescia"
       title="Progettazione strutture in acciaio a Brescia — Studio Capoferri"
       className="link-accent"
     >
-      progettazione in acciaio a Brescia
+      Brescia
     </Link>
     ,{" "}
     <Link
@@ -161,7 +161,7 @@ export const zoneFooter = (
       title="Progettazione strutture in acciaio a Bergamo — Studio Capoferri"
       className="link-accent"
     >
-      progettazione in acciaio a Bergamo
+      Bergamo
     </Link>{" "}
     e{" "}
     <Link
@@ -169,7 +169,7 @@ export const zoneFooter = (
       title="Progettazione strutture in acciaio a Milano — Studio Capoferri"
       className="link-accent"
     >
-      progettazione in acciaio a Milano
+      Milano
     </Link>
     .
   </>
