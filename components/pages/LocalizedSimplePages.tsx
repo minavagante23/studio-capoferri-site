@@ -14,6 +14,7 @@ import { chiSiamoEnParagraphs } from "@/lib/about-copy";
 import { fontDisplay } from "@/lib/fonts";
 import { chiSiamoPageImage, projectPreview } from "@/lib/images";
 import { localizeHref } from "@/lib/i18n";
+import { contactPageJsonLd, servicesPageJsonLd } from "@/lib/jsonld";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site, steelLandingPages } from "@/lib/site";
 import { ui } from "@/lib/ui";
@@ -80,10 +81,12 @@ export function LocalizedServicesPageContent() {
   const locale = useLocale();
   const isEn = locale === "en";
   const sectionHeading = `${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
+  const servicesLd = servicesPageJsonLd(locale);
 
   if (!isEn) {
     return (
       <main id="main-content" className="section-shell bg-[#fafbfc]">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <article className="frost-card rounded-2xl p-5 sm:p-7 md:p-10">
@@ -166,6 +169,7 @@ export function LocalizedServicesPageContent() {
 
   return (
     <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <article className="frost-card rounded-2xl p-5 sm:p-7 md:p-10">
@@ -385,13 +389,16 @@ export function LocalizedServicesPageContent() {
 }
 
 export function LocalizedContactsPageContent() {
-  const isEn = useLocale() === "en";
+  const locale = useLocale();
+  const isEn = locale === "en";
   const contactTagline = isEn ? "Engineering - Architecture - Urban Planning" : site.tagline;
   const openingHours = isEn ? "Mon - Fri: 08:30 - 18:00" : site.openingHoursDisplay;
+  const contactLd = contactPageJsonLd(locale);
 
   if (!isEn) {
     return (
       <main id="main-content" className="section-shell bg-[#fafbfc]">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }} />
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="mb-6 max-w-[780px] sm:mb-8">
@@ -446,6 +453,7 @@ export function LocalizedContactsPageContent() {
 
   return (
     <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="mb-6 max-w-[780px] sm:mb-8">

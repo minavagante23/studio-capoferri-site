@@ -4,7 +4,8 @@ import { projectAreas, projectCategories } from "@/lib/projects";
 
 export const dynamic = "force-static";
 
-const lastModified = new Date("2026-07-19");
+/** Aggiornato a ogni build statico / deploy (evita lastmod stale). */
+const lastModified = new Date();
 
 function entry(
   path: string,

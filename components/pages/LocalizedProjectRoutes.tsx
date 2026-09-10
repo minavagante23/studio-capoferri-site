@@ -9,7 +9,7 @@ import { ProjectImageLightbox } from "@/components/projects/ProjectImageLightbox
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { fontDisplay } from "@/lib/fonts";
 import { localizeHref } from "@/lib/i18n";
-import { caseStudyJsonLd } from "@/lib/jsonld";
+import { caseStudyJsonLd, organizationId } from "@/lib/jsonld";
 import { linkTitles } from "@/lib/link-seo";
 import { projectCaseStudies, projectCategories, type ProjectArea } from "@/lib/projects";
 import { galleryAltEnBySrc } from "@/lib/gallery-alts-en";
@@ -528,7 +528,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
     name: isEn ? "Steel structure design" : "Progettazione strutture in acciaio",
     serviceType: isEn ? "Structural design of steel structures" : "Progettazione strutturale di strutture in acciaio",
     description: isEn ? (getEnglishSteelDescription(config.slug) ?? config.metaDescription) : config.metaDescription,
-    provider: { "@id": `${site.url}/#organization` },
+    provider: { "@id": organizationId() },
     areaServed: [
       { "@type": "AdministrativeArea", name: config.areaServedPrimary },
       { "@type": "AdministrativeArea", name: "Lombardy" },

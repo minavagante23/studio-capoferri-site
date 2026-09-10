@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SkipLink } from "@/components/SkipLink";
 import { fontDisplay, fontSans } from "@/lib/fonts";
+import { offerCatalogJsonLd, organizationId } from "@/lib/jsonld";
 import { defaultOgImage } from "@/lib/seo";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -58,13 +59,13 @@ export const metadata: Metadata = {
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "@id": `${site.url}/#organization`,
+  "@id": organizationId(),
   // Deve corrispondere esattamente al nome del profilo Google Business
   name: "Studio Capoferri - Ingegneria e Architettura",
   alternateName: site.name,
   legalName: site.legalName,
   description:
-    "Civil engineering, architecture and steel structures practice in Adro (Brescia, Italy). Structural design to Eurocodes, steelwork, construction supervision and site safety for projects in Northern Italy and across the EU. / Studio tecnico di ingegneria civile, architettura e strutture in acciaio ad Adro (Brescia). Progettazione strutturale, direzione lavori e sicurezza cantieri in Lombardia, Nord Italia e collaborazioni europee.",
+    "Civil engineering, architecture and steel structures practice in Adro (Brescia, Italy). Structural design to Eurocodes, steelwork, shop drawings, construction supervision and site safety for projects in Northern Italy and across the EU. / Studio tecnico di ingegneria civile, architettura e strutture in acciaio ad Adro (Brescia). Progettazione strutturale, disegni d'officina, direzione lavori e sicurezza cantieri in Lombardia, Nord Italia e collaborazioni europee.",
   url: site.url,
   telephone: site.phoneTel,
   email: site.email,
@@ -93,31 +94,48 @@ const localBusinessJsonLd = {
     },
   ],
   areaServed: [
-    "Brescia",
-    "Bergamo",
-    "Milano",
-    "Franciacorta",
-    "Lombardia",
-    "Nord Italia",
-    "Italy",
-    "European Union",
+    { "@type": "AdministrativeArea", name: "Brescia" },
+    { "@type": "AdministrativeArea", name: "Bergamo" },
+    { "@type": "AdministrativeArea", name: "Milano" },
+    { "@type": "AdministrativeArea", name: "Lombardia" },
+    { "@type": "AdministrativeArea", name: "Veneto" },
+    { "@type": "AdministrativeArea", name: "Piemonte" },
+    { "@type": "AdministrativeArea", name: "Emilia-Romagna" },
+    { "@type": "AdministrativeArea", name: "Toscana" },
+    { "@type": "Country", name: "Italy" },
+    { "@type": "AdministrativeArea", name: "European Union" },
   ],
+  availableLanguage: ["Italian", "English"],
   sameAs: [site.linkedin],
   knowsAbout: [
     "Structural engineering",
     "Steel structures",
+    "Shop drawings",
     "FEM analysis",
     "Eurocodes",
+    "NTC 2018",
     "Construction supervision",
     "Site safety",
     "Architecture",
     "Progettazione strutturale",
     "Strutture in acciaio",
+    "Disegni costruttivi d'officina",
     "Architettura",
     "Urbanistica",
     "Direzione lavori",
     "Sicurezza cantieri",
     "Prevenzione incendi",
+  ],
+  hasOfferCatalog: offerCatalogJsonLd(),
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: site.phoneTel,
+      email: site.email,
+      contactType: "customer service",
+      availableLanguage: ["Italian", "English"],
+      areaServed: ["IT", "EU"],
+    },
   ],
 };
 
@@ -142,7 +160,7 @@ export default function RootLayout({
               "@id": `${site.url}/#website`,
               url: site.url,
               name: site.name,
-              publisher: { "@id": `${site.url}/#organization` },
+              publisher: { "@id": organizationId() },
               inLanguage: ["it-IT", "en"],
             }),
           }}
