@@ -33,7 +33,7 @@ export function LocalizedAboutPageContent() {
       <main id="main-content" className="section-shell bg-[#fafbfc]">
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
-            <div className="frost-card rounded-2xl p-5 sm:p-7 md:p-10">
+            <div className="home-plate home-plate--well">
               <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-7 sm:mb-10`}>{chiSiamoPage.title}</h1>
               <div className={`space-y-5 sm:space-y-6 ${ui.body}`}>
                 {chiSiamoPage.paragraphs.map((p, i) => (
@@ -54,7 +54,7 @@ export function LocalizedAboutPageContent() {
     <main id="main-content" className="section-shell bg-[#fafbfc]">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <div className="frost-card rounded-2xl p-5 sm:p-7 md:p-10">
+          <div className="home-plate home-plate--well">
             <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-7 sm:mb-10`}>{isEn ? "About" : chiSiamoPage.title}</h1>
             <div className={`space-y-5 sm:space-y-6 ${ui.body}`}>
               {isEn
@@ -89,7 +89,7 @@ export function LocalizedServicesPageContent() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
-            <article className="frost-card rounded-2xl p-5 sm:p-7 md:p-10">
+            <article className="home-plate home-plate--well">
               <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-6 sm:mb-8`}>Servizi</h1>
               <p className={ui.body}>
                 <strong>Studio Capoferri</strong> offre una gamma completa di servizi di ingegneria, architettura e consulenza tecnica a 360 gradi.
@@ -172,7 +172,7 @@ export function LocalizedServicesPageContent() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <article className="frost-card rounded-2xl p-5 sm:p-7 md:p-10">
+          <article className="home-plate home-plate--well">
             <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-6 sm:mb-8`}>{isEn ? "Services" : "Servizi"}</h1>
 
             {isEn ? (
@@ -410,7 +410,7 @@ export function LocalizedContactsPageContent() {
             </div>
 
             <div className="grid gap-5 sm:gap-8 lg:grid-cols-[1.02fr_1.28fr] lg:items-stretch">
-              <section aria-labelledby="recapiti-heading" className="frost-card rounded-2xl p-5 sm:p-7 md:p-8">
+              <section aria-labelledby="recapiti-heading" className="home-plate home-plate--well">
                 <h2 id="recapiti-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-4 sm:mb-5`}>Recapiti</h2>
                 <p className="mb-4 text-[0.95rem] font-semibold text-[#2a2a2a] sm:mb-6 sm:text-[1.02rem]">
                   {site.name} - {site.tagline}
@@ -428,7 +428,7 @@ export function LocalizedContactsPageContent() {
                 </div>
               </section>
 
-              <section aria-labelledby="mappa-heading" className="frost-card rounded-2xl p-3 sm:p-4 md:p-5">
+              <section aria-labelledby="mappa-heading" className="home-plate home-plate--well">
                 <h2 id="mappa-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-3 px-1 sm:mb-4 sm:px-2`}>
                   Dove siamo
                 </h2>
@@ -437,7 +437,7 @@ export function LocalizedContactsPageContent() {
             </div>
 
             <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
-              <div className="frost-card rounded-2xl p-5 sm:p-7 md:p-8">
+              <div className="home-plate home-plate--well">
                 <h2 className={`${fontDisplay.className} ${ui.cardHeading} mb-2 sm:mb-3`}>Contattaci</h2>
                 <p className="copy-rhythm mb-6 w-full text-[0.95rem] leading-relaxed text-[#444] sm:mb-8 sm:text-[1.03rem]">
                   Compila il form con i dettagli del tuo intervento. Riceverai un riscontro tecnico puntuale dal nostro team.
@@ -466,7 +466,7 @@ export function LocalizedContactsPageContent() {
           </div>
 
           <div className="grid gap-5 sm:gap-8 lg:grid-cols-[1.02fr_1.28fr] lg:items-stretch">
-            <section aria-labelledby="recapiti-heading" className="frost-card rounded-2xl p-5 sm:p-7 md:p-8">
+            <section aria-labelledby="recapiti-heading" className="home-plate home-plate--well">
               <h2 id="recapiti-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-4 sm:mb-5`}>{isEn ? "Details" : "Recapiti"}</h2>
               <p className="mb-4 text-[0.95rem] font-semibold text-[#2a2a2a] sm:mb-6 sm:text-[1.02rem]">
                 {site.name} - {contactTagline}
@@ -514,7 +514,7 @@ export function LocalizedContactsPageContent() {
               </div>
             </section>
 
-            <section aria-labelledby="mappa-heading" className="frost-card rounded-2xl p-3 sm:p-4 md:p-5">
+            <section aria-labelledby="mappa-heading" className="home-plate home-plate--well">
               <h2 id="mappa-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-3 px-1 sm:mb-4 sm:px-2`}>
                 {isEn ? "Where we are" : "Dove siamo"}
               </h2>
@@ -523,7 +523,7 @@ export function LocalizedContactsPageContent() {
           </div>
 
           <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
-            <div className="frost-card rounded-2xl p-5 sm:p-7 md:p-8">
+            <div className="home-plate home-plate--well">
               <h2 className={`${fontDisplay.className} ${ui.cardHeading} mb-2 sm:mb-3`}>{isEn ? "Contact us" : "Contattaci"}</h2>
               <p className="copy-rhythm mb-6 w-full text-[0.95rem] leading-relaxed text-[#444] sm:mb-8 sm:text-[1.03rem]">
                 {isEn
@@ -558,7 +558,7 @@ export function LocalizedProjectsPageContent() {
                 <Link
                   key={p.href}
                   href={localizeHref(p.href, locale)}
-                  className="group block overflow-hidden rounded-2xl border border-[#2a3f54]/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition duration-500 hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(42,63,84,0.14)]"
+                  className={ui.projectCardLight}
                 >
                   <div className="relative aspect-[4/3]">
                     <Image src={p.image} alt={p.alt} fill className="object-cover transition duration-500 group-hover:scale-[1.03]" sizes="(min-width:1024px) 33vw, 100vw" />
@@ -633,8 +633,8 @@ export function LocalizedPrivacyPageContent() {
             <h2 id="cookie" className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`}>Cookie</h2>
             <p className={`mb-10 ${ui.body}`}>{isEn ? "This website uses cookies to ensure proper operation and improve the browsing experience." : "Questo sito utilizza cookie per garantire il corretto funzionamento e migliorare l'esperienza di navigazione."}</p>
             <div className="space-y-5 sm:space-y-8">
-              <div className="frost-card rounded-2xl p-4 sm:p-6"><h3 className="mb-3 font-semibold text-[#2a3f54]">{isEn ? "Technical cookies" : "Cookie tecnici"}</h3><p className={ui.body}>{isEn ? "Essential cookies required for site functionality, including session and preference cookies." : "Cookie strettamente necessari per il funzionamento del sito, inclusi cookie di sessione e di preferenze."}</p></div>
-              <div className="frost-card rounded-2xl p-4 sm:p-6"><h3 className="mb-3 font-semibold text-[#2a3f54]">{isEn ? "Third-party services" : "Cookie di terze parti"}</h3><p className={ui.body}>{isEn ? "Some pages use Google Maps and the contact form uses Formspree. Related cookies are loaded only where required by the configured consent flow." : "In alcune pagine del sito viene utilizzato Google Maps e il form di contatto usa Formspree."}</p></div>
+              <div className="home-plate"><h3 className="mb-3 font-semibold text-[#2a3f54]">{isEn ? "Technical cookies" : "Cookie tecnici"}</h3><p className={ui.body}>{isEn ? "Essential cookies required for site functionality, including session and preference cookies." : "Cookie strettamente necessari per il funzionamento del sito, inclusi cookie di sessione e di preferenze."}</p></div>
+              <div className="home-plate"><h3 className="mb-3 font-semibold text-[#2a3f54]">{isEn ? "Third-party services" : "Cookie di terze parti"}</h3><p className={ui.body}>{isEn ? "Some pages use Google Maps and the contact form uses Formspree. Related cookies are loaded only where required by the configured consent flow." : "In alcune pagine del sito viene utilizzato Google Maps e il form di contatto usa Formspree."}</p></div>
               <div className={`rounded-2xl p-4 sm:p-6 ${ui.brandGradientCompact} text-white`}><h3 className="mb-3 font-semibold">{isEn ? "Cookie preferences" : "Gestione dei cookie"}</h3><p className="mb-3 text-[1.05rem] leading-relaxed text-white/95">{isEn ? "You can manage cookie preferences through the banner shown on first access to the site." : "È possibile gestire le preferenze sui cookie attraverso il banner che appare al primo accesso al sito."}</p><div className="mt-5"><CookiePreferencesButton /></div></div>
             </div>
           </article>

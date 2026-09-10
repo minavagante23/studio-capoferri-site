@@ -1,8 +1,9 @@
-import { Bebas_Neue, Inter } from "next/font/google";
+import { Bebas_Neue, IBM_Plex_Sans } from "next/font/google";
 
-export const fontSans = Inter({
+export const fontSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
   display: "swap",
 });
 

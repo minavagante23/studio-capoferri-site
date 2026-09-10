@@ -354,7 +354,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
               key={`thumb-m-${img.src}-${i}`}
               type="button"
               onClick={() => setOpen(i)}
-              className="group relative aspect-[4/3] w-[min(78vw,320px)] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-2xl border border-[#2a3f54]/12 bg-white text-left shadow-[0_6px_24px_rgba(42,63,84,0.08)] ring-0 transition hover:border-[#2a3f54]/25 hover:shadow-[0_12px_32px_rgba(42,63,84,0.12)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
+              className="group relative aspect-[4/3] w-[min(78vw,320px)] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-sm border border-[#2a3f54]/12 bg-white text-left transition hover:border-[#b87333]/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
               <Image
@@ -375,7 +375,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
             <button
               type="button"
               onClick={() => setOpen(i)}
-              className="group relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-2xl border border-[#2a3f54]/10 bg-[#fafbfc] text-left shadow-[0_8px_28px_rgba(42,63,84,0.07)] transition hover:-translate-y-0.5 hover:border-[#2a3f54]/22 hover:shadow-[0_14px_40px_rgba(42,63,84,0.11)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
+              className="group relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-sm border border-[#2a3f54]/10 bg-[#fafbfc] text-left transition hover:border-[#b87333]/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
               <Image

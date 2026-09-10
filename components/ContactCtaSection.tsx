@@ -23,10 +23,10 @@ export function ContactCtaSection({
 
   return (
     <section className={className}>
-      <div className="frost-card rounded-2xl p-5 text-center sm:p-7 md:p-8">
+      <div className="home-plate">
         <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-3`}>{resolvedTitle}</h2>
-        <p className={`copy-rhythm mx-auto mb-6 max-w-[560px] ${ui.bodyMuted}`}>{resolvedDescription}</p>
-        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <p className={`copy-rhythm mb-6 max-w-[560px] ${ui.bodyMuted}`}>{resolvedDescription}</p>
+        <div className="flex flex-col gap-3 sm:flex-row">
           <Link href={localizeHref("/contatti#form-contatti", locale)} className={ui.btnPrimary} title={linkTitles.consulenza(locale)}>
             {copy.requestConsultation}
           </Link>

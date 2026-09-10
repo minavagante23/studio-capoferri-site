@@ -8,8 +8,6 @@ export const ui = {
   brandGradient: "bg-gradient-to-br from-[#2a3f54] via-[#24384b] to-[#1f2e3d]",
   /** Gradient brand senza via (CTA, card compatte) */
   brandGradientCompact: "bg-gradient-to-br from-[#2a3f54] to-[#1f2e3d]",
-  /** Icona decorativa in card home */
-  iconBox: "flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-[#2a3f54] to-[#3d5a7a] text-white sm:h-14 sm:w-14",
   /** Didascalia overlay card progetto */
   projectCardCaption: "text-base tracking-[0.01em] text-white sm:text-lg",
   /** Card progetto su sfondo chiaro — foto a vivo, meno chrome */
@@ -47,21 +45,21 @@ export const ui = {
   /** Link inline (navy → corten al hover) */
   linkAccent: "link-accent",
 
-  /** Pulsante primario (gradient brand) */
+  /** Pulsante primario */
   btnPrimary:
-    "inline-flex min-h-[48px] items-center justify-center rounded-xl bg-gradient-to-br from-[#2a3f54] via-[#24384b] to-[#1f2e3d] px-8 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(184,115,51,0.55)] disabled:opacity-60",
+    "inline-flex min-h-[48px] items-center justify-center rounded-sm bg-[#2a3f54] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#1f2e3d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(184,115,51,0.55)] disabled:opacity-60",
 
   /** Pulsante outline — CTA secondari home e link “Esplora / Scopri / Scrivici” */
   btnOutline:
-    "inline-flex min-h-[48px] items-center justify-center rounded-xl border-2 border-[#2a3f54] bg-white/90 px-8 py-3 text-sm font-semibold text-[#2a3f54] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#b87333] hover:bg-[#b87333] hover:text-white hover:shadow-[0_12px_28px_rgba(184,115,51,0.2)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b87333] motion-reduce:hover:translate-y-0",
+    "inline-flex min-h-[48px] items-center justify-center rounded-sm border border-[#2a3f54] bg-transparent px-8 py-3 text-sm font-semibold text-[#2a3f54] transition hover:border-[#b87333] hover:text-[#b87333] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b87333]",
 
   /** Pulsante trasparente su sfondo scuro (privacy / barre) */
   btnGhostOnDark:
-    "inline-flex min-h-[44px] items-center justify-center rounded-xl border border-white/35 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/40",
+    "inline-flex min-h-[44px] items-center justify-center rounded-sm border border-white/35 bg-transparent px-5 py-2.5 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/40",
 
   /** CTA su sfondo scuro (hero) */
   btnOnDark:
-    "inline-flex min-h-[48px] w-full items-center justify-center rounded-xl border border-white/25 bg-white px-8 py-3 text-sm font-semibold text-[#1f2e3d] shadow-[0_10px_30px_rgba(0,0,0,0.18)] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(232,180,120,0.7)] sm:w-auto",
+    "inline-flex min-h-[48px] w-full items-center justify-center rounded-sm border border-white/25 bg-white px-8 py-3 text-sm font-semibold text-[#1f2e3d] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(232,180,120,0.7)] sm:w-auto",
 
   /** Cookie: accetta (chiaro su barra scura) */
   cookieAccept:
