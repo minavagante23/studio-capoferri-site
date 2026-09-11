@@ -12,60 +12,33 @@ import { layoutContentMaxClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
 /**
- * Hero SOTA budget:
+ * Hero budget:
  * - brand is in the header logo
- * - one large rotating H1 (primary visual)
- * - one short support line (SEO keywords)
+ * - fixed H1 + support line (message stays stable)
+ * - carousel changes only the full-bleed image
  * - one CTA
- * - full-bleed image
  */
-const heroSlidesByLocale = {
-  it: [
-    {
-      src: "/assets/superstudio-village-acciaio-pre-fabbricato.webp",
-      alt: "Strutture in acciaio pre-fabbricate - progetti Studio Capoferri Nord Italia, Brescia, Bergamo, Milano",
-      line1: "Progettazione integrata",
-      line2: "dalla fattibilità al cantiere",
-    },
-    {
-      src: "/assets/superstudio-village-sala-proiezione.webp",
-      alt: "Strutture in acciaio per edilizia residenziale e industriale - Studio Capoferri Lombardia",
-      line1: "Esperienza tecnica",
-      line2: "per soluzioni su misura",
-    },
-    {
-      src: "/assets/hero-struttura-new.webp",
-      alt: "Strutture in acciaio - efficienza e rapidità",
-      line1: "Strutture in acciaio",
-      line2: "efficienza e rapidità",
-    },
-  ],
-  en: [
-    {
-      src: "/assets/superstudio-village-acciaio-pre-fabbricato.webp",
-      alt: "Prefabricated steel structures - Studio Capoferri projects in Northern Italy",
-      line1: "Steel structures",
-      line2: "and site support",
-    },
-    {
-      src: "/assets/superstudio-village-sala-proiezione.webp",
-      alt: "Steel structures for residential and industrial buildings - Studio Capoferri Lombardy",
-      line1: "Shop drawings",
-      line2: "to erection assistance",
-    },
-    {
-      src: "/assets/hero-struttura-new.webp",
-      alt: "Steel structures - efficiency and speed",
-      line1: "Northern Italy",
-      line2: "talk to us in English",
-    },
-  ],
-} as const;
+const heroSlides = [
+  {
+    src: "/assets/superstudio-village-acciaio-pre-fabbricato.webp",
+    altIt: "Strutture in acciaio pre-fabbricate - progetti Studio Capoferri Nord Italia, Brescia, Bergamo, Milano",
+    altEn: "Prefabricated steel structures - Studio Capoferri projects in Northern Italy",
+  },
+  {
+    src: "/assets/superstudio-village-sala-proiezione.webp",
+    altIt: "Strutture in acciaio per edilizia residenziale e industriale - Studio Capoferri Lombardia",
+    altEn: "Steel structures for residential and industrial buildings - Studio Capoferri Lombardy",
+  },
+  {
+    src: "/assets/hero-struttura-new.webp",
+    altIt: "Strutture in acciaio - efficienza e rapidità",
+    altEn: "Steel structures - efficiency and speed",
+  },
+] as const;
 
 export function HeroHome() {
   const locale = useLocale();
   const copy = chromeCopy[locale].hero;
-  const heroSlides = heroSlidesByLocale[locale];
   const reduceMotion = !!useReducedMotion();
   const [i, setI] = useState(0);
   const [extraSlidesReady, setExtraSlidesReady] = useState(false);
@@ -74,14 +47,13 @@ export function HeroHome() {
     if (reduceMotion) return;
     const t = setInterval(() => setI((v) => (v + 1) % heroSlides.length), 4500);
     return () => clearInterval(t);
-  }, [reduceMotion, heroSlides.length]);
+  }, [reduceMotion]);
 
   useEffect(() => {
     const id = window.requestAnimationFrame(() => setExtraSlidesReady(true));
     return () => window.cancelAnimationFrame(id);
   }, []);
 
-  const s = heroSlides[i];
   const subtleEase = [0.22, 1, 0.36, 1] as const;
 
   return (
@@ -102,7 +74,7 @@ export function HeroHome() {
             >
               <Image
                 src={slide.src}
-                alt={slide.alt}
+                alt={locale === "en" ? slide.altEn : slide.altIt}
                 fill
                 className="object-cover brightness-[1.1] saturate-[1.04]"
                 sizes="100vw"
@@ -127,12 +99,9 @@ export function HeroHome() {
         >
           <p className="eyebrow mb-3 text-white/70">{copy.location}</p>
 
-          <h1
-            className={`${fontDisplay.className} section-title text-[clamp(2rem,7vw,3.85rem)] leading-[0.98] text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]`}
-            aria-live="polite"
-          >
-            <span className="block sm:whitespace-nowrap">{s.line1}</span>
-            <span className="mt-1 block text-white/95 sm:whitespace-nowrap">{s.line2}</span>
+          <h1 className={`${fontDisplay.className} section-title text-[clamp(2rem,7vw,3.85rem)] leading-[0.98] text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]`}>
+            <span className="block sm:whitespace-nowrap">{copy.line1}</span>
+            <span className="mt-1 block text-white/95 sm:whitespace-nowrap">{copy.line2}</span>
           </h1>
 
           <p className="mt-4 text-[0.85rem] leading-snug tracking-[0.01em] text-white/82 sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:text-[1rem]">
@@ -162,7 +131,7 @@ export function HeroHome() {
                 type="button"
                 role="tab"
                 aria-selected={idx === i}
-                aria-label={`Slide ${idx + 1}: ${slide.line1}`}
+                aria-label={locale === "en" ? `Image ${idx + 1}` : `Immagine ${idx + 1}`}
                 className={`focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full transition ${
                   idx === i ? "bg-white/16" : "bg-white/6 hover:bg-white/12"
                 }`}

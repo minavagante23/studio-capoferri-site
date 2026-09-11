@@ -112,6 +112,8 @@ export const chromeCopy = {
     hero: {
       introLabel: "Introduzione",
       location: "Adro (BS) - Franciacorta - Italia",
+      line1: "Progettazione integrata",
+      line2: "dalla fattibilità al cantiere",
       support: "Ingegneria civile, architettura e strutture in acciaio.",
       cta: "Richiedi un preventivo",
       slidePicker: "Seleziona slide hero",
@@ -181,7 +183,9 @@ export const chromeCopy = {
     hero: {
       introLabel: "Introduction",
       location: "Adro (BS) - Franciacorta - Italy",
-      support: "Steel structures + site support in Northern Italy — talk to us in English.",
+      line1: "Integrated design",
+      line2: "from feasibility to site",
+      support: "Civil engineering, architecture and steel structures.",
       cta: "Request a quote",
       slidePicker: "Select hero slide",
     },
