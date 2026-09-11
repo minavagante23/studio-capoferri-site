@@ -28,6 +28,7 @@ const titleInvertedCls = `${fontDisplay.className} ${ui.homeSectionTitleInverted
 
 type AboutBlock = {
   text: ReactNode;
+  textMobile?: ReactNode;
   image: keyof typeof homeChiSiamoImages;
   imageFirst: boolean;
 };
@@ -39,6 +40,7 @@ const copy = {
       "Studio di ingegneria civile ad Adro (BS): architettura, progettazione strutturale e strutture in acciaio con oltre quarant'anni di esperienza.",
     aboutBlocks: homeChiSiamo.blocks.map((block, index) => ({
       text: block.text,
+      textMobile: block.textMobile,
       image: block.image,
       imageFirst: index === 0,
     })) as AboutBlock[],
@@ -211,7 +213,14 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
                       block.imageFirst ? "" : "md:order-1"
                     }`}
                   >
-                    {block.text}
+                    {block.textMobile ? (
+                      <>
+                        <div className="md:hidden">{block.textMobile}</div>
+                        <div className="hidden md:block">{block.text}</div>
+                      </>
+                    ) : (
+                      block.text
+                    )}
                   </div>
                 </div>
               );
