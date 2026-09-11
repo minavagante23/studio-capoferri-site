@@ -37,7 +37,7 @@ export function MapEmbed() {
   if (consent !== "accepted") {
     return (
       <div
-        className="flex min-h-[220px] items-center justify-center rounded-xl border border-[#2a3f54]/10 bg-gradient-to-br from-[#f4f7fa] to-[#eef3f8] px-4 text-center text-[0.82rem] text-[#4b5a69] sm:min-h-[300px] sm:px-5 sm:text-sm md:min-h-[400px]"
+        className="flex min-h-[220px] items-center justify-center rounded-sm border border-[#2a3f54]/10 bg-gradient-to-br from-[#f4f7fa] to-[#eef3f8] px-4 text-center text-[0.82rem] text-[#4b5a69] sm:min-h-[300px] sm:px-5 sm:text-sm md:min-h-[400px]"
         role="region"
         aria-label={isEn ? "Map disabled until cookie consent" : "Mappa disattivata fino al consenso cookie"}
       >
@@ -52,7 +52,7 @@ export function MapEmbed() {
 
   return (
     <iframe
-      className="h-[220px] w-full rounded-xl border-0 shadow-[0_10px_30px_rgba(0,0,0,0.08)] sm:h-[300px] md:h-[420px]"
+      className="h-[220px] w-full rounded-sm border-0 sm:h-[300px] md:h-[420px]"
       loading="lazy"
       allowFullScreen
       referrerPolicy="no-referrer-when-downgrade"

@@ -15,11 +15,8 @@ export const homeChiSiamo: { title: string; blocks: homeChiSiamoBlock[] } = {
       text: (
         <>
           <strong>Studio Capoferri</strong> è uno studio di <strong>ingegneria civile</strong> ad Adro (Brescia) con oltre quarant&apos;anni di esperienza
-          nella <strong>progettazione strutturale, architettonica e urbanistica</strong> e nelle <strong>strutture in acciaio</strong> in Franciacorta e in
-          generale nel Nord e Centro Italia. Il nostro team è
-          composto da professionisti qualificati, ognuno con competenze multidisciplinari specifiche, in grado di garantire un servizio di qualità e precisione
-          sotto ogni aspetto progettuale. Grazie alla sinergia tra diverse expertise e alla consolidata esperienza maturata nel settore, offriamo soluzioni
-          innovative e personalizzate per ogni tipo di intervento assicurando un approccio integrato e completo per tutti i progetti affidati al nostro studio.
+          nella <strong>progettazione strutturale, architettonica e urbanistica</strong> e nelle <strong>strutture in acciaio</strong> in Franciacorta e nel
+          Nord e Centro Italia. Un team multidisciplinare per soluzioni integrate e personalizzate su ogni intervento.
         </>
       ),
       image: "team",
@@ -27,13 +24,8 @@ export const homeChiSiamo: { title: string; blocks: homeChiSiamoBlock[] } = {
     {
       text: (
         <>
-          Operiamo in diversi ambiti, in particolar modo quello <strong>residenziale e industriale</strong>, offrendo soluzioni tecniche all&apos;avanguardia che
-          rispondono a esigenze funzionali, estetiche e normative. La nostra presenza sul territorio del Nord e Centro Nord Italia
-          (Lombardia, Veneto, Piemonte, Emilia-Romagna, Toscana), in particolare delle province di Brescia, Bergamo, Milano e altre zone
-          limitrofe, ci permette di comprendere appieno le specificità normative e urbanistiche di ciascuna
-          zona. Inoltre, abbiamo sviluppato competenze specifiche nell&apos;ambito della sicurezza antincendio, fornendo consulenza e progettazione secondo le più
-          recenti disposizioni legislative e tecniche. Questa diversificazione ci consente di affrontare ogni progetto con una visione trasversale e consapevole,
-          garantendo risultati di elevata qualità, pienamente conformi alle aspettative del cliente e alle normative vigenti.
+          Operiamo soprattutto in ambito <strong>residenziale e industriale</strong>, con soluzioni tecniche aggiornate a esigenze funzionali, estetiche e
+          normative. Presenza consolidata in Lombardia (Brescia, Bergamo, Milano) e nel Nord-Centro Italia, con competenze anche in sicurezza antincendio.
         </>
       ),
       image: "cantiere",

@@ -10,8 +10,8 @@
   --corten: #b87333;
   --corten-soft: #c4844a;
   --muted: #fafbfc;
-  /* Corpo testo sezioni home / intro (unificato con blocchi Chi siamo) */
-  --copy-body: #262626;
+  /* Corpo testo sezioni home / intro (allineato a ui.body) */
+  --copy-body: #333;
   --section-space-y: clamp(4.5rem, 7vw, 6.2rem);
   --section-space-y-mobile: 4rem;
   --content-gap: clamp(1.1rem, 1.8vw, 1.5rem);
@@ -240,6 +240,17 @@ body::before {
 
 .home-section-accent--light {
   background: linear-gradient(90deg, rgba(232, 180, 120, 0.95), rgba(184, 115, 51, 0.35));
+}
+
+/* H2 pagine interne: stessa barra corten della home */
+.section-heading-with-accent::after {
+  content: "";
+  display: block;
+  width: 2.75rem;
+  height: 3px;
+  border-radius: 9999px;
+  margin-top: 0.85rem;
+  background: linear-gradient(90deg, var(--corten) 0%, var(--corten-soft) 55%, rgba(184, 115, 51, 0.28) 100%);
 }
 
 /* Lastre home: filetto + tic corten al posto del box */

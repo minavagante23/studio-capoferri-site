@@ -69,12 +69,12 @@ const copy = {
       {
         text: chiSiamoEnParagraphs[0],
         image: "team",
-        imageFirst: false,
+        imageFirst: true,
       },
       {
         text: chiSiamoEnParagraphs[1],
         image: "cantiere",
-        imageFirst: true,
+        imageFirst: false,
       },
     ] as AboutBlock[],
     servicesTitle: "Services",
@@ -195,23 +195,24 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="space-y-12 sm:space-y-16 md:space-y-20">
             {t.aboutBlocks.map((block, idx) => {
               const img = homeChiSiamoImages[block.image];
+              // DOM always image → text so mobile stacks: img1, text1, img2, text2.
+              // imageFirst controls desktop column order only.
               return (
                 <div key={idx} className="reveal-block grid gap-6 sm:gap-10 md:grid-cols-2 md:items-stretch">
-                  {block.imageFirst ? (
-                    <>
-                      <div className="relative aspect-[16/10] overflow-hidden rounded-sm md:aspect-auto md:min-h-[300px] md:h-full">
-                        <Image src={img.src} alt={locale === "en" ? img.altEn : img.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
-                      </div>
-                      <div className="home-section-body copy-rhythm reading-measure text-[0.98rem] sm:text-[1.05rem]">{block.text}</div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="home-section-body copy-rhythm reading-measure text-[0.98rem] sm:text-[1.05rem]">{block.text}</div>
-                      <div className="relative aspect-[16/10] overflow-hidden rounded-sm md:aspect-auto md:min-h-[300px] md:h-full">
-                        <Image src={img.src} alt={locale === "en" ? img.altEn : img.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
-                      </div>
-                    </>
-                  )}
+                  <div
+                    className={`relative aspect-[16/10] overflow-hidden rounded-sm md:aspect-auto md:min-h-[300px] md:h-full ${
+                      block.imageFirst ? "" : "md:order-2"
+                    }`}
+                  >
+                    <Image src={img.src} alt={locale === "en" ? img.altEn : img.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
+                  </div>
+                  <div
+                    className={`home-section-body copy-rhythm reading-measure text-[0.98rem] sm:text-[1.05rem] ${
+                      block.imageFirst ? "" : "md:order-1"
+                    }`}
+                  >
+                    {block.text}
+                  </div>
                 </div>
               );
             })}
@@ -235,7 +236,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
                   {String(idx + 1).padStart(2, "0")}
                 </span>
                 <h3 className={`${fontDisplay.className} mb-2 text-xl tracking-[0.02em] text-[#2a3f54] sm:mb-3 sm:text-2xl`}>{title}</h3>
-                <p className="copy-rhythm mb-5 flex-1 text-sm text-[#555] sm:mb-6">{description}</p>
+                <p className="copy-rhythm mb-5 flex-1 text-sm text-[#444] sm:mb-6">{description}</p>
                 <Link href={localizeHref(href, locale)} className="touch-target mt-auto inline-block min-h-[44px] py-2 text-sm font-semibold text-[#2a3f54] underline-offset-4 transition hover:text-[#b87333] group-hover:underline" title={linkTitles.scopriServizio(title, locale)}>
                   {locale === "en" ? `Explore ${title}` : `Scopri ${title.toLowerCase()}`}
                 </Link>
@@ -287,7 +288,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
             {t.certifications.map(([title, text]) => (
               <article key={title} className="home-plate reveal-block text-left">
                 <h3 className={`${fontDisplay.className} mb-2 text-base tracking-[0.02em] text-[#2a3f54] sm:mb-3 sm:text-lg md:text-xl`}>{title}</h3>
-                <p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem] md:text-base">{text}</p>
+                <p className="text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem] md:text-base">{text}</p>
               </article>
             ))}
           </div>
@@ -305,7 +306,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           </div>
           <div className="home-plate reveal-block">
             <h3 className={`${fontDisplay.className} text-lg tracking-[0.02em] text-[#2a3f54] sm:text-xl`}>{t.zoneHeading}</h3>
-            <div className="mt-2 text-[0.98rem] leading-relaxed text-[#555] sm:text-[1.05rem]">{t.zoneFooter}</div>
+            <div className={`mt-2 ${ui.bodyMuted}`}>{t.zoneFooter}</div>
           </div>
         </div>
       </section>
@@ -322,9 +323,9 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
             <p className="home-split-header__right">{t.contactsIntro}</p>
           </div>
           <div className="grid gap-8 sm:grid-cols-3 sm:gap-10">
-            <article className="home-plate reveal-block"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
-            <article className="home-plate reveal-block"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#555] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
-            <article className="home-plate reveal-block"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#555] sm:text-[0.95rem]">{site.addressLine}</p></article>
+            <article className="home-plate reveal-block"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#444] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
+            <article className="home-plate reveal-block"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#444] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
+            <article className="home-plate reveal-block"><h3 className={`${fontDisplay.className} mb-1.5 text-base tracking-[0.02em] text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem]">{site.addressLine}</p></article>
           </div>
           <p className="mt-8 sm:mt-12">
             <Link href={localizeHref("/contatti#form-contatti", locale)} className={`${ui.btnPrimary} inline-flex w-full sm:w-auto`} title={linkTitles.formContatti(locale)}>

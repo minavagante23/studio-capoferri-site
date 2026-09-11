@@ -18,12 +18,14 @@ export const ui = {
     "group block overflow-hidden rounded-sm border border-white/10 bg-transparent transition duration-500 hover:border-[rgba(232,180,120,0.45)]",
 
   /** Paragrafi corpo su sfondo chiaro */
-  body: "copy-rhythm text-[0.98rem] text-[#333] sm:text-[1.05rem]",
+  body: "copy-rhythm text-[0.98rem] text-[var(--copy-body)] sm:text-[1.05rem]",
   /** Testo secondario (card, intro) */
-  bodyMuted: "text-[0.98rem] text-[#444] sm:text-[1.05rem]",
+  bodyMuted: "copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]",
 
   /** H1 pagine interne standard */
   pageTitle: "section-title text-[1.75rem] tracking-[0.02em] text-[#2a2a2a] sm:text-4xl md:text-5xl",
+  /** Margine sotto H1 quando segue un intro nello stesso plate */
+  pageTitleLead: "mb-6 sm:mb-8",
 
   /** H1 case study / progetto singolo */
   caseStudyTitle: "section-title text-[1.65rem] tracking-[0.02em] text-[#2a2a2a] sm:text-3xl md:text-4xl",
@@ -34,13 +36,16 @@ export const ui = {
   homeSectionTitleInverted: "section-title home-section-title home-section-title--inverted reveal-title",
 
   /** H2 sezione lunga (servizi, privacy, landing) */
-  sectionHeadingAccent: "section-title text-2xl tracking-[0.02em] text-[#2a2a2a]",
+  sectionHeadingAccent: "section-title section-heading-with-accent text-2xl tracking-[0.02em] text-[#2a2a2a]",
 
   /** H2 galleria, “Progetti in evidenza” */
-  gallerySectionTitle: "section-title text-xl tracking-[0.02em] text-[#2a2a2a] sm:text-2xl",
+  gallerySectionTitle: "section-title section-heading-with-accent text-xl tracking-[0.02em] text-[#2a2a2a] sm:text-2xl",
 
   /** H2 in card chiare (Recapiti, Dove siamo) */
   cardHeading: "section-title text-xl tracking-[0.02em] text-[#2a2a2a] sm:text-2xl",
+
+  /** Foto di contenuto (editoriale: angolo vivo, filetto leggero) */
+  contentImage: "relative overflow-hidden rounded-sm border border-[#2a3f54]/10",
 
   /** Link inline (navy → corten al hover) */
   linkAccent: "link-accent",

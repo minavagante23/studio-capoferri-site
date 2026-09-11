@@ -34,16 +34,17 @@ export function LocalizedAboutPageContent() {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="home-plate home-plate--well">
-              <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-7 sm:mb-10`}>{chiSiamoPage.title}</h1>
+              <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{chiSiamoPage.title}</h1>
               <div className={`space-y-5 sm:space-y-6 ${ui.body}`}>
                 {chiSiamoPage.paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
               </div>
-              <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-xl border border-[#2a3f54]/10 shadow-[0_10px_30px_rgba(0,0,0,0.08)] sm:mt-12 sm:rounded-2xl">
+              <div className={`${ui.contentImage} mt-8 aspect-[16/9] w-full sm:mt-12`}>
                 <Image src={chiSiamoPageImage.src} alt={chiSiamoPageImage.alt} fill className="object-cover" sizes="(min-width:800px) 800px, 100vw" />
               </div>
             </div>
+            <ContactCtaSection locale="it" className="mt-10 sm:mt-14" />
           </div>
         </div>
       </main>
@@ -55,13 +56,13 @@ export function LocalizedAboutPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well">
-            <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-7 sm:mb-10`}>{isEn ? "About" : chiSiamoPage.title}</h1>
+            <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "About" : chiSiamoPage.title}</h1>
             <div className={`space-y-5 sm:space-y-6 ${ui.body}`}>
               {isEn
                 ? chiSiamoEnParagraphs.map((p, i) => <p key={i}>{p}</p>)
                 : chiSiamoPage.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
             </div>
-            <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-xl border border-[#2a3f54]/10 shadow-[0_10px_30px_rgba(0,0,0,0.08)] sm:mt-12 sm:rounded-2xl">
+            <div className={`${ui.contentImage} mt-8 aspect-[16/9] w-full sm:mt-12`}>
               <Image
                 src={chiSiamoPageImage.src}
                 alt={isEn ? "Studio Capoferri team during a technical meeting in Adro" : chiSiamoPageImage.alt}
@@ -71,6 +72,7 @@ export function LocalizedAboutPageContent() {
               />
             </div>
           </div>
+          <ContactCtaSection locale={isEn ? "en" : "it"} className="mt-10 sm:mt-14" />
         </div>
       </div>
     </main>
@@ -90,7 +92,7 @@ export function LocalizedServicesPageContent() {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <article className="home-plate home-plate--well">
-              <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-6 sm:mb-8`}>Servizi</h1>
+              <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>Servizi</h1>
               <p className={ui.body}>
                 <strong>Studio Capoferri</strong> offre una gamma completa di servizi di ingegneria, architettura e consulenza tecnica a 360 gradi.
                 Affianchiamo i clienti in ogni fase del progetto, garantendo qualità, precisione e soluzioni su misura.
@@ -154,14 +156,13 @@ export function LocalizedServicesPageContent() {
               <ul className="list-none space-y-3 pl-0">
                 <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Assistenza immobiliare</strong> - Supporto tecnico per compravendite, perizie, stime immobiliari e valutazione dello stato di fatto.</li>
               </ul>
-
-              <ContactCtaSection
-                locale="it"
-                title="Cerchi supporto tecnico per il tuo progetto?"
-                description="Contattaci per una valutazione preliminare: ti indichiamo tempi, iter autorizzativi e il percorso progettuale più adatto."
-                className="mt-14"
-              />
             </article>
+            <ContactCtaSection
+              locale="it"
+              title="Cerchi supporto tecnico per il tuo progetto?"
+              description="Contattaci per una valutazione preliminare: ti indichiamo tempi, iter autorizzativi e il percorso progettuale più adatto."
+              className="mt-10 sm:mt-14"
+            />
           </div>
         </div>
       </main>
@@ -174,7 +175,7 @@ export function LocalizedServicesPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <article className="home-plate home-plate--well">
-            <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-6 sm:mb-8`}>{isEn ? "Services" : "Servizi"}</h1>
+            <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Services" : "Servizi"}</h1>
 
             {isEn ? (
               <>
@@ -246,13 +247,6 @@ export function LocalizedServicesPageContent() {
                 <ul className="list-none space-y-3 pl-0">
                   <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Property support</strong> - Technical assistance for transactions, expert valuations, property appraisals and assessment of the existing condition.</li>
                 </ul>
-
-                <ContactCtaSection
-                  locale="en"
-                  title="Need technical support for your project?"
-                  description="Contact us in English for an initial assessment: we can outline timing, design scope and the most suitable engineering path."
-                  className="mt-14"
-                />
               </>
             ) : (
               <>
@@ -377,16 +371,19 @@ export function LocalizedServicesPageContent() {
                     <strong>Assistenza immobiliare</strong> - Supporto tecnico per compravendite, perizie, stime immobiliari e valutazione dello stato di fatto.
                   </li>
                 </ul>
-
-                <ContactCtaSection
-                  locale="it"
-                  title="Cerchi supporto tecnico per il tuo progetto?"
-                  description="Contattaci per una valutazione preliminare: ti indichiamo tempi, iter autorizzativi e il percorso progettuale più adatto."
-                  className="mt-14"
-                />
               </>
             )}
           </article>
+          <ContactCtaSection
+            locale={isEn ? "en" : "it"}
+            title={isEn ? "Need technical support for your project?" : "Cerchi supporto tecnico per il tuo progetto?"}
+            description={
+              isEn
+                ? "Contact us in English for an initial assessment: we can outline timing, design scope and the most suitable engineering path."
+                : "Contattaci per una valutazione preliminare: ti indichiamo tempi, iter autorizzativi e il percorso progettuale più adatto."
+            }
+            className="mt-10 sm:mt-14"
+          />
         </div>
       </div>
     </main>
@@ -406,8 +403,8 @@ export function LocalizedContactsPageContent() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }} />
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
-            <div className="mb-6 max-w-[780px] sm:mb-8">
-              <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-3 sm:mb-4`}>Contatti</h1>
+            <div className="home-plate home-plate--well mb-6 max-w-[780px] sm:mb-8">
+              <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>Contatti</h1>
               <p className={ui.body}>
                 Siamo disponibili per valutazioni preliminari, preventivi e supporto tecnico su progettazione strutturale in acciaio,
                 direzione lavori e consulenza specialistica.
@@ -427,7 +424,17 @@ export function LocalizedContactsPageContent() {
                   <li><strong>Orari:</strong> {site.openingHoursDisplay}</li>
                 </ul>
                 <div className="mt-5 border-t border-[#2a3f54]/10 pt-4 sm:mt-7 sm:pt-6">
-                  <a href={site.linkedin} target="_blank" rel="noopener noreferrer" title={linkTitles.linkedin("it")} className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#2a3f54] underline-offset-2 transition hover:text-[#b87333] hover:underline">
+                  <a
+                    href={site.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={linkTitles.linkedin("it")}
+                    aria-label="Seguici su LinkedIn - Studio Capoferri"
+                    className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#2a3f54] underline-offset-2 transition hover:text-[#b87333] hover:underline"
+                  >
+                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-[#2a3f54]/15 bg-[#2a3f54]/5 text-[#2a3f54]">
+                      <LinkedInIcon className="h-4 w-4" />
+                    </span>
                     Seguici su LinkedIn
                   </a>
                 </div>
@@ -444,7 +451,7 @@ export function LocalizedContactsPageContent() {
             <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
               <div className="home-plate home-plate--well">
                 <h2 className={`${fontDisplay.className} ${ui.cardHeading} mb-2 sm:mb-3`}>Contattaci</h2>
-                <p className="copy-rhythm mb-6 w-full text-[0.95rem] leading-relaxed text-[#444] sm:mb-8 sm:text-[1.03rem]">
+                <p className={`mb-6 w-full sm:mb-8 ${ui.bodyMuted}`}>
                   Compila il form con i dettagli del tuo intervento. Riceverai un riscontro tecnico puntuale dal nostro team.
                 </p>
                 <ContactForm />
@@ -461,8 +468,8 @@ export function LocalizedContactsPageContent() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <div className="mb-6 max-w-[780px] sm:mb-8">
-            <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-3 sm:mb-4`}>{isEn ? "Contact" : "Contatti"}</h1>
+          <div className="home-plate home-plate--well mb-6 max-w-[780px] sm:mb-8">
+            <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Contact" : "Contatti"}</h1>
             <p className={ui.body}>
               {isEn
                 ? "We support international clients on projects in Italy with Eurocode-compliant structural and steel design. Contact us in English for preliminary assessments, quotations and technical consultancy."
@@ -505,16 +512,10 @@ export function LocalizedContactsPageContent() {
                   aria-label={isEn ? "Follow us on LinkedIn - Studio Capoferri" : "Seguici su LinkedIn - Studio Capoferri"}
                   className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#2a3f54] underline-offset-2 transition hover:text-[#b87333] hover:underline"
                 >
-                  {isEn ? (
-                    <>
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-[#2a3f54]/15 bg-[#2a3f54]/5 text-[#2a3f54]">
-                        <LinkedInIcon className="h-4 w-4" />
-                      </span>
-                      Follow us on LinkedIn
-                    </>
-                  ) : (
-                    "Seguici su LinkedIn"
-                  )}
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-[#2a3f54]/15 bg-[#2a3f54]/5 text-[#2a3f54]">
+                    <LinkedInIcon className="h-4 w-4" />
+                  </span>
+                  {isEn ? "Follow us on LinkedIn" : "Seguici su LinkedIn"}
                 </a>
               </div>
             </section>
@@ -530,7 +531,7 @@ export function LocalizedContactsPageContent() {
           <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
             <div className="home-plate home-plate--well">
               <h2 className={`${fontDisplay.className} ${ui.cardHeading} mb-2 sm:mb-3`}>{isEn ? "Contact us" : "Contattaci"}</h2>
-              <p className="copy-rhythm mb-6 w-full text-[0.95rem] leading-relaxed text-[#444] sm:mb-8 sm:text-[1.03rem]">
+              <p className={`mb-6 w-full sm:mb-8 ${ui.bodyMuted}`}>
                 {isEn
                   ? "Complete the form with the details of your project — we reply in English. You will receive a focused technical response from our team."
                   : "Compila il form con i dettagli del tuo intervento. Riceverai un riscontro tecnico puntuale dal nostro team."}
@@ -555,32 +556,16 @@ export function LocalizedProjectsPageContent() {
       <main id="main-content" className="section-shell bg-[#fafbfc]">
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
-            <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} mb-4 sm:mb-6`}>Progetti realizzati</h1>
-            <p className={`reveal-block copy-rhythm mb-8 max-w-none text-pretty sm:mb-14 ${ui.bodyMuted}`}>{progettiIndexIntro}</p>
+            <div className="home-plate home-plate--well mb-8 sm:mb-14">
+              <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>Progetti realizzati</h1>
+              <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>{progettiIndexIntro}</p>
+            </div>
             <div className="fine-divider mb-6 sm:mb-10" />
             <div className="lazy-section grid gap-6 sm:gap-10 md:grid-cols-3">
               {projectPreview.map((p) => (
-                <Link
-                  key={p.href}
-                  href={localizeHref(p.href, locale)}
-                  className={ui.projectCardLight}
-                >
-                  <div className="relative aspect-[4/3]">
-                    <Image src={p.image} alt={p.alt} fill className="object-cover transition duration-500 group-hover:scale-[1.03]" sizes="(min-width:1024px) 33vw, 100vw" />
-                    <div className="image-unify-overlay" aria-hidden />
-                    <div
-                      className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                      style={{
-                        backgroundImage:
-                          "linear-gradient(to right, rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)",
-                        backgroundSize: "28px 28px",
-                      }}
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2e3d]/95 to-transparent px-4 py-3 sm:py-4">
-                      <span className={`${fontDisplay.className} text-base tracking-[0.01em] text-white sm:text-lg`}>{p.caption}</span>
-                    </div>
-                  </div>
-                </Link>
+                <div key={p.href} className="reveal-block">
+                  <ProjectPreviewCard href={localizeHref(p.href, locale)} title={p.title} caption={p.caption} image={p.image} alt={p.alt} />
+                </div>
               ))}
             </div>
             <ContactCtaSection locale="it" title="Vuoi realizzare un progetto con noi?" description="Dalla fattibilità al cantiere: raccontaci obiettivi, tempi e vincoli del tuo intervento." />
@@ -594,12 +579,14 @@ export function LocalizedProjectsPageContent() {
     <main id="main-content" className="section-shell bg-[#fafbfc]">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} mb-4 sm:mb-6`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
-          <p className={`reveal-block copy-rhythm mb-8 max-w-none text-pretty sm:mb-14 ${ui.bodyMuted}`}>
-            {isEn
-              ? "A selection of our most significant work, organised by area of intervention. This classification offers a clearer and more targeted reading of our activity, making it easier to identify projects by intended use."
-              : progettiIndexIntro}
-          </p>
+          <div className="home-plate home-plate--well mb-8 sm:mb-14">
+            <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
+            <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>
+              {isEn
+                ? "A selection of our most significant work, organised by area of intervention. This classification offers a clearer and more targeted reading of our activity, making it easier to identify projects by intended use."
+                : progettiIndexIntro}
+            </p>
+          </div>
           <div className="fine-divider mb-6 sm:mb-10" />
           <div className="lazy-section grid gap-6 sm:gap-10 md:grid-cols-3">
             {cards.map(([title, caption, image, alt, href]) => (
@@ -627,7 +614,9 @@ export function LocalizedPrivacyPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <article className="max-w-[860px]">
-            <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-7 sm:mb-10`}>Privacy policy</h1>
+            <div className="home-plate home-plate--well mb-7 sm:mb-10">
+              <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-0`}>Privacy policy</h1>
+            </div>
             <p className={`mb-7 sm:mb-10 ${ui.body}`}>
               <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> Studio Capoferri SRL STP - Via Piave 35, Adro (BS) - VAT 04732710985 - Email: <a href={`mailto:${site.email}`} title={linkTitles.email(site.email, isEn ? "en" : "it")} className="link-accent">{site.email}</a>
             </p>
@@ -638,9 +627,19 @@ export function LocalizedPrivacyPageContent() {
             <h2 id="cookie" className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`}>Cookie</h2>
             <p className={`mb-10 ${ui.body}`}>{isEn ? "This website uses cookies to ensure proper operation and improve the browsing experience." : "Questo sito utilizza cookie per garantire il corretto funzionamento e migliorare l'esperienza di navigazione."}</p>
             <div className="space-y-5 sm:space-y-8">
-              <div className="home-plate"><h3 className="mb-3 font-semibold text-[#2a3f54]">{isEn ? "Technical cookies" : "Cookie tecnici"}</h3><p className={ui.body}>{isEn ? "Essential cookies required for site functionality, including session and preference cookies." : "Cookie strettamente necessari per il funzionamento del sito, inclusi cookie di sessione e di preferenze."}</p></div>
-              <div className="home-plate"><h3 className="mb-3 font-semibold text-[#2a3f54]">{isEn ? "Third-party services" : "Cookie di terze parti"}</h3><p className={ui.body}>{isEn ? "Some pages use Google Maps and the contact form uses Formspree. Related cookies are loaded only where required by the configured consent flow." : "In alcune pagine del sito viene utilizzato Google Maps e il form di contatto usa Formspree."}</p></div>
-              <div className={`rounded-2xl p-4 sm:p-6 ${ui.brandGradientCompact} text-white`}><h3 className="mb-3 font-semibold">{isEn ? "Cookie preferences" : "Gestione dei cookie"}</h3><p className="mb-3 text-[1.05rem] leading-relaxed text-white/95">{isEn ? "You can manage cookie preferences through the banner shown on first access to the site." : "È possibile gestire le preferenze sui cookie attraverso il banner che appare al primo accesso al sito."}</p><div className="mt-5"><CookiePreferencesButton /></div></div>
+              <div className="home-plate">
+                <h3 className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] text-[#2a3f54]`}>{isEn ? "Technical cookies" : "Cookie tecnici"}</h3>
+                <p className={ui.body}>{isEn ? "Essential cookies required for site functionality, including session and preference cookies." : "Cookie strettamente necessari per il funzionamento del sito, inclusi cookie di sessione e di preferenze."}</p>
+              </div>
+              <div className="home-plate">
+                <h3 className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] text-[#2a3f54]`}>{isEn ? "Third-party services" : "Cookie di terze parti"}</h3>
+                <p className={ui.body}>{isEn ? "Some pages use Google Maps and the contact form uses Formspree. Related cookies are loaded only where required by the configured consent flow." : "In alcune pagine del sito viene utilizzato Google Maps e il form di contatto usa Formspree."}</p>
+              </div>
+              <div className={`rounded-sm p-4 sm:p-6 ${ui.brandGradientCompact} text-white`}>
+                <h3 className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em]`}>{isEn ? "Cookie preferences" : "Gestione dei cookie"}</h3>
+                <p className="mb-3 copy-rhythm text-[0.98rem] leading-relaxed text-white/95 sm:text-[1.05rem]">{isEn ? "You can manage cookie preferences through the banner shown on first access to the site." : "È possibile gestire le preferenze sui cookie attraverso il banner che appare al primo accesso al sito."}</p>
+                <div className="mt-5"><CookiePreferencesButton /></div>
+              </div>
             </div>
           </article>
         </div>

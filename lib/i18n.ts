@@ -111,7 +111,7 @@ export const chromeCopy = {
     },
     hero: {
       introLabel: "Introduzione",
-      location: "Studio Capoferri · Adro (BS)",
+      location: "Adro (BS) - Franciacorta - Italia",
       support: "Ingegneria civile, architettura e strutture in acciaio.",
       cta: "Richiedi un preventivo",
       slidePicker: "Seleziona slide hero",
@@ -180,7 +180,7 @@ export const chromeCopy = {
     },
     hero: {
       introLabel: "Introduction",
-      location: "Studio Capoferri · Adro (BS) - Italy",
+      location: "Adro (BS) - Franciacorta - Italy",
       support: "Steel structures + site support in Northern Italy — talk to us in English.",
       cta: "Request a quote",
       slidePicker: "Select hero slide",
