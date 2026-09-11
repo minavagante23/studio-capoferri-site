@@ -7,10 +7,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLocale } from "@/components/LocaleProvider";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
+import { fontDisplay } from "@/lib/fonts";
 import { chromeCopy, getNavLabel, localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
-import { layoutContentMaxClass, layoutGutterXClass, navItems } from "@/lib/site";
-import { ui } from "@/lib/ui";
+import { layoutContentMaxClass, layoutGutterXClass, navItems, site } from "@/lib/site";
 
 function isActivePath(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
@@ -21,6 +21,7 @@ export function SiteHeader() {
   const pathname = usePathname() || "/";
   const locale = useLocale();
   const copy = chromeCopy[locale].header;
+  const hero = chromeCopy[locale].hero;
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const mobileNavRef = useRef<HTMLDivElement>(null);
@@ -106,25 +107,27 @@ export function SiteHeader() {
   return (
     <>
       <header
-        className={`sticky top-0 z-[1000] transition-all duration-300 ${
-          scrolled
-            ? "bg-white/88 shadow-[0_10px_30px_rgba(0,0,0,0.05)] backdrop-blur-xl"
-            : "bg-white/72 backdrop-blur-2xl"
+        className={`sticky top-0 z-[1000] transition-[background-color,backdrop-filter] duration-300 ${
+          open ? "bg-white" : scrolled ? "bg-white/94 backdrop-blur-xl" : "bg-white/80 backdrop-blur-2xl"
         }`}
       >
         <div className={layoutGutterXClass}>
-          <div className={`relative flex h-[72px] items-center sm:h-[78px] md:h-[94px] md:justify-between ${layoutContentMaxClass}`}>
+          <div className={`relative flex h-[var(--header-h)] items-center justify-between ${layoutContentMaxClass}`}>
             <Link
               href={localizeHref("/", locale)}
-              className="focus-ring absolute left-1/2 top-1/2 flex shrink-0 -translate-x-1/2 -translate-y-1/2 items-center md:static md:translate-x-0 md:translate-y-0"
+              className="focus-ring relative z-10 flex shrink-0 items-center"
               title={linkTitles.home(locale)}
             >
               <Image
                 src="/assets/logo-studio-ingegneria-removebg-preview.png"
-                alt={locale === "en" ? "Studio Capoferri - structural engineering and design" : "Studio Capoferri - ingegneria e progettazione strutturale"}
+                alt={
+                  locale === "en"
+                    ? "Studio Capoferri - structural engineering and design"
+                    : "Studio Capoferri - ingegneria e progettazione strutturale"
+                }
                 width={220}
                 height={70}
-                className="h-[54px] w-auto sm:h-[58px] md:h-[70px]"
+                className="h-11 w-auto sm:h-12 md:h-[70px]"
                 priority
               />
             </Link>
@@ -141,9 +144,7 @@ export function SiteHeader() {
                         <Link
                           href={localizeHref(item.href, locale)}
                           className={`focus-ring inline-flex min-h-[44px] items-center justify-center px-1 py-2 text-[0.95rem] font-medium tracking-normal transition-colors duration-200 lg:text-[1rem] ${
-                            active
-                              ? "text-[#b87333]"
-                              : "text-[#2a2a2a] hover:text-[#b87333]"
+                            active ? "text-[#b87333]" : "text-[#2a2a2a] hover:text-[#b87333]"
                           }`}
                           aria-current={active ? "page" : undefined}
                           title={linkTitles.nav(label, locale)}
@@ -161,15 +162,17 @@ export function SiteHeader() {
             <button
               ref={menuButtonRef}
               type="button"
-              className="focus-ring relative z-10 ml-auto flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-1.5 rounded-md border border-[#2a3f54]/15 bg-white/70 shadow-sm md:hidden"
+              className="focus-ring relative z-10 ml-2 inline-flex h-11 min-w-[44px] items-center gap-2.5 text-[#2a3f54] md:hidden"
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label={open ? copy.closeMenu : copy.openMenu}
               onClick={() => setOpen((v) => !v)}
             >
-              <span className={`block h-0.5 w-7 rounded bg-[#2a3f54] transition ${open ? "translate-y-2 rotate-45" : ""}`} />
-              <span className={`block h-0.5 w-7 rounded bg-[#2a3f54] transition ${open ? "opacity-0" : ""}`} />
-              <span className={`block h-0.5 w-7 rounded bg-[#2a3f54] transition ${open ? "-translate-y-2 -rotate-45" : ""}`} />
+              <span className="eyebrow text-[0.62rem] tracking-[0.2em] text-current">{open ? copy.closeShort : copy.menuShort}</span>
+              <span className={`site-header-burger ${open ? "is-open" : ""}`} aria-hidden>
+                <span />
+                <span />
+              </span>
             </button>
           </div>
         </div>
@@ -179,42 +182,63 @@ export function SiteHeader() {
       <div
         ref={mobileNavRef}
         id="mobile-nav"
-        className={`fixed inset-0 top-[73px] z-[999] flex flex-col ${ui.brandGradient} transition sm:top-[79px] md:hidden ${
-          open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
-        }`}
+        className={`mobile-nav ${open ? "is-open" : ""}`}
         aria-hidden={!open}
         inert={!open ? true : undefined}
       >
-        <div className={`flex flex-1 items-center justify-center overflow-y-auto ${layoutGutterXClass}`}>
-          <ul className={`${layoutContentMaxClass} flex flex-col gap-1 py-8`}>
-            {navItems.map((item) => {
-              const label = getNavLabel(locale, item.key);
-              const href = localizeHref(item.href, locale);
-              const active = isActivePath(pathname, href);
+        <nav className={`relative flex min-h-0 flex-1 flex-col ${layoutGutterXClass}`} aria-label={copy.mainMenu}>
+          <div className={`flex min-h-0 flex-1 flex-col overflow-y-auto pl-3 sm:pl-4 ${layoutContentMaxClass}`}>
+            <p className="eyebrow pt-6 text-[0.68rem] tracking-[0.2em] text-[#e8b478]">{copy.navIndex}</p>
+            <ul className="flex flex-col gap-0 pt-5">
+              {navItems.map((item, index) => {
+                const label = getNavLabel(locale, item.key);
+                const href = localizeHref(item.href, locale);
+                const active = isActivePath(pathname, href);
 
-              return (
-                <li key={item.href}>
-                  <Link
-                    href={href}
-                    className={`focus-ring flex min-h-[48px] items-center justify-center py-4 text-center text-xl font-medium tracking-normal transition sm:text-2xl ${
-                      active ? "text-[#e8b478]" : "text-white/90 hover:text-[#e8b478]"
-                    }`}
-                    aria-current={active ? "page" : undefined}
-                    title={linkTitles.nav(label, locale)}
-                    onClick={closeMenu}
-                  >
-                    {label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="px-4 pb-8 sm:px-5">
-          <div className={`${layoutContentMaxClass} flex justify-center`}>
-            <LanguageSwitcher onNavigate={closeMenu} />
+                return (
+                  <li key={item.href} className="mobile-nav__item">
+                    <Link
+                      href={href}
+                      className={`focus-ring group flex min-h-[52px] items-baseline gap-4 border-b border-white/[0.08] py-3.5 transition-colors ${
+                        active ? "text-[#e8b478]" : "text-white hover:text-[#e8b478]"
+                      }`}
+                      aria-current={active ? "page" : undefined}
+                      title={linkTitles.nav(label, locale)}
+                      onClick={closeMenu}
+                    >
+                      <span className={`shrink-0 pt-1 text-[0.72rem] font-medium tabular-nums tracking-[0.14em] ${active ? "text-[#e8b478]" : "text-white/48 group-hover:text-[#e8b478]"}`}>
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <span className={`${fontDisplay.className} text-[2.15rem] leading-[0.95] tracking-[0.04em] sm:text-[2.55rem]`}>{label}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <div className="mobile-nav__meta mt-auto border-t border-white/10 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-6">
+              <p className="eyebrow text-[0.62rem] tracking-[0.16em] text-white/45">{hero.location}</p>
+              <a
+                href={`tel:${site.phoneTel}`}
+                className="focus-ring mt-2 inline-flex min-h-[44px] items-center text-sm font-medium tracking-wide text-white/88 transition-colors hover:text-[#e8b478]"
+                title={linkTitles.telefono(site.phoneDisplay, locale)}
+              >
+                {site.phoneDisplay}
+              </a>
+              <div className="mt-5 flex flex-wrap items-center justify-between gap-4">
+                <LanguageSwitcher tone="dark" onNavigate={closeMenu} />
+                <Link
+                  href={localizeHref("/contatti", locale)}
+                  className="focus-ring inline-flex min-h-[44px] items-center justify-center rounded-sm border border-white/25 bg-white px-5 py-2.5 text-[0.78rem] font-semibold text-[#1f2e3d] transition hover:bg-neutral-100"
+                  title={linkTitles.contatti(locale)}
+                  onClick={closeMenu}
+                >
+                  {hero.cta}
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
     </>
   );

@@ -16,6 +16,19 @@
   --section-space-y-mobile: 4rem;
   --content-gap: clamp(1.1rem, 1.8vw, 1.5rem);
   --scroll-offset: 100px;
+  --header-h: 64px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --header-h: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-h: 94px;
+  }
 }
 
 @theme inline {
@@ -395,6 +408,153 @@ body::before {
   .eyebrow {
     font-size: 0.68rem;
     letter-spacing: 0.1em;
+  }
+}
+
+/* ─── Header mobile: burger a due filetti (non il box da template) ─── */
+.site-header-burger {
+  position: relative;
+  display: block;
+  width: 1.35rem;
+  height: 0.72rem;
+}
+
+.site-header-burger span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), top 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    bottom 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.site-header-burger span:first-child {
+  top: 0;
+}
+
+.site-header-burger span:last-child {
+  bottom: 0;
+}
+
+.site-header-burger.is-open span:first-child {
+  top: calc(50% - 0.75px);
+  transform: rotate(45deg);
+}
+
+.site-header-burger.is-open span:last-child {
+  bottom: calc(50% - 0.75px);
+  transform: rotate(-45deg);
+}
+
+/* Overlay mobile: griglia da tavola tecnica + indice editoriale */
+.mobile-nav {
+  --nav-grid: rgba(255, 255, 255, 0.05);
+  position: fixed;
+  inset: var(--header-h) 0 0 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  visibility: hidden;
+  clip-path: inset(0 0 100% 0);
+  background:
+    linear-gradient(180deg, rgba(20, 28, 36, 0.18), transparent 42%),
+    repeating-linear-gradient(90deg, var(--nav-grid) 0 1px, transparent 1px 3.5rem),
+    repeating-linear-gradient(0deg, var(--nav-grid) 0 1px, transparent 1px 3.5rem),
+    linear-gradient(155deg, #2a3f54 0%, #24384b 48%, #1a2833 100%);
+  transition: clip-path 0.62s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 0.62s;
+}
+
+.mobile-nav.is-open {
+  pointer-events: auto;
+  visibility: visible;
+  clip-path: inset(0);
+  transition: clip-path 0.62s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s;
+}
+
+.mobile-nav::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+  bottom: 1.25rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--corten) 0%, var(--corten) 28%, rgba(184, 115, 51, 0.12) 100%);
+  pointer-events: none;
+}
+
+.mobile-nav__item {
+  opacity: 0;
+  transform: translate3d(0, 1.15rem, 0);
+}
+
+.mobile-nav.is-open .mobile-nav__item {
+  animation: mobile-nav-item-in 0.62s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.mobile-nav.is-open .mobile-nav__item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.mobile-nav.is-open .mobile-nav__item:nth-child(2) {
+  animation-delay: 0.16s;
+}
+.mobile-nav.is-open .mobile-nav__item:nth-child(3) {
+  animation-delay: 0.22s;
+}
+.mobile-nav.is-open .mobile-nav__item:nth-child(4) {
+  animation-delay: 0.28s;
+}
+
+.mobile-nav__meta {
+  opacity: 0;
+  transform: translate3d(0, 0.75rem, 0);
+}
+
+.mobile-nav.is-open .mobile-nav__meta {
+  animation: mobile-nav-item-in 0.62s cubic-bezier(0.22, 1, 0.36, 1) 0.36s forwards;
+}
+
+@keyframes mobile-nav-item-in {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header-burger span,
+  .mobile-nav,
+  .mobile-nav.is-open {
+    transition: none !important;
+  }
+
+  .mobile-nav {
+    clip-path: none;
+  }
+
+  .mobile-nav:not(.is-open) {
+    opacity: 0;
+  }
+
+  .mobile-nav.is-open {
+    opacity: 1;
+  }
+
+  .mobile-nav__item,
+  .mobile-nav__meta,
+  .mobile-nav.is-open .mobile-nav__item,
+  .mobile-nav.is-open .mobile-nav__meta {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 
