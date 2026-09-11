@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useLocale } from "@/components/LocaleProvider";
 import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
-import { fontDisplay } from "@/lib/fonts";
 import { chromeCopy, getNavLabel, localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, site } from "@/lib/site";
@@ -40,7 +39,7 @@ export function SiteFooter() {
         <div className={layoutContentMaxClass}>
           <div className="grid gap-8 sm:gap-10 md:grid-cols-3">
             <div>
-              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] sm:mb-4 sm:text-xl`}>{copy.services}</p>
+              <p className={`font-display mb-3 text-lg font-medium tracking-tight sm:mb-4 sm:text-xl`}>{copy.services}</p>
               <ul className="space-y-0.5 text-sm text-white/82">
                 {localizedFooterServices.map((item) => (
                   <li key={item.href}>
@@ -53,7 +52,7 @@ export function SiteFooter() {
             </div>
 
             <div>
-              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] sm:mb-4 sm:text-xl`}>{copy.company}</p>
+              <p className={`font-display mb-3 text-lg font-medium tracking-tight sm:mb-4 sm:text-xl`}>{copy.company}</p>
               <ul className="space-y-0.5 text-sm text-white/82">
                 <li>
                   <Link className={ui.footerLink} href={localizeHref("/chi-siamo", locale)} title={linkTitles.pagina(getNavLabel(locale, "about"))}>
@@ -79,7 +78,7 @@ export function SiteFooter() {
             </div>
 
             <div>
-              <p className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] sm:mb-4 sm:text-xl`}>{copy.contacts}</p>
+              <p className={`font-display mb-3 text-lg font-medium tracking-tight sm:mb-4 sm:text-xl`}>{copy.contacts}</p>
               <ul className="space-y-0.5 text-sm text-white/82">
                 <li className="py-1.5">{site.addressLine}</li>
                 <li>

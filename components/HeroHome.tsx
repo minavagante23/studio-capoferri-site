@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useLocale } from "@/components/LocaleProvider";
-import { fontDisplay } from "@/lib/fonts";
 import { chromeCopy, localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass } from "@/lib/site";
@@ -99,7 +98,7 @@ export function HeroHome() {
         >
           <p className="eyebrow mb-3 text-white/70">{copy.location}</p>
 
-          <h1 className={`${fontDisplay.className} section-title text-[clamp(2rem,7vw,3.85rem)] leading-[0.98] text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]`}>
+          <h1 className="font-display section-title text-[clamp(2rem,7vw,3.85rem)] leading-[1.08] text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]">
             <span className="block sm:whitespace-nowrap">{copy.line1}</span>
             <span className="mt-1 block text-white/95 sm:whitespace-nowrap">{copy.line2}</span>
           </h1>

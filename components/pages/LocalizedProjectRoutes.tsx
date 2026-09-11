@@ -7,7 +7,6 @@ import { ContactCtaSection } from "@/components/ContactCtaSection";
 import { ContactForm } from "@/components/ContactForm";
 import { ProjectImageLightbox } from "@/components/projects/ProjectImageLightbox";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
-import { fontDisplay } from "@/lib/fonts";
 import { localizeHref } from "@/lib/i18n";
 import { caseStudyJsonLd, organizationId } from "@/lib/jsonld";
 import { linkTitles } from "@/lib/link-seo";
@@ -288,11 +287,11 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
             </nav>
 
             <div className="reveal-block home-plate home-plate--well mb-12">
-              <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{c.heading}</h1>
+              <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{c.heading}</h1>
               <div className={`${ui.bodyMuted} text-pretty`}>{c.intro}</div>
             </div>
 
-            <h2 className={`${fontDisplay.className} reveal-title ${ui.gallerySectionTitle} mb-6`}>Progetti in evidenza</h2>
+            <h2 className={`font-display reveal-title ${ui.gallerySectionTitle} mb-6`}>Progetti in evidenza</h2>
             <div className="lazy-section grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {c.cases.map((p) => (
                 <div key={p.slug} className="reveal-block">
@@ -319,12 +318,12 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
             <span className="text-[#444]">{t.heading}</span>
           </nav>
           <div className="reveal-block home-plate home-plate--well mb-12">
-            <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{t.heading}</h1>
+            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{t.heading}</h1>
             <div className={`${ui.bodyMuted} text-pretty`}>
               {t.intro.map((p) => <p key={p} className="mb-4 last:mb-0">{p}</p>)}
             </div>
           </div>
-          <h2 className={`${fontDisplay.className} reveal-title ${ui.gallerySectionTitle} mb-6`}>{shared.featured}</h2>
+          <h2 className={`font-display reveal-title ${ui.gallerySectionTitle} mb-6`}>{shared.featured}</h2>
           <div className="lazy-section grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cases.map((p) => {
               const caseKey = `${area}/${p.slug}` as keyof typeof caseCopy.en;
@@ -402,7 +401,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
               </nav>
 
               <div className="home-plate home-plate--well mb-6 sm:mb-8">
-                <h1 className={`${fontDisplay.className} reveal-title ${ui.caseStudyTitle} mb-0`}>{cs.heading}</h1>
+                <h1 className={`font-display reveal-title ${ui.caseStudyTitle} mb-0`}>{cs.heading}</h1>
               </div>
 
               {cs.externalBrand ? (
@@ -454,7 +453,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
               <span className="text-[#444]">{heading}</span>
             </nav>
             <div className="home-plate home-plate--well mb-6 sm:mb-8">
-              <h1 className={`${fontDisplay.className} reveal-title ${ui.caseStudyTitle} mb-0`}>{heading}</h1>
+              <h1 className={`font-display reveal-title ${ui.caseStudyTitle} mb-0`}>{heading}</h1>
             </div>
             {cs.externalBrand ? (
               <div className="reveal-block mb-8 rounded-sm bg-[#2a2a2a] px-4 py-4 text-center">
@@ -549,7 +548,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
           <div className={layoutContentMaxClass}>
             <div className="mx-auto w-full max-w-[900px]">
               <article className="reveal-block home-plate home-plate--well">
-                <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>
+                <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>
                   Progettazione di strutture in acciaio a {config.city} e in Lombardia
                 </h1>
                 <p className={`mb-4 ${ui.bodyMuted}`}>{config.introLead}</p>
@@ -566,7 +565,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
 
               <div className="lazy-section">
                 <section className="mt-10">
-                  <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>Perché scegliere una struttura in acciaio</h2>
+                  <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>Perché scegliere una struttura in acciaio</h2>
                   <div className="home-plate home-plate--well">
                     <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                       <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Resistenza sismica</strong> — leggerezza e duttilità rendono l&apos;acciaio ideale nelle zone sismiche della Lombardia.</li>
@@ -579,7 +578,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 </section>
 
                 <section className="mt-10">
-                  <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>Cosa progettiamo: dal residenziale all&apos;industriale</h2>
+                  <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>Cosa progettiamo: dal residenziale all&apos;industriale</h2>
                   <div className="home-plate home-plate--well">
                     <p className={`mb-4 ${ui.bodyMuted}`}>Progettiamo <strong>strutture in acciaio per ogni destinazione d&apos;uso</strong>: ville e residenze private, edifici multipiano, capannoni industriali con carroponte, edifici commerciali e spazi per eventi. Alcuni progetti recenti:</p>
                     <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
@@ -600,7 +599,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 </section>
 
                 <section className="mt-10">
-                  <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>{config.areaHeading}</h2>
+                  <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>{config.areaHeading}</h2>
                   <div className="home-plate home-plate--well">
                     <p className={`mb-4 ${ui.bodyMuted}`}>{config.areaBody}</p>
                     {config.areaBodySecondary ? <p className={`mb-0 ${ui.bodyMuted}`}>{config.areaBodySecondary}</p> : null}
@@ -608,11 +607,11 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 </section>
 
                 <section className="mt-10">
-                  <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>Domande frequenti sulla progettazione di strutture in acciaio</h2>
+                  <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>Domande frequenti sulla progettazione di strutture in acciaio</h2>
                   <div className="space-y-4">
                     {faq.map(([q, a]) => (
                       <div key={q} className="home-plate">
-                        <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.02em] text-[#2a2a2a]`}>{q}</h3>
+                        <h3 className={`font-display mb-2 text-lg font-medium tracking-tight text-[#2a2a2a]`}>{q}</h3>
                         <p className={ui.bodyMuted}>{a}</p>
                       </div>
                     ))}
@@ -621,7 +620,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
 
                 <section id="richiesta-preventivo" className={`mt-10 ${scrollAnchorClass}`}>
                   <div className="home-plate home-plate--well">
-                    <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-3`}>{config.ctaHeading}</h2>
+                    <h2 className={`font-display ${ui.sectionHeadingAccent} mb-3`}>{config.ctaHeading}</h2>
                     <p className={`mb-6 max-w-[640px] ${ui.bodyMuted}`}>
                       Richiedi un <strong>preventivo senza impegno</strong> per la progettazione strutturale a {config.city}.
                       Indica tipologia, dimensioni indicative e tempi: ti rispondiamo entro 1–2 giorni lavorativi.
@@ -658,7 +657,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
         <div className={layoutContentMaxClass}>
           <div className="mx-auto w-full max-w-[900px]">
             <article className="reveal-block home-plate home-plate--well">
-              <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>
+              <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>
                 {landingCopy.en.heroTitle(config.city)}
               </h1>
               <p className={`mb-4 ${ui.bodyMuted}`}>{cityCopy?.introLead}</p>
@@ -672,7 +671,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
             </article>
             <div className="lazy-section">
               <section className="mt-10">
-                <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>{landingCopy.en.whyTitle}</h2>
+                <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>{landingCopy.en.whyTitle}</h2>
                 <div className="home-plate home-plate--well">
                   <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                     {landingCopy.en.whyBullets.map(([title, text]) => (
@@ -682,7 +681,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 </div>
               </section>
               <section className="mt-10">
-                <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>{landingCopy.en.scopeTitle}</h2>
+                <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>{landingCopy.en.scopeTitle}</h2>
                 <div className="home-plate home-plate--well">
                   <p className={`mb-4 ${ui.bodyMuted}`}>{landingCopy.en.scopeLead}</p>
                   <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
@@ -707,18 +706,18 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 </div>
               </section>
               <section className="mt-10">
-                <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>{cityCopy?.areaHeading}</h2>
+                <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>{cityCopy?.areaHeading}</h2>
                 <div className="home-plate home-plate--well">
                   <p className={`mb-4 ${ui.bodyMuted}`}>{cityCopy?.areaBody}</p>
                   {cityCopy?.areaBodySecondary ? <p className={`mb-0 ${ui.bodyMuted}`}>{cityCopy.areaBodySecondary}</p> : null}
                 </div>
               </section>
               <section className="mt-10">
-                <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-5`}>{landingCopy.en.faqTitle}</h2>
+                <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>{landingCopy.en.faqTitle}</h2>
                 <div className="space-y-4">
                   {faq.map(([q, a]) => (
                     <div key={q} className="home-plate">
-                      <h3 className={`${fontDisplay.className} mb-2 text-lg tracking-[0.02em] text-[#2a2a2a]`}>{q}</h3>
+                      <h3 className={`font-display mb-2 text-lg font-medium tracking-tight text-[#2a2a2a]`}>{q}</h3>
                       <p className={ui.bodyMuted}>{a}</p>
                     </div>
                   ))}
@@ -726,7 +725,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
               </section>
               <section id="richiesta-preventivo" className={`mt-10 ${scrollAnchorClass}`}>
                 <div className="home-plate home-plate--well">
-                  <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-3`}>{cityCopy?.ctaHeading}</h2>
+                  <h2 className={`font-display ${ui.sectionHeadingAccent} mb-3`}>{cityCopy?.ctaHeading}</h2>
                   <p className={`mb-6 max-w-[640px] ${ui.bodyMuted}`}>
                     Request a <strong>no-obligation quote</strong> for structural design in {config.city}.
                     Share building type, approximate size and timeline — we reply within 1–2 working days.

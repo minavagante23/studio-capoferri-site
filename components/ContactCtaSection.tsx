@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { fontDisplay } from "@/lib/fonts";
 import { chromeCopy, localizeHref, type Locale } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { ui } from "@/lib/ui";
@@ -26,7 +25,7 @@ export function ContactCtaSection({
 
   const inner = (
     <>
-      <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4`}>{resolvedTitle}</h2>
+      <h2 className={`font-display ${ui.sectionHeadingAccent} mb-4`}>{resolvedTitle}</h2>
       <p className={`mb-6 max-w-[560px] ${ui.bodyMuted}`}>{resolvedDescription}</p>
       <div className="flex flex-col gap-3 sm:flex-row">
         <Link href={localizeHref("/contatti#form-contatti", locale)} className={ui.btnPrimary} title={linkTitles.consulenza(locale)}>

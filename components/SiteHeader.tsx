@@ -7,7 +7,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLocale } from "@/components/LocaleProvider";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
-import { fontDisplay } from "@/lib/fonts";
 import { chromeCopy, getNavLabel, localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, navItems, site } from "@/lib/site";
@@ -209,7 +208,7 @@ export function SiteHeader() {
                       <span className={`shrink-0 pt-1 text-[0.72rem] font-medium tabular-nums tracking-[0.14em] ${active ? "text-[#e8b478]" : "text-white/48 group-hover:text-[#e8b478]"}`}>
                         {String(index + 1).padStart(2, "0")}
                       </span>
-                      <span className={`${fontDisplay.className} text-[2.15rem] leading-[0.95] tracking-[0.04em] sm:text-[2.55rem]`}>{label}</span>
+                      <span className={`font-display text-[2.15rem] font-medium leading-[1.1] tracking-tight sm:text-[2.55rem]`}>{label}</span>
                     </Link>
                   </li>
                 );

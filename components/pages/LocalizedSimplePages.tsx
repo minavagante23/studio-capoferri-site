@@ -11,7 +11,6 @@ import { MapEmbed } from "@/components/MapEmbed";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { chiSiamoPage, progettiIndexIntro } from "@/lib/content";
 import { chiSiamoEnParagraphs } from "@/lib/about-copy";
-import { fontDisplay } from "@/lib/fonts";
 import { chiSiamoPageImage, projectPreview } from "@/lib/images";
 import { localizeHref } from "@/lib/i18n";
 import { contactPageJsonLd, servicesPageJsonLd } from "@/lib/jsonld";
@@ -34,7 +33,7 @@ export function LocalizedAboutPageContent() {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="home-plate home-plate--well">
-              <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{chiSiamoPage.title}</h1>
+              <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{chiSiamoPage.title}</h1>
               <div className={`space-y-5 sm:space-y-6 ${ui.body}`}>
                 {chiSiamoPage.paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
@@ -56,7 +55,7 @@ export function LocalizedAboutPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well">
-            <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "About" : chiSiamoPage.title}</h1>
+            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "About" : chiSiamoPage.title}</h1>
             <div className={`space-y-5 sm:space-y-6 ${ui.body}`}>
               {isEn
                 ? chiSiamoEnParagraphs.map((p, i) => <p key={i}>{p}</p>)
@@ -82,7 +81,7 @@ export function LocalizedAboutPageContent() {
 export function LocalizedServicesPageContent() {
   const locale = useLocale();
   const isEn = locale === "en";
-  const sectionHeading = `${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
+  const sectionHeading = `font-display ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
   const servicesLd = servicesPageJsonLd(locale);
 
   if (!isEn) {
@@ -92,7 +91,7 @@ export function LocalizedServicesPageContent() {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <article className="home-plate home-plate--well">
-              <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>Servizi</h1>
+              <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>Servizi</h1>
               <p className={ui.body}>
                 <strong>Studio Capoferri</strong> offre una gamma completa di servizi di ingegneria, architettura e consulenza tecnica a 360 gradi.
                 Affianchiamo i clienti in ogni fase del progetto, garantendo qualità, precisione e soluzioni su misura.
@@ -175,7 +174,7 @@ export function LocalizedServicesPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <article className="home-plate home-plate--well">
-            <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Services" : "Servizi"}</h1>
+            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Services" : "Servizi"}</h1>
 
             {isEn ? (
               <>
@@ -404,7 +403,7 @@ export function LocalizedContactsPageContent() {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="home-plate home-plate--well mb-6 max-w-[780px] sm:mb-8">
-              <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>Contatti</h1>
+              <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>Contatti</h1>
               <p className={ui.body}>
                 Siamo disponibili per valutazioni preliminari, preventivi e supporto tecnico su progettazione strutturale in acciaio,
                 direzione lavori e consulenza specialistica.
@@ -413,7 +412,7 @@ export function LocalizedContactsPageContent() {
 
             <div className="grid gap-5 sm:gap-8 lg:grid-cols-[1.02fr_1.28fr] lg:items-stretch">
               <section aria-labelledby="recapiti-heading" className="home-plate home-plate--well">
-                <h2 id="recapiti-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-4 sm:mb-5`}>Recapiti</h2>
+                <h2 id="recapiti-heading" className={`font-display ${ui.cardHeading} mb-4 sm:mb-5`}>Recapiti</h2>
                 <p className="mb-4 text-[0.95rem] font-semibold text-[#2a2a2a] sm:mb-6 sm:text-[1.02rem]">
                   {site.name} - {site.tagline}
                 </p>
@@ -441,7 +440,7 @@ export function LocalizedContactsPageContent() {
               </section>
 
               <section aria-labelledby="mappa-heading" className="home-plate home-plate--well">
-                <h2 id="mappa-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-3 px-1 sm:mb-4 sm:px-2`}>
+                <h2 id="mappa-heading" className={`font-display ${ui.cardHeading} mb-3 px-1 sm:mb-4 sm:px-2`}>
                   Dove siamo
                 </h2>
                 <MapEmbed />
@@ -450,7 +449,7 @@ export function LocalizedContactsPageContent() {
 
             <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
               <div className="home-plate home-plate--well">
-                <h2 className={`${fontDisplay.className} ${ui.cardHeading} mb-2 sm:mb-3`}>Contattaci</h2>
+                <h2 className={`font-display ${ui.cardHeading} mb-2 sm:mb-3`}>Contattaci</h2>
                 <p className={`mb-6 w-full sm:mb-8 ${ui.bodyMuted}`}>
                   Compila il form con i dettagli del tuo intervento. Riceverai un riscontro tecnico puntuale dal nostro team.
                 </p>
@@ -469,7 +468,7 @@ export function LocalizedContactsPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well mb-6 max-w-[780px] sm:mb-8">
-            <h1 className={`${fontDisplay.className} ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Contact" : "Contatti"}</h1>
+            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Contact" : "Contatti"}</h1>
             <p className={ui.body}>
               {isEn
                 ? "We support international clients on projects in Italy with Eurocode-compliant structural and steel design. Contact us in English for preliminary assessments, quotations and technical consultancy."
@@ -479,7 +478,7 @@ export function LocalizedContactsPageContent() {
 
           <div className="grid gap-5 sm:gap-8 lg:grid-cols-[1.02fr_1.28fr] lg:items-stretch">
             <section aria-labelledby="recapiti-heading" className="home-plate home-plate--well">
-              <h2 id="recapiti-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-4 sm:mb-5`}>{isEn ? "Details" : "Recapiti"}</h2>
+              <h2 id="recapiti-heading" className={`font-display ${ui.cardHeading} mb-4 sm:mb-5`}>{isEn ? "Details" : "Recapiti"}</h2>
               <p className="mb-4 text-[0.95rem] font-semibold text-[#2a2a2a] sm:mb-6 sm:text-[1.02rem]">
                 {site.name} - {contactTagline}
               </p>
@@ -521,7 +520,7 @@ export function LocalizedContactsPageContent() {
             </section>
 
             <section aria-labelledby="mappa-heading" className="home-plate home-plate--well">
-              <h2 id="mappa-heading" className={`${fontDisplay.className} ${ui.cardHeading} mb-3 px-1 sm:mb-4 sm:px-2`}>
+              <h2 id="mappa-heading" className={`font-display ${ui.cardHeading} mb-3 px-1 sm:mb-4 sm:px-2`}>
                 {isEn ? "Where we are" : "Dove siamo"}
               </h2>
               <MapEmbed />
@@ -530,7 +529,7 @@ export function LocalizedContactsPageContent() {
 
           <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
             <div className="home-plate home-plate--well">
-              <h2 className={`${fontDisplay.className} ${ui.cardHeading} mb-2 sm:mb-3`}>{isEn ? "Contact us" : "Contattaci"}</h2>
+              <h2 className={`font-display ${ui.cardHeading} mb-2 sm:mb-3`}>{isEn ? "Contact us" : "Contattaci"}</h2>
               <p className={`mb-6 w-full sm:mb-8 ${ui.bodyMuted}`}>
                 {isEn
                   ? "Complete the form with the details of your project — we reply in English. You will receive a focused technical response from our team."
@@ -557,7 +556,7 @@ export function LocalizedProjectsPageContent() {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="home-plate home-plate--well mb-8 sm:mb-14">
-              <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>Progetti realizzati</h1>
+              <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>Progetti realizzati</h1>
               <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>{progettiIndexIntro}</p>
             </div>
             <div className="fine-divider mb-6 sm:mb-10" />
@@ -580,7 +579,7 @@ export function LocalizedProjectsPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well mb-8 sm:mb-14">
-            <h1 className={`${fontDisplay.className} reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
+            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
             <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>
               {isEn
                 ? "A selection of our most significant work, organised by area of intervention. This classification offers a clearer and more targeted reading of our activity, making it easier to identify projects by intended use."
@@ -615,28 +614,28 @@ export function LocalizedPrivacyPageContent() {
         <div className={layoutContentMaxClass}>
           <article className="max-w-[860px]">
             <div className="home-plate home-plate--well mb-7 sm:mb-10">
-              <h1 className={`${fontDisplay.className} ${ui.pageTitle} mb-0`}>Privacy policy</h1>
+              <h1 className={`font-display ${ui.pageTitle} mb-0`}>Privacy policy</h1>
             </div>
             <p className={`mb-7 sm:mb-10 ${ui.body}`}>
               <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> Studio Capoferri SRL STP - Via Piave 35, Adro (BS) - VAT 04732710985 - Email: <a href={`mailto:${site.email}`} title={linkTitles.email(site.email, isEn ? "en" : "it")} className="link-accent">{site.email}</a>
             </p>
-            <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-12`}>{isEn ? "Purpose of processing" : "Finalità del trattamento"}</h2>
+            <h2 className={`font-display ${ui.sectionHeadingAccent} mb-4 mt-12`}>{isEn ? "Purpose of processing" : "Finalità del trattamento"}</h2>
             <p className={ui.body}>{isEn ? "Personal data collected through the contact form is used exclusively to reply to user requests." : "I dati personali raccolti tramite il modulo di contatto vengono utilizzati esclusivamente per rispondere alle richieste inviate dagli utenti."}</p>
-            <h2 className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-12`}>{isEn ? "Legal basis" : "Base giuridica"}</h2>
+            <h2 className={`font-display ${ui.sectionHeadingAccent} mb-4 mt-12`}>{isEn ? "Legal basis" : "Base giuridica"}</h2>
             <p className={ui.body}>{isEn ? "Processing is based on the explicit consent of the data subject." : "Il trattamento è basato sul consenso esplicito dell'interessato."}</p>
-            <h2 id="cookie" className={`${fontDisplay.className} ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`}>Cookie</h2>
+            <h2 id="cookie" className={`font-display ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`}>Cookie</h2>
             <p className={`mb-10 ${ui.body}`}>{isEn ? "This website uses cookies to ensure proper operation and improve the browsing experience." : "Questo sito utilizza cookie per garantire il corretto funzionamento e migliorare l'esperienza di navigazione."}</p>
             <div className="space-y-5 sm:space-y-8">
               <div className="home-plate">
-                <h3 className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] text-[#2a3f54]`}>{isEn ? "Technical cookies" : "Cookie tecnici"}</h3>
+                <h3 className={`font-display mb-3 text-lg font-medium tracking-tight text-[#2a3f54]`}>{isEn ? "Technical cookies" : "Cookie tecnici"}</h3>
                 <p className={ui.body}>{isEn ? "Essential cookies required for site functionality, including session and preference cookies." : "Cookie strettamente necessari per il funzionamento del sito, inclusi cookie di sessione e di preferenze."}</p>
               </div>
               <div className="home-plate">
-                <h3 className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em] text-[#2a3f54]`}>{isEn ? "Third-party services" : "Cookie di terze parti"}</h3>
+                <h3 className={`font-display mb-3 text-lg font-medium tracking-tight text-[#2a3f54]`}>{isEn ? "Third-party services" : "Cookie di terze parti"}</h3>
                 <p className={ui.body}>{isEn ? "Some pages use Google Maps and the contact form uses Formspree. Related cookies are loaded only where required by the configured consent flow." : "In alcune pagine del sito viene utilizzato Google Maps e il form di contatto usa Formspree."}</p>
               </div>
               <div className={`rounded-sm p-4 sm:p-6 ${ui.brandGradientCompact} text-white`}>
-                <h3 className={`${fontDisplay.className} mb-3 text-lg tracking-[0.02em]`}>{isEn ? "Cookie preferences" : "Gestione dei cookie"}</h3>
+                <h3 className={`font-display mb-3 text-lg font-medium tracking-tight`}>{isEn ? "Cookie preferences" : "Gestione dei cookie"}</h3>
                 <p className="mb-3 copy-rhythm text-[0.98rem] leading-relaxed text-white/95 sm:text-[1.05rem]">{isEn ? "You can manage cookie preferences through the banner shown on first access to the site." : "È possibile gestire le preferenze sui cookie attraverso il banner che appare al primo accesso al sito."}</p>
                 <div className="mt-5"><CookiePreferencesButton /></div>
               </div>

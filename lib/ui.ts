@@ -1,7 +1,6 @@
 /**
  * Token UI condivisi: tipografia corpo, titoli, pulsanti, form.
- * I titoli display usano sempre `fontDisplay` da `@/lib/fonts` — comporre così:
- * `className={\`${fontDisplay.className} ${ui.pageTitle}\`}`.
+ * I titoli display usano la classe `.font-display` (Newsreader, caricato in layout).
  */
 export const ui = {
   /** Sfondo gradient brand (footer, sezioni scure, hero fallback) */
@@ -9,7 +8,7 @@ export const ui = {
   /** Gradient brand senza via (CTA, card compatte) */
   brandGradientCompact: "bg-gradient-to-br from-[#2a3f54] to-[#1f2e3d]",
   /** Didascalia overlay card progetto */
-  projectCardCaption: "text-base tracking-[0.01em] text-white sm:text-lg",
+  projectCardCaption: "text-base font-medium tracking-tight text-white sm:text-lg",
   /** Card progetto su sfondo chiaro — foto a vivo, meno chrome */
   projectCardLight:
     "group block overflow-hidden rounded-sm border border-[#2a3f54]/08 bg-transparent transition duration-500 hover:border-[#b87333]/35",
@@ -23,26 +22,26 @@ export const ui = {
   bodyMuted: "copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]",
 
   /** H1 pagine interne standard */
-  pageTitle: "section-title text-[1.75rem] tracking-[0.02em] text-[#2a2a2a] sm:text-4xl md:text-5xl",
+  pageTitle: "section-title text-[1.75rem] text-[#2a2a2a] sm:text-4xl md:text-5xl",
   /** Margine sotto H1 quando segue un intro nello stesso plate */
   pageTitleLead: "mb-6 sm:mb-8",
 
   /** H1 case study / progetto singolo */
-  caseStudyTitle: "section-title text-[1.65rem] tracking-[0.02em] text-[#2a2a2a] sm:text-3xl md:text-4xl",
+  caseStudyTitle: "section-title text-[1.65rem] text-[#2a2a2a] sm:text-3xl md:text-4xl",
 
-  /** H2 sezioni home (Chi siamo, Servizi, Contatti, …) — comporre con fontDisplay */
+  /** H2 sezioni home (Chi siamo, Servizi, Contatti, …) — comporre con font-display */
   homeSectionTitle: "section-title home-section-title reveal-title",
   /** H2 sezioni home su sfondo scuro (Progetti, Statistiche) */
   homeSectionTitleInverted: "section-title home-section-title home-section-title--inverted reveal-title",
 
   /** H2 sezione lunga (servizi, privacy, landing) */
-  sectionHeadingAccent: "section-title section-heading-with-accent text-2xl tracking-[0.02em] text-[#2a2a2a]",
+  sectionHeadingAccent: "section-title section-heading-with-accent text-2xl text-[#2a2a2a]",
 
   /** H2 galleria, “Progetti in evidenza” */
-  gallerySectionTitle: "section-title section-heading-with-accent text-xl tracking-[0.02em] text-[#2a2a2a] sm:text-2xl",
+  gallerySectionTitle: "section-title section-heading-with-accent text-xl text-[#2a2a2a] sm:text-2xl",
 
   /** H2 in card chiare (Recapiti, Dove siamo) */
-  cardHeading: "section-title text-xl tracking-[0.02em] text-[#2a2a2a] sm:text-2xl",
+  cardHeading: "section-title text-xl text-[#2a2a2a] sm:text-2xl",
 
   /** Foto di contenuto (editoriale: angolo vivo, filetto leggero) */
   contentImage: "relative overflow-hidden rounded-sm border border-[#2a3f54]/10",

@@ -1,4 +1,4 @@
-import { Bebas_Neue, IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Newsreader } from "next/font/google";
 
 export const fontSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -7,9 +7,9 @@ export const fontSans = IBM_Plex_Sans({
   display: "swap",
 });
 
-export const fontDisplay = Bebas_Neue({
-  weight: "400",
+export const fontDisplay = Newsreader({
   subsets: ["latin"],
-  variable: "--font-bebas",
+  weight: ["400", "500", "600"],
+  variable: "--font-title",
   display: "swap",
 });

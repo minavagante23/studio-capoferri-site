@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useInView, useReducedMotion } from "framer-motion";
 import { useLocale } from "@/components/LocaleProvider";
-import { fontDisplay } from "@/lib/fonts";
 import { stats } from "@/lib/content";
 import { layoutContentMaxClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
@@ -43,7 +42,7 @@ function Counter({
   }, [active, target, reduced]);
 
   return (
-    <span className={`${fontDisplay.className} text-3xl text-white sm:text-4xl md:text-5xl`}>
+    <span className={`font-display text-3xl font-medium lining-nums tabular-nums tracking-tight text-white sm:text-4xl md:text-5xl`}>
       {v}
       {suffix}
     </span>
@@ -77,7 +76,7 @@ export function StatsSection() {
       <div className={layoutContentMaxClass}>
         <div className="home-split-header reveal-block">
           <div className="home-split-header__left">
-            <h2 id="stats-heading" className={`${fontDisplay.className} ${ui.homeSectionTitleInverted}`}>
+            <h2 id="stats-heading" className={`font-display ${ui.homeSectionTitleInverted}`}>
               {copy.heading}
             </h2>
             <div className="home-section-accent home-section-accent--light" aria-hidden />

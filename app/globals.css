@@ -54,6 +54,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.font-display {
+  font-family: var(--font-title), ui-serif, Georgia, serif;
+}
+
 /* Scroll verticale: niente barra sul bordo destro su mobile (lo scroll resta; c’è la barra lettura in header) */
 @media (max-width: 767px) {
   html,
@@ -171,8 +175,10 @@ body::before {
 }
 
 .section-title {
-  line-height: 1.06;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.022em;
+  font-optical-sizing: auto;
 }
 
 /* ═══ Home sections: split-header pattern ═══ */
@@ -224,8 +230,8 @@ body::before {
 
 .home-section-title {
   font-size: clamp(1.65rem, 1.15rem + 1.35vw, 2.35rem);
-  line-height: 1.07;
-  letter-spacing: 0.018em;
+  line-height: 1.16;
+  letter-spacing: -0.022em;
   color: #2a2a2a;
   text-wrap: balance;
 }
@@ -287,8 +293,10 @@ body::before {
   display: block;
   margin-bottom: 0.7rem;
   font-size: clamp(1.55rem, 1.15rem + 0.9vw, 1.95rem);
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
+  font-variant-numeric: lining-nums tabular-nums;
   color: var(--corten);
 }
 
@@ -391,11 +399,11 @@ body::before {
   }
 
   .section-title {
-    letter-spacing: 0.016em;
+    letter-spacing: -0.018em;
   }
 
   .home-section-title {
-    letter-spacing: 0.014em;
+    letter-spacing: -0.018em;
   }
 }
 
