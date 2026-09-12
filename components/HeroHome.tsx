@@ -94,16 +94,11 @@ export function HeroHome() {
         className={`relative z-10 mx-auto flex min-h-[calc(100svh-72px)] flex-col justify-end gap-5 px-4 pb-10 pt-20 sm:min-h-[calc(100svh-78px)] sm:gap-7 sm:px-5 sm:pb-12 sm:pt-24 md:min-h-[calc(100svh-94px)] md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
       >
         <motion.div
-          className="relative max-w-[min(100%,28rem)] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
+          className="max-w-[min(100%,28rem)] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
           initial={reduceMotion ? false : { opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.72, ease: subtleEase }}
         >
-          <div
-            className="pointer-events-none absolute -inset-x-3 -inset-y-4 -z-10 rounded-sm bg-gradient-to-t from-black/45 via-black/20 to-transparent blur-[1px] sm:-inset-x-5 sm:-inset-y-5 md:bg-gradient-to-l md:from-black/50 md:via-black/22 md:to-transparent"
-            aria-hidden
-          />
-
           <p className="eyebrow mb-3 inline-flex max-w-full items-center gap-3 text-[#e8b478] drop-shadow-[0_1px_10px_rgba(0,0,0,0.65)] md:ml-auto md:flex-row-reverse">
             <span className="h-px w-8 shrink-0 bg-[#e8b478]" aria-hidden />
             <span className="min-w-0">{copy.location}</span>
