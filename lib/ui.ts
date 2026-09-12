@@ -65,13 +65,12 @@ export const ui = {
   btnOnDark:
     "inline-flex min-h-[48px] w-full items-center justify-center rounded-sm border border-white/25 bg-white px-8 py-3 text-sm font-semibold text-[#1f2e3d] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(232,180,120,0.7)] sm:w-auto",
 
-  /** Cookie: accetta (chiaro su barra scura) */
+  /** Cookie: accetta / rifiuta — stessi pesi visivi (pari dignità Garante) */
   cookieAccept:
-    "min-h-[48px] flex-1 rounded-md bg-white px-5 py-3 text-sm font-semibold text-[#2a3f54] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:px-6",
+    "min-h-[48px] flex-1 rounded-md bg-white px-5 py-3 text-sm font-semibold text-[#2a3f54] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:min-w-[8.5rem] sm:px-6",
 
-  /** Cookie: rifiuta */
   cookieReject:
-    "min-h-[48px] flex-1 rounded-md border-2 border-white/60 bg-transparent px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:px-6",
+    "min-h-[48px] flex-1 rounded-md border-2 border-white bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:min-w-[8.5rem] sm:px-6",
 
   /** Input / textarea form contatti */
   inputField:

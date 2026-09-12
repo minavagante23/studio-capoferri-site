@@ -105,7 +105,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   },
   "privacy-policy": {
     title: "Privacy policy",
-    description: "Information on the processing of personal data and cookies for Studio Capoferri SRL STP.",
+    description: "Privacy and cookie information for Studio Capoferri SRL STP.",
     path: "/privacy-policy",
   },
   "progettazione-strutture-acciaio-brescia": {

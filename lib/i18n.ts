@@ -75,7 +75,7 @@ export const chromeCopy = {
     },
     cookie: {
       title: "Cookie e privacy",
-      body: "Utilizziamo cookie tecnici necessari e, previo consenso, contenuti di terze parti (es. mappe).",
+      body: "Utilizziamo cookie tecnici necessari e, previo consenso, contenuti di terze parti (es. mappe) e strumenti di statistica (Google Analytics).",
       more: "Informativa estesa",
       accept: "Accetta",
       reject: "Rifiuta",
@@ -146,7 +146,7 @@ export const chromeCopy = {
     },
     cookie: {
       title: "Cookies and privacy",
-      body: "We use essential technical cookies and, with consent, third-party content such as maps.",
+      body: "We use essential technical cookies and, with consent, third-party content such as maps and analytics tools (Google Analytics).",
       more: "Extended policy",
       accept: "Accept",
       reject: "Reject",

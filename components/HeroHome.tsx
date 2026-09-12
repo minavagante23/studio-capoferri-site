@@ -75,7 +75,7 @@ export function HeroHome() {
                 src={slide.src}
                 alt={locale === "en" ? slide.altEn : slide.altIt}
                 fill
-                className="object-cover brightness-[1.1] saturate-[1.04]"
+                className="object-cover brightness-[1.02] saturate-[1.03]"
                 sizes="100vw"
                 priority={idx === 0}
                 fetchPriority={idx === 0 ? "high" : "auto"}
@@ -84,26 +84,37 @@ export function HeroHome() {
             </div>
           );
         })}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/36 via-black/10 to-black/14" aria-hidden />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-black/62 via-black/28 to-black/22 md:bg-[linear-gradient(to_top,rgba(0,0,0,0.58)_0%,rgba(0,0,0,0.22)_42%,rgba(0,0,0,0.18)_100%),linear-gradient(to_left,rgba(0,0,0,0.42)_0%,rgba(0,0,0,0.12)_48%,transparent_78%)]"
+          aria-hidden
+        />
       </div>
 
       <div
         className={`relative z-10 mx-auto flex min-h-[calc(100svh-72px)] flex-col justify-end gap-5 px-4 pb-10 pt-20 sm:min-h-[calc(100svh-78px)] sm:gap-7 sm:px-5 sm:pb-12 sm:pt-24 md:min-h-[calc(100svh-94px)] md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
       >
         <motion.div
-          className="max-w-[min(100%,28rem)] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
+          className="relative max-w-[min(100%,28rem)] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
           initial={reduceMotion ? false : { opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.72, ease: subtleEase }}
         >
-          <p className="eyebrow mb-3 text-white/70">{copy.location}</p>
+          <div
+            className="pointer-events-none absolute -inset-x-3 -inset-y-4 -z-10 rounded-sm bg-gradient-to-t from-black/45 via-black/20 to-transparent blur-[1px] sm:-inset-x-5 sm:-inset-y-5 md:bg-gradient-to-l md:from-black/50 md:via-black/22 md:to-transparent"
+            aria-hidden
+          />
 
-          <h1 className="font-display section-title text-[clamp(2rem,7vw,3.85rem)] leading-[1.08] text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]">
-            <span className="block sm:whitespace-nowrap">{copy.line1}</span>
-            <span className="mt-1 block text-white/95 sm:whitespace-nowrap">{copy.line2}</span>
+          <p className="eyebrow mb-3 inline-flex max-w-full items-center gap-3 text-[#e8b478] drop-shadow-[0_1px_10px_rgba(0,0,0,0.65)] md:ml-auto md:flex-row-reverse">
+            <span className="h-px w-8 shrink-0 bg-[#e8b478]" aria-hidden />
+            <span className="min-w-0">{copy.location}</span>
+          </p>
+
+          <h1 className="font-display section-title text-[clamp(1.65rem,8.2vw,2rem)] leading-[1.08] text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.65)] sm:text-[clamp(2rem,7vw,3.85rem)]">
+            <span className="block whitespace-nowrap">{copy.line1}</span>
+            <span className="mt-1 block whitespace-nowrap text-white">{copy.line2}</span>
           </h1>
 
-          <p className="mt-4 text-[0.85rem] leading-snug tracking-[0.01em] text-white/82 sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:text-[1rem]">
+          <p className="mt-4 border-t border-[#e8b478]/45 pt-3 text-[0.85rem] leading-snug tracking-[0.015em] text-white drop-shadow-[0_1px_12px_rgba(0,0,0,0.75)] sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:border-t-0 md:border-r md:border-[#e8b478]/55 md:pr-3.5 md:pt-0 md:text-[1rem]">
             {copy.support}
           </p>
 

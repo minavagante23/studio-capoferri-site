@@ -41,6 +41,8 @@ export const site = {
   linkedin: "https://www.linkedin.com/company/studio-capoferri-ingegneria",
   piva: "04732710985",
   formspreeId: "mqapdvrr",
+  /** Google Analytics 4 measurement ID (loaded only after cookie consent). */
+  gaMeasurementId: "G-53HR1FFCQC",
 } as const;
 
 export const navItems = [

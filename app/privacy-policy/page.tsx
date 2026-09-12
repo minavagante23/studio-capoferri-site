@@ -4,7 +4,7 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Privacy policy",
-  description: "Informativa sul trattamento dei dati personali e cookie - Studio Capoferri SRL STP.",
+  description: "Informativa privacy e cookie - Studio Capoferri SRL STP.",
   path: "/privacy-policy",
 });
 

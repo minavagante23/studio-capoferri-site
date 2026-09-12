@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AppProviders } from "@/components/AppProviders";
 import { CookieBanner } from "@/components/CookieBanner";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { LocalePreferenceRedirect } from "@/components/LocalePreferenceRedirect";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -172,6 +173,7 @@ export default function RootLayout({
           <LocalePreferenceRedirect />
           <SiteHeader />
           <CookieBanner />
+          <GoogleAnalytics />
           {children}
           <SiteFooter />
         </AppProviders>
