@@ -42,6 +42,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/contatti", "en", 0.8),
     entry("/privacy-policy", "it", 0.3, "yearly"),
     entry("/privacy-policy", "en", 0.3, "yearly"),
+    entry("/clienti-internazionali", "it", 0.85),
+    entry("/clienti-internazionali", "en", 0.9),
     ...steelLandingSlugs.flatMap((slug) => [
       entry(`/progettazione-strutture-acciaio-${slug}`, "it", 0.8),
       entry(`/progettazione-strutture-acciaio-${slug}`, "en", 0.8),

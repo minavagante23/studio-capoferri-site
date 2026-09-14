@@ -78,30 +78,75 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     description:
       "Studio Capoferri in Adro, near Brescia, Italy: steel structures, shop drawings and site support for projects in Northern Italy. Talk to our engineers in English.",
     path: "/",
+    keywords: [
+      "structural engineer Northern Italy",
+      "steel structure design Italy",
+      "English speaking engineer Brescia",
+      "shop drawings Italy",
+      "steel fabrication drawings EU",
+    ],
   },
   "chi-siamo": {
     title: "About",
     description:
-      "Learn more about Studio Capoferri, our team of professionals, our history and the design approach that guides our engineering and architectural work in Adro, near Brescia, Italy.",
+      "Studio Capoferri: structural and steel engineering practice in Adro near Brescia. English project talks with our engineers for international and EU partners.",
     path: "/chi-siamo",
+    keywords: [
+      "Studio Capoferri",
+      "structural engineering firm Italy",
+      "English speaking structural engineer",
+      "steel engineering Northern Italy",
+    ],
   },
   servizi: {
     title: "Engineering and design services",
     description:
-      "Structural design, construction supervision, technical consultancy, site safety and property support in Brescia, Bergamo, Milan and across Northern Italy.",
+      "Steel structures, FEM and BIM, fabrication shop drawings, construction supervision and site safety for projects in Northern Italy — English-speaking engineering team.",
     path: "/servizi",
+    keywords: [
+      "steel structure design services Italy",
+      "fabrication shop drawings Italy",
+      "structural engineering Eurocodes",
+      "construction supervision Northern Italy",
+      "BIM FEM structural design",
+    ],
   },
   progetti: {
     title: "Projects",
     description:
-      "A selection of Studio Capoferri projects: residential, industrial and public-venue structures designed from our base in Adro, near Brescia, Italy.",
+      "Selected Studio Capoferri projects: steel residences, industrial halls and public venues across Lombardy and Northern Italy.",
     path: "/progetti",
+    keywords: [
+      "steel structure projects Italy",
+      "industrial steel building Northern Italy",
+      "steel villa Italy",
+      "seismic upgrade steel structure Milan",
+    ],
   },
   contatti: {
     title: "Contact",
     description:
-      "Contact Studio Capoferri to request a quotation or schedule a meeting. Office details, address and opening hours in Adro, near Brescia, Italy.",
+      "Contact Studio Capoferri in English for a technical first reply: quotations, shop-drawing scope and site support for projects in Italy.",
     path: "/contatti",
+    keywords: [
+      "contact structural engineer Italy",
+      "steel design quote Northern Italy",
+      "English speaking engineer Adro Brescia",
+    ],
+  },
+  "clienti-internazionali": {
+    title: "International clients — steel engineering in Italy",
+    description:
+      "English-speaking structural engineers in Northern Italy for overseas architects, contractors and EU fabricators: steel structures, shop drawings, Eurocodes/NTC and site support.",
+    path: "/clienti-internazionali",
+    keywords: [
+      "international structural engineer Italy",
+      "English speaking structural engineer Italy",
+      "steel shop drawings Italy EU fabricator",
+      "hire Italian structural engineer",
+      "Eurocode steel design Italy",
+      "steel structure design Northern Italy",
+    ],
   },
   "privacy-policy": {
     title: "Privacy policy",
@@ -111,20 +156,42 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutture-acciaio-brescia": {
     title: "Steel structure design in Brescia and Lombardy",
     description:
-      "Structural engineering practice specialised in steel structures in Brescia and across Lombardy: steel villas, industrial sheds, vertical extensions and fabrication drawings.",
+      "Structural engineering practice specialised in steel structures in Brescia and across Lombardy: steel villas, industrial sheds, vertical extensions and fabrication drawings. English project coordination available.",
     path: "/progettazione-strutture-acciaio-brescia",
+    keywords: [
+      "steel structure design Brescia",
+      "structural engineer Brescia Italy",
+      "steel villa Lombardy",
+      "industrial steel building Brescia",
+      "shop drawings Brescia",
+      "English speaking engineer Brescia",
+    ],
   },
   "progettazione-strutture-acciaio-bergamo": {
     title: "Steel structure design in Bergamo and Lombardy",
     description:
-      "Steel structure design in Bergamo and its province: villas, industrial buildings, vertical extensions and steelwork engineering by Studio Capoferri.",
+      "Steel structure design in Bergamo and its province: villas, industrial buildings, vertical extensions and steelwork engineering by Studio Capoferri. English-speaking engineers for international partners.",
     path: "/progettazione-strutture-acciaio-bergamo",
+    keywords: [
+      "steel structure design Bergamo",
+      "structural engineer Bergamo Italy",
+      "industrial steel Bergamo",
+      "shop drawings Bergamo",
+      "English speaking engineer Bergamo",
+    ],
   },
   "progettazione-strutture-acciaio-milano": {
     title: "Steel structure design in Milan and Lombardy",
     description:
-      "Steel structure design in Milan and its metropolitan area: residential buildings, industrial sheds, event venues and steelwork engineering by Studio Capoferri.",
+      "Steel structure design in Milan and its metropolitan area: residential buildings, industrial sheds, event venues and steelwork engineering by Studio Capoferri. English project talks available.",
     path: "/progettazione-strutture-acciaio-milano",
+    keywords: [
+      "steel structure design Milan",
+      "structural engineer Milan Italy",
+      "event venue steel structure Milan",
+      "shop drawings Milan",
+      "English speaking engineer Milan",
+    ],
   },
 };
 
@@ -134,18 +201,21 @@ const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
     description:
       "Residential structural design by Studio Capoferri: private homes, steel villas, residential complexes and multi-storey buildings in Lombardy and Northern Italy.",
     path: "/progetti/residenziali",
+    keywords: ["steel villa Italy", "residential steel structure Northern Italy", "steel house design Lombardy"],
   },
   industriali: {
     title: "Industrial structures",
     description:
       "Industrial steel structures, production buildings, logistics facilities and high-performance structural design by Studio Capoferri.",
     path: "/progetti/industriali",
+    keywords: ["industrial steel building Italy", "steel warehouse design Northern Italy", "crane steel structure design"],
   },
   ricettivi: {
     title: "Structures for public venues",
     description:
       "Structural design for public venues, event spaces and hospitality-related buildings, including complex steel and seismic upgrading works.",
     path: "/progetti/ricettivi",
+    keywords: ["event venue steel structure Milan", "public building structural design Italy", "seismic upgrade steel structure"],
   },
 };
 
@@ -213,6 +283,7 @@ export function getEnglishMetadataForSlug(slug: string[]): Metadata {
       services: "servizi",
       contact: "contatti",
       "privacy-policy": "privacy-policy",
+      "international-clients": "clienti-internazionali",
       projects: "progetti",
       "steel-structure-design-brescia": "progettazione-strutture-acciaio-brescia",
       "steel-structure-design-bergamo": "progettazione-strutture-acciaio-bergamo",

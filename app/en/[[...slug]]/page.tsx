@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import HomePage from "@/app/page";
 import ChiSiamoPage from "@/app/chi-siamo/page";
 import ContattiPage from "@/app/contatti/page";
+import ClientiInternazionaliPage from "@/app/clienti-internazionali/page";
 import PrivacyPolicyPage from "@/app/privacy-policy/page";
 import ProgettiPage from "@/app/progetti/page";
 import ProjectAreaPage from "@/app/progetti/[area]/page";
@@ -43,6 +44,8 @@ export default async function EnglishMirrorPage({ params }: Props) {
           return <ServiziPage />;
         case "contatti":
           return <ContattiPage />;
+        case "clienti-internazionali":
+          return <ClientiInternazionaliPage />;
         case "privacy-policy":
           return <PrivacyPolicyPage />;
         default:

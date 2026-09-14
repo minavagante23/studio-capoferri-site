@@ -11,6 +11,7 @@ import { MapEmbed } from "@/components/MapEmbed";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { chiSiamoPage, progettiIndexIntro } from "@/lib/content";
 import { chiSiamoEnParagraphs } from "@/lib/about-copy";
+import { internationalHub } from "@/lib/international-copy";
 import { chiSiamoPageImage, projectPreview } from "@/lib/images";
 import { localizeHref } from "@/lib/i18n";
 import { contactPageJsonLd, servicesPageJsonLd } from "@/lib/jsonld";
@@ -19,9 +20,9 @@ import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site, ste
 import { ui } from "@/lib/ui";
 
 const englishProjectCards = [
-  ["Residential structures", "Residential structures", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
-  ["Industrial structures", "Industrial structures", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
-  ["Public-space structures", "Public-space structures", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
+  ["Residential structures", "Steel villas and homes — concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
+  ["Industrial structures", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
+  ["Public-space structures", "Event venues and seismic upgrades for complex steelwork", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
 ] as const;
 
 export function LocalizedAboutPageContent() {
@@ -181,7 +182,11 @@ export function LocalizedServicesPageContent() {
                 <p className={ui.body}>
                   <strong>Studio Capoferri</strong> specialises in <strong>structural and steel engineering</strong>: FEM analysis, BIM modelling, Eurocode-compliant
                   design, fabrication shop drawings and construction supervision for industrial and civil projects. Architecture, planning and
-                  Italy-based administrative services are available when the brief requires them.
+                  Italy-based administrative services are available when the brief requires them. Overseas partners: see{" "}
+                  <Link href={localizeHref("/clienti-internazionali", "en")} title={linkTitles.international("en")} className="link-accent">
+                    International clients
+                  </Link>
+                  .
                 </p>
 
                 <h2 id="progettazione-strutturale" className={sectionHeading}>Structural design</h2>
@@ -582,7 +587,7 @@ export function LocalizedProjectsPageContent() {
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
             <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>
               {isEn
-                ? "A selection of our most significant work, organised by area of intervention. This classification offers a clearer and more targeted reading of our activity, making it easier to identify projects by intended use."
+                ? "Selected steel and structural work across Northern Italy — residences, industrial buildings and public venues. Review outcomes by sector, then write to us in English for a first technical assessment."
                 : progettiIndexIntro}
             </p>
           </div>
@@ -599,6 +604,104 @@ export function LocalizedProjectsPageContent() {
             title={isEn ? "Would you like to develop a project with us?" : "Vuoi realizzare un progetto con noi?"}
             description={isEn ? "From feasibility to construction: tell us about the objectives, timing and constraints of your intervention." : "Dalla fattibilità al cantiere: raccontaci obiettivi, tempi e vincoli del tuo intervento."}
           />
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export function LocalizedInternationalPageContent() {
+  const locale = useLocale();
+  const isEn = locale === "en";
+  const copy = internationalHub[isEn ? "en" : "it"];
+  const sectionHeading = `font-display ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
+  const bullet =
+    "relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]";
+
+  return (
+    <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <div className={layoutGutterXClass}>
+        <div className={layoutContentMaxClass}>
+          <article className="home-plate home-plate--well max-w-[860px]">
+            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
+            <p className={ui.body}>{copy.lead}</p>
+
+            {copy.sections.map((section) => (
+              <section key={section.id} id={section.id} className={scrollAnchorClass}>
+                <h2 className={sectionHeading}>{section.heading}</h2>
+                {"body" in section && section.body
+                  ? section.body.map((p) => (
+                      <p key={p} className={`mb-4 last:mb-0 ${ui.bodyMuted}`}>
+                        {p}
+                      </p>
+                    ))
+                  : null}
+                {"items" in section && section.items ? (
+                  <ul className="mt-2 list-none space-y-3 pl-0">
+                    {section.items.map(([title, text]) => (
+                      <li key={title} className={bullet}>
+                        <strong>{title}</strong> — {text}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </section>
+            ))}
+
+            <p className={`mt-10 ${ui.bodyMuted}`}>
+              {isEn ? (
+                <>
+                  Explore{" "}
+                  <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
+                    services
+                  </Link>
+                  ,{" "}
+                  <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">
+                    projects
+                  </Link>{" "}
+                  and steel design in{" "}
+                  <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", locale)} title={linkTitles.acciaio("Brescia", locale)} className="link-accent">
+                    Brescia
+                  </Link>
+                  ,{" "}
+                  <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", locale)} title={linkTitles.acciaio("Bergamo", locale)} className="link-accent">
+                    Bergamo
+                  </Link>{" "}
+                  and{" "}
+                  <Link href={localizeHref("/progettazione-strutture-acciaio-milano", locale)} title={linkTitles.acciaio("Milan", locale)} className="link-accent">
+                    Milan
+                  </Link>
+                  .
+                </>
+              ) : (
+                <>
+                  Approfondisci{" "}
+                  <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
+                    servizi
+                  </Link>
+                  ,{" "}
+                  <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">
+                    progetti
+                  </Link>{" "}
+                  e le pagine su{" "}
+                  <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", locale)} title={linkTitles.acciaio("Brescia", locale)} className="link-accent">
+                    Brescia
+                  </Link>
+                  ,{" "}
+                  <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", locale)} title={linkTitles.acciaio("Bergamo", locale)} className="link-accent">
+                    Bergamo
+                  </Link>{" "}
+                  e{" "}
+                  <Link href={localizeHref("/progettazione-strutture-acciaio-milano", locale)} title={linkTitles.acciaio("Milano", locale)} className="link-accent">
+                    Milano
+                  </Link>
+                  .
+                </>
+              )}
+            </p>
+          </article>
+
+          <ContactCtaSection locale={isEn ? "en" : "it"} title={copy.ctaTitle} description={copy.ctaDescription} className="mt-10 sm:mt-14" />
         </div>
       </div>
     </main>

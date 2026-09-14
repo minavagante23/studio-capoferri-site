@@ -137,8 +137,11 @@ const copy = {
     ),
     zoneFooter: (
       <>
-        International contractors and EU partners: speak with our <strong>engineers in English</strong> on scope, drawings and site issues, and we
-        interface with <strong>Italian and EU fabricators</strong> through fabrication drawings and erection support.{" "}
+        International contractors and EU partners: speak with our <strong>engineers in English</strong> on scope, drawings and site issues.{" "}
+        <Link href={localizeHref("/clienti-internazionali", "en")} title={linkTitles.international("en")} className="link-accent">
+          International clients
+        </Link>{" "}
+        ·{" "}
         <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="link-accent">
           Get in touch
         </Link>{" "}
@@ -173,9 +176,9 @@ const previews = {
     ["Strutture per spazi pubblici", "Strutture per spazi pubblici", "/assets/progetto-ricettivo.webp", "Spazio per eventi con progettazione strutturale", "/progetti/ricettivi"],
   ],
   en: [
-    ["Residential structures", "Residential structures", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
-    ["Industrial structures", "Industrial structures", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
-    ["Public-space structures", "Public-space structures", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
+    ["Residential structures", "Steel villas and homes — concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
+    ["Industrial structures", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
+    ["Public-space structures", "Event venues and seismic upgrades for complex steelwork", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
   ],
 } as const;
 

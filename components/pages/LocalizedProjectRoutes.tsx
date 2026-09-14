@@ -266,6 +266,17 @@ const landingCopy = {
   },
 } as const;
 
+/** Short EN blurbs for project area cards (outcome-focused, not title duplicates). */
+const caseCardCaptionEn: Record<string, string> = {
+  "residenziali/villa-acciaio-veneto": "Integrated steel villa with landscape-led structure",
+  "residenziali/villa-acciaio-salsomaggiore": "Piled foundations, steel frame, PV-ready roof",
+  "industriali/capannone-erbusco": "Heavy fabrication hall — dual cranes and shop drawings",
+  "industriali/ampliamento-complesso-zootecnico": "Large-span steel trusses, fast erection on site",
+  "industriali/centro-direzionale-provaglio-diseo": "5,000 m² steel mezzanine for corporate HQ",
+  "ricettivi/superstudio-village": "Six-building complex — new steel and seismic upgrade",
+  "ricettivi/superstudio-maxi": "Industrial shed recovery with seismic strengthening",
+};
+
 export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
   const locale = useLocale();
   const t = areaCopy[locale][area];
@@ -328,12 +339,13 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
             {cases.map((p) => {
               const caseKey = `${area}/${p.slug}` as keyof typeof caseCopy.en;
               const enTitle = caseKey in caseCopy.en ? caseCopy.en[caseKey].heading : p.title;
+              const enCaption = caseCardCaptionEn[`${area}/${p.slug}`] ?? enTitle;
               return (
               <div key={p.slug} className="reveal-block">
                 <ProjectPreviewCard
                   href={localizeHref(p.href, locale)}
                   title={enTitle}
-                  caption={enTitle}
+                  caption={enCaption}
                   image={p.cover}
                   alt={locale === "en" ? enTitle : p.alt}
                 />

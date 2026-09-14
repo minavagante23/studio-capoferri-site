@@ -9,6 +9,7 @@ export const itToEnPath: Record<string, string> = {
   "/servizi": "/services",
   "/contatti": "/contact",
   "/privacy-policy": "/privacy-policy",
+  "/clienti-internazionali": "/international-clients",
   "/progetti": "/projects",
   "/progettazione-strutture-acciaio-brescia": "/steel-structure-design-brescia",
   "/progettazione-strutture-acciaio-bergamo": "/steel-structure-design-bergamo",
@@ -108,6 +109,8 @@ export function resolveEnglishSlug(slug: string[]): EnglishRoute | null {
         return { kind: "static", key: "contatti" };
       case "privacy-policy":
         return { kind: "static", key: "privacy-policy" };
+      case "international-clients":
+        return { kind: "static", key: "clienti-internazionali" };
       case "projects":
         return { kind: "projects" };
       case "steel-structure-design-brescia":
@@ -144,6 +147,7 @@ export function englishStaticParams(): { slug: string[] }[] {
     ["services"],
     ["contact"],
     ["privacy-policy"],
+    ["international-clients"],
     ["projects"],
     ["steel-structure-design-brescia"],
     ["steel-structure-design-bergamo"],

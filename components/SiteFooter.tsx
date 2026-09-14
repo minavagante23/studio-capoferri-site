@@ -74,6 +74,11 @@ export function SiteFooter() {
                     Privacy policy
                   </Link>
                 </li>
+                <li>
+                  <Link className={ui.footerLink} href={localizeHref("/clienti-internazionali", locale)} title={linkTitles.international(locale)}>
+                    {locale === "en" ? "International clients" : "Clienti internazionali"}
+                  </Link>
+                </li>
               </ul>
             </div>
 
