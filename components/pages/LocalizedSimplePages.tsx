@@ -397,8 +397,7 @@ export function LocalizedServicesPageContent() {
 export function LocalizedContactsPageContent() {
   const locale = useLocale();
   const isEn = locale === "en";
-  const contactTagline = isEn ? "Engineering - Architecture - Urban Planning" : site.tagline;
-  const openingHours = isEn ? "Mon - Fri: 08:30 - 18:00" : site.openingHoursDisplay;
+  const openingHours = isEn ? site.openingHoursDisplayEn : site.openingHoursDisplay;
   const contactLd = contactPageJsonLd(locale);
 
   if (!isEn) {
@@ -419,7 +418,7 @@ export function LocalizedContactsPageContent() {
               <section aria-labelledby="recapiti-heading" className="home-plate home-plate--well">
                 <h2 id="recapiti-heading" className={`font-display ${ui.cardHeading} mb-4 sm:mb-5`}>Recapiti</h2>
                 <p className="mb-4 text-[0.95rem] font-semibold text-[#2a2a2a] sm:mb-6 sm:text-[1.02rem]">
-                  {site.name} - {site.tagline}
+                  {site.gmbName}
                 </p>
                 <ul className="space-y-2 text-[0.95rem] text-[#333] sm:space-y-3 sm:text-[1.03rem]">
                   <li><strong>Indirizzo:</strong> {site.addressLine}</li>
@@ -485,7 +484,7 @@ export function LocalizedContactsPageContent() {
             <section aria-labelledby="recapiti-heading" className="home-plate home-plate--well">
               <h2 id="recapiti-heading" className={`font-display ${ui.cardHeading} mb-4 sm:mb-5`}>{isEn ? "Details" : "Recapiti"}</h2>
               <p className="mb-4 text-[0.95rem] font-semibold text-[#2a2a2a] sm:mb-6 sm:text-[1.02rem]">
-                {site.name} - {contactTagline}
+                {site.gmbName}
               </p>
               <ul className="space-y-2 text-[0.95rem] text-[#333] sm:space-y-3 sm:text-[1.03rem]">
                 <li>

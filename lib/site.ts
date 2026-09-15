@@ -21,6 +21,8 @@ const publicSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.studiocap
 
 export const site = {
   name: "Studio Capoferri",
+  /** Must match Google Business Profile exactly. */
+  gmbName: "Studio Capoferri - Ingegneria e Architettura",
   legalName: "Studio Capoferri SRL STP",
   tagline: "Ingegneria - Architettura - Urbanistica",
   url: publicSiteUrl,
@@ -36,8 +38,15 @@ export const site = {
     region: "Lombardia",
     country: "IT",
   },
-  geo: { latitude: 45.6157, longitude: 9.9989 },
-  openingHoursDisplay: "Lun – Ven: 08:30 – 18:00",
+  /** Exact Google Business / Maps place pin. */
+  geo: { latitude: 45.6179772, longitude: 9.9641795 },
+  mapsUrl:
+    "https://www.google.com/maps/place/Studio+Capoferri+-+Ingegneria+e+Architettura/@45.6179772,9.9641795,17z/data=!4m6!3m5!1s0x4781689f7af0d03b:0xf05e95b5cb5391fe!8m2!3d45.6179772!4d9.9641795!16s%2Fg%2F1w0p4gwq",
+  mapsEmbedSrc:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1350!2d9.9641795!3d45.6179772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781689f7af0d03b%3A0xf05e95b5cb5391fe!2sStudio%20Capoferri%20-%20Ingegneria%20e%20Architettura!5e0!3m2!1sit!2sit!4v1726400000000!5m2!1sit!2sit",
+  /** Opening hours — same split as Google Business Profile. */
+  openingHoursDisplay: "Lun – Ven: 08:30–12:00, 14:30–18:30",
+  openingHoursDisplayEn: "Mon – Fri: 08:30–12:00, 14:30–18:30",
   linkedin: "https://www.linkedin.com/company/studio-capoferri-ingegneria",
   piva: "04732710985",
   formspreeId: "mqapdvrr",

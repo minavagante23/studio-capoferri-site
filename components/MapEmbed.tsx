@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import { site } from "@/lib/site";
 import { CookieChoice } from "./CookieBanner";
 
 const STORAGE_KEY = "cookie_consent_studio_capoferri";
@@ -31,9 +32,6 @@ export function MapEmbed() {
     return () => window.removeEventListener("cookie-consent", onCustom as EventListener);
   }, []);
 
-  const src =
-    "https://maps.google.com/maps?q=Via%20Piave%2035,%20Adro%20BS&t=&z=13&ie=UTF8&iwloc=&output=embed";
-
   if (consent !== "accepted") {
     return (
       <div
@@ -57,7 +55,7 @@ export function MapEmbed() {
       allowFullScreen
       referrerPolicy="no-referrer-when-downgrade"
       title={isEn ? "Studio Capoferri office — Via Piave 35, Adro (BS)" : "Sede Studio Capoferri — Via Piave 35, Adro (BS)"}
-      src={src}
+      src={site.mapsEmbedSrc}
     />
   );
 }

@@ -62,7 +62,7 @@ const localBusinessJsonLd = {
   "@type": "ProfessionalService",
   "@id": organizationId(),
   // Deve corrispondere esattamente al nome del profilo Google Business
-  name: "Studio Capoferri - Ingegneria e Architettura",
+  name: site.gmbName,
   alternateName: site.name,
   legalName: site.legalName,
   description:
@@ -91,7 +91,13 @@ const localBusinessJsonLd = {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "08:30",
-      closes: "18:00",
+      closes: "12:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "14:30",
+      closes: "18:30",
     },
   ],
   areaServed: [
