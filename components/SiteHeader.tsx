@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLocale } from "@/components/LocaleProvider";
-import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { chromeCopy, getNavLabel, localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, navItems, site } from "@/lib/site";
@@ -175,7 +174,6 @@ export function SiteHeader() {
             </button>
           </div>
         </div>
-        <ReadingProgressBar />
       </header>
 
       <div

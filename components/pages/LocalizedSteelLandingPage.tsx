@@ -48,7 +48,7 @@ const landingCopy = {
           "Yes. Our office is based in Adro, in the province of Brescia, and we operate throughout Lombardy, including Brescia, Bergamo and Milan and their respective provinces, as well as in Veneto, Piedmont and Emilia-Romagna.",
         featuredProjects: [
           ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
-          ["Steel villa in Salsomaggiore Terme", "piled foundations, steel frame and full photovoltaic roof"],
+          ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
           ["Private steel residence in Veneto", "integrated structural and architectural design"],
           ["Superstudio Village in Milan", "new steel structure around 16 metres high and structural strengthening works"],
         ],
@@ -66,7 +66,7 @@ const landingCopy = {
           "Yes. Our office is based in Adro (Brescia), on the border with the province of Bergamo, and we operate throughout Lombardy, including Bergamo, Brescia and Milan and their respective provinces, as well as in Veneto, Piedmont and Emilia-Romagna.",
         featuredProjects: [
           ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
-          ["Steel villa in Salsomaggiore Terme", "piled foundations, steel frame and full photovoltaic roof"],
+          ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
           ["Private steel residence in Veneto", "integrated structural and architectural design"],
           ["Superstudio Village in Milan Bovisa", "new steel structure around 16 metres high and structural strengthening works"],
         ],
@@ -86,7 +86,7 @@ const landingCopy = {
           ["Superstudio Village in Milan Bovisa", "new steel structure around 16 metres high, strengthening and reconstruction works"],
           ["Superstudio Maxi in Famagosta", "conversion of an industrial shed with seismic upgrading and new steel structures"],
           ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
-          ["Steel villa in Salsomaggiore Terme", "piled foundations, steel frame and full photovoltaic roof"],
+          ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
         ],
       },
     },
@@ -172,7 +172,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 </h1>
                 <p className={`mb-4 ${ui.bodyMuted}`}>{config.introLead}</p>
                 <p className={`mb-6 ${ui.bodyMuted}`}>
-                  Dal <strong>calcolo strutturale secondo NTC 2018 ed Eurocodici</strong> ai <strong>disegni costruttivi d&apos;officina</strong>, fino alla direzione lavori e al collaudo: seguiamo ogni fase del progetto, dalla prima idea al cantiere.
+                  Dal calcolo strutturale secondo <strong>NTC 2018</strong> ed Eurocodici ai disegni costruttivi d&apos;officina, fino alla direzione lavori e al collaudo: seguiamo ogni fase del progetto, dalla prima idea al cantiere.
                 </p>
                 <div className="flex flex-col gap-3 sm:flex-row">
                   <a href="#richiesta-preventivo" className={ui.btnPrimary} title="Richiedi preventivo senza impegno — Studio Capoferri">
@@ -199,7 +199,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 <section className="mt-10">
                   <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>Cosa progettiamo: dal residenziale all&apos;industriale</h2>
                   <div className="home-plate home-plate--well">
-                    <p className={`mb-4 ${ui.bodyMuted}`}>Progettiamo <strong>strutture in acciaio per ogni destinazione d&apos;uso</strong>: ville e residenze private, edifici multipiano, capannoni industriali con carroponte, edifici commerciali e spazi per eventi. Alcuni progetti recenti:</p>
+                    <p className={`mb-4 ${ui.bodyMuted}`}>Progettiamo strutture in acciaio per ogni destinazione d&apos;uso: ville e residenze private, edifici multipiano, capannoni industriali con carroponte, edifici commerciali e spazi per eventi. Alcuni progetti recenti:</p>
                     <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                       {config.featuredProjects.map((p) => (
                         <li key={p.href} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
@@ -241,7 +241,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                   <div className="home-plate home-plate--well">
                     <h2 className={`font-display ${ui.sectionHeadingAccent} mb-3`}>{config.ctaHeading}</h2>
                     <p className={`mb-6 max-w-[640px] ${ui.bodyMuted}`}>
-                      Richiedi un <strong>preventivo senza impegno</strong> per la progettazione strutturale a {config.city}.
+                      Richiedi un preventivo senza impegno per la progettazione strutturale a {config.city}.
                       Indica tipologia, dimensioni indicative e tempi: ti rispondiamo entro 1–2 giorni lavorativi.
                     </p>
                     <ContactForm
@@ -346,7 +346,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 <div className="home-plate home-plate--well">
                   <h2 className={`font-display ${ui.sectionHeadingAccent} mb-3`}>{cityCopy?.ctaHeading}</h2>
                   <p className={`mb-6 max-w-[640px] ${ui.bodyMuted}`}>
-                    Request a <strong>no-obligation quote</strong> for structural design in {config.city}.
+                    Request a no-obligation quote for structural design in {config.city}.
                     Share building type, approximate size and timeline — we reply within 1–2 working days.
                   </p>
                   <ContactForm

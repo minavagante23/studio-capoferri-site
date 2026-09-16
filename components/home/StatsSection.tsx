@@ -79,7 +79,6 @@ export function StatsSection() {
             <h2 id="stats-heading" className={`font-display ${ui.homeSectionTitleInverted}`}>
               {copy.heading}
             </h2>
-            <div className="home-section-accent home-section-accent--light" aria-hidden />
           </div>
           <p className="home-split-header__right home-split-header__right--inverted">{copy.intro}</p>
         </div>

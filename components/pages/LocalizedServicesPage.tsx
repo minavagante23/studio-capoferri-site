@@ -110,7 +110,7 @@ export function LocalizedServicesPageContent() {
             {isEn ? (
               <>
                 <p className={ui.body}>
-                  <strong>Studio Capoferri</strong> specialises in <strong>structural and steel engineering</strong>: FEM analysis, BIM modelling, Eurocode-compliant
+                  <strong>Studio Capoferri</strong> specialises in structural and steel engineering: FEM analysis, BIM modelling, Eurocode-compliant
                   design, fabrication shop drawings and construction supervision for industrial and civil projects. Architecture, planning and
                   Italy-based administrative services are available when the brief requires them. Overseas partners: see{" "}
                   <Link href={localizeHref("/clienti-internazionali", "en")} title={linkTitles.international("en")} className="link-accent">

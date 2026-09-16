@@ -58,7 +58,7 @@ body {
   font-family: var(--font-title), ui-serif, Georgia, serif;
 }
 
-/* Scroll verticale: niente barra sul bordo destro su mobile (lo scroll resta; c’è la barra lettura in header) */
+/* Scroll verticale: niente barra sul bordo destro su mobile (lo scroll resta attivo) */
 @media (max-width: 767px) {
   html,
   body {
@@ -164,7 +164,7 @@ body::before {
 
 .copy-rhythm {
   line-height: 1.78;
-  letter-spacing: 0.002em;
+  letter-spacing: normal;
 }
 
 .eyebrow {
@@ -176,8 +176,8 @@ body::before {
 
 .section-title {
   font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.022em;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   font-optical-sizing: auto;
 }
 
@@ -202,7 +202,7 @@ body::before {
 .home-split-header__right {
   font-size: 0.98rem;
   line-height: 1.75;
-  letter-spacing: 0.008em;
+  letter-spacing: normal;
   color: var(--copy-body);
   font-weight: 400;
   text-wrap: pretty;
@@ -230,33 +230,10 @@ body::before {
 
 .home-section-title {
   font-size: clamp(1.65rem, 1.15rem + 1.35vw, 2.35rem);
-  line-height: 1.16;
-  letter-spacing: -0.022em;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
   color: #2a2a2a;
   text-wrap: balance;
-}
-
-.home-section-accent {
-  width: 2.75rem;
-  height: 3px;
-  border-radius: 9999px;
-  margin-top: 0.85rem;
-  background: linear-gradient(90deg, var(--corten) 0%, var(--corten-soft) 55%, rgba(184, 115, 51, 0.28) 100%);
-}
-
-.home-section-accent--light {
-  background: linear-gradient(90deg, rgba(232, 180, 120, 0.95), rgba(184, 115, 51, 0.35));
-}
-
-/* H2 pagine interne: stessa barra corten della home */
-.section-heading-with-accent::after {
-  content: "";
-  display: block;
-  width: 2.75rem;
-  height: 3px;
-  border-radius: 9999px;
-  margin-top: 0.85rem;
-  background: linear-gradient(90deg, var(--corten) 0%, var(--corten-soft) 55%, rgba(184, 115, 51, 0.28) 100%);
 }
 
 /* Lastre home: filetto + tic corten al posto del box */
@@ -289,17 +266,6 @@ body::before {
   clip-path: inset(0);
 }
 
-.home-plate-index {
-  display: block;
-  margin-bottom: 0.7rem;
-  font-size: clamp(1.55rem, 1.15rem + 0.9vw, 1.95rem);
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.04em;
-  font-variant-numeric: lining-nums tabular-nums;
-  color: var(--corten);
-}
-
 .home-plate--well {
   padding-bottom: 1.5rem;
 }
@@ -328,7 +294,7 @@ body::before {
 .home-section-prose {
   font-size: 0.98rem;
   line-height: 1.75;
-  letter-spacing: 0.008em;
+  letter-spacing: normal;
   color: var(--copy-body);
   text-wrap: pretty;
 }
@@ -399,11 +365,11 @@ body::before {
   }
 
   .section-title {
-    letter-spacing: -0.018em;
+    letter-spacing: -0.026em;
   }
 
   .home-section-title {
-    letter-spacing: -0.018em;
+    letter-spacing: -0.026em;
   }
 }
 

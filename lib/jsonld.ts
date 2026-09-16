@@ -34,7 +34,7 @@ const caseLocations: Record<string, { name: string; addressRegion: string; addre
   "residenziali/villa-acciaio-salsomaggiore": {
     name: "Salsomaggiore Terme (PR), Italy",
     addressRegion: "Emilia-Romagna",
-    addressLocality: "Salsomaggiore Terme",
+    addressLocality: "Salsomaggiore Terme (PR)",
   },
   "industriali/copertura-edificio-verniciatura-maranello": {
     name: "Maranello (MO), Italy",

@@ -116,7 +116,6 @@ export const chromeCopy = {
       line2: "dalla fattibilità al cantiere",
       support: "Progettazione strutture in acciaio, ingegneria civile e architettura.",
       cta: "Richiedi un preventivo",
-      slidePicker: "Seleziona slide hero",
     },
   },
   en: {
@@ -187,7 +186,6 @@ export const chromeCopy = {
       line2: "from feasibility to site",
       support: "Steel structure design, civil engineering and architecture.",
       cta: "Request a quote",
-      slidePicker: "Select hero slide",
     },
   },
 } as const;

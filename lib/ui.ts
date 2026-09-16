@@ -22,12 +22,12 @@ export const ui = {
   bodyMuted: "copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]",
 
   /** H1 pagine interne standard */
-  pageTitle: "section-title text-[1.75rem] text-[#2a2a2a] sm:text-4xl md:text-5xl",
+  pageTitle: "section-title text-[2.05rem] text-[#2a2a2a] sm:text-5xl md:text-6xl",
   /** Margine sotto H1 quando segue un intro nello stesso plate */
   pageTitleLead: "mb-6 sm:mb-8",
 
   /** H1 case study / progetto singolo */
-  caseStudyTitle: "section-title text-[1.65rem] text-[#2a2a2a] sm:text-3xl md:text-4xl",
+  caseStudyTitle: "section-title text-[1.9rem] text-[#2a2a2a] sm:text-4xl md:text-5xl",
 
   /** H2 sezioni home (Chi siamo, Servizi, Contatti, …) — comporre con font-display */
   homeSectionTitle: "section-title home-section-title reveal-title",
@@ -35,10 +35,10 @@ export const ui = {
   homeSectionTitleInverted: "section-title home-section-title home-section-title--inverted reveal-title",
 
   /** H2 sezione lunga (servizi, privacy, landing) */
-  sectionHeadingAccent: "section-title section-heading-with-accent text-2xl text-[#2a2a2a]",
+  sectionHeadingAccent: "section-title text-2xl text-[#2a2a2a]",
 
   /** H2 galleria, “Progetti in evidenza” */
-  gallerySectionTitle: "section-title section-heading-with-accent text-xl text-[#2a2a2a] sm:text-2xl",
+  gallerySectionTitle: "section-title text-xl text-[#2a2a2a] sm:text-2xl",
 
   /** H2 in card chiare (Recapiti, Dove siamo) */
   cardHeading: "section-title text-xl text-[#2a2a2a] sm:text-2xl",

@@ -85,7 +85,7 @@ export const steelLandingBrescia: SteelLandingConfig = {
     },
     {
       href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
-      title: "Villa in acciaio a Salsomaggiore Terme",
+      title: "Villa in acciaio a Salsomaggiore Terme (PR)",
       description: "fondazioni su pali, telaio in acciaio e copertura fotovoltaica integrale",
     },
     {
@@ -150,7 +150,7 @@ export const steelLandingBergamo: SteelLandingConfig = {
     },
     {
       href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
-      title: "Villa in acciaio a Salsomaggiore Terme",
+      title: "Villa in acciaio a Salsomaggiore Terme (PR)",
       description: "fondazioni su pali, telaio in acciaio e copertura fotovoltaica integrale",
     },
     {
@@ -225,7 +225,7 @@ export const steelLandingMilano: SteelLandingConfig = {
     },
     {
       href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
-      title: "Villa in acciaio a Salsomaggiore Terme",
+      title: "Villa in acciaio a Salsomaggiore Terme (PR)",
       description: "fondazioni su pali, telaio in acciaio e copertura fotovoltaica integrale",
     },
   ],

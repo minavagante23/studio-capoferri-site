@@ -106,7 +106,7 @@ const copy = {
     zoneHeading: "Northern Italy",
     zoneDescription: (
       <>
-        We operate throughout <strong>Northern and North-Central Italy</strong> (Lombardy, Veneto, Piedmont, Emilia-Romagna and Tuscany), with a
+        We operate throughout Northern and North-Central Italy (Lombardy, Veneto, Piedmont, Emilia-Romagna and Tuscany), with a
         particular focus on the provinces of{" "}
         <Link
           href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")}
@@ -137,7 +137,7 @@ const copy = {
     ),
     zoneFooter: (
       <>
-        International contractors and EU partners: speak with our <strong>engineers in English</strong> on scope, drawings and site issues.{" "}
+        International contractors and EU partners: speak with our engineers in English on scope, drawings and site issues.{" "}
         <Link href={localizeHref("/clienti-internazionali", "en")} title={linkTitles.international("en")} className="link-accent">
           International clients
         </Link>{" "}
@@ -192,7 +192,6 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.aboutTitle}</h2>
-              <div className="home-section-accent" aria-hidden />
             </div>
             <p className="home-split-header__right">{t.aboutIntro}</p>
           </div>
@@ -236,16 +235,12 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.servicesTitle}</h2>
-              <div className="home-section-accent" aria-hidden />
             </div>
             <p className="home-split-header__right">{t.servicesIntro}</p>
           </div>
           <div className="grid gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-14">
-            {t.serviceCards.map(([title, description, href], idx) => (
+            {t.serviceCards.map(([title, description, href]) => (
               <article key={title} className="home-plate group reveal-block flex flex-col">
-                <span className={`font-display home-plate-index`} aria-hidden>
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
                 <h3 className={`font-display mb-2 text-xl font-medium tracking-tight text-[#2a3f54] sm:mb-3 sm:text-2xl`}>{title}</h3>
                 <p className="copy-rhythm mb-5 flex-1 text-sm text-[#444] sm:mb-6">{description}</p>
                 <Link href={localizeHref(href, locale)} className="touch-target mt-auto inline-block min-h-[44px] py-2 text-sm font-semibold text-[#2a3f54] underline-offset-4 transition hover:text-[#b87333] group-hover:underline" title={linkTitles.scopriServizio(title, locale)}>
@@ -267,7 +262,6 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
               <h2 className={titleInvertedCls}>{t.projectsTitle}</h2>
-              <div className="home-section-accent home-section-accent--light" aria-hidden />
             </div>
             <p className="home-split-header__right home-split-header__right--inverted">{t.projectsIntro}</p>
           </div>
@@ -291,7 +285,6 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.certificationsTitle}</h2>
-              <div className="home-section-accent" aria-hidden />
             </div>
             <p className="home-split-header__right">{t.certificationsIntro}</p>
           </div>
@@ -311,7 +304,6 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.zoneTitle}</h2>
-              <div className="home-section-accent" aria-hidden />
             </div>
             <div className="home-split-header__right">{t.zoneDescription}</div>
           </div>
@@ -329,7 +321,6 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.contactsTitle}</h2>
-              <div className="home-section-accent" aria-hidden />
             </div>
             <p className="home-split-header__right">{t.contactsIntro}</p>
           </div>

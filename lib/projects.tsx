@@ -55,9 +55,9 @@ export const projectCategories: Record<
       {
         slug: "villa-acciaio-salsomaggiore",
         title: "Villa in acciaio — Salsomaggiore Terme (PR)",
-        caption: "Villa in acciaio - Salsomaggiore",
+        caption: "Villa in acciaio - Salsomaggiore Terme (PR)",
         cover: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
-        alt: "Montaggio del telaio in carpenteria metallica — villa in acciaio a Salsomaggiore Terme",
+        alt: "Montaggio del telaio in carpenteria metallica — villa in acciaio a Salsomaggiore Terme (PR)",
         href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
       },
     ],
@@ -231,14 +231,14 @@ export const projectCaseStudies: Record<
   "residenziali/villa-acciaio-salsomaggiore": {
     metaTitle: "Villa in acciaio — Salsomaggiore Terme (PR)",
     metaDescription:
-      "Villa in acciaio a Salsomaggiore Terme: fondazioni su pali, struttura mista in cemento armato e acciaio, sistemi a secco — Studio Capoferri.",
+      "Villa in acciaio a Salsomaggiore Terme (PR): fondazioni su pali, struttura mista in cemento armato e acciaio, sistemi a secco — Studio Capoferri.",
     heading: "Villa in acciaio — Salsomaggiore Terme (PR)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Studio Capoferri ha seguito la parte strutturale di un edificio residenziale in acciaio a{" "}
           <strong>Salsomaggiore Terme (PR)</strong>, dalla fase di progettazione alla costruzione. Le caratteristiche scadenti del terreno hanno
-          richiesto una soluzione specifica: un sistema di <strong>fondazioni su pali</strong>, definito fin dalle prime fasi in coerenza con la
+          richiesto una soluzione specifica: un sistema di fondazioni su pali, definito fin dalle prime fasi in coerenza con la
           struttura mista in cemento armato e acciaio prevista in elevazione.
         </p>
         <p className="copy-rhythm mb-6 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -272,35 +272,35 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/fondazioni-su-pali-villa-acciaio.webp",
-        alt: "Getto di calcestruzzo delle fondazioni su pali — villa in acciaio a Salsomaggiore Terme",
+        alt: "Getto di calcestruzzo delle fondazioni su pali — villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/murature-cemento-armato-seminterrato.webp",
-        alt: "Murature in cemento armato del piano seminterrato e nucleo scala — Salsomaggiore Terme",
+        alt: "Murature in cemento armato del piano seminterrato e nucleo scala — Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/cantiere-villa-acciaio-salsomaggiore.webp",
-        alt: "Vista del cantiere con fondazioni in cemento armato — villa in acciaio a Salsomaggiore Terme",
+        alt: "Vista del cantiere con fondazioni in cemento armato — villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
-        alt: "Montaggio del telaio portante in carpenteria metallica — villa in acciaio a Salsomaggiore Terme",
+        alt: "Montaggio del telaio portante in carpenteria metallica — villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/struttura-acciaio-copertura-fotovoltaico.webp",
-        alt: "Struttura in acciaio della copertura predisposta per pannelli fotovoltaici — Salsomaggiore Terme",
+        alt: "Struttura in acciaio della copertura predisposta per pannelli fotovoltaici — Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/pareti-a-secco-lana-minerale-villa.webp",
-        alt: "Posa delle pareti a secco con isolamento in lana minerale — villa in acciaio a Salsomaggiore Terme",
+        alt: "Posa delle pareti a secco con isolamento in lana minerale — villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-interne-cartongesso-villa-acciaio.webp",
-        alt: "Finiture interne in cartongesso con posa impianti — villa in acciaio a Salsomaggiore Terme",
+        alt: "Finiture interne in cartongesso con posa impianti — villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp",
-        alt: "Finiture esterne e tracciature sul terrazzo a sbalzo — villa in acciaio a Salsomaggiore Terme",
+        alt: "Finiture esterne e tracciature sul terrazzo a sbalzo — villa in acciaio a Salsomaggiore Terme (PR)",
       },
     ],
   },
@@ -313,13 +313,13 @@ export const projectCaseStudies: Record<
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           A <strong>Maranello (MO)</strong>, nel cuore del distretto automotive di eccellenza mondiale, lo Studio Capoferri ha curato la
-          progettazione strutturale di una <strong>tettoia in carpenteria metallica</strong> a copertura di due edifici prefabbricati, in
+          progettazione strutturale di una tettoia in carpenteria metallica a copertura di due edifici prefabbricati, in
           un impianto di verniciatura per uno stabilimento produttivo di un&apos;azienda di autovetture di lusso.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          La tettoia ha una <strong>luce libera di circa 40 metri</strong> e collega due edifici prefabbricati. La struttura è
-          caratterizzata da un&apos;<strong>unica capriata reticolare</strong> realizzata con{" "}
-          <strong>profili tubolari a sezione circolare</strong>, scelti anche per la qualità estetica dell&apos;insieme.
+          La tettoia ha una luce libera di circa <strong>40 metri</strong> e collega due edifici prefabbricati. La struttura è
+          caratterizzata da un&apos;unica capriata reticolare realizzata con profili tubolari a sezione circolare, scelti anche per la qualità
+          estetica dell&apos;insieme.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
           <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
@@ -368,7 +368,7 @@ export const projectCaseStudies: Record<
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Lo Studio Capoferri ha curato la <strong>progettazione strutturale, architettonica e urbanistica</strong> per l&apos;ampliamento della zona
+          Lo Studio Capoferri ha curato la progettazione strutturale, architettonica e urbanistica per l&apos;ampliamento della zona
           produttiva di un&apos;importante carpenteria metallica pesante a <strong>Erbusco (BS)</strong>.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -383,10 +383,10 @@ export const projectCaseStudies: Record<
             <strong>Progettazione esecutiva</strong> — disegni costruttivi d&apos;officina per la realizzazione in acciaio.
           </li>
           <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Integrazione carroponti</strong> — struttura calcolata per <strong>due carroponti</strong> e movimentazione dei pezzi.
+            <strong>Integrazione carroponti</strong> — struttura calcolata per due carroponti e movimentazione dei pezzi.
           </li>
           <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Efficienza e isolamento</strong> — <strong>pannelli sandwich</strong> per isolamento termico e acustico.
+            <strong>Efficienza e isolamento</strong> — pannelli sandwich per isolamento termico e acustico.
           </li>
           <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
             <strong>Gestione globale</strong> — urbanistica, architettura e calcoli strutturali esecutivi.
@@ -433,11 +433,11 @@ export const projectCaseStudies: Record<
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Intervenire sull&apos;esistente richiede equilibrio tra vincoli strutturali, logistica e continuità dell&apos;attività. Nel progetto di
-          ampliamento di questo <strong>complesso zootecnico a Castegnato (BS)</strong>, l&apos;obiettivo era aumentare la superficie coperta e
+          ampliamento di questo complesso zootecnico a <strong>Castegnato (BS)</strong>, l&apos;obiettivo era aumentare la superficie coperta e
           garantire la massima flessibilità interna.
         </p>
         <p className="copy-rhythm mb-6 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          La soluzione si concentra sullo sviluppo di <strong>nuove capriate metalliche</strong> con una luce libera di quasi{" "}
+          La soluzione si concentra sullo sviluppo di nuove capriate metalliche con una luce libera di quasi{" "}
           <strong>16 metri</strong>. L&apos;assenza di sostegni intermedi permette di ottimizzare gli spazi per le esigenze operative del settore.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
@@ -484,7 +484,7 @@ export const projectCaseStudies: Record<
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           L&apos;intervento riguarda la riqualificazione di un edificio industriale a <strong>Provaglio d&apos;Iseo (BS)</strong>, destinato a diventare
-          la <strong>sede principale</strong> di un&apos;importante azienda del settore elettronica quotata in borsa, con uffici, laboratori e spazi di
+          la sede principale di un&apos;importante azienda del settore elettronica quotata in borsa, con uffici, laboratori e spazi di
           lavoro.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -492,7 +492,7 @@ export const projectCaseStudies: Record<
           un&apos;ottimizzazione a 360°, adattando le soluzioni progettuali alle reali dinamiche costruttive del cantiere.
         </p>
         <p className="copy-rhythm mb-6 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Il cuore dell&apos;intervento è un <strong>soppalco in carpenteria metallica di oltre 5.000 mq</strong>, integrato nella struttura esistente
+          Il cuore dell&apos;intervento è un soppalco in carpenteria metallica di oltre <strong>5.000 mq</strong>, integrato nella struttura esistente
           per ampliarne la superficie utile. L&apos;attività ha riguardato:
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
@@ -549,7 +549,7 @@ export const projectCaseStudies: Record<
     },
     body: (
       <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-        L&apos;attività di <strong>progettazione strutturale</strong> ha riguardato un complesso edilizio a <strong>Milano Bovisa</strong> per{" "}
+        L&apos;attività di progettazione strutturale ha riguardato un complesso edilizio a <strong>Milano Bovisa</strong> per{" "}
         <a
           href="https://www.superstudioevents.com/it/"
           target="_blank"
@@ -558,9 +558,9 @@ export const projectCaseStudies: Record<
         >
           Superstudio Events S.r.l.
         </a>
-        , costituito da sei edifici con differenti tipologie di intervento. I lavori sono iniziati nel 2023. In due edifici sono stati previsti interventi
+        , costituito da sei edifici con differenti tipologie di intervento. I lavori sono iniziati nel <strong>2023</strong>. In due edifici sono stati previsti interventi
         di consolidamento strutturale di volte e copertura. Un edificio è stato demolito e ricostruito con nuova struttura in acciaio (altezza massima
-        circa 16 m). Un altro è stato ricostruito con struttura mista in cemento armato e muratura portante; un ulteriore fabbricato con muratura
+        circa <strong>16 m</strong>). Un altro è stato ricostruito con struttura mista in cemento armato e muratura portante; un ulteriore fabbricato con muratura
         portante e copertura collaborante; infine un adeguamento sismico su uno stabile esistente.
       </p>
     ),

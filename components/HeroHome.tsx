@@ -57,11 +57,6 @@ export function HeroHome() {
     return () => window.cancelAnimationFrame(id);
   }, []);
 
-  const goToSlide = (idx: number) => {
-    setI(idx);
-    setCycle((c) => c + 1);
-  };
-
   const subtleEase = [0.22, 1, 0.36, 1] as const;
 
   return (
@@ -123,12 +118,12 @@ export function HeroHome() {
             <span className="min-w-0">{copy.location}</span>
           </p>
 
-          <h1 className="font-display section-title text-[clamp(1.65rem,8.2vw,2rem)] leading-[1.08] text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.65)] sm:text-[clamp(2rem,7vw,3.85rem)]">
+          <h1 className="font-display section-title text-[clamp(1.95rem,9.5vw,2.45rem)] leading-[1.04] text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.65)] sm:text-[clamp(2.45rem,8vw,4.6rem)]">
             <span className="block whitespace-nowrap">{copy.line1}</span>
             <span className="mt-1 block whitespace-nowrap text-white">{copy.line2}</span>
           </h1>
 
-          <p className="mt-4 border-t border-[#e8b478]/45 pt-3 text-[0.85rem] leading-snug tracking-[0.015em] text-[#e8b478] drop-shadow-[0_1px_12px_rgba(0,0,0,0.75)] sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:border-t-0 md:border-r md:border-[#e8b478]/55 md:pr-3.5 md:pt-0 md:text-[1rem]">
+          <p className="mt-4 border-t border-[#e8b478]/45 pt-3 text-[0.85rem] leading-snug text-[#e8b478] drop-shadow-[0_1px_12px_rgba(0,0,0,0.75)] sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:border-t-0 md:border-r md:border-[#e8b478]/55 md:pr-3.5 md:pt-0 md:text-[1rem]">
             {copy.support}
           </p>
 
@@ -146,26 +141,6 @@ export function HeroHome() {
             </Link>
           </motion.div>
         </motion.div>
-
-        {heroSlides.length > 1 ? (
-          <div className="flex items-center justify-start gap-1 md:ml-auto md:justify-end" role="tablist" aria-label={copy.slidePicker}>
-            {heroSlides.map((slide, idx) => (
-              <button
-                key={slide.src}
-                type="button"
-                role="tab"
-                aria-selected={idx === i}
-                aria-label={locale === "en" ? `Image ${idx + 1}` : `Immagine ${idx + 1}`}
-                className={`focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full transition ${
-                  idx === i ? "bg-white/16" : "bg-white/6 hover:bg-white/12"
-                }`}
-                onClick={() => goToSlide(idx)}
-              >
-                <span className={`block h-2.5 w-2.5 rounded-full transition ${idx === i ? "bg-white" : "bg-white/48 hover:bg-white/70"}`} />
-              </button>
-            ))}
-          </div>
-        ) : null}
       </div>
     </section>
   );
