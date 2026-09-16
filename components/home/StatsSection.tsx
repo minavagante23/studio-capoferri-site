@@ -54,34 +54,19 @@ export function StatsSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const reduced = !!useReducedMotion();
-  const copy =
+  const labels =
     locale === "en"
-      ? {
-          heading: "Statistics",
-          intro: "Figures that reflect the practice's experience, delivery capacity and client trust over time.",
-          labels: ["Years of experience", "Completed projects", "Satisfied clients"],
-        }
-      : {
-          heading: "Statistiche",
-          intro: "Numeri che raccontano esperienza, capacità di realizzazione e fiducia dei clienti nel tempo.",
-          labels: ["Anni di esperienza", "Progetti completati", "Clienti soddisfatti"],
-        };
+      ? ["Years of experience", "Completed projects", "Satisfied clients"]
+      : ["Anni di esperienza", "Progetti completati", "Clienti soddisfatti"];
+  const sectionLabel = locale === "en" ? "Key figures" : "Cifre chiave";
 
   return (
     <section
       ref={ref}
       className={`lazy-section ${ui.brandGradient} px-4 py-14 text-white sm:px-5 sm:py-20 md:px-10`}
-      aria-labelledby="stats-heading"
+      aria-label={sectionLabel}
     >
       <div className={layoutContentMaxClass}>
-        <div className="home-split-header reveal-block">
-          <div className="home-split-header__left">
-            <h2 id="stats-heading" className={`font-display ${ui.homeSectionTitleInverted}`}>
-              {copy.heading}
-            </h2>
-          </div>
-          <p className="home-split-header__right home-split-header__right--inverted">{copy.intro}</p>
-        </div>
         <div className="grid grid-cols-3 gap-3 sm:gap-8">
           {stats.map((s, index) => (
             <div
@@ -90,7 +75,7 @@ export function StatsSection() {
             >
               <Counter target={s.value} suffix={s.suffix} reduced={reduced} active={inView} />
               <p className="mt-2 text-[0.78rem] font-medium tracking-normal text-white/85 sm:mt-3 sm:text-sm">
-                {copy.labels[index] ?? s.label}
+                {labels[index] ?? s.label}
               </p>
             </div>
           ))}
