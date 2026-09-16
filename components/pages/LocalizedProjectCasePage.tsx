@@ -52,7 +52,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
             dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
           />
         ))}
-      <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <main id="main-content" className="section-shell">
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="mx-auto w-full max-w-[900px]">
@@ -105,7 +105,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
           dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
         />
       ))}
-    <main id="main-content" className="section-shell bg-[#fafbfc]">
+    <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="mx-auto w-full max-w-[900px]">

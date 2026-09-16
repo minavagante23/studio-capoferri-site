@@ -12,7 +12,7 @@ export function LocalizedPrivacyPageContent() {
   const h3 = `font-display mb-3 text-lg font-medium tracking-tight text-[#2a3f54]`;
 
   return (
-    <main id="main-content" className="section-shell bg-[#fafbfc]">
+    <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <article className="max-w-[860px]">

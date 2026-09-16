@@ -187,7 +187,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <section id="chi-siamo" className={`lazy-section section-shell ${scrollAnchorClass} bg-[#fafbfc] ${layoutGutterXClass}`}>
+      <section id="chi-siamo" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
@@ -230,7 +230,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section id="servizi" className={`lazy-section section-shell ${scrollAnchorClass} bg-white ${layoutGutterXClass}`}>
+      <section id="servizi" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
@@ -280,7 +280,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section id="certificazioni" className={`lazy-section section-shell ${scrollAnchorClass} bg-white ${layoutGutterXClass}`}>
+      <section id="certificazioni" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
@@ -299,7 +299,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section id="zone-servite" className={`lazy-section section-shell ${scrollAnchorClass} bg-[#fafbfc] ${layoutGutterXClass}`}>
+      <section id="zone-servite" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">
@@ -316,7 +316,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
 
       <StatsSection />
 
-      <section id="contatti" className={`lazy-section section-shell ${scrollAnchorClass} bg-white ${layoutGutterXClass}`}>
+      <section id="contatti" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
           <div className="home-split-header reveal-block">
             <div className="home-split-header__left">

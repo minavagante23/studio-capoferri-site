@@ -18,7 +18,7 @@ export function LocalizedExportPartnerPage() {
     "relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]";
 
   return (
-    <main id="main-content" className="section-shell bg-[#fafbfc]">
+    <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <article className="home-plate home-plate--well max-w-[860px]">

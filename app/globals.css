@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* Carta calda: sfondo unico del sito; il bianco puro resta a card e form */
+  --background: #f7f6f2;
   --foreground: #1a1a1a;
   --primary: #2a3f54;
   --primary-dark: #1f2e3d;
@@ -9,7 +10,7 @@
   /* Acciaio corten — accento sparso (lineette, hover link, focus) */
   --corten: #b87333;
   --corten-soft: #c4844a;
-  --muted: #fafbfc;
+  --muted: #f7f6f2;
   /* Corpo testo sezioni home / intro (allineato a ui.body) */
   --copy-body: #333;
   --section-space-y: clamp(4.5rem, 7vw, 6.2rem);

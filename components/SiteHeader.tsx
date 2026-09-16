@@ -106,7 +106,7 @@ export function SiteHeader() {
     <>
       <header
         className={`sticky top-0 z-[1000] transition-[background-color,backdrop-filter] duration-300 ${
-          open ? "bg-white" : scrolled ? "bg-white/94 backdrop-blur-xl" : "bg-white/80 backdrop-blur-2xl"
+          open ? "bg-[#f7f6f2]" : scrolled ? "bg-[#f7f6f2]/94 backdrop-blur-xl" : "bg-[#f7f6f2]/80 backdrop-blur-2xl"
         }`}
       >
         <div className={layoutGutterXClass}>

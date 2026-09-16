@@ -17,7 +17,7 @@ export function LocalizedServicesPageContent() {
 
   if (!isEn) {
     return (
-      <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <main id="main-content" className="section-shell">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
@@ -100,7 +100,7 @@ export function LocalizedServicesPageContent() {
   }
 
   return (
-    <main id="main-content" className="section-shell bg-[#fafbfc]">
+    <main id="main-content" className="section-shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>

@@ -21,7 +21,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
   if (locale === "it") {
     const c = projectCategories[area];
     return (
-      <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <main id="main-content" className="section-shell">
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Percorso di navigazione">
@@ -53,7 +53,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
   }
 
   return (
-    <main id="main-content" className="section-shell bg-[#fafbfc]">
+    <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Breadcrumb">

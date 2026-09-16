@@ -17,7 +17,7 @@ export function LocalizedContactsPageContent() {
 
   if (!isEn) {
     return (
-      <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <main id="main-content" className="section-shell">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }} />
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
@@ -82,7 +82,7 @@ export function LocalizedContactsPageContent() {
   }
 
   return (
-    <main id="main-content" className="section-shell bg-[#fafbfc]">
+    <main id="main-content" className="section-shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>

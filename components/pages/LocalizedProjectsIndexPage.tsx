@@ -23,7 +23,7 @@ export function LocalizedProjectsPageContent() {
 
   if (!isEn) {
     return (
-      <main id="main-content" className="section-shell bg-[#fafbfc]">
+      <main id="main-content" className="section-shell">
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="home-plate home-plate--well mb-8 sm:mb-14">
@@ -46,7 +46,7 @@ export function LocalizedProjectsPageContent() {
   }
 
   return (
-    <main id="main-content" className="section-shell bg-[#fafbfc]">
+    <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well mb-8 sm:mb-14">
