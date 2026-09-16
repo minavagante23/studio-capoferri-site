@@ -10,6 +10,7 @@ export const itToEnPath: Record<string, string> = {
   "/contatti": "/contact",
   "/privacy-policy": "/privacy-policy",
   "/clienti-internazionali": "/international-clients",
+  "/progettazione-strutturale-acciaio-italia": "/structural-steel-design-italy",
   "/progetti": "/projects",
   "/progettazione-strutture-acciaio-brescia": "/steel-structure-design-brescia",
   "/progettazione-strutture-acciaio-bergamo": "/steel-structure-design-bergamo",
@@ -19,6 +20,8 @@ export const itToEnPath: Record<string, string> = {
   "/progetti/ricettivi": "/projects/public-spaces",
   "/progetti/residenziali/villa-acciaio-veneto": "/projects/residential/steel-villa-veneto",
   "/progetti/residenziali/villa-acciaio-salsomaggiore": "/projects/residential/steel-villa-salsomaggiore",
+  "/progetti/industriali/copertura-edificio-verniciatura-maranello":
+    "/projects/industrial/paint-shop-roof-structure-maranello",
   "/progetti/industriali/capannone-erbusco": "/projects/industrial/industrial-warehouse-erbusco",
   "/progetti/industriali/ampliamento-complesso-zootecnico": "/projects/industrial/livestock-complex-extension",
   "/progetti/industriali/centro-direzionale-provaglio-diseo": "/projects/industrial/office-complex-provaglio-diseo",
@@ -41,6 +44,7 @@ export const itAreaByEn: Record<string, ProjectArea> = {
 export const enCaseByIt: Record<string, string> = {
   "villa-acciaio-veneto": "steel-villa-veneto",
   "villa-acciaio-salsomaggiore": "steel-villa-salsomaggiore",
+  "copertura-edificio-verniciatura-maranello": "paint-shop-roof-structure-maranello",
   "capannone-erbusco": "industrial-warehouse-erbusco",
   "ampliamento-complesso-zootecnico": "livestock-complex-extension",
   "centro-direzionale-provaglio-diseo": "office-complex-provaglio-diseo",
@@ -111,6 +115,8 @@ export function resolveEnglishSlug(slug: string[]): EnglishRoute | null {
         return { kind: "static", key: "privacy-policy" };
       case "international-clients":
         return { kind: "static", key: "clienti-internazionali" };
+      case "structural-steel-design-italy":
+        return { kind: "static", key: "progettazione-strutturale-acciaio-italia" };
       case "projects":
         return { kind: "projects" };
       case "steel-structure-design-brescia":
@@ -141,18 +147,12 @@ export function resolveEnglishSlug(slug: string[]): EnglishRoute | null {
 }
 
 export function englishStaticParams(): { slug: string[] }[] {
-  const staticPaths = [
-    [],
-    ["about"],
-    ["services"],
-    ["contact"],
-    ["privacy-policy"],
-    ["international-clients"],
-    ["projects"],
-    ["steel-structure-design-brescia"],
-    ["steel-structure-design-bergamo"],
-    ["steel-structure-design-milano"],
-  ];
+  const staticPaths = Object.values(itToEnPath)
+    .filter((enPath) => !enPath.startsWith("/projects/") || enPath === "/projects")
+    .map((enPath) => {
+      if (enPath === "/") return [] as string[];
+      return enPath.replace(/^\//, "").split("/");
+    });
 
   const projectPaths = projectAreas.flatMap((area) => {
     const enArea = enAreaByIt[area];
@@ -165,5 +165,13 @@ export function englishStaticParams(): { slug: string[] }[] {
     return [...categoryPaths, ...casePaths];
   });
 
-  return [...staticPaths, ...projectPaths].map((slug) => ({ slug }));
+  const seen = new Set<string>();
+  return [...staticPaths, ...projectPaths]
+    .filter((slug) => {
+      const key = slug.join("/");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .map((slug) => ({ slug }));
 }

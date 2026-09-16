@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { LocalizedProjectCasePage } from "@/components/pages/LocalizedProjectRoutes";
+import { LocalizedProjectCasePage } from "@/components/pages/LocalizedProjectCasePage";
 import {
   getCaseStudyKey,
   isProjectArea,

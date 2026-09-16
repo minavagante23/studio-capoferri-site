@@ -33,17 +33,19 @@ export function ProjectPreviewCard({
       title={linkTitles.progetto(title, locale)}
       className={`${variant === "dark" ? ui.projectCardDark : ui.projectCardLight} ${className}`}
     >
-      <div className="relative aspect-[4/3]">
-        <Image
-          src={image}
-          alt={alt}
-          fill
-          className="object-cover transition duration-500 group-hover:scale-[1.03]"
-          sizes="(min-width:1024px) 33vw, 100vw"
-        />
-        <div className="image-unify-overlay" aria-hidden />
-        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2e3d]/95 to-transparent px-4 py-3 sm:py-4">
-          <span className={`font-display ${ui.projectCardCaption}`}>{caption}</span>
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <div className="reveal-beam absolute inset-0">
+          <Image
+            src={image}
+            alt={alt}
+            fill
+            className="object-cover transition duration-500 group-hover:scale-[1.03]"
+            sizes="(min-width:1024px) 33vw, 100vw"
+          />
+          <div className="image-unify-overlay" aria-hidden />
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2e3d]/95 to-transparent px-4 py-3 sm:py-4">
+            <span className={`font-display ${ui.projectCardCaption}`}>{caption}</span>
+          </div>
         </div>
       </div>
     </Link>

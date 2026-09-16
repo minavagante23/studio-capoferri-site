@@ -29,5 +29,4 @@ export const linkTitles = {
   breadcrumbProgetti: (locale: SeoLocale = "it") => (locale === "en" ? "Back to projects - Studio Capoferri" : "Torna ai progetti - Studio Capoferri"),
   breadcrumbArea: (area: string, locale: SeoLocale = "it") => linkTitle(locale === "en" ? `Projects ${area}` : `Progetti ${area}`, "Studio Capoferri"),
   external: (name: string, locale: SeoLocale = "it") => linkTitle(name, locale === "en" ? "External site" : "Sito esterno"),
-  legacyRedirect: (page: string, locale: SeoLocale = "it") => linkTitle(locale === "en" ? `Go to the new page: ${page}` : `Vai alla nuova pagina: ${page}`, "Studio Capoferri"),
 } as const;

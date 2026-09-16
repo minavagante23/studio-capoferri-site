@@ -357,13 +357,15 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
               className="group relative aspect-[4/3] w-[min(78vw,320px)] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-sm border border-[#2a3f54]/12 bg-white text-left transition hover:border-[#b87333]/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
-              <Image
-                src={img.src}
-                alt=""
-                fill
-                className="object-cover transition duration-500 ease-out group-hover:scale-[1.02]"
-                sizes="78vw"
-              />
+              <span className="reveal-beam absolute inset-0">
+                <Image
+                  src={img.src}
+                  alt=""
+                  fill
+                  className="object-cover transition duration-500 ease-out group-hover:scale-[1.02]"
+                  sizes="78vw"
+                />
+              </span>
             </button>
           ))}
         </div>
@@ -378,17 +380,19 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
               className="group relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-sm border border-[#2a3f54]/10 bg-[#fafbfc] text-left transition hover:border-[#b87333]/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
-              <Image
-                src={img.src}
-                alt=""
-                fill
-                className="object-cover transition duration-500 ease-out group-hover:scale-[1.02]"
-                sizes="(min-width:1024px) 33vw, 50vw"
-              />
-              <div
-                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#2a3f54]/20 via-transparent to-transparent opacity-0 transition group-hover:opacity-100"
-                aria-hidden
-              />
+              <span className="reveal-beam absolute inset-0">
+                <Image
+                  src={img.src}
+                  alt=""
+                  fill
+                  className="object-cover transition duration-500 ease-out group-hover:scale-[1.02]"
+                  sizes="(min-width:1024px) 33vw, 50vw"
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#2a3f54]/20 via-transparent to-transparent opacity-0 transition group-hover:opacity-100"
+                  aria-hidden
+                />
+              </span>
             </button>
           </li>
         ))}

@@ -36,14 +36,20 @@ const caseLocations: Record<string, { name: string; addressRegion: string; addre
     addressRegion: "Emilia-Romagna",
     addressLocality: "Salsomaggiore Terme",
   },
+  "industriali/copertura-edificio-verniciatura-maranello": {
+    name: "Maranello (MO), Italy",
+    addressRegion: "Emilia-Romagna",
+    addressLocality: "Maranello",
+  },
   "industriali/capannone-erbusco": {
     name: "Erbusco (BS), Italy",
     addressRegion: "Lombardia",
     addressLocality: "Erbusco",
   },
   "industriali/ampliamento-complesso-zootecnico": {
-    name: "Northern Italy",
+    name: "Castegnato (BS), Italy",
     addressRegion: "Lombardia",
+    addressLocality: "Castegnato",
   },
   "industriali/centro-direzionale-provaglio-diseo": {
     name: "Provaglio d'Iseo (BS), Italy",

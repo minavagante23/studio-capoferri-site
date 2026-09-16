@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LocalizedContactsPageContent } from "@/components/pages/LocalizedSimplePages";
+import { LocalizedContactsPageContent } from "@/components/pages/LocalizedContactsPage";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({

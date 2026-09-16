@@ -11,6 +11,7 @@ import ProjectCasePage from "@/app/progetti/[area]/[slug]/page";
 import ProgettazioneStruttureAcciaioBergamoPage from "@/app/progettazione-strutture-acciaio-bergamo/page";
 import ProgettazioneStruttureAcciaioBresciaPage from "@/app/progettazione-strutture-acciaio-brescia/page";
 import ProgettazioneStruttureAcciaioMilanoPage from "@/app/progettazione-strutture-acciaio-milano/page";
+import ProgettazioneStrutturaleAcciaioItaliaPage from "@/app/progettazione-strutturale-acciaio-italia/page";
 import ServiziPage from "@/app/servizi/page";
 import { englishStaticParams, resolveEnglishSlug } from "@/lib/locale-paths";
 import { getEnglishMetadataForSlug } from "@/lib/seo";
@@ -46,6 +47,8 @@ export default async function EnglishMirrorPage({ params }: Props) {
           return <ContattiPage />;
         case "clienti-internazionali":
           return <ClientiInternazionaliPage />;
+        case "progettazione-strutturale-acciaio-italia":
+          return <ProgettazioneStrutturaleAcciaioItaliaPage />;
         case "privacy-policy":
           return <PrivacyPolicyPage />;
         default:

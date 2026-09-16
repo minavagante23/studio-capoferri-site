@@ -39,22 +39,12 @@ for (const extra of ["favicon.ico", "llms.txt", "CNAME"]) {
 // Redirect dei vecchi URL .html: su GitHub Pages (export statico) i redirects()
 // di next.config.ts non funzionano, quindi generiamo pagine-ponte statiche.
 const SITE_URL = "https://www.studiocapoferri.eu";
-const legacyRedirects = {
-  "chi-siamo.html": "/chi-siamo/",
-  "servizi-studio-progettazione.html": "/servizi/",
-  "progettazione-strutture-brescia-contatti.html": "/contatti/",
-  "privacy-policy.html": "/privacy-policy/",
-  "progetti-studio-ingegneria-capoferri.html": "/progetti/",
-  "progetti-residenziali-studio-ingegneria-capoferri.html": "/progetti/residenziali/",
-  "progetti-industriali-studio-ingegneria-capoferri.html": "/progetti/industriali/",
-  "progetti-ricettivi-studio-ingegneria-capoferri.html": "/progetti/ricettivi/",
-  "villa-acciaio-veneto.html": "/progetti/residenziali/villa-acciaio-veneto/",
-  "capannone-erbusco.html": "/progetti/industriali/capannone-erbusco/",
-  "superstudio-village.html": "/progetti/ricettivi/superstudio-village/",
-  "superstudio-maxi.html": "/progetti/ricettivi/superstudio-maxi/",
-};
+const legacyRedirects = JSON.parse(
+  fs.readFileSync(path.join(root, "lib", "legacy-redirects.json"), "utf8")
+);
 for (const [from, to] of Object.entries(legacyRedirects)) {
-  const target = `${SITE_URL}${to}`;
+  const dest = String(to).endsWith("/") ? String(to) : `${to}/`;
+  const target = `${SITE_URL}${dest}`;
   const html = `<!DOCTYPE html>
 <html lang="it">
 <head>

@@ -40,11 +40,15 @@ export function HeroHome() {
   const copy = chromeCopy[locale].hero;
   const reduceMotion = !!useReducedMotion();
   const [i, setI] = useState(0);
+  const [cycle, setCycle] = useState(0);
   const [extraSlidesReady, setExtraSlidesReady] = useState(false);
 
   useEffect(() => {
     if (reduceMotion) return;
-    const t = setInterval(() => setI((v) => (v + 1) % heroSlides.length), 4500);
+    const t = setInterval(() => {
+      setI((v) => (v + 1) % heroSlides.length);
+      setCycle((c) => c + 1);
+    }, 8000);
     return () => clearInterval(t);
   }, [reduceMotion]);
 
@@ -52,6 +56,11 @@ export function HeroHome() {
     const id = window.requestAnimationFrame(() => setExtraSlidesReady(true));
     return () => window.cancelAnimationFrame(id);
   }, []);
+
+  const goToSlide = (idx: number) => {
+    setI(idx);
+    setCycle((c) => c + 1);
+  };
 
   const subtleEase = [0.22, 1, 0.36, 1] as const;
 
@@ -65,22 +74,32 @@ export function HeroHome() {
       <div className="absolute inset-0">
         {heroSlides.map((slide, idx) => {
           if (idx > 0 && !extraSlidesReady) return null;
+          const active = idx === i;
 
           return (
             <div
               key={slide.src}
-              className={`absolute inset-0 transition-opacity duration-[1.4s] ease-in-out ${idx === i ? "opacity-100" : "opacity-0"}`}
+              className={`absolute inset-0 overflow-hidden transition-opacity duration-[1.4s] ease-in-out ${
+                active ? "opacity-100" : "opacity-0"
+              }`}
             >
-              <Image
-                src={slide.src}
-                alt={locale === "en" ? slide.altEn : slide.altIt}
-                fill
-                className="object-cover brightness-[1.02] saturate-[1.03]"
-                sizes="100vw"
-                priority={idx === 0}
-                fetchPriority={idx === 0 ? "high" : "auto"}
-                loading={idx === 0 ? "eager" : "lazy"}
-              />
+              <div
+                key={active ? `kb-${idx}-${cycle}` : `idle-${idx}`}
+                className={`absolute inset-0 ${
+                  !reduceMotion && active ? `hero-ken-burns hero-ken-burns--${idx % 3}` : ""
+                }`}
+              >
+                <Image
+                  src={slide.src}
+                  alt={locale === "en" ? slide.altEn : slide.altIt}
+                  fill
+                  className="object-cover brightness-[1.02] saturate-[1.03]"
+                  sizes="100vw"
+                  priority={idx === 0}
+                  fetchPriority={idx === 0 ? "high" : "auto"}
+                  loading={idx === 0 ? "eager" : "lazy"}
+                />
+              </div>
             </div>
           );
         })}
@@ -140,7 +159,7 @@ export function HeroHome() {
                 className={`focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full transition ${
                   idx === i ? "bg-white/16" : "bg-white/6 hover:bg-white/12"
                 }`}
-                onClick={() => setI(idx)}
+                onClick={() => goToSlide(idx)}
               >
                 <span className={`block h-2.5 w-2.5 rounded-full transition ${idx === i ? "bg-white" : "bg-white/48 hover:bg-white/70"}`} />
               </button>

@@ -17,15 +17,26 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/residenziale/villa-acciaio-salsomaggiore/pareti-a-secco-lana-minerale-villa.webp": "Dry-wall installation with mineral-wool insulation — steel villa in Salsomaggiore Terme",
   "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-interne-cartongesso-villa-acciaio.webp": "Interior plasterboard finishes with services installation — steel villa in Salsomaggiore Terme",
   "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp": "External finishes and setting-out on the cantilever terrace — steel villa in Salsomaggiore Terme",
-  "/assets/industriale/capannone-erbusco/capannone-industriale-erbusco.webp": "Exterior view of the industrial steel building in Erbusco (Brescia)",
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg":
+    "Tubular circular-section space truss with large clear span — paint shop canopy in Maranello (MO)",
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.jpeg":
+    "Lifting and erection of the steel canopy — paint shop construction site in Maranello (MO)",
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/cantiere-copertura-industriale-verniciatura-maranello.jpeg":
+    "Steel canopy covering two prefabricated buildings — Maranello (MO) construction site",
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/vista-interna-copertura-metallica-verniciatura-maranello.jpeg":
+    "Interior view of the circular hollow-section space truss — Maranello (MO)",
+  "/assets/industriale/capannone-erbusco/capannone-industriale-erbusco.webp": "Exterior view of the industrial steel building in Erbusco (BS)",
   "/assets/industriale/capannone-erbusco/progettazione-strutture-adro.webp": "Structural design of the steel-framed industrial building — Erbusco (BS)",
-  "/assets/industriale/capannone-erbusco/strutture-industriali-erbusco.webp": "Load-bearing steel frame of the industrial building in Erbusco",
+  "/assets/industriale/capannone-erbusco/strutture-industriali-erbusco.webp": "Load-bearing steel frame of the industrial building in Erbusco (BS)",
   "/assets/industriale/capannone-erbusco/vista-capannone-erbusco.webp": "Overview of the steel production extension — industrial building in Erbusco (BS)",
-  "/assets/industriale/capannone-erbusco/strutture-industriali.webp": "Detail of beams and structural connections in the Erbusco industrial building",
+  "/assets/industriale/capannone-erbusco/strutture-industriali.webp": "Detail of beams and structural connections in the Erbusco (BS) industrial building",
   "/assets/industriale/capannone-erbusco/ingegneria-civile-adro.webp": "Interior of the industrial building with structure designed for overhead cranes — Erbusco (BS)",
-  "/assets/industriale/ampliamento-complesso-zootecnico/capriate-metalliche-grande-luce-complesso-zootecnico.webp": "Long-span steel trusses under erection — livestock complex extension",
-  "/assets/industriale/ampliamento-complesso-zootecnico/carpenteria-metallica-basamento-cemento-zootecnico.webp": "Steelwork on a reinforced-concrete base — livestock complex extension",
-  "/assets/industriale/ampliamento-complesso-zootecnico/vista-aerea-ampliamento-complesso-zootecnico.webp": "Aerial view of new steel trusses integrated with existing structures — livestock complex",
+  "/assets/industriale/ampliamento-complesso-zootecnico/capriate-metalliche-grande-luce-complesso-zootecnico.webp":
+    "Long-span steel trusses under erection — livestock complex in Castegnato (BS)",
+  "/assets/industriale/ampliamento-complesso-zootecnico/carpenteria-metallica-basamento-cemento-zootecnico.webp":
+    "Steelwork on a reinforced-concrete base — livestock complex in Castegnato (BS)",
+  "/assets/industriale/ampliamento-complesso-zootecnico/vista-aerea-ampliamento-complesso-zootecnico.webp":
+    "Aerial view of new steel trusses integrated with existing structures — Castegnato (BS)",
   "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp": "Overall view of the steel mezzanine integrated into the existing building — Provaglio d'Iseo (BS)",
   "/assets/industriale/centro-direzionale-provaglio-diseo/carpenteria-metallica-soppalco-provaglio-diseo.webp": "Steel mezzanine erection with structural connections and metal decking — Provaglio d'Iseo office centre (BS)",
   "/assets/industriale/centro-direzionale-provaglio-diseo/progettazione-strutture-acciaio-industriali.jpeg": "Roof opening and steelwork on the mezzanine level — Provaglio d'Iseo office centre (BS)",

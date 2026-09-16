@@ -82,19 +82,28 @@ export const projectCategories: Record<
     ),
     cases: [
       {
+        slug: "copertura-edificio-verniciatura-maranello",
+        title: "Copertura edificio di verniciatura — Maranello (MO)",
+        caption: "Copertura verniciatura - Maranello",
+        cover:
+          "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
+        alt: "Copertura reticolare in acciaio per edificio di verniciatura a Maranello (MO) — Studio Capoferri",
+        href: "/progetti/industriali/copertura-edificio-verniciatura-maranello",
+      },
+      {
         slug: "capannone-erbusco",
         title: "Capannone industriale — Erbusco (BS)",
-        caption: "Capannone industriale - Erbusco",
+        caption: "Capannone industriale - Erbusco (BS)",
         cover: "/assets/industriale/capannone-erbusco/progettazione-strutture-adro.webp",
         alt: "Capannone industriale in acciaio a Erbusco (BS) — progettazione strutturale Studio Capoferri",
         href: "/progetti/industriali/capannone-erbusco",
       },
       {
         slug: "ampliamento-complesso-zootecnico",
-        title: "Ampliamento complesso zootecnico",
-        caption: "Complesso zootecnico",
+        title: "Complesso zootecnico — Castegnato (BS)",
+        caption: "Complesso zootecnico - Castegnato (BS)",
         cover: "/assets/industriale/ampliamento-complesso-zootecnico/vista-aerea-ampliamento-complesso-zootecnico.webp",
-        alt: "Vista aerea delle capriate metalliche per l'ampliamento di un complesso zootecnico",
+        alt: "Vista aerea delle capriate metalliche per l'ampliamento di un complesso zootecnico a Castegnato (BS)",
         href: "/progetti/industriali/ampliamento-complesso-zootecnico",
       },
       {
@@ -295,6 +304,62 @@ export const projectCaseStudies: Record<
       },
     ],
   },
+  "industriali/copertura-edificio-verniciatura-maranello": {
+    metaTitle: "Copertura edificio di verniciatura — Maranello (MO)",
+    metaDescription:
+      "Tettoia in carpenteria metallica a Maranello (MO): luce libera circa 40 m, unica capriata reticolare in profili tubolari — Studio Capoferri.",
+    heading: "Copertura edificio di verniciatura — Maranello (MO)",
+    body: (
+      <>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          A <strong>Maranello (MO)</strong>, nel cuore del distretto automotive di eccellenza mondiale, lo Studio Capoferri ha curato la
+          progettazione strutturale di una <strong>tettoia in carpenteria metallica</strong> a copertura di un edificio di verniciatura
+          per uno stabilimento produttivo di un&apos;azienda di autovetture di lusso.
+        </p>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          La copertura ha una <strong>luce libera di circa 40 metri</strong> e collega due edifici prefabbricati. La struttura è
+          caratterizzata da un&apos;<strong>unica capriata reticolare</strong> realizzata con{" "}
+          <strong>profili tubolari a sezione circolare</strong>, scelti anche per la qualità estetica dell&apos;insieme.
+        </p>
+        <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+            <strong>Grande luce libera</strong> — circa 40 metri senza sostegni intermedi tra i due edifici.
+          </li>
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+            <strong>Capriata reticolare unica</strong> — geometria spaziale in profili tubolari a sezione circolare.
+          </li>
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+            <strong>Sollevamento e montaggio</strong> — le esigenze esecutive integrate nelle scelte progettuali fin dalle prime fasi.
+          </li>
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+            <strong>Qualità estetica</strong> — profili e finitura coerenti con lo standard di un impianto di verniciatura ad alte prestazioni.
+          </li>
+        </ul>
+        <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          Il risultato è una copertura leggera, precisa e controllabile in cantiere, allineata al livello tecnico richiesto dal polo
+          produttivo di Maranello.
+        </p>
+      </>
+    ),
+    gallery: [
+      {
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
+        alt: "Capriata reticolare in profili tubolari a grande luce — tettoia edificio verniciatura Maranello (MO)",
+      },
+      {
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.jpeg",
+        alt: "Fasi di sollevamento e montaggio della copertura metallica — Maranello (MO)",
+      },
+      {
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/cantiere-copertura-industriale-verniciatura-maranello.jpeg",
+        alt: "Tettoia in carpenteria metallica a copertura di edifici prefabbricati — cantiere Maranello (MO)",
+      },
+      {
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/vista-interna-copertura-metallica-verniciatura-maranello.jpeg",
+        alt: "Vista interna della capriata reticolare in tubolari a sezione circolare — Maranello (MO)",
+      },
+    ],
+  },
   "industriali/capannone-erbusco": {
     metaTitle: "Capannone industriale — Erbusco (BS)",
     metaDescription:
@@ -304,7 +369,7 @@ export const projectCaseStudies: Record<
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Lo Studio Capoferri ha curato la <strong>progettazione strutturale, architettonica e urbanistica</strong> per l&apos;ampliamento della zona
-          produttiva di un&apos;importante carpenteria metallica pesante a <strong>Erbusco (Brescia)</strong>.
+          produttiva di un&apos;importante carpenteria metallica pesante a <strong>Erbusco (BS)</strong>.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Progetto di ingegneria industriale avanzata per massimizzare efficienza operativa e sicurezza in un contesto produttivo intensivo. Il capannone
@@ -335,7 +400,7 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/industriale/capannone-erbusco/capannone-industriale-erbusco.webp",
-        alt: "Vista esterna del capannone industriale in acciaio a Erbusco (Brescia)",
+        alt: "Vista esterna del capannone industriale in acciaio a Erbusco (BS)",
       },
       {
         src: "/assets/industriale/capannone-erbusco/progettazione-strutture-adro.webp",
@@ -343,7 +408,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/industriale/capannone-erbusco/strutture-industriali-erbusco.webp",
-        alt: "Telaio portante in acciaio del capannone industriale a Erbusco",
+        alt: "Telaio portante in acciaio del capannone industriale a Erbusco (BS)",
       },
       {
         src: "/assets/industriale/capannone-erbusco/vista-capannone-erbusco.webp",
@@ -351,7 +416,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/industriale/capannone-erbusco/strutture-industriali.webp",
-        alt: "Dettaglio delle travi e connessioni strutturali del capannone industriale a Erbusco",
+        alt: "Dettaglio delle travi e connessioni strutturali del capannone industriale a Erbusco (BS)",
       },
       {
         src: "/assets/industriale/capannone-erbusco/ingegneria-civile-adro.webp",
@@ -360,16 +425,16 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/ampliamento-complesso-zootecnico": {
-    metaTitle: "Ampliamento complesso zootecnico",
+    metaTitle: "Complesso zootecnico — Castegnato (BS)",
     metaDescription:
-      "Ampliamento con capriate metalliche a luce libera di quasi 16 metri: progettazione strutturale per complesso zootecnico — Studio Capoferri.",
-    heading: "Ampliamento complesso zootecnico",
+      "Ampliamento con capriate metalliche a luce libera di quasi 16 metri: progettazione strutturale per complesso zootecnico a Castegnato (BS) — Studio Capoferri.",
+    heading: "Complesso zootecnico — Castegnato (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Intervenire sull&apos;esistente richiede equilibrio tra vincoli strutturali, logistica e continuità dell&apos;attività. Nel progetto di
-          ampliamento di questo <strong>complesso zootecnico</strong>, l&apos;obiettivo era aumentare la superficie coperta e garantire la massima
-          flessibilità interna.
+          ampliamento di questo <strong>complesso zootecnico a Castegnato (BS)</strong>, l&apos;obiettivo era aumentare la superficie coperta e
+          garantire la massima flessibilità interna.
         </p>
         <p className="copy-rhythm mb-6 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           La soluzione si concentra sullo sviluppo di <strong>nuove capriate metalliche</strong> con una luce libera di quasi{" "}
@@ -398,15 +463,15 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/industriale/ampliamento-complesso-zootecnico/capriate-metalliche-grande-luce-complesso-zootecnico.webp",
-        alt: "Capriate metalliche a grande luce in fase di montaggio — ampliamento complesso zootecnico",
+        alt: "Capriate metalliche a grande luce in fase di montaggio — complesso zootecnico Castegnato (BS)",
       },
       {
         src: "/assets/industriale/ampliamento-complesso-zootecnico/carpenteria-metallica-basamento-cemento-zootecnico.webp",
-        alt: "Carpenteria metallica su basamento in cemento armato — ampliamento complesso zootecnico",
+        alt: "Carpenteria metallica su basamento in cemento armato — complesso zootecnico Castegnato (BS)",
       },
       {
         src: "/assets/industriale/ampliamento-complesso-zootecnico/vista-aerea-ampliamento-complesso-zootecnico.webp",
-        alt: "Vista aerea delle nuove capriate metalliche integrate con le strutture preesistenti — complesso zootecnico",
+        alt: "Vista aerea delle nuove capriate metalliche integrate con le strutture preesistenti — Castegnato (BS)",
       },
     ],
   },

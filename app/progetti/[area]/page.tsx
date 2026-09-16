@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { LocalizedProjectAreaPage } from "@/components/pages/LocalizedProjectRoutes";
+import { LocalizedProjectAreaPage } from "@/components/pages/LocalizedProjectAreaPage";
 import { isProjectArea, projectCategories, projectAreas } from "@/lib/projects";
 import { buildPageMetadata } from "@/lib/seo";
 

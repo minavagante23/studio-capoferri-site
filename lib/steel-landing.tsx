@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LocalizedSteelLandingPage } from "@/components/pages/LocalizedProjectRoutes";
+import { LocalizedSteelLandingPage } from "@/components/pages/LocalizedSteelLandingPage";
 import { buildPageMetadata } from "@/lib/seo";
 
 export type SteelLandingConfig = {

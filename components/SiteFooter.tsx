@@ -79,6 +79,15 @@ export function SiteFooter() {
                     {locale === "en" ? "International clients" : "Clienti internazionali"}
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className={ui.footerLink}
+                    href={localizeHref("/progettazione-strutturale-acciaio-italia", locale)}
+                    title={locale === "en" ? "Structural steel design services in Italy" : "Progettazione strutturale acciaio per partner europei"}
+                  >
+                    {locale === "en" ? "Steel design for EU partners" : "Acciaio per partner UE"}
+                  </Link>
+                </li>
               </ul>
             </div>
 

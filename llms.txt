@@ -60,7 +60,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 
 - Regions: Lombardy, Veneto, Piedmont, Emilia-Romagna, Tuscany
 - Main provinces: Brescia, Bergamo, Milan
-- Frequent areas: Franciacorta, Lake Iseo, Adro, Erbusco
+- Frequent areas: Franciacorta, Lake Iseo, Adro, Erbusco (BS)
 - Also: EU project partners needing Italian steel design and site interface
 
 ## Project categories / Categorie progetti
@@ -92,20 +92,24 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 ### Italian
 - [Steel villa in Veneto](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-veneto/)
 - [Steel villa in Salsomaggiore Terme](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-salsomaggiore/)
-- [Industrial building in Erbusco](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco/)
-- [Livestock complex extension](https://www.studiocapoferri.eu/progetti/industriali/ampliamento-complesso-zootecnico/)
+- [Paint shop roof structure in Maranello](https://www.studiocapoferri.eu/progetti/industriali/copertura-edificio-verniciatura-maranello/)
+- [Industrial building in Erbusco (BS)](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco/)
+- [Livestock complex in Castegnato (BS)](https://www.studiocapoferri.eu/progetti/industriali/ampliamento-complesso-zootecnico/)
 - [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/)
 - [Superstudio Village in Milan Bovisa](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/)
 - [Superstudio Maxi in Famagosta](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/)
+- [Structural steel design for EU partners](https://www.studiocapoferri.eu/progettazione-strutturale-acciaio-italia/)
 
 ### English
 - [Steel villa in Veneto](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-veneto/)
 - [Steel villa in Salsomaggiore Terme](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-salsomaggiore/)
-- [Industrial building in Erbusco](https://www.studiocapoferri.eu/en/projects/industrial/industrial-warehouse-erbusco/)
-- [Livestock complex extension](https://www.studiocapoferri.eu/en/projects/industrial/livestock-complex-extension/)
+- [Paint shop roof structure in Maranello](https://www.studiocapoferri.eu/en/projects/industrial/paint-shop-roof-structure-maranello/)
+- [Industrial building in Erbusco (BS)](https://www.studiocapoferri.eu/en/projects/industrial/industrial-warehouse-erbusco/)
+- [Livestock complex in Castegnato (BS)](https://www.studiocapoferri.eu/en/projects/industrial/livestock-complex-extension/)
 - [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/)
 - [Superstudio Village in Milan Bovisa](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-village/)
 - [Superstudio Maxi in Famagosta](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-maxi/)
+- [Structural steel design services in Italy](https://www.studiocapoferri.eu/en/structural-steel-design-italy/)
 
 ## Snapshot / Dati sintetici
 

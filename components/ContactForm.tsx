@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import { trackEvent } from "@/lib/analytics";
 import { chromeCopy, localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { site } from "@/lib/site";
@@ -78,6 +79,12 @@ export function ContactForm({
           }),
         });
         if (res.ok) {
+          trackEvent("generate_lead", {
+            method: "contact_form",
+            locale,
+            form_id: formId ?? "contact",
+            city: city || undefined,
+          });
           setStatus("success");
           setName("");
           setEmail("");
@@ -93,7 +100,7 @@ export function ContactForm({
         setStatus("error");
       }
     },
-    [city, copy.noSubject, defaultCity, defaultSubject, email, locale, message, name, subject, valid]
+    [city, copy.noSubject, defaultCity, defaultSubject, email, formId, locale, message, name, subject, valid]
   );
 
   if (status === "success") {

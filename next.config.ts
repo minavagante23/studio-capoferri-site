@@ -1,10 +1,15 @@
 import type { NextConfig } from "next";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const isStaticExport = process.env.STATIC_EXPORT === "1";
+
+const legacyRedirectMap = JSON.parse(
+  readFileSync(path.join(__dirname, "lib/legacy-redirects.json"), "utf8")
+) as Record<string, string>;
 
 const nextConfig: NextConfig = {
   turbopack: {
@@ -42,11 +47,11 @@ if (isStaticExport) {
             "base-uri 'self'",
             "frame-ancestors 'self'",
             "form-action 'self' https://formspree.io",
-            "img-src 'self' data: https://www.studiocapoferri.eu https://*.googleapis.com https://*.gstatic.com",
+            "img-src 'self' data: https://www.studiocapoferri.eu https://*.googleapis.com https://*.gstatic.com https://www.google-analytics.com https://www.googletagmanager.com",
             "font-src 'self' data: https://fonts.gstatic.com",
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-            "script-src 'self' 'unsafe-inline'",
-            "connect-src 'self' https://formspree.io",
+            "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
+            "connect-src 'self' https://formspree.io https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com",
             "frame-src 'self' https://maps.google.com https://www.google.com https://*.google.com",
             "upgrade-insecure-requests",
           ].join("; "),
@@ -61,38 +66,11 @@ if (isStaticExport) {
 
   nextConfig.redirects = async () => [
     { source: "/index.html", destination: "/", permanent: true },
-    { source: "/chi-siamo.html", destination: "/chi-siamo", permanent: true },
-    { source: "/servizi-studio-progettazione.html", destination: "/servizi", permanent: true },
-    {
-      source: "/progettazione-strutture-brescia-contatti.html",
-      destination: "/contatti",
+    ...Object.entries(legacyRedirectMap).map(([source, destination]) => ({
+      source: `/${source}`,
+      destination,
       permanent: true,
-    },
-    { source: "/privacy-policy.html", destination: "/privacy-policy", permanent: true },
-    {
-      source: "/progetti-studio-ingegneria-capoferri.html",
-      destination: "/progetti",
-      permanent: true,
-    },
-    {
-      source: "/progetti-residenziali-studio-ingegneria-capoferri.html",
-      destination: "/progetti/residenziali",
-      permanent: true,
-    },
-    {
-      source: "/progetti-industriali-studio-ingegneria-capoferri.html",
-      destination: "/progetti/industriali",
-      permanent: true,
-    },
-    {
-      source: "/progetti-ricettivi-studio-ingegneria-capoferri.html",
-      destination: "/progetti/ricettivi",
-      permanent: true,
-    },
-    { source: "/villa-acciaio-veneto.html", destination: "/progetti/residenziali/villa-acciaio-veneto", permanent: true },
-    { source: "/capannone-erbusco.html", destination: "/progetti/industriali/capannone-erbusco", permanent: true },
-    { source: "/superstudio-village.html", destination: "/progetti/ricettivi/superstudio-village", permanent: true },
-    { source: "/superstudio-maxi.html", destination: "/progetti/ricettivi/superstudio-maxi", permanent: true },
+    })),
   ];
 }
 

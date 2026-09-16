@@ -2,27 +2,6 @@
 
 export const heroFirstImageSrc = "/assets/superstudio-village-acciaio-pre-fabbricato.webp";
 
-export const heroSlides = [
-  {
-    src: "/assets/superstudio-village-acciaio-pre-fabbricato.webp",
-    alt: "Strutture in acciaio pre-fabbricate — progetti Studio Capoferri Nord Italia, Brescia, Bergamo, Milano",
-    line1: "Progettazione integrata",
-    line2: "dalla fattibilità al cantiere",
-  },
-  {
-    src: "/assets/superstudio-village-sala-proiezione.webp",
-    alt: "Strutture in acciaio per edilizia residenziale e industriale — Studio Capoferri Lombardia",
-    line1: "Esperienza tecnica",
-    line2: "per soluzioni su misura",
-  },
-  {
-    src: "/assets/hero-struttura-new.webp",
-    alt: "Strutture in acciaio — efficienza e rapidità",
-    line1: "Strutture in acciaio",
-    line2: "efficienza e rapidità",
-  },
-] as const;
-
 export const homeChiSiamoImages = {
   team: {
     src: "/assets/ingegneria-progettazione-brescia.webp",

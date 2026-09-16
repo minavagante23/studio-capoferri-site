@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import { caseCopyEn } from "@/lib/case-copy-en";
+import { itAreaByEn, itCaseByEn, localizedPathname, toItalianPath } from "@/lib/locale-paths";
 import { site } from "@/lib/site";
-import { localizedPathname } from "@/lib/locale-paths";
 
 export const defaultOgImage = "/assets/superstudio-village-acciaio-pre-fabbricato.webp";
 export const steelLandingSlugs = ["brescia", "bergamo", "milano"] as const;
@@ -46,7 +47,7 @@ export function buildPageMetadata({
       languages: {
         it: pageUrl(path, "it"),
         en: pageUrl(path, "en"),
-        "x-default": pageUrl(path, "it"),
+        "x-default": pageUrl(path, "en"),
       },
     },
     ...(keywords ? { keywords } : {}),
@@ -137,7 +138,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "clienti-internazionali": {
     title: "International clients — steel engineering in Italy",
     description:
-      "English-speaking structural engineers in Northern Italy for overseas architects, contractors and EU fabricators: steel structures, shop drawings, Eurocodes/NTC and site support.",
+      "English-speaking structural engineers in Northern Italy for partners in Germany, the Netherlands, Belgium and the EU: steel structures, shop drawings, Eurocodes/NTC and site support.",
     path: "/clienti-internazionali",
     keywords: [
       "international structural engineer Italy",
@@ -146,6 +147,22 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
       "hire Italian structural engineer",
       "Eurocode steel design Italy",
       "steel structure design Northern Italy",
+      "structural engineer Germany Netherlands Belgium Italy",
+    ],
+  },
+  "progettazione-strutturale-acciaio-italia": {
+    title: "Structural steel design services in Italy for EU partners",
+    description:
+      "Outsource structural steel design and shop drawings to an English-speaking engineering partner in Northern Italy — for contractors and fabricators in Germany, the Netherlands and Belgium building in Italy.",
+    path: "/progettazione-strutturale-acciaio-italia",
+    keywords: [
+      "structural steel design services Italy",
+      "outsource steel detailing Europe",
+      "engineering partner Italy steel",
+      "steel shop drawings Germany Netherlands Belgium",
+      "Eurocode structural engineer Italy",
+      "English speaking steel engineer Northern Italy",
+      "hire structural engineer Italy EU project",
     ],
   },
   "privacy-policy": {
@@ -219,50 +236,16 @@ const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
   },
 };
 
-const englishProjectCaseMetadata: Record<string, BaseMetadataInput> = {
-  "residenziali/villa-acciaio-veneto": {
-    title: "Private residence - Veneto",
-    description:
-      "Private steel residence with integrated structural and architectural design: efficiency, durability and landscape integration by Studio Capoferri.",
-    path: "/progetti/residenziali/villa-acciaio-veneto",
-  },
-  "residenziali/villa-acciaio-salsomaggiore": {
-    title: "Steel villa - Salsomaggiore Terme (PR)",
-    description:
-      "Steel villa in Salsomaggiore Terme with piled foundations, mixed reinforced-concrete and steel structure, dry construction systems and photovoltaic-ready roof.",
-    path: "/progetti/residenziali/villa-acciaio-salsomaggiore",
-  },
-  "industriali/capannone-erbusco": {
-    title: "Industrial building - Erbusco (BS)",
-    description:
-      "Extension of a heavy steel fabrication production area in Erbusco: steel structure, overhead cranes, sandwich panels and fabrication drawings.",
-    path: "/progetti/industriali/capannone-erbusco",
-  },
-  "industriali/ampliamento-complesso-zootecnico": {
-    title: "Livestock complex extension",
-    description:
-      "Structural design for a livestock complex extension with large-span steel trusses, fast erection and precise integration with the existing buildings.",
-    path: "/progetti/industriali/ampliamento-complesso-zootecnico",
-  },
-  "industriali/centro-direzionale-provaglio-diseo": {
-    title: "Headquarters - Provaglio d'Iseo (BS)",
-    description:
-      "Redevelopment of an industrial building in Provaglio d'Iseo (BS) as the main headquarters of a major listed electronics company — steel mezzanine of more than 5,000 square metres.",
-    path: "/progetti/industriali/centro-direzionale-provaglio-diseo",
-  },
-  "ricettivi/superstudio-village": {
-    title: "Superstudio Village - Milan Bovisa",
-    description:
-      "Structural design for a six-building complex in Milan Bovisa, including steel reconstruction, strengthening works and seismic upgrading.",
-    path: "/progetti/ricettivi/superstudio-village",
-  },
-  "ricettivi/superstudio-maxi": {
-    title: "Superstudio Maxi - Famagosta",
-    description:
-      "Recovery of a disused industrial shed in Milan Famagosta with seismic upgrading, strengthening of existing steel structures and new event spaces.",
-    path: "/progetti/ricettivi/superstudio-maxi",
-  },
-};
+const englishProjectCaseMetadata: Record<string, BaseMetadataInput> = Object.fromEntries(
+  Object.entries(caseCopyEn).map(([key, copy]) => [
+    key,
+    {
+      title: copy.heading,
+      description: copy.metaDescription,
+      path: `/progetti/${key}`,
+    },
+  ])
+);
 
 export function getEnglishCaseMetadata(area: string, slug: string): BaseMetadataInput | undefined {
   return englishProjectCaseMetadata[`${area}/${slug}`];
@@ -278,52 +261,23 @@ export function getEnglishMetadataForSlug(slug: string[]): Metadata {
   }
 
   if (slug.length === 1) {
-    const byEnKey: Record<string, string> = {
-      about: "chi-siamo",
-      services: "servizi",
-      contact: "contatti",
-      "privacy-policy": "privacy-policy",
-      "international-clients": "clienti-internazionali",
-      projects: "progetti",
-      "steel-structure-design-brescia": "progettazione-strutture-acciaio-brescia",
-      "steel-structure-design-bergamo": "progettazione-strutture-acciaio-bergamo",
-      "steel-structure-design-milano": "progettazione-strutture-acciaio-milano",
-    };
-    const itKey = byEnKey[slug[0]];
-    if (itKey && itKey in englishStaticMetadata) {
+    const itPath = toItalianPath(`/${slug[0]}`);
+    const itKey = itPath === "/" ? "" : itPath.replace(/^\//, "");
+    if (itKey in englishStaticMetadata) {
       return buildPageMetadata({ ...englishStaticMetadata[itKey], locale: "en" });
     }
   }
 
   if (slug[0] === "projects" && slug.length === 2) {
-    const areaByEn: Record<string, string> = {
-      residential: "residenziali",
-      industrial: "industriali",
-      "public-spaces": "ricettivi",
-    };
-    const area = areaByEn[slug[1]];
+    const area = itAreaByEn[slug[1]];
     if (area && area in englishProjectAreaMetadata) {
       return buildPageMetadata({ ...englishProjectAreaMetadata[area], locale: "en" });
     }
   }
 
   if (slug[0] === "projects" && slug.length === 3) {
-    const areaByEn: Record<string, string> = {
-      residential: "residenziali",
-      industrial: "industriali",
-      "public-spaces": "ricettivi",
-    };
-    const caseByEn: Record<string, string> = {
-      "steel-villa-veneto": "villa-acciaio-veneto",
-      "steel-villa-salsomaggiore": "villa-acciaio-salsomaggiore",
-      "industrial-warehouse-erbusco": "capannone-erbusco",
-      "livestock-complex-extension": "ampliamento-complesso-zootecnico",
-      "office-complex-provaglio-diseo": "centro-direzionale-provaglio-diseo",
-      "superstudio-village": "superstudio-village",
-      "superstudio-maxi": "superstudio-maxi",
-    };
-    const area = areaByEn[slug[1]];
-    const itSlug = caseByEn[slug[2]];
+    const area = itAreaByEn[slug[1]];
+    const itSlug = itCaseByEn[slug[2]];
     if (area && itSlug) {
       const key = `${area}/${itSlug}`;
       if (key in englishProjectCaseMetadata) {

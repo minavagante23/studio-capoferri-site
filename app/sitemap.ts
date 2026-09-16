@@ -22,7 +22,7 @@ function entry(
       languages: {
         it: pageUrl(path, "it"),
         en: pageUrl(path, "en"),
-        "x-default": pageUrl(path, "it"),
+        "x-default": pageUrl(path, "en"),
       },
     },
   };
@@ -44,6 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/privacy-policy", "en", 0.3, "yearly"),
     entry("/clienti-internazionali", "it", 0.85),
     entry("/clienti-internazionali", "en", 0.9),
+    entry("/progettazione-strutturale-acciaio-italia", "it", 0.85),
+    entry("/progettazione-strutturale-acciaio-italia", "en", 0.95),
     ...steelLandingSlugs.flatMap((slug) => [
       entry(`/progettazione-strutture-acciaio-${slug}`, "it", 0.8),
       entry(`/progettazione-strutture-acciaio-${slug}`, "en", 0.8),
