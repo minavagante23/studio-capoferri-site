@@ -128,7 +128,7 @@ export function HeroHome() {
             <span className="mt-1 block whitespace-nowrap text-white">{copy.line2}</span>
           </h1>
 
-          <p className="mt-4 border-t border-[#e8b478]/45 pt-3 text-[0.85rem] leading-snug tracking-[0.015em] text-white drop-shadow-[0_1px_12px_rgba(0,0,0,0.75)] sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:border-t-0 md:border-r md:border-[#e8b478]/55 md:pr-3.5 md:pt-0 md:text-[1rem]">
+          <p className="mt-4 border-t border-[#e8b478]/45 pt-3 text-[0.85rem] leading-snug tracking-[0.015em] text-[#e8b478] drop-shadow-[0_1px_12px_rgba(0,0,0,0.75)] sm:whitespace-nowrap sm:text-[0.9rem] md:ml-auto md:border-t-0 md:border-r md:border-[#e8b478]/55 md:pr-3.5 md:pt-0 md:text-[1rem]">
             {copy.support}
           </p>
 
