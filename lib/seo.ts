@@ -138,7 +138,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "clienti-internazionali": {
     title: "International clients — steel engineering in Italy",
     description:
-      "English-speaking structural engineers in Northern Italy for partners in Germany, the Netherlands, Belgium and the EU: steel structures, shop drawings, Eurocodes/NTC and site support.",
+      "English-speaking structural engineers in Northern Italy for partners in Germany, the Netherlands, Belgium, Denmark and the EU: steel structures, shop drawings, Eurocodes/NTC and site support.",
     path: "/clienti-internazionali",
     keywords: [
       "international structural engineer Italy",
@@ -147,19 +147,19 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
       "hire Italian structural engineer",
       "Eurocode steel design Italy",
       "steel structure design Northern Italy",
-      "structural engineer Germany Netherlands Belgium Italy",
+      "structural engineer Germany Netherlands Belgium Denmark Italy",
     ],
   },
   "progettazione-strutturale-acciaio-italia": {
     title: "Structural steel design services in Italy for EU partners",
     description:
-      "Outsource structural steel design and shop drawings to an English-speaking engineering partner in Northern Italy — for contractors and fabricators in Germany, the Netherlands and Belgium building in Italy.",
+      "Outsource structural steel design and shop drawings to an English-speaking engineering partner in Northern Italy — for contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy.",
     path: "/progettazione-strutturale-acciaio-italia",
     keywords: [
       "structural steel design services Italy",
       "outsource steel detailing Europe",
       "engineering partner Italy steel",
-      "steel shop drawings Germany Netherlands Belgium",
+      "steel shop drawings Germany Netherlands Belgium Denmark",
       "Eurocode structural engineer Italy",
       "English speaking steel engineer Northern Italy",
       "hire structural engineer Italy EU project",

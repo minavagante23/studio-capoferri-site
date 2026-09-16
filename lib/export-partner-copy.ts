@@ -4,7 +4,7 @@ export const exportPartnerCopy = {
   it: {
     title: "Progettazione strutturale in acciaio per partner europei",
     lead:
-      "Studio Capoferri progetta strutture in acciaio, disegni d'officina e supporto al montaggio per imprese e progettisti di Germania, Paesi Bassi, Belgio e altri paesi UE che realizzano opere in Italia.",
+      "Studio Capoferri progetta strutture in acciaio, disegni d'officina e supporto al montaggio per imprese e progettisti di Germania, Paesi Bassi, Belgio, Danimarca e altri paesi UE che realizzano opere in Italia.",
     sections: [
       {
         id: "per-chi",
@@ -43,13 +43,13 @@ export const exportPartnerCopy = {
   en: {
     title: "Structural steel design services in Italy for EU partners",
     lead:
-      "Studio Capoferri is an English-speaking structural engineering practice in Northern Italy. We design steel structures, issue fabrication shop drawings and support erection for partners in Germany, the Netherlands, Belgium and across the EU building projects in Italy.",
+      "Studio Capoferri is an English-speaking structural engineering practice in Northern Italy. We design steel structures, issue fabrication shop drawings and support erection for partners in Germany, the Netherlands, Belgium, Denmark and across the EU building projects in Italy.",
     sections: [
       {
         id: "who",
         heading: "Who this page is for",
         body: [
-          "General contractors, steel fabricators and engineering offices in Germany, the Netherlands, Belgium and neighbouring countries that need a local structural partner for works in Italy — Eurocode-aligned and NTC-compliant.",
+          "General contractors, steel fabricators and engineering offices in Germany, the Netherlands, Belgium, Denmark and neighbouring countries that need a local structural partner for works in Italy — Eurocode-aligned and NTC-compliant.",
           "Technical discussions are held in English with our engineers, not only with a commercial contact.",
         ],
       },

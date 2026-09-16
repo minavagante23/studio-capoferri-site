@@ -10,7 +10,7 @@ export const internationalHub = {
         id: "per-chi",
         heading: "Per chi lavoriamo",
         body: [
-          "Ingegneri e architetti stranieri, general contractor, fabricator europei — in particolare da Germania, Paesi Bassi e Belgio — e investitori che devono realizzare o coordinare opere in Italia e cercano uno studio strutturale di riferimento sul territorio.",
+          "Ingegneri e architetti stranieri, general contractor, fabricator europei — in particolare da Germania, Paesi Bassi, Belgio e Danimarca — e investitori che devono realizzare o coordinare opere in Italia e cercano uno studio strutturale di riferimento sul territorio.",
           "I confronti di progetto possono svolgersi in inglese direttamente con i nostri ingegneri — non solo con un referente commerciale.",
         ],
       },
@@ -40,13 +40,13 @@ export const internationalHub = {
   en: {
     title: "International clients",
     lead:
-      "English-speaking structural engineering in Northern Italy for partners in Germany, the Netherlands, Belgium and across the EU — steel structures, shop drawings and site support for projects built in Italy.",
+      "English-speaking structural engineering in Northern Italy for partners in Germany, the Netherlands, Belgium, Denmark and across the EU — steel structures, shop drawings and site support for projects built in Italy.",
     sections: [
       {
         id: "who",
         heading: "Who we work with",
         body: [
-          "Foreign engineers and architects, general contractors, EU fabricators — especially from Germany, the Netherlands and Belgium — and investors who need a local structural partner for projects in Italy.",
+          "Foreign engineers and architects, general contractors, EU fabricators — especially from Germany, the Netherlands, Belgium and Denmark — and investors who need a local structural partner for projects in Italy.",
           "Project discussions are handled in English by our engineers — not only the first commercial contact.",
         ],
       },
