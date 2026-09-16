@@ -83,11 +83,11 @@ export const projectCategories: Record<
     cases: [
       {
         slug: "copertura-edificio-verniciatura-maranello",
-        title: "Copertura edificio di verniciatura — Maranello (MO)",
-        caption: "Copertura verniciatura - Maranello (MO)",
+        title: "Tettoia reticolare a grande luce — Maranello (MO)",
+        caption: "Tettoia reticolare - Maranello (MO)",
         cover:
           "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
-        alt: "Copertura reticolare in acciaio per edificio di verniciatura a Maranello (MO) — Studio Capoferri",
+        alt: "Tettoia reticolare in acciaio a grande luce a Maranello (MO) — Studio Capoferri",
         href: "/progetti/industriali/copertura-edificio-verniciatura-maranello",
       },
       {
@@ -305,19 +305,19 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/copertura-edificio-verniciatura-maranello": {
-    metaTitle: "Copertura edificio di verniciatura — Maranello (MO)",
+    metaTitle: "Tettoia reticolare a grande luce — Maranello (MO)",
     metaDescription:
       "Tettoia in carpenteria metallica a Maranello (MO): luce libera circa 40 m, unica capriata reticolare in profili tubolari — Studio Capoferri.",
-    heading: "Copertura edificio di verniciatura — Maranello (MO)",
+    heading: "Tettoia reticolare a grande luce — Maranello (MO)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           A <strong>Maranello (MO)</strong>, nel cuore del distretto automotive di eccellenza mondiale, lo Studio Capoferri ha curato la
-          progettazione strutturale di una <strong>tettoia in carpenteria metallica</strong> a copertura di un edificio di verniciatura
-          per uno stabilimento produttivo di un&apos;azienda di autovetture di lusso.
+          progettazione strutturale di una <strong>tettoia in carpenteria metallica</strong> a copertura di due edifici prefabbricati, in
+          un impianto di verniciatura per uno stabilimento produttivo di un&apos;azienda di autovetture di lusso.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          La copertura ha una <strong>luce libera di circa 40 metri</strong> e collega due edifici prefabbricati. La struttura è
+          La tettoia ha una <strong>luce libera di circa 40 metri</strong> e collega due edifici prefabbricati. La struttura è
           caratterizzata da un&apos;<strong>unica capriata reticolare</strong> realizzata con{" "}
           <strong>profili tubolari a sezione circolare</strong>, scelti anche per la qualità estetica dell&apos;insieme.
         </p>

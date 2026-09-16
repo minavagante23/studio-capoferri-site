@@ -138,16 +138,14 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "clienti-internazionali": {
     title: "International clients — steel engineering in Italy",
     description:
-      "English-speaking structural engineers in Northern Italy for partners in Germany, the Netherlands, Belgium, Denmark and the EU: steel structures, shop drawings, Eurocodes/NTC and site support.",
+      "English-speaking structural engineers in Northern Italy for EU partners: steel structures, shop drawings, Eurocodes/NTC and site support for projects built in Italy.",
     path: "/clienti-internazionali",
     keywords: [
       "international structural engineer Italy",
       "English speaking structural engineer Italy",
       "steel shop drawings Italy EU fabricator",
-      "hire Italian structural engineer",
       "Eurocode steel design Italy",
       "steel structure design Northern Italy",
-      "structural engineer Germany Netherlands Belgium Denmark Italy",
     ],
   },
   "progettazione-strutturale-acciaio-italia": {

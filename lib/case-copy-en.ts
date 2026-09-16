@@ -31,12 +31,12 @@ export const caseCopyEn = {
     ],
   },
   "industriali/copertura-edificio-verniciatura-maranello": {
-    heading: "Paint shop roof structure - Maranello (MO)",
+    heading: "Large-span space-truss canopy - Maranello (MO)",
     metaDescription:
       "Steel canopy in Maranello (MO) with about 40 m clear span: single tubular circular-section space truss covering two prefabricated buildings — Studio Capoferri.",
     body: [
-      "In Maranello (MO), at the heart of a world-renowned automotive district, Studio Capoferri handled the structural design of a steel canopy for a paint shop building serving a luxury car manufacturing plant.",
-      "The roof has a clear span of about 40 metres and covers two prefabricated buildings. The structure is defined by a single space truss made of circular hollow sections, chosen also for the overall aesthetic quality.",
+      "In Maranello (MO), at the heart of a world-renowned automotive district, Studio Capoferri handled the structural design of a steel canopy covering two prefabricated buildings within a paint shop facility for a luxury car manufacturing plant.",
+      "The canopy has a clear span of about 40 metres. The structure is defined by a single space truss made of circular hollow sections, chosen also for the overall aesthetic quality.",
       "Particular attention was given to lifting and erection phases, integrating construction requirements into the design choices from the outset.",
     ],
     bullets: [
@@ -125,7 +125,7 @@ export const caseCopyEn = {
 export const caseCardCaptionEn: Record<string, string> = {
   "residenziali/villa-acciaio-veneto": "Integrated steel villa with landscape-led structure",
   "residenziali/villa-acciaio-salsomaggiore": "Piled foundations, steel frame, PV-ready roof",
-  "industriali/copertura-edificio-verniciatura-maranello": "About 40 m clear-span tubular space truss for a luxury automotive paint shop",
+  "industriali/copertura-edificio-verniciatura-maranello": "About 40 m clear-span tubular space-truss canopy",
   "industriali/capannone-erbusco": "Heavy fabrication hall — dual cranes and shop drawings",
   "industriali/ampliamento-complesso-zootecnico": "Large-span steel trusses in Castegnato (BS)",
   "industriali/centro-direzionale-provaglio-diseo": "5,000 m² steel mezzanine for corporate HQ",

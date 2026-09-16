@@ -56,10 +56,10 @@ export function LocalizedExportPartnerPage() {
                     See{" "}
                     <Link
                       href={localizeHref("/progetti/industriali/copertura-edificio-verniciatura-maranello", locale)}
-                      title={linkTitles.progetto("Paint shop roof - Maranello (MO)", locale)}
+                      title={linkTitles.progetto("Large-span space-truss canopy - Maranello (MO)", locale)}
                       className="link-accent"
                     >
-                      Maranello (MO) paint shop canopy
+                      Maranello (MO) space-truss canopy
                     </Link>
                     ,{" "}
                     <Link
@@ -80,10 +80,10 @@ export function LocalizedExportPartnerPage() {
                     Vedi{" "}
                     <Link
                       href={localizeHref("/progetti/industriali/copertura-edificio-verniciatura-maranello", locale)}
-                      title={linkTitles.progetto("Copertura verniciatura Maranello (MO)", locale)}
+                      title={linkTitles.progetto("Tettoia reticolare a grande luce — Maranello (MO)", locale)}
                       className="link-accent"
                     >
-                      copertura Maranello (MO)
+                      tettoia Maranello (MO)
                     </Link>
                     ,{" "}
                     <Link

@@ -92,7 +92,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 ### Italian
 - [Steel villa in Veneto](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-veneto/)
 - [Steel villa in Salsomaggiore Terme](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-salsomaggiore/)
-- [Paint shop roof structure in Maranello (MO)](https://www.studiocapoferri.eu/progetti/industriali/copertura-edificio-verniciatura-maranello/)
+- [Large-span space-truss canopy in Maranello (MO)](https://www.studiocapoferri.eu/progetti/industriali/copertura-edificio-verniciatura-maranello/)
 - [Industrial building in Erbusco (BS)](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco/)
 - [Livestock complex in Castegnato (BS)](https://www.studiocapoferri.eu/progetti/industriali/ampliamento-complesso-zootecnico/)
 - [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/)
@@ -103,7 +103,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 ### English
 - [Steel villa in Veneto](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-veneto/)
 - [Steel villa in Salsomaggiore Terme](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-salsomaggiore/)
-- [Paint shop roof structure in Maranello (MO)](https://www.studiocapoferri.eu/en/projects/industrial/paint-shop-roof-structure-maranello/)
+- [Large-span space-truss canopy in Maranello (MO)](https://www.studiocapoferri.eu/en/projects/industrial/paint-shop-roof-structure-maranello/)
 - [Industrial building in Erbusco (BS)](https://www.studiocapoferri.eu/en/projects/industrial/industrial-warehouse-erbusco/)
 - [Livestock complex in Castegnato (BS)](https://www.studiocapoferri.eu/en/projects/industrial/livestock-complex-extension/)
 - [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/)

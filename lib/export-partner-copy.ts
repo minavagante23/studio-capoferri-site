@@ -35,7 +35,7 @@ export const exportPartnerCopy = {
     ],
     proofHeading: "Prova di lavoro recente",
     proofBody:
-      "Tra i progetti recenti: copertura reticolare a grande luce (circa 40 m) per un edificio di verniciatura a Maranello (MO), capannone industriale a Erbusco (BS) e interventi su carpenterie speciali in Lombardia.",
+      "Tra i progetti recenti: tettoia reticolare a grande luce (circa 40 m) a Maranello (MO), capannone industriale a Erbusco (BS) e interventi su carpenterie speciali in Lombardia.",
     ctaTitle: "Scrivici in inglese il brief del progetto",
     ctaDescription:
       "Allegati, vincoli, tempi e paese di provenienza del team: rispondiamo con una valutazione tecnica preliminare.",
@@ -74,7 +74,7 @@ export const exportPartnerCopy = {
     ],
     proofHeading: "Recent proof of work",
     proofBody:
-      "Recent projects include a large-span tubular space-truss canopy (about 40 m clear span) for a paint shop building in Maranello (MO), an industrial hall in Erbusco (BS), and specialist steelwork across Lombardy.",
+      "Recent projects include a large-span tubular space-truss canopy (about 40 m clear span) in Maranello (MO), an industrial hall in Erbusco (BS), and specialist steelwork across Lombardy.",
     ctaTitle: "Send your brief in English",
     ctaDescription:
       "Share drawings, constraints, programme and where your team is based — you will receive a focused technical first reply.",
