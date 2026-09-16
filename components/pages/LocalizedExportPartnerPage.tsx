@@ -56,18 +56,18 @@ export function LocalizedExportPartnerPage() {
                     See{" "}
                     <Link
                       href={localizeHref("/progetti/industriali/copertura-edificio-verniciatura-maranello", locale)}
-                      title={linkTitles.progetto("Paint shop roof - Maranello", locale)}
+                      title={linkTitles.progetto("Paint shop roof - Maranello (MO)", locale)}
                       className="link-accent"
                     >
-                      Maranello paint shop canopy
+                      Maranello (MO) paint shop canopy
                     </Link>
                     ,{" "}
                     <Link
                       href={localizeHref("/progetti/industriali/capannone-erbusco", locale)}
-                      title={linkTitles.progetto("Industrial building - Erbusco", locale)}
+                      title={linkTitles.progetto("Industrial building - Erbusco (BS)", locale)}
                       className="link-accent"
                     >
-                      Erbusco industrial hall
+                      Erbusco (BS) industrial hall
                     </Link>{" "}
                     and{" "}
                     <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">
@@ -80,18 +80,18 @@ export function LocalizedExportPartnerPage() {
                     Vedi{" "}
                     <Link
                       href={localizeHref("/progetti/industriali/copertura-edificio-verniciatura-maranello", locale)}
-                      title={linkTitles.progetto("Copertura verniciatura Maranello", locale)}
+                      title={linkTitles.progetto("Copertura verniciatura Maranello (MO)", locale)}
                       className="link-accent"
                     >
-                      copertura Maranello
+                      copertura Maranello (MO)
                     </Link>
                     ,{" "}
                     <Link
                       href={localizeHref("/progetti/industriali/capannone-erbusco", locale)}
-                      title={linkTitles.progetto("Capannone Erbusco", locale)}
+                      title={linkTitles.progetto("Capannone Erbusco (BS)", locale)}
                       className="link-accent"
                     >
-                      capannone Erbusco
+                      capannone Erbusco (BS)
                     </Link>{" "}
                     e{" "}
                     <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">

@@ -84,7 +84,7 @@ export const projectCategories: Record<
       {
         slug: "copertura-edificio-verniciatura-maranello",
         title: "Copertura edificio di verniciatura — Maranello (MO)",
-        caption: "Copertura verniciatura - Maranello",
+        caption: "Copertura verniciatura - Maranello (MO)",
         cover:
           "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
         alt: "Copertura reticolare in acciaio per edificio di verniciatura a Maranello (MO) — Studio Capoferri",
@@ -337,7 +337,7 @@ export const projectCaseStudies: Record<
         </ul>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Il risultato è una copertura leggera, precisa e controllabile in cantiere, allineata al livello tecnico richiesto dal polo
-          produttivo di Maranello.
+          produttivo di Maranello (MO).
         </p>
       </>
     ),
