@@ -193,11 +193,6 @@ export const zoneFooter = (
 export const contattiIntro =
   "Per informazioni, preventivi o consulenze tecniche, il nostro team è a disposizione per rispondere a ogni vostra esigenza.";
 
-export const stats = [
-  { value: 40, suffix: "+", label: "Anni di esperienza" },
-  { value: 1000, suffix: "+", label: "Progetti completati" },
-] as const;
-
 export const chiSiamoPage = {
   title: "Chi siamo",
   paragraphs: [
