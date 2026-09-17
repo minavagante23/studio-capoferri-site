@@ -82,15 +82,6 @@ export const projectCategories: Record<
     ),
     cases: [
       {
-        slug: "lamiere-da-getto-spinelli",
-        title: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
-        caption: "Lamiere da getto - Spinelli S.r.l., Adro (BS)",
-        cover:
-          "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
-        alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante — Spinelli S.r.l., Adro (BS)",
-        href: "/progetti/industriali/lamiere-da-getto-spinelli",
-      },
-      {
         slug: "copertura-edificio-verniciatura-maranello",
         title: "Tettoia reticolare a grande luce — Maranello (MO)",
         caption: "Tettoia reticolare - Maranello (MO)",
@@ -122,6 +113,15 @@ export const projectCategories: Record<
         cover: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp",
         alt: "Soppalco in carpenteria metallica in fase di montaggio — centro direzionale a Provaglio d'Iseo (BS)",
         href: "/progetti/industriali/centro-direzionale-provaglio-diseo",
+      },
+      {
+        slug: "lamiere-da-getto-spinelli",
+        title: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
+        caption: "Lamiere da getto - Spinelli S.r.l., Adro (BS)",
+        cover:
+          "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
+        alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante — Spinelli S.r.l., Adro (BS)",
+        href: "/progetti/industriali/lamiere-da-getto-spinelli",
       },
     ],
   },
