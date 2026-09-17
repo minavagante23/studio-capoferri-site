@@ -5,15 +5,15 @@ export const heroFirstImageSrc = "/assets/hero-struttura-new.webp";
 export const homeChiSiamoImages = {
   team: {
     src: "/assets/home-chi-siamo-struttura-acciaio-chiuduno.webp",
-    alt: "Struttura reticolare in acciaio del centro raccolta rifiuti di Chiuduno — progettazione strutturale Studio Capoferri",
+    alt: "Intradosso delle travature reticolari in acciaio a Chiuduno — progettazione strutturale Studio Capoferri",
     altEn:
-      "Steel lattice structure at the Chiuduno waste collection centre — structural design by Studio Capoferri",
+      "Underside of steel lattice trusses in Chiuduno — structural design by Studio Capoferri",
   },
   cantiere: {
     src: "/assets/home-chi-siamo-travature-ombre-chiuduno.webp",
-    alt: "Vista interna con travature reticolari e ombre a Chiuduno — progettazione strutturale Studio Capoferri",
+    alt: "Dettaglio di tiranti e colonne reticolari in acciaio a Chiuduno — progettazione strutturale Studio Capoferri",
     altEn:
-      "Interior view with steel trusses and shadows in Chiuduno — structural design by Studio Capoferri",
+      "Detail of steel tension rods and lattice columns in Chiuduno — structural design by Studio Capoferri",
   },
 } as const;
 

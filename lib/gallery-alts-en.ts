@@ -19,6 +19,12 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp": "External finishes and setting-out on the cantilever terrace — steel villa in Salsomaggiore Terme (PR)",
   "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg":
     "Steel lattice roof trusses — waste collection centre in Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-intradosso-travature-reticolari-chiuduno.jpeg":
+    "Underside of steel lattice trusses and roof panels — Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-tiranti-e-colonne-reticolari-chiuduno.jpeg":
+    "Detail of steel tension rods and lattice columns — Chiuduno recycling centre (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-nodo-strutturale-acciaio-chiuduno.jpeg":
+    "Steel structural node with triangular gusset plate — Chiuduno (BG)",
   "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.jpeg":
     "Galvanised lattice steel columns during erection — Chiuduno (BG)",
   "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.jpeg":

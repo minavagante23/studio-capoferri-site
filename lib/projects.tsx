@@ -125,11 +125,11 @@ export const projectCategories: Record<
       },
       {
         slug: "lamiere-da-getto-spinelli",
-        title: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
-        caption: "Lamiere da getto - Spinelli S.r.l., Adro (BS)",
+        title: "Lamiere da getto in acciaio — Adro (BS)",
+        caption: "Lamiere da getto - Adro (BS)",
         cover:
           "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
-        alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante — Spinelli S.r.l., Adro (BS)",
+        alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante — Adro (BS)",
         href: "/progetti/industriali/lamiere-da-getto-spinelli",
       },
     ],
@@ -212,6 +212,18 @@ export const projectCaseStudies: Record<
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
         alt: "Travature reticolari in acciaio della copertura — centro raccolta rifiuti Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-intradosso-travature-reticolari-chiuduno.jpeg",
+        alt: "Intradosso delle travature reticolari in acciaio e pannelli di copertura — Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-tiranti-e-colonne-reticolari-chiuduno.jpeg",
+        alt: "Dettaglio di tiranti e colonne reticolari in acciaio — centro raccolta Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-nodo-strutturale-acciaio-chiuduno.jpeg",
+        alt: "Nodo strutturale in acciaio con piastra di giunzione triangolare — Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.jpeg",
