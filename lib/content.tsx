@@ -196,7 +196,6 @@ export const contattiIntro =
 export const stats = [
   { value: 40, suffix: "+", label: "Anni di esperienza" },
   { value: 1000, suffix: "+", label: "Progetti completati" },
-  { value: 300, suffix: "+", label: "Clienti soddisfatti" },
 ] as const;
 
 export const chiSiamoPage = {

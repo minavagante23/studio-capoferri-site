@@ -1,85 +1,44 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-import { useInView, useReducedMotion } from "framer-motion";
-import { useLocale } from "@/components/LocaleProvider";
-import { stats } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 import { layoutContentMaxClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
-function Counter({
-  target,
-  suffix,
-  reduced,
-  active,
-}: {
-  target: number;
-  suffix: string;
-  reduced: boolean;
-  active: boolean;
-}) {
-  // SSR / first paint must show the real target (not 0+) for SEO and no-JS.
-  const [v, setV] = useState(target);
+const figures = [
+  {
+    value: "40+",
+    labelIt: "Anni di esperienza",
+    labelEn: "Years of experience",
+  },
+  {
+    value: "1000+",
+    labelIt: "Progetti completati",
+    labelEn: "Completed projects",
+  },
+] as const;
 
-  useEffect(() => {
-    if (reduced) {
-      setV(target);
-      return;
-    }
-    if (!active) return;
-    setV(0);
-    const duration = 1800;
-    const t0 = performance.now();
-    let raf = 0;
-    const tick = (now: number) => {
-      const p = Math.min(1, (now - t0) / duration);
-      const ease = 1 - (1 - p) ** 3;
-      setV(Math.floor(target * ease));
-      if (p < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [active, target, reduced]);
-
-  return (
-    <span className={`font-display text-3xl font-medium lining-nums tabular-nums tracking-tight text-white sm:text-4xl md:text-5xl`}>
-      {v}
-      {suffix}
-    </span>
-  );
-}
-
-export function StatsSection() {
-  const locale = useLocale();
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
-  const reduced = !!useReducedMotion();
-  const labels =
-    locale === "en"
-      ? ["Years of experience", "Completed projects", "Satisfied clients"]
-      : ["Anni di esperienza", "Progetti completati", "Clienti soddisfatti"];
+export function StatsSection({ locale }: { locale: Locale }) {
   const sectionLabel = locale === "en" ? "Key figures" : "Cifre chiave";
 
   return (
     <section
-      ref={ref}
-      className={`lazy-section ${ui.brandGradient} px-4 py-14 text-white sm:px-5 sm:py-20 md:px-10`}
+      className={`lazy-section ${ui.brandGradient} px-4 py-14 text-white sm:px-5 sm:py-16 md:px-10`}
       aria-label={sectionLabel}
     >
       <div className={layoutContentMaxClass}>
-        <div className="grid grid-cols-3 gap-3 sm:gap-8">
-          {stats.map((s, index) => (
-            <div
-              key={s.label}
-              className="reveal-block rounded-xl border border-white/15 bg-white/[0.07] px-3 py-5 text-center shadow-[0_10px_30px_rgba(0,0,0,0.12)] backdrop-blur-sm sm:px-6 sm:py-8"
-            >
-              <Counter target={s.value} suffix={s.suffix} reduced={reduced} active={inView} />
-              <p className="mt-2 text-[0.78rem] font-medium tracking-normal text-white/85 sm:mt-3 sm:text-sm">
-                {labels[index] ?? s.label}
-              </p>
+        <dl className="grid grid-cols-2 gap-8 sm:gap-16 md:gap-24">
+          {figures.map((f) => (
+            <div key={f.value} className="reveal-block text-left sm:text-center">
+              <dt className="sr-only">{locale === "en" ? f.labelEn : f.labelIt}</dt>
+              <dd>
+                <p className="font-display text-4xl font-medium lining-nums tracking-tight text-white sm:text-5xl md:text-6xl">
+                  {f.value}
+                </p>
+                <p className="mt-2 text-sm text-white/75 sm:mt-3 sm:text-base">
+                  {locale === "en" ? f.labelEn : f.labelIt}
+                </p>
+              </dd>
             </div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   );

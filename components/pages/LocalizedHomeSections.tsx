@@ -314,7 +314,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <StatsSection />
+      <StatsSection locale={locale} />
 
       <section id="contatti" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
