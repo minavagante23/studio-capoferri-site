@@ -36,6 +36,11 @@ const caseLocations: Record<string, { name: string; addressRegion: string; addre
     addressRegion: "Emilia-Romagna",
     addressLocality: "Salsomaggiore Terme (PR)",
   },
+  "industriali/centro-raccolta-rifiuti-chiuduno": {
+    name: "Chiuduno (BG), Italy",
+    addressRegion: "Lombardia",
+    addressLocality: "Chiuduno",
+  },
   "industriali/copertura-edificio-verniciatura-maranello": {
     name: "Maranello (MO), Italy",
     addressRegion: "Emilia-Romagna",

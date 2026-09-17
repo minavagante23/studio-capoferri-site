@@ -82,6 +82,15 @@ export const projectCategories: Record<
     ),
     cases: [
       {
+        slug: "centro-raccolta-rifiuti-chiuduno",
+        title: "Centro raccolta rifiuti — Chiuduno (BG)",
+        caption: "Centro raccolta rifiuti - Chiuduno (BG)",
+        cover:
+          "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
+        alt: "Struttura reticolare in acciaio del centro raccolta rifiuti a Chiuduno (BG) — Studio Capoferri",
+        href: "/progetti/industriali/centro-raccolta-rifiuti-chiuduno",
+      },
+      {
         slug: "copertura-edificio-verniciatura-maranello",
         title: "Tettoia reticolare a grande luce — Maranello (MO)",
         caption: "Tettoia reticolare - Maranello (MO)",
@@ -175,6 +184,69 @@ export const projectCaseStudies: Record<
     externalBrand?: { href: string; imageSrc: string; imageAlt: string };
   }
 > = {
+  "industriali/centro-raccolta-rifiuti-chiuduno": {
+    metaTitle: "Centro raccolta rifiuti — Chiuduno (BG)",
+    metaDescription:
+      "Centro raccolta rifiuti urbani differenziati a Chiuduno (BG): progettazione strutturale di fondazioni, opere in c.a. e strutture in acciaio — Studio Capoferri.",
+    heading: "Centro raccolta rifiuti — Chiuduno (BG)",
+    body: (
+      <>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          Per il <strong>Comune di Chiuduno (BG)</strong>, lo Studio Capoferri ha seguito la progettazione
+          strutturale del nuovo <strong>centro di raccolta rifiuti urbani differenziati</strong> (isola ecologica), opera
+          realizzata nell&apos;ambito di un appalto pubblico con committenza di Servizi Comunali SpA.
+        </p>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          Allo studio è stata affidata la parte strutturale dell&apos;intervento: il calcolo delle{" "}
+          <strong>fondazioni</strong>, la progettazione delle <strong>opere in cemento armato</strong> (basamenti e murature
+          perimetrali) e delle <strong>strutture in acciaio</strong> — colonne a traliccio e travature reticolari di
+          copertura — fino ai dettagli necessari al montaggio in cantiere.
+        </p>
+        <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          L&apos;insieme di cemento armato e carpenteria metallica definisce un impianto leggero e leggibile, adatto a un
+          servizio comunale e al contesto periurbano bergamasco.
+        </p>
+      </>
+    ),
+    gallery: [
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
+        alt: "Travature reticolari in acciaio della copertura — centro raccolta rifiuti Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.jpeg",
+        alt: "Colonne reticolari in acciaio zincato in fase di montaggio — Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.jpeg",
+        alt: "Cantiere con gru e montaggio della carpenteria metallica — Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/gru-montaggio-carpenteria-chiuduno.jpeg",
+        alt: "Sollevamento e assemblaggio delle travature in acciaio — isola ecologica Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/travature-reticolari-e-piattaforma-chiuduno.jpeg",
+        alt: "Maglia reticolare di copertura con piattaforma aerea in opera — Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/muratura-ca-e-struttura-acciaio-chiuduno.jpeg",
+        alt: "Parete in cemento armato e sovrastruttura in acciaio — centro raccolta Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.jpeg",
+        alt: "Vista interna delle travature reticolari e ombre a terra — Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-parete-ca-chiuduno.jpeg",
+        alt: "Interno del telaio in acciaio con parete in c.a. sullo sfondo — Chiuduno (BG)",
+      },
+      {
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-esterna-cantiere-e-paesaggio-chiuduno.jpeg",
+        alt: "Vista esterna del cantiere con struttura in acciaio e colline — Chiuduno (BG)",
+      },
+    ],
+  },
   "residenziali/villa-acciaio-pollenza": {
     metaTitle: "Residenza privata — Pollenza (MC)",
     metaDescription:

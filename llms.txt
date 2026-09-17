@@ -92,6 +92,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 ### Italian
 - [Steel villa in Pollenza (MC)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-pollenza/)
 - [Steel villa in Salsomaggiore Terme (PR)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-salsomaggiore/)
+- [Waste collection centre in Chiuduno (BG)](https://www.studiocapoferri.eu/progetti/industriali/centro-raccolta-rifiuti-chiuduno/)
 - [Large-span space-truss canopy in Maranello (MO)](https://www.studiocapoferri.eu/progetti/industriali/copertura-edificio-verniciatura-maranello/)
 - [Steel decking for Spinelli S.r.l. in Adro (BS)](https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/)
 - [Industrial building in Erbusco (BS)](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco/)

@@ -17,6 +17,24 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/residenziale/villa-acciaio-salsomaggiore/pareti-a-secco-lana-minerale-villa.webp": "Dry-wall installation with mineral-wool insulation — steel villa in Salsomaggiore Terme (PR)",
   "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-interne-cartongesso-villa-acciaio.webp": "Interior plasterboard finishes with services installation — steel villa in Salsomaggiore Terme (PR)",
   "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp": "External finishes and setting-out on the cantilever terrace — steel villa in Salsomaggiore Terme (PR)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg":
+    "Steel lattice roof trusses — waste collection centre in Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.jpeg":
+    "Galvanised lattice steel columns during erection — Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.jpeg":
+    "Site with crane and steel frame assembly — Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/gru-montaggio-carpenteria-chiuduno.jpeg":
+    "Lifting and assembly of steel trusses — Chiuduno recycling centre (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/travature-reticolari-e-piattaforma-chiuduno.jpeg":
+    "Roof lattice grid with aerial work platform — Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/muratura-ca-e-struttura-acciaio-chiuduno.jpeg":
+    "Reinforced-concrete wall and steel superstructure — Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.jpeg":
+    "Interior view of lattice trusses casting shadows on the ground — Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-parete-ca-chiuduno.jpeg":
+    "Interior steel frame with reinforced-concrete wall beyond — Chiuduno (BG)",
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-esterna-cantiere-e-paesaggio-chiuduno.jpeg":
+    "Exterior site view with steel frame and hillside — Chiuduno (BG)",
   "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg":
     "Tubular circular-section space truss with large clear span — paint shop canopy in Maranello (MO)",
   "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.jpeg":

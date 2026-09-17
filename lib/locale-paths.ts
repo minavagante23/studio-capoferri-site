@@ -20,6 +20,8 @@ export const itToEnPath: Record<string, string> = {
   "/progetti/ricettivi": "/projects/public-spaces",
   "/progetti/residenziali/villa-acciaio-pollenza": "/projects/residential/steel-villa-pollenza",
   "/progetti/residenziali/villa-acciaio-salsomaggiore": "/projects/residential/steel-villa-salsomaggiore",
+  "/progetti/industriali/centro-raccolta-rifiuti-chiuduno":
+    "/projects/industrial/waste-collection-centre-chiuduno",
   "/progetti/industriali/copertura-edificio-verniciatura-maranello":
     "/projects/industrial/paint-shop-roof-structure-maranello",
   "/progetti/industriali/lamiere-da-getto-spinelli": "/projects/industrial/steel-decking-spinelli",
@@ -45,6 +47,7 @@ export const itAreaByEn: Record<string, ProjectArea> = {
 export const enCaseByIt: Record<string, string> = {
   "villa-acciaio-pollenza": "steel-villa-pollenza",
   "villa-acciaio-salsomaggiore": "steel-villa-salsomaggiore",
+  "centro-raccolta-rifiuti-chiuduno": "waste-collection-centre-chiuduno",
   "copertura-edificio-verniciatura-maranello": "paint-shop-roof-structure-maranello",
   "lamiere-da-getto-spinelli": "steel-decking-spinelli",
   "capannone-erbusco": "industrial-warehouse-erbusco",

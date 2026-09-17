@@ -38,5 +38,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# local WhatsApp / phone dumps (source photos only)
+WhatsApp Image*.jpeg
+WhatsApp\ Image*.jpeg
+
 # legacy scaffold folder (optional remove)
 next-scaffold/

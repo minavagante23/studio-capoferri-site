@@ -30,6 +30,17 @@ export const caseCopyEn = {
       ["Integrated design", "services and finishes coordinated in parallel to reduce delays and on-site uncertainty."],
     ],
   },
+  "industriali/centro-raccolta-rifiuti-chiuduno": {
+    heading: "Waste collection centre — Chiuduno (BG)",
+    metaDescription:
+      "Urban separate-waste collection centre in Chiuduno (BG): Studio Capoferri handled structural design of foundations, reinforced-concrete works and steel structures.",
+    body: [
+      "For the Municipality of Chiuduno (BG), Studio Capoferri handled the structural design of the new urban separate-waste collection centre (recycling island), built under a public contract with Servizi Comunali SpA as client.",
+      "The studio was responsible for the structural scope of the works: foundation design, reinforced-concrete elements (bases and perimeter walls) and the steel frame — lattice columns and roof trusses — through to the detailing needed for site erection.",
+      "Together, the reinforced concrete and steelwork form a clear, lightweight facility suited to a municipal service and to the peri-urban Bergamo setting.",
+    ],
+    bullets: [] as [string, string][],
+  },
   "industriali/lamiere-da-getto-spinelli": {
     heading: "Steel decking for concrete slabs - Spinelli S.r.l., Adro (BS)",
     metaDescription:
@@ -140,6 +151,7 @@ export const caseCopyEn = {
 export const caseCardCaptionEn: Record<string, string> = {
   "residenziali/villa-acciaio-pollenza": "Integrated steel villa with landscape-led structure",
   "residenziali/villa-acciaio-salsomaggiore": "Piled foundations, steel frame, PV-ready roof",
+  "industriali/centro-raccolta-rifiuti-chiuduno": "Structural design — foundations, RC and steel lattice",
   "industriali/copertura-edificio-verniciatura-maranello": "About 40 m clear-span tubular space-truss canopy",
   "industriali/lamiere-da-getto-spinelli": "Load tables from structural analysis and lab testing",
   "industriali/capannone-erbusco": "Heavy fabrication hall — dual cranes and shop drawings",
