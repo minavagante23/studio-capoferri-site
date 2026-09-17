@@ -1,6 +1,6 @@
 /** Path pubblici dopo sync: cartella `assets/` → `public/assets/` (URL `/assets/...`) */
 
-export const heroFirstImageSrc = "/assets/superstudio-village-acciaio-pre-fabbricato.webp";
+export const heroFirstImageSrc = "/assets/hero-struttura-new.webp";
 
 export const homeChiSiamoImages = {
   team: {
