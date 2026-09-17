@@ -219,9 +219,9 @@ const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
     keywords: ["steel villa Italy", "residential steel structure Northern Italy", "steel house design Lombardy"],
   },
   industriali: {
-    title: "Industrial structures",
+    title: "Industrial projects",
     description:
-      "Industrial steel structures, production buildings, logistics facilities and high-performance structural design by Studio Capoferri.",
+      "Industrial steel projects, production buildings, logistics facilities and high-performance structural design by Studio Capoferri.",
     path: "/progetti/industriali",
     keywords: ["industrial steel building Italy", "steel warehouse design Northern Italy", "crane steel structure design"],
   },

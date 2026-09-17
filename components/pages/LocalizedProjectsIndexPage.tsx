@@ -11,7 +11,7 @@ import { ui } from "@/lib/ui";
 
 const englishProjectCards = [
   ["Residential structures", "Steel villas and homes — concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
-  ["Industrial structures", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
+  ["Industrial projects", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
   ["Public-space structures", "Event venues and seismic upgrades for complex steelwork", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
 ] as const;
 

@@ -65,8 +65,8 @@ export const projectCategories: Record<
   industriali: {
     metaTitle: "Progetti in ambito industriale",
     metaDescription:
-      "Strutture industriali in acciaio, capannoni e logistica — progettazione strutturale Studio Capoferri.",
-    heading: "Strutture industriali",
+      "Progetti industriali in acciaio, capannoni e logistica — progettazione strutturale Studio Capoferri.",
+    heading: "Progetti industriali",
     intro: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">

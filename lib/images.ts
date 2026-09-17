@@ -32,8 +32,8 @@ export const projectPreview = [
   },
   {
     href: "/progetti/industriali",
-    title: "Strutture per l'industria",
-    caption: "Strutture per l'industria",
+    title: "Progetti per l'industria",
+    caption: "Progetti per l'industria",
     image: "/assets/progetto2.webp",
     alt: "Capannone industriale con struttura portante in acciaio — progetti industriali Studio Capoferri, provincia di Brescia",
   },

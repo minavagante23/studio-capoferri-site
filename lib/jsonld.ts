@@ -5,12 +5,12 @@ import type { ProjectArea } from "@/lib/projects";
 const areaLabels: Record<SeoLocale, Record<ProjectArea, string>> = {
   it: {
     residenziali: "Strutture residenziali",
-    industriali: "Strutture industriali",
+    industriali: "Progetti industriali",
     ricettivi: "Strutture per spazi pubblici",
   },
   en: {
     residenziali: "Residential structures",
-    industriali: "Industrial structures",
+    industriali: "Industrial projects",
     ricettivi: "Structures for public venues",
   },
 };

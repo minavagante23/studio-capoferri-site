@@ -67,12 +67,12 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 
 ### Italian
 - [Residential structures](https://www.studiocapoferri.eu/progetti/residenziali/)
-- [Industrial structures](https://www.studiocapoferri.eu/progetti/industriali/)
+- [Industrial projects](https://www.studiocapoferri.eu/progetti/industriali/)
 - [Public-venue structures](https://www.studiocapoferri.eu/progetti/ricettivi/)
 
 ### English
 - [Residential structures](https://www.studiocapoferri.eu/en/projects/residential/)
-- [Industrial structures](https://www.studiocapoferri.eu/en/projects/industrial/)
+- [Industrial projects](https://www.studiocapoferri.eu/en/projects/industrial/)
 - [Public-venue structures](https://www.studiocapoferri.eu/en/projects/public-spaces/)
 
 ## Thematic pages / Pagine tematiche

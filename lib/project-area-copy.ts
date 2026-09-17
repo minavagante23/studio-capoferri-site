@@ -8,7 +8,7 @@ export const areaCopy = {
       ],
     },
     industriali: {
-      heading: "Strutture industriali",
+      heading: "Progetti industriali",
       intro: [
         "In ambito industriale la progettazione richiede soluzioni robuste e ad alte prestazioni, con attenzione a logistica, tempi e operatività.",
         "Ogni progetto nasce dall'analisi delle necessità operative del cliente e si sviluppa con soluzioni su misura.",
@@ -34,7 +34,7 @@ export const areaCopy = {
       ],
     },
     industriali: {
-      heading: "Industrial structures",
+      heading: "Industrial projects",
       intro: [
         "Industrial projects require robust, high-performance solutions. We work on buildings for production, storage and logistics, with fast execution times and careful optimisation of space.",
         "Steel is often the strategic material for this type of intervention because it combines strength, speed of assembly and adaptability to complex operational requirements.",
