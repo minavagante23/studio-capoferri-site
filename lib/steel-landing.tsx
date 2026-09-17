@@ -89,8 +89,8 @@ export const steelLandingBrescia: SteelLandingConfig = {
       description: "fondazioni su pali, telaio in acciaio e copertura fotovoltaica integrale",
     },
     {
-      href: "/progetti/residenziali/villa-acciaio-veneto",
-      title: "Residenza privata in acciaio in Veneto",
+      href: "/progetti/residenziali/villa-acciaio-pollenza",
+      title: "Residenza privata in acciaio a Pollenza (MC)",
       description: "progettazione strutturale e architettonica integrata",
     },
     {
@@ -154,8 +154,8 @@ export const steelLandingBergamo: SteelLandingConfig = {
       description: "fondazioni su pali, telaio in acciaio e copertura fotovoltaica integrale",
     },
     {
-      href: "/progetti/residenziali/villa-acciaio-veneto",
-      title: "Residenza privata in acciaio in Veneto",
+      href: "/progetti/residenziali/villa-acciaio-pollenza",
+      title: "Residenza privata in acciaio a Pollenza (MC)",
       description: "progettazione strutturale e architettonica integrata",
     },
     {

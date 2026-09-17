@@ -45,12 +45,12 @@ export const projectCategories: Record<
     ),
     cases: [
       {
-        slug: "villa-acciaio-veneto",
-        title: "Residenza privata - Veneto",
-        caption: "Residenza privata - Veneto",
+        slug: "villa-acciaio-pollenza",
+        title: "Residenza privata — Pollenza (MC)",
+        caption: "Residenza privata — Pollenza (MC)",
         cover: "/assets/residenza-privata-acciaio.webp",
-        alt: "Residenza privata in acciaio nel Veneto — progettazione strutturale Studio Capoferri",
-        href: "/progetti/residenziali/villa-acciaio-veneto",
+        alt: "Residenza privata in acciaio a Pollenza (MC) — progettazione strutturale Studio Capoferri",
+        href: "/progetti/residenziali/villa-acciaio-pollenza",
       },
       {
         slug: "villa-acciaio-salsomaggiore",
@@ -175,11 +175,11 @@ export const projectCaseStudies: Record<
     externalBrand?: { href: string; imageSrc: string; imageAlt: string };
   }
 > = {
-  "residenziali/villa-acciaio-veneto": {
-    metaTitle: "Residenza privata - Veneto",
+  "residenziali/villa-acciaio-pollenza": {
+    metaTitle: "Residenza privata — Pollenza (MC)",
     metaDescription:
-      "Residenza privata in acciaio: progettazione strutturale e architettonica integrata — Studio Capoferri.",
-    heading: "Residenza privata - Veneto",
+      "Residenza privata in acciaio a Pollenza (MC): progettazione strutturale e architettonica integrata — Studio Capoferri.",
+    heading: "Residenza privata — Pollenza (MC)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -205,35 +205,35 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/residenziale/architettura-bergamo.webp",
-        alt: "Volumi architettonici della residenza privata in acciaio nel Veneto",
+        alt: "Volumi architettonici della residenza privata in acciaio a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/ingegneria-civile-brescia.webp",
-        alt: "Montaggio della struttura in acciaio della villa residenziale nel Veneto",
+        alt: "Montaggio della struttura in acciaio della villa residenziale a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/ingegneria-urbanistica.webp",
-        alt: "Progettazione integrata della villa in acciaio con inserimento paesaggistico nel Veneto",
+        alt: "Progettazione integrata della villa in acciaio con inserimento paesaggistico a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/progettazione-strutture-acciaio.webp",
-        alt: "Interni con telaio in acciaio e grandi luci della residenza privata nel Veneto",
+        alt: "Interni con telaio in acciaio e grandi luci della residenza privata a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/progettazione-strutture-acciaio-franciacorta.webp",
-        alt: "Dettaglio costruttivo della struttura portante in acciaio — residenza nel Veneto",
+        alt: "Dettaglio costruttivo della struttura portante in acciaio — residenza a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/strutture-acciaio-bergamo.webp",
-        alt: "Carpenteria metallica in fase di realizzazione della villa in acciaio nel Veneto",
+        alt: "Carpenteria metallica in fase di realizzazione della villa in acciaio a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/studio-ingegneria-architettura-adro.webp",
-        alt: "Cantiere della residenza privata in acciaio durante le fasi di costruzione nel Veneto",
+        alt: "Cantiere della residenza privata in acciaio durante le fasi di costruzione a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-lusso.webp",
-        alt: "Panoramica della struttura in acciaio integrata nel paesaggio veneto",
+        alt: "Panoramica della struttura in acciaio integrata nel paesaggio di Pollenza (MC)",
       },
     ],
   },

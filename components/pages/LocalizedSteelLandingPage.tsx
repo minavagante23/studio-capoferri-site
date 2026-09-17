@@ -49,7 +49,7 @@ const landingCopy = {
         featuredProjects: [
           ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
           ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
-          ["Private steel residence in Veneto", "integrated structural and architectural design"],
+          ["Private steel residence in Pollenza (MC)", "integrated structural and architectural design"],
           ["Superstudio Village in Milan", "new steel structure around 16 metres high and structural strengthening works"],
         ],
       },
@@ -67,7 +67,7 @@ const landingCopy = {
         featuredProjects: [
           ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
           ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
-          ["Private steel residence in Veneto", "integrated structural and architectural design"],
+          ["Private steel residence in Pollenza (MC)", "integrated structural and architectural design"],
           ["Superstudio Village in Milan Bovisa", "new steel structure around 16 metres high and structural strengthening works"],
         ],
       },

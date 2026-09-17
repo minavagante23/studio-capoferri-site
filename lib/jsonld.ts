@@ -30,7 +30,7 @@ const areaAbout: Record<SeoLocale, Record<ProjectArea, string[]>> = {
 
 /** Location hints for case-study schema (contentLocation). */
 const caseLocations: Record<string, { name: string; addressRegion: string; addressLocality?: string }> = {
-  "residenziali/villa-acciaio-veneto": { name: "Veneto, Italy", addressRegion: "Veneto" },
+  "residenziali/villa-acciaio-pollenza": { name: "Pollenza (MC), Italy", addressRegion: "Marche", addressLocality: "Pollenza" },
   "residenziali/villa-acciaio-salsomaggiore": {
     name: "Salsomaggiore Terme (PR), Italy",
     addressRegion: "Emilia-Romagna",

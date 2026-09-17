@@ -39,9 +39,10 @@ for (const extra of ["favicon.ico", "llms.txt", "CNAME"]) {
 // Redirect dei vecchi URL .html: su GitHub Pages (export statico) i redirects()
 // di next.config.ts non funzionano, quindi generiamo pagine-ponte statiche.
 const SITE_URL = "https://www.studiocapoferri.eu";
-const legacyRedirects = JSON.parse(
-  fs.readFileSync(path.join(root, "lib", "legacy-redirects.json"), "utf8")
-);
+const legacyRedirects = {
+  ...JSON.parse(fs.readFileSync(path.join(root, "lib", "legacy-redirects.json"), "utf8")),
+  ...JSON.parse(fs.readFileSync(path.join(root, "lib", "static-path-redirects.json"), "utf8")),
+};
 for (const [from, to] of Object.entries(legacyRedirects)) {
   const dest = String(to).endsWith("/") ? String(to) : `${to}/`;
   const target = `${SITE_URL}${dest}`;
@@ -59,8 +60,10 @@ for (const [from, to] of Object.entries(legacyRedirects)) {
 </body>
 </html>
 `;
-  fs.writeFileSync(path.join(root, "public", from), html);
+  const outPath = path.join(root, "public", from);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.writeFileSync(outPath, html);
 }
-console.log(`[sync-static] ${Object.keys(legacyRedirects).length} redirect legacy .html → public/`);
+console.log(`[sync-static] ${Object.keys(legacyRedirects).length} redirect statici → public/`);
 
 console.log("[sync-static] Completato.");

@@ -1,8 +1,8 @@
 export const caseCopyEn = {
-  "residenziali/villa-acciaio-veneto": {
-    heading: "Private residence - Veneto",
+  "residenziali/villa-acciaio-pollenza": {
+    heading: "Private residence — Pollenza (MC)",
     metaDescription:
-      "Private steel residence with integrated structural and architectural design: efficiency, durability and landscape integration by Studio Capoferri.",
+      "Private steel residence in Pollenza (MC) with integrated structural and architectural design: efficiency, durability and landscape integration by Studio Capoferri.",
     body: [
       "We designed a villa that combines innovation, efficiency and contemporary design. The steel structure ensures strength, durability and sustainability, applying advanced engineering to residential architecture.",
       "The project shows how the structure can be integrated with the architectural design to create a functional building that sits naturally within its landscape.",
@@ -138,7 +138,7 @@ export const caseCopyEn = {
 
 /** Short EN blurbs for project area cards (outcome-focused, not title duplicates). */
 export const caseCardCaptionEn: Record<string, string> = {
-  "residenziali/villa-acciaio-veneto": "Integrated steel villa with landscape-led structure",
+  "residenziali/villa-acciaio-pollenza": "Integrated steel villa with landscape-led structure",
   "residenziali/villa-acciaio-salsomaggiore": "Piled foundations, steel frame, PV-ready roof",
   "industriali/copertura-edificio-verniciatura-maranello": "About 40 m clear-span tubular space-truss canopy",
   "industriali/lamiere-da-getto-spinelli": "Load tables from structural analysis and lab testing",

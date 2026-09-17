@@ -90,7 +90,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 ## Case studies / Casi studio
 
 ### Italian
-- [Steel villa in Veneto](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-veneto/)
+- [Steel villa in Pollenza (MC)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-pollenza/)
 - [Steel villa in Salsomaggiore Terme (PR)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-salsomaggiore/)
 - [Large-span space-truss canopy in Maranello (MO)](https://www.studiocapoferri.eu/progetti/industriali/copertura-edificio-verniciatura-maranello/)
 - [Steel decking for Spinelli S.r.l. in Adro (BS)](https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/)
@@ -102,7 +102,7 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 - [Structural steel design for EU partners](https://www.studiocapoferri.eu/progettazione-strutturale-acciaio-italia/)
 
 ### English
-- [Steel villa in Veneto](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-veneto/)
+- [Steel villa in Pollenza (MC)](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-pollenza/)
 - [Steel villa in Salsomaggiore Terme (PR)](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-salsomaggiore/)
 - [Large-span space-truss canopy in Maranello (MO)](https://www.studiocapoferri.eu/en/projects/industrial/paint-shop-roof-structure-maranello/)
 - [Steel decking for Spinelli S.r.l. in Adro (BS)](https://www.studiocapoferri.eu/en/projects/industrial/steel-decking-spinelli/)

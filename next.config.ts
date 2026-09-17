@@ -66,6 +66,10 @@ if (isStaticExport) {
 
   nextConfig.redirects = async () => [
     { source: "/index.html", destination: "/", permanent: true },
+    { source: "/progetti/residenziali/villa-acciaio-veneto", destination: "/progetti/residenziali/villa-acciaio-pollenza", permanent: true },
+    { source: "/progetti/residenziali/villa-acciaio-veneto/", destination: "/progetti/residenziali/villa-acciaio-pollenza/", permanent: true },
+    { source: "/en/projects/residential/steel-villa-veneto", destination: "/en/projects/residential/steel-villa-pollenza", permanent: true },
+    { source: "/en/projects/residential/steel-villa-veneto/", destination: "/en/projects/residential/steel-villa-pollenza/", permanent: true },
     ...Object.entries(legacyRedirectMap).map(([source, destination]) => ({
       source: `/${source}`,
       destination,
