@@ -17,7 +17,7 @@ import {
 } from "@/lib/content";
 import { homeChiSiamoImages } from "@/lib/images";
 import { localizeHref, type Locale } from "@/lib/i18n";
-import { chiSiamoEnIntro, chiSiamoEnParagraphs } from "@/lib/about-copy";
+import { chiSiamoEnParagraphs } from "@/lib/about-copy";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site } from "@/lib/site";
 import { ui } from "@/lib/ui";
@@ -35,8 +35,6 @@ type AboutBlock = {
 const copy = {
   it: {
     aboutTitle: homeChiSiamo.title,
-    aboutIntro:
-      "Studio di ingegneria civile ad Adro (BS): architettura, progettazione strutturale e strutture in acciaio con oltre quarant'anni di esperienza.",
     aboutBlocks: homeChiSiamo.blocks.map((block, index) => ({
       text: block.text,
       textMobile: block.textMobile,
@@ -65,7 +63,6 @@ const copy = {
   },
   en: {
     aboutTitle: "About",
-    aboutIntro: chiSiamoEnIntro,
     aboutBlocks: [
       {
         text: chiSiamoEnParagraphs[0],
@@ -193,7 +190,6 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.aboutTitle}</h2>
             </div>
-            <p className="home-split-header__right">{t.aboutIntro}</p>
           </div>
           <div className="space-y-12 sm:space-y-16 md:space-y-20">
             {t.aboutBlocks.map((block, idx) => {

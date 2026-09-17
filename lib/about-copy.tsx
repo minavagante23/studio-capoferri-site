@@ -1,9 +1,6 @@
 import type { ReactNode } from "react";
 
 /** Shared English About copy used by homepage and /chi-siamo|/en/about. */
-export const chiSiamoEnIntro =
-  "Steel structures and site support from Adro, near Brescia, Italy — project talks with our engineers in English.";
-
 export const chiSiamoEnParagraphs: ReactNode[] = [
   <>
     <strong>Studio Capoferri</strong> is a structural and steel engineering practice based in Adro, near Brescia, Italy, with more than
