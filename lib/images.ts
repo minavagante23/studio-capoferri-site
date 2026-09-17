@@ -10,10 +10,10 @@ export const homeChiSiamoImages = {
       "Steel lattice structure at the Chiuduno waste collection centre — structural design by Studio Capoferri",
   },
   cantiere: {
-    src: "/assets/home-chi-siamo-cantiere-chiuduno.webp",
-    alt: "Montaggio colonne reticolari in acciaio in cantiere a Chiuduno — Studio Capoferri, Nord Italia",
+    src: "/assets/home-chi-siamo-copertura-maranello.webp",
+    alt: "Copertura reticolare a grande luce in acciaio — edificio verniciatura Maranello, Studio Capoferri",
     altEn:
-      "Assembly of steel lattice columns on site in Chiuduno — Studio Capoferri, Northern Italy",
+      "Large-span steel space-frame roof — paint shop building in Maranello, Studio Capoferri",
   },
 } as const;
 
