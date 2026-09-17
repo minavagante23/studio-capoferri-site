@@ -4,16 +4,16 @@ export const heroFirstImageSrc = "/assets/hero-struttura-new.webp";
 
 export const homeChiSiamoImages = {
   team: {
-    src: "/assets/ingegneria-progettazione-brescia.webp",
-    alt: "Ingegneri strutturisti dello Studio Capoferri durante una riunione tecnica — studio di ingegneria civile a Brescia, Bergamo e Milano",
+    src: "/assets/home-chi-siamo-struttura-acciaio-chiuduno.webp",
+    alt: "Struttura reticolare in acciaio del centro raccolta rifiuti di Chiuduno — progettazione strutturale Studio Capoferri",
     altEn:
-      "Studio Capoferri structural engineers during a technical meeting — civil engineering practice serving Brescia, Bergamo and Milan",
+      "Steel lattice structure at the Chiuduno waste collection centre — structural design by Studio Capoferri",
   },
   cantiere: {
-    src: "/assets/sicurezza-cantiere.webp",
-    alt: "Sicurezza in cantiere e pianificazione — Studio Capoferri Nord Italia, province di Brescia, Bergamo e Milano",
+    src: "/assets/home-chi-siamo-cantiere-chiuduno.webp",
+    alt: "Montaggio colonne reticolari in acciaio in cantiere a Chiuduno — Studio Capoferri, Nord Italia",
     altEn:
-      "Site safety and planning — Studio Capoferri Northern Italy, provinces of Brescia, Bergamo and Milan",
+      "Assembly of steel lattice columns on site in Chiuduno — Studio Capoferri, Northern Italy",
   },
 } as const;
 
