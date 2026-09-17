@@ -22,6 +22,7 @@ export const itToEnPath: Record<string, string> = {
   "/progetti/residenziali/villa-acciaio-salsomaggiore": "/projects/residential/steel-villa-salsomaggiore",
   "/progetti/industriali/copertura-edificio-verniciatura-maranello":
     "/projects/industrial/paint-shop-roof-structure-maranello",
+  "/progetti/industriali/lamiere-da-getto-spinelli": "/projects/industrial/steel-decking-spinelli",
   "/progetti/industriali/capannone-erbusco": "/projects/industrial/industrial-warehouse-erbusco",
   "/progetti/industriali/ampliamento-complesso-zootecnico": "/projects/industrial/livestock-complex-extension",
   "/progetti/industriali/centro-direzionale-provaglio-diseo": "/projects/industrial/office-complex-provaglio-diseo",
@@ -45,6 +46,7 @@ export const enCaseByIt: Record<string, string> = {
   "villa-acciaio-veneto": "steel-villa-veneto",
   "villa-acciaio-salsomaggiore": "steel-villa-salsomaggiore",
   "copertura-edificio-verniciatura-maranello": "paint-shop-roof-structure-maranello",
+  "lamiere-da-getto-spinelli": "steel-decking-spinelli",
   "capannone-erbusco": "industrial-warehouse-erbusco",
   "ampliamento-complesso-zootecnico": "livestock-complex-extension",
   "centro-direzionale-provaglio-diseo": "office-complex-provaglio-diseo",

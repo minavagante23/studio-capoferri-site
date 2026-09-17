@@ -30,6 +30,21 @@ export const caseCopyEn = {
       ["Integrated design", "services and finishes coordinated in parallel to reduce delays and on-site uncertainty."],
     ],
   },
+  "industriali/lamiere-da-getto-spinelli": {
+    heading: "Steel decking for concrete slabs - Spinelli S.r.l., Adro (BS)",
+    metaDescription:
+      "Review and design of steel decking for concrete slabs for Spinelli S.r.l. in Adro (BS): structural analysis, experimental testing and load tables.",
+    body: [
+      "For Spinelli S.r.l., a manufacturer of profiled steel sheets with an operating base in Adro (BS), the studio reviewed the existing steel decking range and designed new steel solutions through an integrated programme of structural analysis and experimental testing.",
+      "The testing campaign investigated the behaviour of the sheets both without concrete and with a concrete topping, producing the parameters needed for design and for assessing load-bearing capacity.",
+      "Combining experimental results with calculation analysis led to the preparation of load tables, providing a technical reference for using the sheets in the different configurations and load conditions required.",
+    ],
+    bullets: [
+      ["Structural analysis", "review of the existing sheets and definition of new steel solutions."],
+      ["Experimental testing", "behaviour of the sheets without concrete and as a composite slab."],
+      ["Load tables", "technical reference for the different configurations and load conditions."],
+    ],
+  },
   "industriali/copertura-edificio-verniciatura-maranello": {
     heading: "Large-span space-truss canopy - Maranello (MO)",
     metaDescription:
@@ -126,6 +141,7 @@ export const caseCardCaptionEn: Record<string, string> = {
   "residenziali/villa-acciaio-veneto": "Integrated steel villa with landscape-led structure",
   "residenziali/villa-acciaio-salsomaggiore": "Piled foundations, steel frame, PV-ready roof",
   "industriali/copertura-edificio-verniciatura-maranello": "About 40 m clear-span tubular space-truss canopy",
+  "industriali/lamiere-da-getto-spinelli": "Load tables from structural analysis and lab testing",
   "industriali/capannone-erbusco": "Heavy fabrication hall — dual cranes and shop drawings",
   "industriali/ampliamento-complesso-zootecnico": "Large-span steel trusses in Castegnato (BS)",
   "industriali/centro-direzionale-provaglio-diseo": "5,000 m² steel mezzanine for corporate HQ",

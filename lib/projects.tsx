@@ -82,6 +82,15 @@ export const projectCategories: Record<
     ),
     cases: [
       {
+        slug: "lamiere-da-getto-spinelli",
+        title: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
+        caption: "Lamiere da getto - Spinelli S.r.l., Adro (BS)",
+        cover:
+          "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
+        alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante — Spinelli S.r.l., Adro (BS)",
+        href: "/progetti/industriali/lamiere-da-getto-spinelli",
+      },
+      {
         slug: "copertura-edificio-verniciatura-maranello",
         title: "Tettoia reticolare a grande luce — Maranello (MO)",
         caption: "Tettoia reticolare - Maranello (MO)",
@@ -301,6 +310,95 @@ export const projectCaseStudies: Record<
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp",
         alt: "Finiture esterne e tracciature sul terrazzo a sbalzo — villa in acciaio a Salsomaggiore Terme (PR)",
+      },
+    ],
+  },
+  "industriali/lamiere-da-getto-spinelli": {
+    metaTitle: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
+    metaDescription:
+      "Revisione e progettazione di lamiere da getto in acciaio per Spinelli S.r.l. a Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata — Studio Capoferri.",
+    heading: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
+    externalBrand: {
+      href: "https://spinellisrl.eu/",
+      imageSrc: "/assets/spinelli-logo.png",
+      imageAlt: "Logo Spinelli S.r.l.",
+    },
+    body: (
+      <>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          Per{" "}
+          <a
+            href="https://spinellisrl.eu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-accent"
+          >
+            Spinelli S.r.l.
+          </a>
+          , produttore di lamiere grecate con sede operativa a <strong>Adro (BS)</strong>, lo studio ha curato la revisione
+          delle lamiere da getto esistenti e la progettazione di nuove soluzioni in acciaio, attraverso un percorso
+          integrato di analisi strutturale e prove sperimentali.
+        </p>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          La sperimentazione ha consentito di indagare il comportamento delle lamiere sia nella configurazione senza getto
+          sia in quella con getto di calcestruzzo, ricavando i parametri indispensabili alla progettazione e alla
+          valutazione della capacità portante.
+        </p>
+        <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+            <strong>Analisi strutturale</strong> — revisione delle lamiere esistenti e definizione di nuove soluzioni in
+            acciaio.
+          </li>
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+            <strong>Prove sperimentali</strong> — comportamento delle lamiere senza getto e con solaio collaborante.
+          </li>
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+            <strong>Tabelle di portata</strong> — riferimento tecnico per le diverse configurazioni e condizioni di carico.
+          </li>
+        </ul>
+        <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          L&apos;integrazione tra risultati sperimentali e analisi di calcolo ha portato alla redazione delle tabelle di
+          portata, fornendo un riferimento tecnico per l&apos;impiego delle lamiere nelle diverse configurazioni e
+          condizioni di carico previste.
+        </p>
+      </>
+    ),
+    gallery: [
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
+        alt: "Prova di carico su lamiera da getto Spinelli con solaio in calcestruzzo — Adro (BS)",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-solaia-collaborante.jpeg",
+        alt: "Allestimento della prova di carico su solaio collaborante in laboratorio — Spinelli S.r.l.",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/strumentazione-prova-carico-solaio.jpeg",
+        alt: "Strumentazione di misura durante la prova di carico sul solaio collaborante",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/campione-sg110-prova-sperimentale.jpeg",
+        alt: "Campione di prova SG110 etichettato Ditta Spinelli in laboratorio strutturale",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/dettaglio-pressa-getto-calcestruzzo.jpeg",
+        alt: "Dettaglio della pressa idraulica sul getto di calcestruzzo durante la prova",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/laboratorio-pressa-prove-strutturali.jpeg",
+        alt: "Laboratorio prove strutturali con pressa e stazione di acquisizione dati",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/preparazione-lamiere-grecate-armatura.jpeg",
+        alt: "Preparazione delle lamiere grecate con armatura prima del getto di calcestruzzo",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/campioni-collaboranti-area-esterna.jpeg",
+        alt: "Campioni di solaio collaborante gettati in area esterna presso lo stabilimento",
+      },
+      {
+        src: "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.jpeg",
+        alt: "Getto di calcestruzzo sui campioni di prova nello stabilimento Spinelli a Adro (BS)",
       },
     ],
   },

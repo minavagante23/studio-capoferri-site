@@ -46,6 +46,11 @@ const caseLocations: Record<string, { name: string; addressRegion: string; addre
     addressRegion: "Lombardia",
     addressLocality: "Erbusco",
   },
+  "industriali/lamiere-da-getto-spinelli": {
+    name: "Adro (BS), Italy",
+    addressRegion: "Lombardia",
+    addressLocality: "Adro",
+  },
   "industriali/ampliamento-complesso-zootecnico": {
     name: "Castegnato (BS), Italy",
     addressRegion: "Lombardia",

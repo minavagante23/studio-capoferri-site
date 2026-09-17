@@ -31,6 +31,24 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/industriale/capannone-erbusco/vista-capannone-erbusco.webp": "Overview of the steel production extension — industrial building in Erbusco (BS)",
   "/assets/industriale/capannone-erbusco/strutture-industriali.webp": "Detail of beams and structural connections in the Erbusco (BS) industrial building",
   "/assets/industriale/capannone-erbusco/ingegneria-civile-adro.webp": "Interior of the industrial building with structure designed for overhead cranes — Erbusco (BS)",
+  "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg":
+    "Load test on Spinelli steel decking with concrete composite slab — Adro (BS)",
+  "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-solaia-collaborante.jpeg":
+    "Composite slab load-test setup in the structural laboratory — Spinelli S.r.l.",
+  "/assets/industriale/lamiere-da-getto-spinelli/strumentazione-prova-carico-solaio.jpeg":
+    "Instrumentation during the composite slab load test",
+  "/assets/industriale/lamiere-da-getto-spinelli/campione-sg110-prova-sperimentale.jpeg":
+    "SG110 test specimen labelled Ditta Spinelli in the structural laboratory",
+  "/assets/industriale/lamiere-da-getto-spinelli/dettaglio-pressa-getto-calcestruzzo.jpeg":
+    "Detail of the hydraulic press on the concrete topping during the test",
+  "/assets/industriale/lamiere-da-getto-spinelli/laboratorio-pressa-prove-strutturali.jpeg":
+    "Structural testing laboratory with press and data-acquisition station",
+  "/assets/industriale/lamiere-da-getto-spinelli/preparazione-lamiere-grecate-armatura.jpeg":
+    "Preparation of profiled steel sheets with reinforcement before concrete casting",
+  "/assets/industriale/lamiere-da-getto-spinelli/campioni-collaboranti-area-esterna.jpeg":
+    "Composite slab specimens cast in the outdoor area of the plant",
+  "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.jpeg":
+    "Concrete casting on test specimens at the Spinelli plant in Adro (BS)",
   "/assets/industriale/ampliamento-complesso-zootecnico/capriate-metalliche-grande-luce-complesso-zootecnico.webp":
     "Long-span steel trusses under erection — livestock complex in Castegnato (BS)",
   "/assets/industriale/ampliamento-complesso-zootecnico/carpenteria-metallica-basamento-cemento-zootecnico.webp":
