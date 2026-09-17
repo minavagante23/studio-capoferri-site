@@ -10,10 +10,10 @@ export const homeChiSiamoImages = {
       "Steel lattice structure at the Chiuduno waste collection centre — structural design by Studio Capoferri",
   },
   cantiere: {
-    src: "/assets/home-chi-siamo-copertura-maranello.webp",
-    alt: "Copertura reticolare a grande luce in acciaio — edificio verniciatura Maranello, Studio Capoferri",
+    src: "/assets/home-chi-siamo-travature-ombre-chiuduno.webp",
+    alt: "Vista interna con travature reticolari e ombre a Chiuduno — progettazione strutturale Studio Capoferri",
     altEn:
-      "Large-span steel space-frame roof — paint shop building in Maranello, Studio Capoferri",
+      "Interior view with steel trusses and shadows in Chiuduno — structural design by Studio Capoferri",
   },
 } as const;
 
