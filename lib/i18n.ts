@@ -112,9 +112,15 @@ export const chromeCopy = {
     hero: {
       introLabel: "Introduzione",
       location: "Adro (BS) - Franciacorta - Italia",
+      /** Shorter location for narrow phones — full string from sm. */
+      locationMobile: "Adro (BS) · Franciacorta",
       line1: "Progettazione integrata",
       line2: "dalla fattibilità al cantiere",
+      /** Second line split for controlled mobile wrap (joined on sm+). */
+      line2a: "dalla fattibilità",
+      line2b: "al cantiere",
       support: "Progettazione strutture in acciaio, ingegneria civile e architettura.",
+      supportMobile: "Strutture in acciaio · ingegneria civile · architettura",
     },
   },
   en: {
@@ -181,9 +187,13 @@ export const chromeCopy = {
     hero: {
       introLabel: "Introduction",
       location: "Adro (BS) - Franciacorta - Italy",
+      locationMobile: "Adro (BS) · Franciacorta",
       line1: "Integrated design",
       line2: "from feasibility to site",
+      line2a: "from feasibility",
+      line2b: "to site",
       support: "Steel structure design, civil engineering and architecture.",
+      supportMobile: "Steel structures · civil engineering · architecture",
     },
   },
 } as const;

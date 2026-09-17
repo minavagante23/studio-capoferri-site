@@ -55,6 +55,14 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Full-viewport hero — multiple fallbacks (vh → dvh → svh − header) */
+.hero-home,
+.hero-home__content {
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: calc(100svh - var(--header-h, 64px));
+}
+
 .font-display {
   font-family: var(--font-title), ui-serif, Georgia, serif;
 }

@@ -21,7 +21,9 @@ export function SiteHeader() {
   const copy = chromeCopy[locale].header;
   const hero = chromeCopy[locale].hero;
   const [open, setOpen] = useState(false);
+  /** Keep SSR + first client paint identical; apply scroll styles only after mount. */
   const [scrolled, setScrolled] = useState(false);
+  const [scrollReady, setScrollReady] = useState(false);
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const lastFocusedRef = useRef<HTMLElement | null>(null);
@@ -33,6 +35,7 @@ export function SiteHeader() {
   }, [pathname]);
 
   useEffect(() => {
+    setScrollReady(true);
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -102,13 +105,16 @@ export function SiteHeader() {
     };
   }, [open, closeMenu]);
 
+  const headerBg =
+    open || !scrollReady
+      ? "bg-[#f7f6f2]"
+      : scrolled
+        ? "bg-[#f7f6f2]/94 backdrop-blur-xl"
+        : "bg-[#f7f6f2]/80 backdrop-blur-2xl";
+
   return (
     <>
-      <header
-        className={`sticky top-0 z-[1000] transition-[background-color,backdrop-filter] duration-300 ${
-          open ? "bg-[#f7f6f2]" : scrolled ? "bg-[#f7f6f2]/94 backdrop-blur-xl" : "bg-[#f7f6f2]/80 backdrop-blur-2xl"
-        }`}
-      >
+      <header className={`sticky top-0 z-[1000] transition-[background-color,backdrop-filter] duration-300 ${headerBg}`}>
         <div className={layoutGutterXClass}>
           <div className={`relative flex h-[var(--header-h)] items-center justify-between ${layoutContentMaxClass}`}>
             <Link
