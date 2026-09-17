@@ -230,7 +230,7 @@ export function SiteHeader() {
                   title={linkTitles.contatti(locale)}
                   onClick={closeMenu}
                 >
-                  {hero.cta}
+                  {getNavLabel(locale, "contacts")}
                 </Link>
               </div>
             </div>

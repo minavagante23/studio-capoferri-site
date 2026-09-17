@@ -1,12 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useLocale } from "@/components/LocaleProvider";
-import { chromeCopy, localizeHref } from "@/lib/i18n";
-import { linkTitles } from "@/lib/link-seo";
+import { chromeCopy } from "@/lib/i18n";
 import { layoutContentMaxClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
@@ -98,20 +96,6 @@ export function HeroHome() {
           >
             {copy.support}
           </motion.p>
-
-          <motion.div
-            initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease, delay: reduceMotion ? 0 : 0.42 }}
-          >
-            <Link
-              href={localizeHref("/contatti#form-contatti", locale)}
-              className={`focus-ring mt-6 sm:mt-8 ${ui.btnOnDark}`}
-              title={linkTitles.consulenza(locale)}
-            >
-              {copy.cta}
-            </Link>
-          </motion.div>
         </div>
       </div>
     </section>

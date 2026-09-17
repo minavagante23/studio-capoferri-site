@@ -115,7 +115,6 @@ export const chromeCopy = {
       line1: "Progettazione integrata",
       line2: "dalla fattibilità al cantiere",
       support: "Progettazione strutture in acciaio, ingegneria civile e architettura.",
-      cta: "Richiedi un preventivo",
     },
   },
   en: {
@@ -185,7 +184,6 @@ export const chromeCopy = {
       line1: "Integrated design",
       line2: "from feasibility to site",
       support: "Steel structure design, civil engineering and architecture.",
-      cta: "Request a quote",
     },
   },
 } as const;
