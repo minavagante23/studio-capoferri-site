@@ -30,7 +30,7 @@ export function HeroHome() {
     offset: ["start start", "end start"],
   });
 
-  const imageY = useTransform(scrollYProgress, [0, 1], reduceMotion ? [0, 0] : ["0%", "12%"]);
+  const imageY = useTransform(scrollYProgress, [0, 1], reduceMotion ? ["0%", "0%"] : ["0%", "12%"]);
   const imageScale = useTransform(scrollYProgress, [0, 1], reduceMotion ? [1, 1] : [1.06, 1]);
 
   return (
