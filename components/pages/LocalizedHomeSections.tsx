@@ -221,7 +221,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
               })}
             </div>
             <figcaption className="mt-2.5 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
-              {locale === "en" ? "From calculation to erection" : "Dal calcolo al montaggio"}
+              {locale === "en" ? "Steel structures" : "Strutture in acciaio"}
             </figcaption>
           </figure>
         </div>
