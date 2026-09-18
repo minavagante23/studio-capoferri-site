@@ -23,8 +23,11 @@ export const site = {
   email: "info@studiocapoferri.eu",
   phoneDisplay: "+39 030 7357263",
   phoneTel: "+390307357263",
-  /** Comma-separated NAP line (ASCII) so local-SEO crawlers parse street + city reliably. */
-  addressLine: "Via Piave 35, 25030 Adro (BS), Italia",
+  /**
+   * Visible NAP line: number-first + English country helps US local-SEO crawlers
+   * that miss Italian “Via … N” order.
+   */
+  addressLine: "35 Via Piave, 25030 Adro, Brescia, Italy",
   address: {
     street: "Via Piave 35",
     postalCode: "25030",
@@ -44,7 +47,10 @@ export const site = {
   openingHoursDisplay: "Lun – Ven: 08:30–12:00, 14:30–18:30",
   openingHoursDisplayEn: "Mon – Fri: 08:30–12:00, 14:30–18:30",
   linkedin: "https://www.linkedin.com/company/studio-capoferri-ingegneria",
+  /** Digits only (schema vatID). */
   piva: "04732710985",
+  /** Spaced so crawlers do not treat the VAT as a phone number. */
+  pivaDisplay: "IT 0473 2710 985",
   formspreeId: "mqapdvrr",
   /** Google Analytics 4 measurement ID (loaded only after cookie consent). */
   gaMeasurementId: "G-53HR1FFCQC",

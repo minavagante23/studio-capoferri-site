@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   "@id": organizationId(),
   // Deve corrispondere esattamente al nome del profilo Google Business
   name: site.gmbName,
