@@ -57,11 +57,11 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
           <div className={layoutContentMaxClass}>
             <div className="mx-auto w-full max-w-[900px]">
               <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Percorso di navigazione">
-                <Link href="/progetti" title={linkTitles.breadcrumbProgetti("it")} className="font-medium text-[#2a3f54] hover:underline">
+                <Link href="/progetti" title={linkTitles.breadcrumbProgetti("it")} className="font-medium text-[#1c1e21] hover:underline">
                   Progetti
                 </Link>
                 <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
-                <Link href={`/progetti/${area}`} title={linkTitles.breadcrumbArea(cat.heading, "it")} className="font-medium text-[#2a3f54] hover:underline">
+                <Link href={`/progetti/${area}`} title={linkTitles.breadcrumbArea(cat.heading, "it")} className="font-medium text-[#1c1e21] hover:underline">
                   {cat.heading}
                 </Link>
                 <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
@@ -86,7 +86,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 </article>
 
                 <ProjectImageLightbox images={cs.gallery} className="mt-10" />
-                <ContactCtaSection locale="it" title="Hai un progetto simile?" />
+                <ContactCtaSection locale="it" title="Un intervento simile" description="Stesso tipo di opera, o un vincolo analogo." />
               </div>
             </div>
           </div>
@@ -110,11 +110,11 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
         <div className={layoutContentMaxClass}>
           <div className="mx-auto w-full max-w-[900px]">
             <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Breadcrumb">
-              <Link href={localizeHref("/progetti", locale)} title={linkTitles.breadcrumbProgetti(locale)} className="font-medium text-[#2a3f54] hover:underline">
+              <Link href={localizeHref("/progetti", locale)} title={linkTitles.breadcrumbProgetti(locale)} className="font-medium text-[#1c1e21] hover:underline">
                 {locale === "en" ? "Projects" : "Progetti"}
               </Link>
               <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
-              <Link href={localizeHref(`/progetti/${area}`, locale)} title={linkTitles.breadcrumbArea(catHeading, locale)} className="font-medium text-[#2a3f54] hover:underline">
+              <Link href={localizeHref(`/progetti/${area}`, locale)} title={linkTitles.breadcrumbArea(catHeading, locale)} className="font-medium text-[#1c1e21] hover:underline">
                 {catHeading}
               </Link>
               <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
@@ -138,7 +138,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                     {body.bullets.length ? (
                       <ul className="mt-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                         {body.bullets.map(([title, text]) => (
-                          <li key={title} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+                          <li key={title} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
                             <strong>{title}</strong> - {text}
                           </li>
                         ))}
@@ -150,7 +150,11 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 )}
               </article>
               <ProjectImageLightbox images={gallery} className="mt-10" />
-              <ContactCtaSection locale={locale} title={locale === "en" ? "Do you have a similar project?" : "Hai un progetto simile?"} />
+              <ContactCtaSection
+                locale={locale}
+                title={locale === "en" ? "A similar brief" : "Un intervento simile"}
+                description={locale === "en" ? "The same kind of structure, or a comparable constraint." : "Stesso tipo di opera, o un vincolo analogo."}
+              />
             </div>
           </div>
         </div>

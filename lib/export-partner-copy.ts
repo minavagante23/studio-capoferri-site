@@ -28,7 +28,7 @@ export const exportPartnerCopy = {
         id: "perche-italia",
         heading: "Perché un partner in Nord Italia",
         body: [
-          "Siamo ad Adro (BS), tra Brescia, Bergamo e Milano: tempi di risposta rapidi sui cantieri del Nord Italia e dell'Emilia-Romagna, con esperienza su opere industriali ad alta specializzazione — compreso interventi in distretti produttivi di eccellenza.",
+          "Siamo ad Adro (BS), tra Brescia, Bergamo e Milano: tempi di risposta rapidi sui cantieri del Nord Italia e dell'Emilia-Romagna, con esperienza su opere industriali ad alta specializzazione, compreso interventi in distretti produttivi di eccellenza.",
           "Parliamo la lingua del cantiere italiano e quella dei vostri team di progetto: meno attrito tra calcolo, officina e montaggio.",
         ],
       },
@@ -49,7 +49,7 @@ export const exportPartnerCopy = {
         id: "who",
         heading: "Who this page is for",
         body: [
-          "General contractors, steel fabricators and engineering offices in Germany, the Netherlands, Belgium, Denmark and neighbouring countries that need a local structural partner for works in Italy — Eurocode-aligned and NTC-compliant.",
+          "General contractors, steel fabricators and engineering offices in Germany, the Netherlands, Belgium, Denmark and neighbouring countries that need a local structural partner for works in Italy, Eurocode-aligned and NTC-compliant.",
           "Technical discussions are held in English with our engineers, not only with a commercial contact.",
         ],
       },
@@ -58,7 +58,7 @@ export const exportPartnerCopy = {
         heading: "What we deliver",
         items: [
           ["Structural steel design", "Analysis and design of steel buildings: industrial halls, large-span canopies, mezzanines, villas and specialist steelwork."],
-          ["Shop drawings / steel detailing", "Fabrication and erection drawings aligned with site sequences — for Italian and EU fabricators."],
+          ["Shop drawings / steel detailing", "Fabrication and erection drawings aligned with site sequences, for Italian and EU fabricators."],
           ["Eurocodes and Italian NTC", "Design under Eurocodes and Italian NTC so your project in Italy has a clear local engineering owner."],
           ["Site support", "Lifting and erection assistance, detail clarification and structural construction supervision."],
         ],
@@ -67,7 +67,7 @@ export const exportPartnerCopy = {
         id: "why",
         heading: "Why a Northern Italy partner",
         body: [
-          "Based in Adro near Brescia — between Bergamo and Milan — we respond quickly on Northern Italy and Emilia-Romagna sites, including highly specialised industrial work in excellence manufacturing districts.",
+          "Based in Adro near Brescia, between Bergamo and Milan, we respond quickly on Northern Italy and Emilia-Romagna sites, including highly specialised industrial work in excellence manufacturing districts.",
           "We speak both the language of Italian construction sites and that of your project teams: less friction between calculation, fabrication and erection.",
         ],
       },
@@ -77,6 +77,6 @@ export const exportPartnerCopy = {
       "Recent projects include a large-span tubular space-truss canopy (about 40 m clear span) in Maranello (MO), an industrial hall in Erbusco (BS), and specialist steelwork across Lombardy.",
     ctaTitle: "Send your brief in English",
     ctaDescription:
-      "Share drawings, constraints, programme and where your team is based — you will receive a focused technical first reply.",
+      "Share drawings, constraints, programme and where your team is based, you will receive a focused technical first reply.",
   },
 } as const;

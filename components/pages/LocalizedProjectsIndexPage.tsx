@@ -1,7 +1,6 @@
 "use client";
 
 import { useLocale } from "@/components/LocaleProvider";
-import { ContactCtaSection } from "@/components/ContactCtaSection";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { progettiIndexIntro } from "@/lib/content";
 import { localizeHref } from "@/lib/i18n";
@@ -10,9 +9,9 @@ import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
 const englishProjectCards = [
-  ["Residential structures", "Steel villas and homes — concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
+  ["Residential structures", "Steel villas and homes, concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
   ["Industrial projects", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
-  ["Public-space structures", "Event venues and seismic upgrades for complex steelwork", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
+  ["Structures for events", "Exhibitions, seminars and conferences", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
 ] as const;
 
 export function LocalizedProjectsPageContent() {
@@ -38,7 +37,6 @@ export function LocalizedProjectsPageContent() {
                 </div>
               ))}
             </div>
-            <ContactCtaSection locale="it" title="Vuoi realizzare un progetto con noi?" description="Dalla fattibilità al cantiere: raccontaci obiettivi, tempi e vincoli del tuo intervento." />
           </div>
         </div>
       </main>
@@ -53,7 +51,7 @@ export function LocalizedProjectsPageContent() {
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
             <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>
               {isEn
-                ? "Selected steel and structural work across Northern Italy — residences, industrial buildings and public venues. Review outcomes by sector, then write to us in English for a first technical assessment."
+                ? "Selected steel and structural work across Northern Italy: residences, industrial buildings and event venues."
                 : progettiIndexIntro}
             </p>
           </div>
@@ -65,11 +63,6 @@ export function LocalizedProjectsPageContent() {
               </div>
             ))}
           </div>
-          <ContactCtaSection
-            locale={isEn ? "en" : "it"}
-            title={isEn ? "Would you like to develop a project with us?" : "Vuoi realizzare un progetto con noi?"}
-            description={isEn ? "From feasibility to construction: tell us about the objectives, timing and constraints of your intervention." : "Dalla fattibilità al cantiere: raccontaci obiettivi, tempi e vincoli del tuo intervento."}
-          />
         </div>
       </div>
     </main>

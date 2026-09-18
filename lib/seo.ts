@@ -36,7 +36,7 @@ export function buildPageMetadata({
   const url = pageUrl(path, locale);
   // Brand once at the start; absolute avoids root template appending it again.
   const pageTitle = title.replace(new RegExp(`\\s*[—–-]\\s*${site.name}\\s*$`, "i"), "").trim();
-  const documentTitle = `${site.name} — ${pageTitle}`;
+  const documentTitle = `${site.name} - ${pageTitle}`;
   const otherLocale = locale === "it" ? "en_US" : "it_IT";
 
   return {
@@ -102,7 +102,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   servizi: {
     title: "Engineering and design services",
     description:
-      "Steel structures, FEM and BIM, fabrication shop drawings, construction supervision and site safety for projects in Northern Italy — English-speaking engineering team.",
+      "Steel structures, FEM and BIM, fabrication shop drawings, construction supervision and site safety for projects in Northern Italy, English-speaking engineering team.",
     path: "/servizi",
     keywords: [
       "steel structure design services Italy",
@@ -136,7 +136,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   "clienti-internazionali": {
-    title: "International clients — steel engineering in Italy",
+    title: "International clients, steel engineering in Italy",
     description:
       "English-speaking structural engineers in Northern Italy for EU partners: steel structures, shop drawings, Eurocodes/NTC and site support for projects built in Italy.",
     path: "/clienti-internazionali",
@@ -151,7 +151,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutturale-acciaio-italia": {
     title: "Structural steel design services in Italy for EU partners",
     description:
-      "Outsource structural steel design and shop drawings to an English-speaking engineering partner in Northern Italy — for contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy.",
+      "Outsource structural steel design and shop drawings to an English-speaking engineering partner in Northern Italy, for contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy.",
     path: "/progettazione-strutturale-acciaio-italia",
     keywords: [
       "structural steel design services Italy",
@@ -226,11 +226,11 @@ const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
     keywords: ["industrial steel building Italy", "steel warehouse design Northern Italy", "crane steel structure design"],
   },
   ricettivi: {
-    title: "Structures for public venues",
+    title: "Structures for events",
     description:
-      "Structural design for public venues, event spaces and hospitality-related buildings, including complex steel and seismic upgrading works.",
+      "Structural design for exhibition halls, seminar rooms and event venues in Northern Italy.",
     path: "/progetti/ricettivi",
-    keywords: ["event venue steel structure Milan", "public building structural design Italy", "seismic upgrade steel structure"],
+    keywords: ["event venue steel structure Milan", "exhibition hall structural design Italy", "seminar venue structure Italy"],
   },
 };
 

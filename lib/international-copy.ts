@@ -10,9 +10,9 @@ export const internationalHub = {
         id: "per-chi",
         heading: "Per chi lavoriamo",
         body: [
-          "Ingegneri e architetti stranieri, general contractor e fabricator europei — in particolare da Germania, Paesi Bassi, Belgio e Danimarca — che devono coordinare opere in Italia e cercano uno studio strutturale di riferimento sul territorio.",
+          "Ingegneri e architetti stranieri, general contractor e fabricator europei, in particolare da Germania, Paesi Bassi, Belgio e Danimarca, che devono coordinare opere in Italia e cercano uno studio strutturale di riferimento sul territorio.",
           "Interveniamo spesso su carpenterie in capannoni e edifici industriali esistenti a Milano e nel Nord Italia: strutture secondarie, soppalchi e piattaforme per logistica, produzione, data center, clean room e altri fit-out tecnici.",
-          "I confronti di progetto possono svolgersi in inglese direttamente con i nostri ingegneri — non solo con un referente commerciale.",
+          "I confronti di progetto possono svolgersi in inglese direttamente con i nostri ingegneri, non solo con un referente commerciale.",
         ],
       },
       {
@@ -47,15 +47,15 @@ export const internationalHub = {
   en: {
     title: "International clients",
     lead:
-      "English-speaking structural engineering in Northern Italy for partners in Germany, the Netherlands, Belgium, Denmark and across the EU — steel structures, shop drawings and site support for projects built in Italy.",
+      "English-speaking structural engineering in Northern Italy for partners in Germany, the Netherlands, Belgium, Denmark and across the EU, steel structures, shop drawings and site support for projects built in Italy.",
     sections: [
       {
         id: "who",
         heading: "Who we work with",
         body: [
-          "Foreign engineers and architects, general contractors and EU fabricators — especially from Germany, the Netherlands, Belgium and Denmark — who need a local structural partner for projects in Italy.",
+          "Foreign engineers and architects, general contractors and EU fabricators, especially from Germany, the Netherlands, Belgium and Denmark, who need a local structural partner for projects in Italy.",
           "We often work on steelwork inside existing industrial buildings in Milan and Northern Italy: secondary structures, mezzanines and platforms for logistics, manufacturing, data centres, cleanrooms and other technical fit-outs.",
-          "Project discussions are handled in English by our engineers — not only the first commercial contact.",
+          "Project discussions are handled in English by our engineers, not only the first commercial contact.",
         ],
       },
       {
@@ -88,6 +88,6 @@ export const internationalHub = {
     ],
     ctaTitle: "Speak with our engineers in English",
     ctaDescription:
-      "Tell us about scope, drawings and programme — you will receive a focused technical first reply from our engineering team.",
+      "Tell us about scope, drawings and programme, you will receive a focused technical first reply from our engineering team.",
   },
 } as const;

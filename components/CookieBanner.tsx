@@ -53,7 +53,7 @@ export function CookieBanner() {
       role="dialog"
       aria-label={copy.dialogLabel}
       aria-modal="false"
-      className={`fixed inset-x-0 bottom-0 z-[10000] border-t-2 border-[#3d5a7a] ${ui.brandGradient} pb-[max(1rem,env(safe-area-inset-bottom))] pt-4 text-white shadow-[0_-8px_32px_rgba(0,0,0,0.25)] backdrop-blur-md sm:pt-5`}
+      className={`fixed inset-x-0 bottom-0 z-[10000] border-t-2 border-white/15 ${ui.brandGradient} pb-[max(1rem,env(safe-area-inset-bottom))] pt-4 text-white shadow-[0_-8px_32px_rgba(0,0,0,0.25)] backdrop-blur-md sm:pt-5`}
     >
       <div className={layoutGutterXClass}>
         <div className={`flex flex-col gap-3 sm:gap-4 md:flex-row md:items-center md:justify-between ${layoutContentMaxClass}`}>

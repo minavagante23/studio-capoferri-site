@@ -16,6 +16,11 @@ type Props = {
   className?: string;
 };
 
+function captionsDiffer(title: string, caption: string) {
+  const norm = (s: string) => s.toLowerCase().replace(/[-–—]/g, "-").replace(/\s+/g, " ").trim();
+  return norm(title) !== norm(caption);
+}
+
 export function ProjectPreviewCard({
   href,
   title,
@@ -26,27 +31,25 @@ export function ProjectPreviewCard({
   className = "",
 }: Props) {
   const locale = useLocale();
+  const showCaption = captionsDiffer(title, caption);
+  const dark = variant === "dark";
 
   return (
     <Link
       href={href}
       title={linkTitles.progetto(title, locale)}
-      className={`${variant === "dark" ? ui.projectCardDark : ui.projectCardLight} ${className}`}
+      className={`${dark ? ui.projectCardDark : ui.projectCardLight} ${className}`}
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <div className="reveal-beam absolute inset-0">
-          <Image
-            src={image}
-            alt={alt}
-            fill
-            className="object-cover transition duration-500 group-hover:scale-[1.03]"
-            sizes="(min-width:1024px) 33vw, 100vw"
-          />
-          <div className="image-unify-overlay" aria-hidden />
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2e3d]/95 to-transparent px-4 py-3 sm:py-4">
-            <span className={`font-display ${ui.projectCardCaption}`}>{caption}</span>
-          </div>
-        </div>
+        <Image src={image} alt={alt} fill className="object-cover" sizes="(min-width:1024px) 33vw, 100vw" />
+      </div>
+      <div className="pt-3">
+        <span className={`font-display block text-base font-medium tracking-tight sm:text-lg ${dark ? "text-white" : "text-[#1c1e21]"}`}>
+          {title}
+        </span>
+        {showCaption ? (
+          <span className={`mt-1 block text-sm ${dark ? "text-white/65" : "text-[#666]"}`}>{caption}</span>
+        ) : null}
       </div>
     </Link>
   );

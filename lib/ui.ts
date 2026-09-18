@@ -3,18 +3,16 @@
  * I titoli display usano la classe `.font-display` (Newsreader, caricato in layout).
  */
 export const ui = {
-  /** Sfondo gradient brand (footer, sezioni scure, hero fallback) */
-  brandGradient: "bg-gradient-to-br from-[#2a3f54] via-[#24384b] to-[#1f2e3d]",
-  /** Gradient brand senza via (CTA, card compatte) */
-  brandGradientCompact: "bg-gradient-to-br from-[#2a3f54] to-[#1f2e3d]",
-  /** Didascalia overlay card progetto */
-  projectCardCaption: "text-base font-medium tracking-tight text-white sm:text-lg",
-  /** Card progetto su sfondo chiaro — foto a vivo, meno chrome */
+  /** Sfondo brand scuro, piatto (footer, sezioni scure, hero fallback) */
+  brandGradient: "bg-[#1c1e21]",
+  /** Compatto, stesso grafite (privacy / barre) */
+  brandGradientCompact: "bg-[#1c1e21]",
+  /** Card progetto su sfondo chiaro — foto a vivo, titolo sotto */
   projectCardLight:
-    "group block overflow-hidden rounded-sm border border-[#2a3f54]/08 bg-transparent transition duration-500 hover:border-[#b87333]/35",
+    "group block overflow-hidden rounded-sm",
   /** Card progetto su sfondo scuro */
   projectCardDark:
-    "group block overflow-hidden rounded-sm border border-white/10 bg-transparent transition duration-500 hover:border-[rgba(232,180,120,0.45)]",
+    "group block overflow-hidden rounded-sm",
 
   /** Paragrafi corpo su sfondo chiaro */
   body: "copy-rhythm text-[0.98rem] text-[var(--copy-body)] sm:text-[1.05rem]",
@@ -44,18 +42,18 @@ export const ui = {
   cardHeading: "section-title text-xl text-[#2a2a2a] sm:text-2xl",
 
   /** Foto di contenuto (editoriale: angolo vivo, filetto leggero) */
-  contentImage: "relative overflow-hidden rounded-sm border border-[#2a3f54]/10",
+  contentImage: "relative overflow-hidden rounded-sm border border-[#1c1e21]/10",
 
-  /** Link inline (navy → corten al hover) */
+  /** Link inline (grafite → rosso logo al hover) */
   linkAccent: "link-accent",
 
-  /** Pulsante primario */
+  /** Pulsante primario — grafite. Rosso solo su nav, hover testo, focus. */
   btnPrimary:
-    "inline-flex min-h-[48px] items-center justify-center rounded-sm bg-[#2a3f54] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#1f2e3d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(184,115,51,0.55)] disabled:opacity-60",
+    "inline-flex min-h-[48px] items-center justify-center rounded-sm bg-[#1c1e21] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#121416] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(176,16,16,0.55)] disabled:opacity-60",
 
-  /** Pulsante outline — CTA secondari home e link “Esplora / Scopri / Scrivici” */
+  /** Pulsante outline */
   btnOutline:
-    "inline-flex min-h-[48px] items-center justify-center rounded-sm border border-[#2a3f54] bg-transparent px-8 py-3 text-sm font-semibold text-[#2a3f54] transition hover:border-[#b87333] hover:text-[#b87333] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b87333]",
+    "inline-flex min-h-[48px] items-center justify-center rounded-sm border border-[#1c1e21] bg-transparent px-8 py-3 text-sm font-semibold text-[#1c1e21] transition hover:bg-[#1c1e21] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(176,16,16,0.55)]",
 
   /** Pulsante trasparente su sfondo scuro (privacy / barre) */
   btnGhostOnDark:
@@ -63,19 +61,19 @@ export const ui = {
 
   /** CTA su sfondo scuro (hero) */
   btnOnDark:
-    "inline-flex min-h-[48px] w-full items-center justify-center rounded-sm border border-white/25 bg-white px-8 py-3 text-sm font-semibold text-[#1f2e3d] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(232,180,120,0.7)] sm:w-auto",
+    "inline-flex min-h-[48px] w-full items-center justify-center rounded-sm border border-white/25 bg-white px-8 py-3 text-sm font-semibold text-[#1c1e21] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(176,16,16,0.7)] sm:w-auto",
 
   /** Cookie: accetta / rifiuta — stessi pesi visivi (pari dignità Garante) */
   cookieAccept:
-    "min-h-[48px] flex-1 rounded-md bg-white px-5 py-3 text-sm font-semibold text-[#2a3f54] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:min-w-[8.5rem] sm:px-6",
+    "min-h-[48px] flex-1 rounded-md bg-white px-5 py-3 text-sm font-semibold text-[#1c1e21] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:min-w-[8.5rem] sm:px-6",
 
   cookieReject:
     "min-h-[48px] flex-1 rounded-md border-2 border-white bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:min-w-[8.5rem] sm:px-6",
 
   /** Input / textarea form contatti */
   inputField:
-    "w-full rounded-md border-2 border-[#2a3f54]/12 bg-white px-4 py-3 text-base text-[#333] outline-none transition placeholder:text-neutral-400 focus:border-[#b87333] focus:ring-2 focus:ring-[rgba(184,115,51,0.2)]",
+    "w-full rounded-md border-2 border-[#1c1e21]/12 bg-white px-4 py-3 text-base text-[#333] outline-none transition placeholder:text-neutral-400 focus:border-[#b01010] focus:ring-2 focus:ring-[rgba(176,16,16,0.2)]",
 
   /** Link colonna footer */
-  footerLink: "focus-ring inline-block min-h-[44px] py-1.5 leading-relaxed transition-colors hover:text-[#e8b478]",
+  footerLink: "focus-ring inline-block min-h-[44px] py-1.5 leading-relaxed transition-colors hover:text-white",
 } as const;

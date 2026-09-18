@@ -1,16 +1,15 @@
 export const caseCopyEn = {
   "residenziali/villa-acciaio-pollenza": {
-    heading: "Private residence — Pollenza (MC)",
+    heading: "Private residence, Pollenza (MC)",
     metaDescription:
-      "Private steel residence in Pollenza (MC) with integrated structural and architectural design: efficiency, durability and landscape integration by Studio Capoferri.",
+      "Steel house in Pollenza (MC): steel frame, long spans, shop drawings and erection. Studio Capoferri.",
     body: [
-      "We designed a villa that combines innovation, efficiency and contemporary design. The steel structure ensures strength, durability and sustainability, applying advanced engineering to residential architecture.",
-      "The project shows how the structure can be integrated with the architectural design to create a functional building that sits naturally within its landscape.",
+      "Steel house in Pollenza (MC). Steel frame, long spans, erection on site. Structure and architecture set together, on the plot.",
+      "The frame sets the volumes and the construction sequence; shop details follow the erection order.",
     ],
     bullets: [
-      ["Steel structure", "strength, lightness and controlled construction time."],
-      ["Integrated design", "spaces optimised for liveability and landscape integration."],
-      ["Sustainability", "high energy performance and ambitious environmental standards."],
+      ["Steel structure", "frame, spans, erection time."],
+      ["Site", "steelwork sequenced with the architecture."],
     ],
   },
   "residenziali/villa-acciaio-salsomaggiore": {
@@ -31,12 +30,12 @@ export const caseCopyEn = {
     ],
   },
   "industriali/centro-raccolta-rifiuti-chiuduno": {
-    heading: "Waste collection centre — Chiuduno (BG)",
+    heading: "Waste collection centre, Chiuduno (BG)",
     metaDescription:
       "Urban separate-waste collection centre in Chiuduno (BG): Studio Capoferri handled structural design of foundations, reinforced-concrete works and steel structures.",
     body: [
       "For the Municipality of Chiuduno (BG), Studio Capoferri handled the structural design of the new urban separate-waste collection centre (recycling island), built under a public contract with Servizi Comunali SpA as client.",
-      "The studio was responsible for the structural scope of the works: foundation design, reinforced-concrete elements (bases and perimeter walls) and the steel frame — lattice columns and roof trusses — through to the detailing needed for site erection.",
+      "The studio was responsible for the structural scope of the works: foundation design, reinforced-concrete elements (bases and perimeter walls) and the steel frame: lattice columns and roof trusses, through to the detailing needed for site erection.",
       "Together, the reinforced concrete and steelwork form a clear, lightweight facility suited to a municipal service and to the peri-urban Bergamo setting.",
     ],
     bullets: [] as [string, string][],
@@ -59,7 +58,7 @@ export const caseCopyEn = {
   "industriali/copertura-edificio-verniciatura-maranello": {
     heading: "Large-span space-truss canopy - Maranello (MO)",
     metaDescription:
-      "Steel canopy in Maranello (MO) with about 40 m clear span: single tubular circular-section space truss covering two prefabricated buildings — Studio Capoferri.",
+      "Steel canopy in Maranello (MO) with about 40 m clear span: single tubular circular-section space truss covering two prefabricated buildings. Studio Capoferri.",
     body: [
       "In Maranello (MO), at the heart of a world-renowned automotive district, Studio Capoferri handled the structural design of a steel canopy covering two prefabricated buildings within a paint shop facility for a luxury car manufacturing plant.",
       "The canopy has a clear span of about 40 metres. The structure is defined by a single space truss made of circular hollow sections, chosen also for the overall aesthetic quality.",
@@ -108,7 +107,7 @@ export const caseCopyEn = {
   "industriali/centro-direzionale-provaglio-diseo": {
     heading: "Headquarters - Provaglio d'Iseo (BS)",
     metaDescription:
-      "Redevelopment of an industrial building in Provaglio d'Iseo (BS) as the main headquarters of a major listed electronics company — steel mezzanine of more than 5,000 square metres.",
+      "Redevelopment of an industrial building in Provaglio d'Iseo (BS) as the main headquarters of a major listed electronics company: steel mezzanine of more than 5,000 square metres.",
     body: [
       "The project concerns the redevelopment of an industrial building in Provaglio d'Iseo (BS), converted into the main headquarters of a major listed electronics company, with offices, laboratories and workspaces.",
       "It started from an approved base scheme developed by the lead designer. Studio Capoferri focused its contribution on full optimisation, adapting the design solutions to the real construction dynamics of the site.",
@@ -151,12 +150,12 @@ export const caseCopyEn = {
 export const caseCardCaptionEn: Record<string, string> = {
   "residenziali/villa-acciaio-pollenza": "Integrated steel villa with landscape-led structure",
   "residenziali/villa-acciaio-salsomaggiore": "Piled foundations, steel frame, PV-ready roof",
-  "industriali/centro-raccolta-rifiuti-chiuduno": "Structural design — foundations, RC and steel lattice",
+  "industriali/centro-raccolta-rifiuti-chiuduno": "Structural design: foundations, RC and steel lattice",
   "industriali/copertura-edificio-verniciatura-maranello": "About 40 m clear-span tubular space-truss canopy",
   "industriali/lamiere-da-getto-spinelli": "Load tables from structural analysis and lab testing",
-  "industriali/capannone-erbusco": "Heavy fabrication hall — dual cranes and shop drawings",
+  "industriali/capannone-erbusco": "Heavy fabrication hall, dual cranes and shop drawings",
   "industriali/ampliamento-complesso-zootecnico": "Large-span steel trusses in Castegnato (BS)",
   "industriali/centro-direzionale-provaglio-diseo": "5,000 m² steel mezzanine for corporate HQ",
-  "ricettivi/superstudio-village": "Six-building complex — new steel and seismic upgrade",
+  "ricettivi/superstudio-village": "Six-building complex: new steel and seismic upgrade",
   "ricettivi/superstudio-maxi": "Industrial shed recovery with seismic strengthening",
 };

@@ -6,7 +6,6 @@ import { StatsSection } from "@/components/home/StatsSection";
 import {
   certifications as originalCertifications,
   certificationsIntro as originalCertificationsIntro,
-  contattiIntro as originalContattiIntro,
   homeChiSiamo,
   homeProgettiIntro,
   homeServiceCards,
@@ -17,7 +16,6 @@ import {
 } from "@/lib/content";
 import { homeChiSiamoImages } from "@/lib/images";
 import { localizeHref, type Locale } from "@/lib/i18n";
-import { chiSiamoEnParagraphs } from "@/lib/about-copy";
 import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site } from "@/lib/site";
 import { ui } from "@/lib/ui";
@@ -29,25 +27,23 @@ type AboutBlock = {
   text: ReactNode;
   textMobile?: ReactNode;
   image: keyof typeof homeChiSiamoImages;
-  imageFirst: boolean;
 };
 
 const copy = {
   it: {
     aboutTitle: homeChiSiamo.title,
-    aboutBlocks: homeChiSiamo.blocks.map((block, index) => ({
+    aboutBlocks: homeChiSiamo.blocks.map((block) => ({
       text: block.text,
       textMobile: block.textMobile,
       image: block.image,
-      imageFirst: index === 0,
     })) as AboutBlock[],
     servicesTitle: "Servizi",
     servicesIntro: homeServiziIntro,
     serviceCards: homeServiceCards.map((card) => [card.title, card.description, card.href]) as [string, string, string][],
-    allServices: "Scopri tutti i nostri servizi",
+    allServices: "Tutti i servizi",
     projectsTitle: "Progetti",
     projectsIntro: homeProgettiIntro,
-    projectsCta: "Esplora tutti i progetti realizzati",
+    projectsCta: "Tutti i progetti",
     certificationsTitle: "Abilitazioni professionali",
     certificationsIntro: originalCertificationsIntro,
     certifications: originalCertifications.map((item) => [item.title, item.text]) as [string, string][],
@@ -56,23 +52,40 @@ const copy = {
     zoneDescription: originalZoneDescription,
     zoneFooter: originalZoneFooter,
     contactsTitle: "Contatti",
-    contactsIntro: originalContattiIntro,
     office: "Sede",
     phone: "Telefono",
-    writeUs: "Richiedi una consulenza",
+    writeUs: "Scrivici",
   },
   en: {
     aboutTitle: "About",
     aboutBlocks: [
       {
-        text: chiSiamoEnParagraphs[0],
-        image: "team",
-        imageFirst: true,
+        text: (
+          <>
+            <strong>Studio Capoferri</strong> is a civil and structural engineering practice in Adro (Brescia), Italy.
+            For more than forty years we have designed steel, reinforced-concrete and masonry structures across
+            Franciacorta and Northern and North-Central Italy. Calculation, shop drawings, site supervision.
+            Architecture and planning when the commission needs them.
+          </>
+        ),
+        textMobile: (
+          <>
+            <strong>Studio Capoferri</strong> is a civil and structural engineering practice in Adro (Brescia), Italy.
+            For more than forty years we have designed steel, reinforced-concrete and masonry structures across
+            Franciacorta and Northern and North-Central Italy.
+          </>
+        ),
+        image: "struttura",
       },
       {
-        text: chiSiamoEnParagraphs[1],
+        text: (
+          <>
+            Mostly residential and industrial work: steel houses and villas, halls, vertical extensions, steelwork and
+            interventions on existing buildings. Based in Adro; commissions across Lombardy (Brescia, Bergamo, Milan)
+            and neighbouring regions. Fire design when the brief asks for it.
+          </>
+        ),
         image: "cantiere",
-        imageFirst: false,
       },
     ] as AboutBlock[],
     servicesTitle: "Services",
@@ -86,18 +99,18 @@ const copy = {
       ["Italy-based technical services", "Building permits (SCIA/CILA), cadastral filings and related Italian procedures.", "/servizi#servizi-tecnici"],
       ["Property support", "Technical support for transactions, appraisals, valuations and due diligence.", "/servizi#assistenza-immobiliare"],
     ] as [string, string, string][],
-    allServices: "Explore all services",
+    allServices: "All services",
     projectsTitle: "Projects",
     projectsIntro:
-      "Industrial buildings, steel residences, vertical extensions and specialist steelwork — selected work that shows how we design and support construction.",
-    projectsCta: "Explore all completed projects",
+      "Industrial halls, steel houses, vertical extensions and specialist steelwork, selected by sector.",
+    projectsCta: "All projects",
     certificationsTitle: "Professional qualifications",
     certificationsIntro: "All activities are carried out by professionals holding the qualifications required by sector regulations.",
     certifications: [
       ["CSP/CSE qualification", "Qualified professionals for the CSP and CSE safety coordination roles on site"],
       ["Fire prevention", "Professionals listed by the Italian Ministry of the Interior under article 16 of Legislative Decree no. 139 of March 8, 2006"],
       ["Energy certification", "Energy certification services for issuing Building Energy Performance Certificates (APE)"],
-      ["Professional software", "We use specialist and dedicated software for every type of design requirement: CAD, FEM structural analysis, structural calculation, BIM modelling, 3D modelling and rendering, ensuring precision and regulatory compliance."],
+      ["Professional software", "CAD, FEM analysis, structural calculation, BIM modelling."],
     ] as [string, string][],
     zoneTitle: "Where we work",
     zoneHeading: "Northern Italy",
@@ -128,8 +141,7 @@ const copy = {
         >
           Milan
         </Link>
-        . Our office in Adro, near Brescia, Italy, allows us to serve these areas and the surrounding territories effectively, ensuring rapid response times
-        and in-depth knowledge of local regulations.
+        . Based in Adro, near Brescia.
       </>
     ),
     zoneFooter: (
@@ -141,41 +153,27 @@ const copy = {
         ·{" "}
         <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="link-accent">
           Get in touch
-        </Link>{" "}
-        or see our pages for{" "}
-        <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")} title={linkTitles.acciaio("Brescia", "en")} className="link-accent">
-          Brescia
-        </Link>
-        ,{" "}
-        <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", "en")} title={linkTitles.acciaio("Bergamo", "en")} className="link-accent">
-          Bergamo
-        </Link>{" "}
-        and{" "}
-        <Link href={localizeHref("/progettazione-strutture-acciaio-milano", "en")} title={linkTitles.acciaio("Milan", "en")} className="link-accent">
-          Milan
         </Link>
         .
       </>
     ),
     contactsTitle: "Contact",
-    contactsIntro:
-      "Write in English for a technical first reply from our engineering team — quotations, shop-drawing scope and site support for projects in Italy.",
     office: "Office",
     phone: "Phone",
-    writeUs: "Request a consultation",
+    writeUs: "Write to us",
   },
 } as const;
 
 const previews = {
   it: [
-    ["Strutture per il residenziale", "Strutture per il residenziale", "/assets/progetti-ambito-residenziale.webp", "Progetto residenziale con struttura in acciaio", "/progetti/residenziali"],
-    ["Progetti per l'industria", "Progetti per l'industria", "/assets/progetto2.webp", "Capannone industriale con struttura portante in acciaio", "/progetti/industriali"],
-    ["Strutture per spazi pubblici", "Strutture per spazi pubblici", "/assets/progetto-ricettivo.webp", "Spazio per eventi con progettazione strutturale", "/progetti/ricettivi"],
+    ["Strutture per il residenziale", "Ville e case in acciaio", "/assets/progetti-ambito-residenziale.webp", "Progetto residenziale con struttura in acciaio", "/progetti/residenziali"],
+    ["Progetti per l'industria", "Capannoni, carichi da carroponte, disegni d'officina", "/assets/progetto2.webp", "Capannone industriale con struttura portante in acciaio", "/progetti/industriali"],
+    ["Strutture per eventi", "Mostre, seminari, convegni", "/assets/progetto-ricettivo.webp", "Spazio per eventi con progettazione strutturale", "/progetti/ricettivi"],
   ],
   en: [
-    ["Residential structures", "Steel villas and homes — concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
+    ["Residential structures", "Steel villas and homes, concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
     ["Industrial projects", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
-    ["Public-space structures", "Event venues and seismic upgrades for complex steelwork", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
+    ["Structures for events", "Exhibitions, seminars and conferences", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
   ],
 } as const;
 
@@ -190,39 +188,42 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.aboutTitle}</h2>
             </div>
+            <div className="home-split-header__right space-y-4 sm:space-y-5">
+              {t.aboutBlocks.map((block, idx) => (
+                <p key={idx}>
+                  {block.textMobile ? (
+                    <>
+                      <span className="md:hidden">{block.textMobile}</span>
+                      <span className="hidden md:block">{block.text}</span>
+                    </>
+                  ) : (
+                    block.text
+                  )}
+                </p>
+              ))}
+            </div>
           </div>
-          <div className="space-y-12 sm:space-y-16 md:space-y-20">
-            {t.aboutBlocks.map((block, idx) => {
-              const img = homeChiSiamoImages[block.image];
-              // DOM always image → text so mobile stacks: img1, text1, img2, text2.
-              // imageFirst controls desktop column order only.
-              return (
-                <div key={idx} className="reveal-block grid gap-6 sm:gap-10 md:grid-cols-2 md:items-stretch">
-                  <div
-                    className={`relative aspect-[16/10] overflow-hidden rounded-sm md:aspect-auto md:min-h-[300px] md:h-full ${
-                      block.imageFirst ? "" : "md:order-2"
-                    }`}
-                  >
-                    <Image src={img.src} alt={locale === "en" ? img.altEn : img.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
+          <figure className="m-0">
+            <div className="grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#1c1e21]/25 sm:grid-cols-2">
+              {(["struttura", "cantiere"] as const).map((key) => {
+                const img = homeChiSiamoImages[key];
+                return (
+                  <div key={key} className="relative aspect-[4/3] bg-[#e8e6e1] sm:aspect-[5/4]">
+                    <Image
+                      src={img.src}
+                      alt={locale === "en" ? img.altEn : img.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width:640px) 50vw, 100vw"
+                    />
                   </div>
-                  <div
-                    className={`home-section-body copy-rhythm reading-measure text-[0.98rem] sm:text-[1.05rem] ${
-                      block.imageFirst ? "" : "md:order-1"
-                    }`}
-                  >
-                    {block.textMobile ? (
-                      <>
-                        <div className="md:hidden">{block.textMobile}</div>
-                        <div className="hidden md:block">{block.text}</div>
-                      </>
-                    ) : (
-                      block.text
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+            <figcaption className="mt-2.5 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
+              {locale === "en" ? "From calculation to erection" : "Dal calcolo al montaggio"}
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -236,13 +237,15 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           </div>
           <div className="grid gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-14">
             {t.serviceCards.map(([title, description, href]) => (
-              <article key={title} className="home-plate group reveal-block flex flex-col">
-                <h3 className={`font-display mb-2 text-xl font-medium tracking-tight text-[#2a3f54] sm:mb-3 sm:text-2xl`}>{title}</h3>
-                <p className="copy-rhythm mb-5 flex-1 text-sm text-[#444] sm:mb-6">{description}</p>
-                <Link href={localizeHref(href, locale)} className="touch-target mt-auto inline-block min-h-[44px] py-2 text-sm font-semibold text-[#2a3f54] underline-offset-4 transition hover:text-[#b87333] group-hover:underline" title={linkTitles.scopriServizio(title, locale)}>
-                  {locale === "en" ? `Explore ${title}` : `Scopri ${title.toLowerCase()}`}
-                </Link>
-              </article>
+              <Link
+                key={title}
+                href={localizeHref(href, locale)}
+                className="home-plate group reveal-block flex flex-col"
+                title={linkTitles.servizio(title, locale)}
+              >
+                <h3 className={`font-display mb-2 text-xl font-medium tracking-tight text-[#1c1e21] transition-colors group-hover:text-[#b01010] sm:mb-3 sm:text-2xl`}>{title}</h3>
+                <p className="copy-rhythm mb-0 flex-1 text-sm text-[#444]">{description}</p>
+              </Link>
             ))}
           </div>
           <p className="mt-8 sm:mt-12">
@@ -287,7 +290,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-10 lg:grid-cols-4">
             {t.certifications.map(([title, text]) => (
               <article key={title} className="home-plate reveal-block text-left">
-                <h3 className={`font-display mb-2 text-base font-medium tracking-tight text-[#2a3f54] sm:mb-3 sm:text-lg md:text-xl`}>{title}</h3>
+                <h3 className={`font-display mb-2 text-base font-medium tracking-tight text-[#1c1e21] sm:mb-3 sm:text-lg md:text-xl`}>{title}</h3>
                 <p className="text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem] md:text-base">{text}</p>
               </article>
             ))}
@@ -304,7 +307,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
             <div className="home-split-header__right">{t.zoneDescription}</div>
           </div>
           <div className="home-plate reveal-block">
-            <h3 className={`font-display text-lg font-medium tracking-tight text-[#2a3f54] sm:text-xl`}>{t.zoneHeading}</h3>
+            <h3 className={`font-display text-lg font-medium tracking-tight text-[#1c1e21] sm:text-xl`}>{t.zoneHeading}</h3>
             <div className={`mt-2 ${ui.bodyMuted}`}>{t.zoneFooter}</div>
           </div>
         </div>
@@ -318,12 +321,11 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
             <div className="home-split-header__left">
               <h2 className={titleCls}>{t.contactsTitle}</h2>
             </div>
-            <p className="home-split-header__right">{t.contactsIntro}</p>
           </div>
           <div className="grid gap-8 sm:grid-cols-3 sm:gap-10">
-            <article className="home-plate reveal-block"><h3 className={`font-display mb-1.5 text-base font-medium tracking-tight text-[#2a3f54] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#444] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
-            <article className="home-plate reveal-block"><h3 className={`font-display mb-1.5 text-base font-medium tracking-tight text-[#2a3f54] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#444] underline-offset-2 transition hover:text-[#b87333] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
-            <article className="home-plate reveal-block"><h3 className={`font-display mb-1.5 text-base font-medium tracking-tight text-[#2a3f54] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem]">{site.addressLine}</p></article>
+            <article className="home-plate reveal-block"><h3 className={`font-display mb-1.5 text-base font-medium tracking-tight text-[#1c1e21] sm:text-lg`}>Email</h3><a href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)} className="text-[0.88rem] text-[#444] underline-offset-2 transition hover:text-[#b01010] hover:underline sm:text-[0.95rem]">{site.email}</a></article>
+            <article className="home-plate reveal-block"><h3 className={`font-display mb-1.5 text-base font-medium tracking-tight text-[#1c1e21] sm:text-lg`}>{t.phone}</h3><a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)} className="text-[0.88rem] text-[#444] underline-offset-2 transition hover:text-[#b01010] hover:underline sm:text-[0.95rem]">{site.phoneDisplay}</a></article>
+            <article className="home-plate reveal-block"><h3 className={`font-display mb-1.5 text-base font-medium tracking-tight text-[#1c1e21] sm:text-lg`}>{t.office}</h3><p className="text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem]">{site.addressLine}</p></article>
           </div>
           <p className="mt-8 sm:mt-12">
             <Link href={localizeHref("/contatti#form-contatti", locale)} className={`${ui.btnPrimary} inline-flex w-full sm:w-auto`} title={linkTitles.formContatti(locale)}>

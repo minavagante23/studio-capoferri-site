@@ -12,9 +12,6 @@ export const itToEnPath: Record<string, string> = {
   "/clienti-internazionali": "/international-clients",
   "/progettazione-strutturale-acciaio-italia": "/structural-steel-design-italy",
   "/progetti": "/projects",
-  "/progettazione-strutture-acciaio-brescia": "/steel-structure-design-brescia",
-  "/progettazione-strutture-acciaio-bergamo": "/steel-structure-design-bergamo",
-  "/progettazione-strutture-acciaio-milano": "/steel-structure-design-milano",
   "/progetti/residenziali": "/projects/residential",
   "/progetti/industriali": "/projects/industrial",
   "/progetti/ricettivi": "/projects/public-spaces",
@@ -99,7 +96,6 @@ export function localizedPathname(itPath: string, locale: Locale): string {
 export type EnglishRoute =
   | { kind: "home" }
   | { kind: "static"; key: string }
-  | { kind: "steel"; city: "brescia" | "bergamo" | "milano" }
   | { kind: "projects" }
   | { kind: "project-area"; area: ProjectArea }
   | { kind: "project-case"; area: ProjectArea; slug: string };
@@ -124,12 +120,6 @@ export function resolveEnglishSlug(slug: string[]): EnglishRoute | null {
         return { kind: "static", key: "progettazione-strutturale-acciaio-italia" };
       case "projects":
         return { kind: "projects" };
-      case "steel-structure-design-brescia":
-        return { kind: "steel", city: "brescia" };
-      case "steel-structure-design-bergamo":
-        return { kind: "steel", city: "bergamo" };
-      case "steel-structure-design-milano":
-        return { kind: "steel", city: "milano" };
       default:
         return null;
     }

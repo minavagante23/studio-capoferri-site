@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Chi siamo",
   description:
-    "Scopri lo Studio Capoferri, il nostro team di professionisti, la storia e la filosofia che ci guida nella progettazione ingegneristica e architettonica con sede ad Adro (BS).",
+    "Studio di ingegneria civile ad Adro (BS): strutture in acciaio, cemento armato e muratura, disegni d'officina, direzione lavori.",
   path: "/chi-siamo",
 });
 

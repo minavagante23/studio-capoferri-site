@@ -18,8 +18,8 @@ const siteDescription =
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Studio Capoferri — Studio di ingegneria a Brescia e provincia",
-    template: `${site.name} — %s`,
+    default: "Studio Capoferri - Studio di ingegneria a Brescia e provincia",
+    template: `${site.name} - %s`,
   },
   description: siteDescription,
   alternates: { canonical: `${site.url}/` },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `Studio Capoferri – ${site.tagline}`,
     description: siteDescription,
-    images: [{ url: defaultOgImage, width: 1200, height: 630, alt: "Progettazione strutture in acciaio — Studio Capoferri" }],
+    images: [{ url: defaultOgImage, width: 1200, height: 630, alt: "Progettazione strutture in acciaio - Studio Capoferri" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   verification: { google: "DMhu8zo7VvJIGjVKh3LMDhcxJs174oNCUb41rzZNTCA" },
-  other: { "theme-color": "#2a3f54" },
+  other: { "theme-color": "#1c1e21" },
 };
 
 const localBusinessJsonLd = {
@@ -157,6 +157,12 @@ export default function RootLayout({
     <html lang="it" suppressHydrationWarning>
       <head>
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var p=location.pathname;if(p==='/en'||p.indexOf('/en/')===0)document.documentElement.lang='en';}catch(e){}})();",
+          }}
+        />
       </head>
       <body className={`${fontSans.variable} ${fontDisplay.variable} ${fontSans.className} antialiased`}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />

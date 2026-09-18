@@ -6,12 +6,12 @@ const areaLabels: Record<SeoLocale, Record<ProjectArea, string>> = {
   it: {
     residenziali: "Strutture residenziali",
     industriali: "Progetti industriali",
-    ricettivi: "Strutture per spazi pubblici",
+    ricettivi: "Strutture per eventi",
   },
   en: {
     residenziali: "Residential structures",
     industriali: "Industrial projects",
-    ricettivi: "Structures for public venues",
+    ricettivi: "Structures for events",
   },
 };
 
@@ -19,12 +19,12 @@ const areaAbout: Record<SeoLocale, Record<ProjectArea, string[]>> = {
   it: {
     residenziali: ["Strutture in acciaio", "Progettazione residenziale", "Ville in acciaio"],
     industriali: ["Capannoni industriali", "Strutture in acciaio", "Carpenteria metallica"],
-    ricettivi: ["Spazi per eventi", "Strutture in acciaio", "Miglioramento sismico"],
+    ricettivi: ["Spazi per eventi", "Mostre", "Seminari"],
   },
   en: {
     residenziali: ["Steel structures", "Residential design", "Steel villas"],
     industriali: ["Industrial sheds", "Steel structures", "Steel fabrication"],
-    ricettivi: ["Event venues", "Steel structures", "Seismic upgrading"],
+    ricettivi: ["Event venues", "Exhibitions", "Seminars"],
   },
 };
 

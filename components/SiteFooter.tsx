@@ -34,7 +34,7 @@ export function SiteFooter() {
   const footerTagline = locale === "en" ? "Engineering - Architecture - Urban Planning" : site.tagline;
 
   return (
-    <footer className={`mt-12 border-t border-[#3d5a7a]/35 ${ui.brandGradient} py-10 text-white sm:mt-16 sm:py-14`}>
+    <footer className={`mt-12 border-t border-white/10 ${ui.brandGradient} py-10 text-white sm:mt-16 sm:py-14`}>
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="grid gap-8 sm:gap-10 md:grid-cols-3">

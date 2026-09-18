@@ -35,7 +35,7 @@ export function MapEmbed() {
   if (consent !== "accepted") {
     return (
       <div
-        className="flex min-h-[220px] items-center justify-center rounded-sm border border-[#2a3f54]/10 bg-gradient-to-br from-[#f4f7fa] to-[#eef3f8] px-4 text-center text-[0.82rem] text-[#4b5a69] sm:min-h-[300px] sm:px-5 sm:text-sm md:min-h-[400px]"
+        className="flex min-h-[220px] items-center justify-center rounded-sm border border-[#1c1e21]/10 bg-[#f7f6f2] px-4 text-center text-[0.82rem] text-[#444] sm:min-h-[300px] sm:px-5 sm:text-sm md:min-h-[400px]"
         role="region"
         aria-label={isEn ? "Map disabled until cookie consent" : "Mappa disattivata fino al consenso cookie"}
       >
@@ -54,7 +54,7 @@ export function MapEmbed() {
       loading="lazy"
       allowFullScreen
       referrerPolicy="no-referrer-when-downgrade"
-      title={isEn ? "Studio Capoferri office — Via Piave 35, Adro (BS)" : "Sede Studio Capoferri — Via Piave 35, Adro (BS)"}
+      title={isEn ? "Studio Capoferri office, Via Piave 35, Adro (BS)" : "Sede Studio Capoferri, Via Piave 35, Adro (BS)"}
       src={site.mapsEmbedSrc}
     />
   );

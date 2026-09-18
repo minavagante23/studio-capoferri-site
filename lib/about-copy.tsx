@@ -3,19 +3,21 @@ import type { ReactNode } from "react";
 /** Shared English About copy used by homepage and /chi-siamo|/en/about. */
 export const chiSiamoEnParagraphs: ReactNode[] = [
   <>
-    <strong>Studio Capoferri</strong> is a structural and steel engineering practice based in Adro, near Brescia, Italy, with more than
-    forty years of experience across Franciacorta and Northern Italy. We design steel, reinforced-concrete and masonry structures, produce fabrication
-    shop drawings and support erection on site. For international clients, project discussions are handled in English by our engineers — not only the
-    first commercial contact.
+    <strong>Studio Capoferri</strong> is a civil and structural engineering practice based in Adro, near Brescia, Italy.
+    For more than forty years we have designed steel, reinforced-concrete and masonry structures for contractors,
+    architects and engineering offices: houses and villas, industrial halls, vertical extensions, specialist steelwork and
+    interventions on existing buildings. Most of our work is across Franciacorta and Northern and North-Central Italy,
+    where site access and short response times matter.
   </>,
   <>
-    We work especially on industrial and residential steel projects, including heavy production buildings, vertical extensions and
-    specialist steelwork. We coordinate with Italian and EU fabricators on shop drawings, fabrication and erection interfaces, and we
-    follow Eurocode-compliant design for partners building in Italy. Coverage is strongest across Lombardy (Brescia, Bergamo, Milan) and neighbouring
-    Northern Italian regions, with fire-safety design available when the brief requires it.
+    The same team stays on the job from calculation through site support. Design follows Italian NTC and Eurocodes; we
+    issue fabrication shop drawings and support erection when required. We provide construction supervision, assessments
+    of existing structures and executive-phase assistance. Architecture, planning and Italian permits enter the brief
+    when the commission is integrated, not structural-only.
   </>,
   <>
-    From compact interventions to major industrial facilities, the same technical team stays on the job from calculation through site support. Write to
-    us in English for a first assessment of scope, timing and the engineering path that fits your project.
+    Assignments range from compact works to industrial halls. Coverage is strongest across Lombardy (Brescia, Bergamo,
+    Milan) and neighbouring regions. Calculation, shop drawings and erection stay with one team — fewer handoffs, clearer
+    programme and clearer ownership of details.
   </>,
 ];

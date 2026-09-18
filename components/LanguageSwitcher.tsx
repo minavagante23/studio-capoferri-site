@@ -45,7 +45,7 @@ export function LanguageSwitcher({ className = "", onNavigate, tone = "light" }:
         return (
           <span key={item.locale} className="inline-flex items-center">
             {index > 0 ? (
-              <span className={`px-1 text-[0.7rem] ${dark ? "text-white/25" : "text-[#2a3f54]/30"}`} aria-hidden>
+              <span className={`px-1 text-[0.7rem] ${dark ? "text-white/25" : "text-[#1c1e21]/30"}`} aria-hidden>
                 /
               </span>
             ) : null}
@@ -61,11 +61,11 @@ export function LanguageSwitcher({ className = "", onNavigate, tone = "light" }:
               className={`focus-ring relative inline-flex min-h-[44px] min-w-[44px] items-center justify-center px-1.5 text-[0.72rem] font-semibold tracking-[0.16em] transition-colors ${
                 dark
                   ? active
-                    ? "text-[#e8b478]"
+                    ? "text-white"
                     : "text-white/45 hover:text-white"
                   : active
-                    ? "text-[#b87333]"
-                    : "text-[#2a3f54]/55 hover:text-[#b87333]"
+                    ? "text-[#b01010]"
+                    : "text-[#1c1e21]/55 hover:text-[#b01010]"
               }`}
             >
               {item.shortLabel}

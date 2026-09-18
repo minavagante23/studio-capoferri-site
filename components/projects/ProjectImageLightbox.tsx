@@ -222,7 +222,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
             transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.18, ease: "easeOut" }}
           >
             <motion.div
-              className="relative z-30 flex shrink-0 items-center justify-end gap-3 border-b border-white/35 bg-white/55 px-3 py-3 shadow-[0_12px_30px_rgba(42,63,84,0.08)] backdrop-blur-xl sm:px-5 sm:py-4"
+              className="relative z-30 flex shrink-0 items-center justify-end gap-3 border-b border-white/35 bg-white/55 px-3 py-3 shadow-[0_12px_30px_rgba(28,30,33,0.08)] backdrop-blur-xl sm:px-5 sm:py-4"
               onClick={(e) => e.stopPropagation()}
               initial={prefersReducedMotion ? false : { opacity: 0, y: -10 }}
               animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
@@ -231,7 +231,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
             >
               <button
                 type="button"
-                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#2a3f54]/15 bg-white text-xl leading-none text-[#2a3f54] shadow-sm transition hover:bg-[#fafbfc] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
+                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1c1e21]/15 bg-white text-xl leading-none text-[#1c1e21] shadow-sm transition hover:bg-[#fafbfc] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1e21]"
                 onClick={close}
                 aria-label={copy.close}
               >
@@ -248,12 +248,12 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
                 exit={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 0.985, y: 8 }}
                 transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.22, ease: "easeOut" }}
               >
-                <div className="relative w-full rounded-[1.9rem] border border-white/18 bg-[rgba(255,255,255,0.045)] p-3 shadow-[0_24px_80px_rgba(42,63,84,0.18)] ring-1 ring-white/10 backdrop-blur-2xl sm:p-4">
+                <div className="relative w-full rounded-[1.9rem] border border-white/18 bg-[rgba(255,255,255,0.045)] p-3 shadow-[0_24px_80px_rgba(28,30,33,0.18)] ring-1 ring-white/10 backdrop-blur-2xl sm:p-4">
                   {images.length > 1 ? (
                     <>
                       <button
                         type="button"
-                        className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl border border-white/40 bg-white/68 text-xl text-[#2a3f54] shadow-[0_10px_28px_rgba(42,63,84,0.12)] backdrop-blur-xl transition hover:scale-[1.04] hover:bg-white/84 sm:left-3 sm:h-11 sm:w-11 sm:text-2xl"
+                        className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl border border-white/40 bg-white/68 text-xl text-[#1c1e21] shadow-[0_10px_28px_rgba(28,30,33,0.12)] backdrop-blur-xl transition hover:scale-[1.04] hover:bg-white/84 sm:left-3 sm:h-11 sm:w-11 sm:text-2xl"
                         onClick={(e) => {
                           e.stopPropagation();
                           go(-1);
@@ -264,7 +264,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
                       </button>
                       <button
                         type="button"
-                        className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl border border-white/40 bg-white/68 text-xl text-[#2a3f54] shadow-[0_10px_28px_rgba(42,63,84,0.12)] backdrop-blur-xl transition hover:scale-[1.04] hover:bg-white/84 sm:right-3 sm:h-11 sm:w-11 sm:text-2xl"
+                        className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl border border-white/40 bg-white/68 text-xl text-[#1c1e21] shadow-[0_10px_28px_rgba(28,30,33,0.12)] backdrop-blur-xl transition hover:scale-[1.04] hover:bg-white/84 sm:right-3 sm:h-11 sm:w-11 sm:text-2xl"
                         onClick={(e) => {
                           e.stopPropagation();
                           go(1);
@@ -313,7 +313,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
               >
                 <div
                   ref={filmstripRef}
-                  className="flex cursor-grab gap-2 overflow-x-auto overscroll-x-contain pb-1 active:cursor-grabbing [scrollbar-width:thin] [scrollbar-color:rgba(42,63,84,0.35)_transparent]"
+                  className="flex cursor-grab gap-2 overflow-x-auto overscroll-x-contain pb-1 active:cursor-grabbing [scrollbar-width:thin] [scrollbar-color:rgba(28,30,33,0.35)_transparent]"
                   style={{ WebkitOverflowScrolling: "touch" }}
                 >
                   {images.map((img, i) => (
@@ -323,7 +323,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
                       onClick={() => setOpen(i)}
                       className={`relative h-[4.25rem] w-[6.5rem] shrink-0 cursor-pointer overflow-hidden rounded-lg border-2 transition sm:h-[4.75rem] sm:w-28 ${
                         i === open
-                          ? "border-[#2a3f54] ring-2 ring-[#2a3f54]/25"
+                          ? "border-[#1c1e21] ring-2 ring-[#1c1e21]/25"
                           : "border-transparent opacity-75 hover:opacity-100"
                       }`}
                       aria-label={img.alt || copy.select}
@@ -346,7 +346,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
 
       <div className="md:hidden">
         <div
-          className="-mx-1 flex gap-3 overflow-x-auto overscroll-x-contain px-1 pb-3 pt-1 [scrollbar-width:thin] [scrollbar-color:rgba(42,63,84,0.35)_transparent] snap-x snap-mandatory"
+          className="-mx-1 flex gap-3 overflow-x-auto overscroll-x-contain px-1 pb-3 pt-1 [scrollbar-width:thin] [scrollbar-color:rgba(28,30,33,0.35)_transparent] snap-x snap-mandatory"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
           {images.map((img, i) => (
@@ -354,7 +354,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
               key={`thumb-m-${img.src}-${i}`}
               type="button"
               onClick={() => setOpen(i)}
-              className="group relative aspect-[4/3] w-[min(78vw,320px)] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-sm border border-[#2a3f54]/12 bg-white text-left transition hover:border-[#b87333]/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
+              className="group relative aspect-[4/3] w-[min(78vw,320px)] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-white text-left transition hover:border-[#1c1e21]/28 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1e21]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
               <span className="reveal-beam absolute inset-0">
@@ -362,7 +362,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
                   src={img.src}
                   alt=""
                   fill
-                  className="object-cover transition duration-500 ease-out group-hover:scale-[1.02]"
+                  className="object-cover"
                   sizes="78vw"
                 />
               </span>
@@ -377,7 +377,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
             <button
               type="button"
               onClick={() => setOpen(i)}
-              className="group relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-sm border border-[#2a3f54]/10 bg-[#fafbfc] text-left transition hover:border-[#b87333]/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2a3f54]"
+              className="group relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-sm border border-[#1c1e21]/10 bg-[#fafbfc] text-left transition hover:border-[#1c1e21]/28 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1e21]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
               <span className="reveal-beam absolute inset-0">
@@ -385,12 +385,8 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
                   src={img.src}
                   alt=""
                   fill
-                  className="object-cover transition duration-500 ease-out group-hover:scale-[1.02]"
+                  className="object-cover"
                   sizes="(min-width:1024px) 33vw, 50vw"
-                />
-                <div
-                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#2a3f54]/20 via-transparent to-transparent opacity-0 transition group-hover:opacity-100"
-                  aria-hidden
                 />
               </span>
             </button>

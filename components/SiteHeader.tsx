@@ -21,9 +21,6 @@ export function SiteHeader() {
   const copy = chromeCopy[locale].header;
   const hero = chromeCopy[locale].hero;
   const [open, setOpen] = useState(false);
-  /** Keep SSR + first client paint identical; apply scroll styles only after mount. */
-  const [scrolled, setScrolled] = useState(false);
-  const [scrollReady, setScrollReady] = useState(false);
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const lastFocusedRef = useRef<HTMLElement | null>(null);
@@ -33,14 +30,6 @@ export function SiteHeader() {
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
-
-  useEffect(() => {
-    setScrollReady(true);
-    const onScroll = () => setScrolled(window.scrollY > 12);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 768px)");
@@ -105,16 +94,9 @@ export function SiteHeader() {
     };
   }, [open, closeMenu]);
 
-  const headerBg =
-    open || !scrollReady
-      ? "bg-[#f7f6f2]"
-      : scrolled
-        ? "bg-[#f7f6f2]/94 backdrop-blur-xl"
-        : "bg-[#f7f6f2]/80 backdrop-blur-2xl";
-
   return (
     <>
-      <header className={`sticky top-0 z-[1000] transition-[background-color,backdrop-filter] duration-300 ${headerBg}`}>
+      <header className="sticky top-0 z-[1000] bg-[var(--background)]">
         <div className={layoutGutterXClass}>
           <div className={`relative flex h-[var(--header-h)] items-center justify-between ${layoutContentMaxClass}`}>
             <Link
@@ -148,7 +130,7 @@ export function SiteHeader() {
                         <Link
                           href={localizeHref(item.href, locale)}
                           className={`focus-ring inline-flex min-h-[44px] items-center justify-center px-1 py-2 text-[0.95rem] font-medium tracking-normal transition-colors duration-200 lg:text-[1rem] ${
-                            active ? "text-[#b87333]" : "text-[#2a2a2a] hover:text-[#b87333]"
+                            active ? "text-[#b01010]" : "text-[#2a2a2a] hover:text-[#b01010]"
                           }`}
                           aria-current={active ? "page" : undefined}
                           title={linkTitles.nav(label, locale)}
@@ -166,7 +148,7 @@ export function SiteHeader() {
             <button
               ref={menuButtonRef}
               type="button"
-              className="focus-ring relative z-10 ml-2 inline-flex h-11 min-w-[44px] items-center gap-2.5 text-[#2a3f54] md:hidden"
+              className="focus-ring relative z-10 ml-2 inline-flex h-11 min-w-[44px] items-center gap-2.5 text-[#1c1e21] md:hidden"
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label={open ? copy.closeMenu : copy.openMenu}
@@ -190,10 +172,9 @@ export function SiteHeader() {
         inert={!open ? true : undefined}
       >
         <nav className={`relative flex min-h-0 flex-1 flex-col ${layoutGutterXClass}`} aria-label={copy.mainMenu}>
-          <div className={`flex min-h-0 flex-1 flex-col overflow-y-auto pl-3 sm:pl-4 ${layoutContentMaxClass}`}>
-            <p className="eyebrow pt-6 text-[0.68rem] tracking-[0.2em] text-[#e8b478]">{copy.navIndex}</p>
-            <ul className="flex flex-col gap-0 pt-5">
-              {navItems.map((item, index) => {
+          <div className={`flex min-h-0 flex-1 flex-col overflow-y-auto ${layoutContentMaxClass}`}>
+            <ul className="flex flex-col gap-0 pt-8">
+              {navItems.map((item) => {
                 const label = getNavLabel(locale, item.key);
                 const href = localizeHref(item.href, locale);
                 const active = isActivePath(pathname, href);
@@ -202,16 +183,13 @@ export function SiteHeader() {
                   <li key={item.href} className="mobile-nav__item">
                     <Link
                       href={href}
-                      className={`focus-ring group flex min-h-[52px] items-baseline gap-4 border-b border-white/[0.08] py-3.5 transition-colors ${
-                        active ? "text-[#e8b478]" : "text-white hover:text-[#e8b478]"
+                      className={`focus-ring flex min-h-[52px] items-center border-b border-white/[0.08] py-3.5 transition-colors ${
+                        active ? "text-white" : "text-white/72 hover:text-white"
                       }`}
                       aria-current={active ? "page" : undefined}
                       title={linkTitles.nav(label, locale)}
                       onClick={closeMenu}
                     >
-                      <span className={`shrink-0 pt-1 text-[0.72rem] font-medium tabular-nums tracking-[0.14em] ${active ? "text-[#e8b478]" : "text-white/48 group-hover:text-[#e8b478]"}`}>
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
                       <span className={`font-display text-[2.15rem] font-medium leading-[1.1] tracking-tight sm:text-[2.55rem]`}>{label}</span>
                     </Link>
                   </li>
@@ -223,21 +201,13 @@ export function SiteHeader() {
               <p className="eyebrow text-[0.62rem] tracking-[0.16em] text-white/45">{hero.location}</p>
               <a
                 href={`tel:${site.phoneTel}`}
-                className="focus-ring mt-2 inline-flex min-h-[44px] items-center text-sm font-medium tracking-wide text-white/88 transition-colors hover:text-[#e8b478]"
+                className="focus-ring mt-2 inline-flex min-h-[44px] items-center text-sm font-medium tracking-wide text-white/88 transition-colors hover:text-white"
                 title={linkTitles.telefono(site.phoneDisplay, locale)}
               >
                 {site.phoneDisplay}
               </a>
-              <div className="mt-5 flex flex-wrap items-center justify-between gap-4">
+              <div className="mt-5">
                 <LanguageSwitcher tone="dark" onNavigate={closeMenu} />
-                <Link
-                  href={localizeHref("/contatti", locale)}
-                  className="focus-ring inline-flex min-h-[44px] items-center justify-center rounded-sm border border-white/25 bg-white px-5 py-2.5 text-[0.78rem] font-semibold text-[#1f2e3d] transition hover:bg-neutral-100"
-                  title={linkTitles.contatti(locale)}
-                  onClick={closeMenu}
-                >
-                  {getNavLabel(locale, "contacts")}
-                </Link>
               </div>
             </div>
           </div>

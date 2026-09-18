@@ -8,9 +8,6 @@ import PrivacyPolicyPage from "@/app/privacy-policy/page";
 import ProgettiPage from "@/app/progetti/page";
 import ProjectAreaPage from "@/app/progetti/[area]/page";
 import ProjectCasePage from "@/app/progetti/[area]/[slug]/page";
-import ProgettazioneStruttureAcciaioBergamoPage from "@/app/progettazione-strutture-acciaio-bergamo/page";
-import ProgettazioneStruttureAcciaioBresciaPage from "@/app/progettazione-strutture-acciaio-brescia/page";
-import ProgettazioneStruttureAcciaioMilanoPage from "@/app/progettazione-strutture-acciaio-milano/page";
 import ProgettazioneStrutturaleAcciaioItaliaPage from "@/app/progettazione-strutturale-acciaio-italia/page";
 import ServiziPage from "@/app/servizi/page";
 import { englishStaticParams, resolveEnglishSlug } from "@/lib/locale-paths";
@@ -56,10 +53,6 @@ export default async function EnglishMirrorPage({ params }: Props) {
       }
     case "projects":
       return <ProgettiPage />;
-    case "steel":
-      if (route.city === "brescia") return <ProgettazioneStruttureAcciaioBresciaPage />;
-      if (route.city === "bergamo") return <ProgettazioneStruttureAcciaioBergamoPage />;
-      return <ProgettazioneStruttureAcciaioMilanoPage />;
     case "project-area":
       return <ProjectAreaPage params={Promise.resolve({ area: route.area })} />;
     case "project-case":

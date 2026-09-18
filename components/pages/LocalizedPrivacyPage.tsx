@@ -9,7 +9,7 @@ import { ui } from "@/lib/ui";
 export function LocalizedPrivacyPageContent() {
   const isEn = useLocale() === "en";
   const h2 = `font-display ${ui.sectionHeadingAccent} mb-4 mt-12`;
-  const h3 = `font-display mb-3 text-lg font-medium tracking-tight text-[#2a3f54]`;
+  const h3 = `font-display mb-3 text-lg font-medium tracking-tight text-[#1c1e21]`;
 
   return (
     <main id="main-content" className="section-shell">
@@ -23,8 +23,8 @@ export function LocalizedPrivacyPageContent() {
             </div>
 
             <p className={`mb-7 sm:mb-10 ${ui.body}`}>
-              <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> {site.legalName} — {site.addressLine} —{" "}
-              {isEn ? "VAT" : "P.IVA"} {site.piva} — Email:{" "}
+              <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> {site.legalName}, {site.addressLine},{" "}
+              {isEn ? "VAT" : "P.IVA"} {site.piva}. Email:{" "}
               <a href={`mailto:${site.email}`} title={linkTitles.email(site.email, isEn ? "en" : "it")} className="link-accent">
                 {site.email}
               </a>
@@ -40,8 +40,8 @@ export function LocalizedPrivacyPageContent() {
             <ul className={`list-disc space-y-2 pl-5 ${ui.body}`}>
               <li>
                 {isEn
-                  ? "Browsing data: IP address, date/time, pages visited, device/browser information — collected via Google Analytics only after cookie consent."
-                  : "Dati di navigazione: indirizzo IP, data/ora, pagine visitate, informazioni su dispositivo/browser — raccolti tramite Google Analytics solo dopo il consenso ai cookie."}
+                  ? "Browsing data: IP address, date/time, pages visited, device/browser information, collected via Google Analytics only after cookie consent."
+                  : "Dati di navigazione: indirizzo IP, data/ora, pagine visitate, informazioni su dispositivo/browser, raccolti tramite Google Analytics solo dopo il consenso ai cookie."}
               </li>
               <li>
                 {isEn
@@ -59,23 +59,23 @@ export function LocalizedPrivacyPageContent() {
             <ul className={`list-disc space-y-2 pl-5 ${ui.body}`}>
               <li>
                 {isEn
-                  ? "Replying to contact requests — legal basis: your consent (Art. 6(1)(a) GDPR) and/or steps prior to a contract (Art. 6(1)(b))."
-                  : "Rispondere alle richieste di contatto — base giuridica: consenso (art. 6, par. 1, lett. a GDPR) e/o misure precontrattuali (art. 6, par. 1, lett. b)."}
+                  ? "Replying to contact requests: legal basis: your consent (Art. 6(1)(a) GDPR) and/or steps prior to a contract (Art. 6(1)(b))."
+                  : "Rispondere alle richieste di contatto: base giuridica: consenso (art. 6, par. 1, lett. a GDPR) e/o misure precontrattuali (art. 6, par. 1, lett. b)."}
               </li>
               <li>
                 {isEn
-                  ? "Site statistics with Google Analytics — legal basis: consent (Art. 6(1)(a) GDPR / ePrivacy). Without consent the analytics script is not loaded."
-                  : "Statistiche di sito con Google Analytics — base giuridica: consenso (art. 6, par. 1, lett. a GDPR / ePrivacy). Senza consenso lo script analytics non viene caricato."}
+                  ? "Site statistics with Google Analytics: legal basis: consent (Art. 6(1)(a) GDPR / ePrivacy). Without consent the analytics script is not loaded."
+                  : "Statistiche di sito con Google Analytics: base giuridica: consenso (art. 6, par. 1, lett. a GDPR / ePrivacy). Senza consenso lo script analytics non viene caricato."}
               </li>
               <li>
                 {isEn
-                  ? "Embedding Google Maps on the contacts page — legal basis: consent. Without consent the map is not loaded."
-                  : "Incorporamento di Google Maps nella pagina contatti — base giuridica: consenso. Senza consenso la mappa non viene caricata."}
+                  ? "Embedding Google Maps on the contacts page: legal basis: consent. Without consent the map is not loaded."
+                  : "Incorporamento di Google Maps nella pagina contatti: base giuridica: consenso. Senza consenso la mappa non viene caricata."}
               </li>
               <li>
                 {isEn
-                  ? "Technical operation of the site (including remembering cookie choice) — legal basis: legitimate interest / necessity for the service requested (Art. 6(1)(f))."
-                  : "Funzionamento tecnico del sito (incluso il ricordo della scelta cookie) — base giuridica: legittimo interesse / necessità per il servizio richiesto (art. 6, par. 1, lett. f)."}
+                  ? "Technical operation of the site (including remembering cookie choice): legal basis: legitimate interest / necessity for the service requested (Art. 6(1)(f))."
+                  : "Funzionamento tecnico del sito (incluso il ricordo della scelta cookie): base giuridica: legittimo interesse / necessità per il servizio richiesto (art. 6, par. 1, lett. f)."}
               </li>
             </ul>
 
@@ -88,13 +88,13 @@ export function LocalizedPrivacyPageContent() {
             <ul className={`mt-3 list-disc space-y-2 pl-5 ${ui.body}`}>
               <li>
                 {isEn
-                  ? "Formspree — receives contact-form submissions so we can read and reply to messages."
-                  : "Formspree — riceve i messaggi del form di contatto per consentirci di leggerli e rispondere."}
+                  ? "Formspree: receives contact-form submissions so we can read and reply to messages."
+                  : "Formspree: riceve i messaggi del form di contatto per consentirci di leggerli e rispondere."}
               </li>
               <li>
                 {isEn
-                  ? `Google Ireland Ltd / Google LLC — Google Analytics (${site.gaMeasurementId}) and, if accepted, Google Maps embeds.`
-                  : `Google Ireland Ltd / Google LLC — Google Analytics (${site.gaMeasurementId}) e, se accettato, l’embed di Google Maps.`}
+                  ? `Google Ireland Ltd / Google LLC, Google Analytics (${site.gaMeasurementId}) and, if accepted, Google Maps embeds.`
+                  : `Google Ireland Ltd / Google LLC, Google Analytics (${site.gaMeasurementId}) e, se accettato, l’embed di Google Maps.`}
               </li>
               <li>
                 {isEn
@@ -143,7 +143,7 @@ export function LocalizedPrivacyPageContent() {
                 {site.email}
               </a>
               {isEn
-                ? ". You also have the right to lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali — www.garanteprivacy.it)."
+                ? ". You also have the right to lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali, www.garanteprivacy.it)."
                 : ". Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it)."}
             </p>
 
@@ -167,7 +167,7 @@ export function LocalizedPrivacyPageContent() {
               </div>
 
               <div className="home-plate">
-                <h3 className={h3}>{isEn ? "Analytics — Google Analytics 4 (consent required)" : "Statistiche — Google Analytics 4 (consenso richiesto)"}</h3>
+                <h3 className={h3}>{isEn ? "Analytics: Google Analytics 4 (consent required)" : "Statistiche, Google Analytics 4 (consenso richiesto)"}</h3>
                 <p className={ui.body}>
                   {isEn
                     ? `Provider: Google. Measurement ID: ${site.gaMeasurementId}. Purpose: aggregated statistics on visits and page use. Loaded only after “Accept”. If you refuse or have not chosen yet, the gtag.js script is not installed.`
@@ -176,7 +176,7 @@ export function LocalizedPrivacyPageContent() {
               </div>
 
               <div className="home-plate">
-                <h3 className={h3}>{isEn ? "Embedded content — Google Maps (consent required)" : "Contenuti incorporati — Google Maps (consenso richiesto)"}</h3>
+                <h3 className={h3}>{isEn ? "Embedded content: Google Maps (consent required)" : "Contenuti incorporati, Google Maps (consenso richiesto)"}</h3>
                 <p className={ui.body}>
                   {isEn
                     ? "On the contacts page, the map iframe loads only after consent. Without consent a placeholder is shown instead."
@@ -185,7 +185,7 @@ export function LocalizedPrivacyPageContent() {
               </div>
 
               <div className="home-plate">
-                <h3 className={h3}>{isEn ? "Contact form — Formspree (not a tracking cookie)" : "Modulo di contatto — Formspree (non è un cookie di tracciamento)"}</h3>
+                <h3 className={h3}>{isEn ? "Contact form: Formspree (not a tracking cookie)" : "Modulo di contatto, Formspree (non è un cookie di tracciamento)"}</h3>
                 <p className={ui.body}>
                   {isEn
                     ? "When you submit the form after accepting this privacy notice, the message is sent to Formspree so we can receive it. This is processing of the request you make, not website audience tracking."

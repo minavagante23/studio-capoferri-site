@@ -11,10 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function EnglishLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <>
-      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang='en';" }} />
-      <div lang="en">{children}</div>
-    </>
-  );
+  return <div lang="en">{children}</div>;
 }

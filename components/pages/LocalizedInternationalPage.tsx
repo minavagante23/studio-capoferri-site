@@ -15,7 +15,7 @@ export function LocalizedInternationalPageContent() {
   const copy = internationalHub[isEn ? "en" : "it"];
   const sectionHeading = `font-display ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
   const bullet =
-    "relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]";
+    "relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]";
 
   return (
     <main id="main-content" className="section-shell">
@@ -39,7 +39,7 @@ export function LocalizedInternationalPageContent() {
                   <ul className="mt-2 list-none space-y-3 pl-0">
                     {section.items.map(([title, text]) => (
                       <li key={title} className={bullet}>
-                        <strong>{title}</strong> — {text}
+                        <strong>{title}</strong>: {text}
                       </li>
                     ))}
                   </ul>
@@ -61,22 +61,10 @@ export function LocalizedInternationalPageContent() {
                   . Explore{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
                     services
-                  </Link>
-                  ,{" "}
-                  <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">
-                    projects
-                  </Link>{" "}
-                  and steel design in{" "}
-                  <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", locale)} title={linkTitles.acciaio("Brescia", locale)} className="link-accent">
-                    Brescia
-                  </Link>
-                  ,{" "}
-                  <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", locale)} title={linkTitles.acciaio("Bergamo", locale)} className="link-accent">
-                    Bergamo
                   </Link>{" "}
                   and{" "}
-                  <Link href={localizeHref("/progettazione-strutture-acciaio-milano", locale)} title={linkTitles.acciaio("Milan", locale)} className="link-accent">
-                    Milan
+                  <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">
+                    projects
                   </Link>
                   .
                 </>
@@ -93,22 +81,10 @@ export function LocalizedInternationalPageContent() {
                   . Approfondisci{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
                     servizi
-                  </Link>
-                  ,{" "}
-                  <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">
-                    progetti
-                  </Link>{" "}
-                  e progettazione acciaio a{" "}
-                  <Link href={localizeHref("/progettazione-strutture-acciaio-brescia", locale)} title={linkTitles.acciaio("Brescia", locale)} className="link-accent">
-                    Brescia
-                  </Link>
-                  ,{" "}
-                  <Link href={localizeHref("/progettazione-strutture-acciaio-bergamo", locale)} title={linkTitles.acciaio("Bergamo", locale)} className="link-accent">
-                    Bergamo
                   </Link>{" "}
                   e{" "}
-                  <Link href={localizeHref("/progettazione-strutture-acciaio-milano", locale)} title={linkTitles.acciaio("Milano", locale)} className="link-accent">
-                    Milano
+                  <Link href={localizeHref("/progetti", locale)} title={linkTitles.tuttiProgetti(locale)} className="link-accent">
+                    progetti
                   </Link>
                   .
                 </>

@@ -50,13 +50,13 @@ for (const [from, to] of Object.entries(legacyRedirects)) {
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<title>Pagina spostata — Studio Capoferri</title>
+<title>Pagina spostata - Studio Capoferri</title>
 <meta http-equiv="refresh" content="0; url=${target}">
 <link rel="canonical" href="${target}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<p>Questa pagina è stata spostata. <a href="${target}" title="Vai alla nuova pagina — Studio Capoferri">Vai alla nuova pagina</a>.</p>
+<p>Questa pagina è stata spostata. <a href="${target}" title="Vai alla nuova pagina - Studio Capoferri">Vai alla nuova pagina</a>.</p>
 </body>
 </html>
 `;

@@ -10,12 +10,6 @@ export const layoutContentMaxClass = "mx-auto w-full max-w-[1140px]";
 /** Offset per anchor link sotto header sticky */
 export const scrollAnchorClass = "scroll-anchor";
 
-export const steelLandingPages = [
-  { href: "/progettazione-strutture-acciaio-brescia", label: "Progettazione acciaio — Brescia" },
-  { href: "/progettazione-strutture-acciaio-bergamo", label: "Progettazione acciaio — Bergamo" },
-  { href: "/progettazione-strutture-acciaio-milano", label: "Progettazione acciaio — Milano" },
-] as const;
-
 /** URL pubblico (canonical, OG). In CI per GitHub Pages impostare NEXT_PUBLIC_SITE_URL al dominio reale del deploy. */
 const publicSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.studiocapoferri.eu";
 

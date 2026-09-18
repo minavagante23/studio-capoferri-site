@@ -8,43 +8,29 @@ type Props = {
   title?: string;
   description?: string;
   className?: string;
-  /** When true, skip the outer plate (e.g. already inside another plate). */
-  plain?: boolean;
 };
 
 export function ContactCtaSection({
   locale,
   title,
   description,
-  className = "mt-10",
-  plain = false,
+  className = "mt-10 sm:mt-14",
 }: Props) {
   const copy = chromeCopy[locale].cta;
   const resolvedTitle = title ?? copy.defaultTitle;
   const resolvedDescription = description ?? copy.defaultDescription;
 
-  const inner = (
-    <>
-      <h2 className={`font-display ${ui.sectionHeadingAccent} mb-4`}>{resolvedTitle}</h2>
-      <p className={`mb-6 max-w-[560px] ${ui.bodyMuted}`}>{resolvedDescription}</p>
-      <div className="flex flex-col gap-3 sm:flex-row">
-        <Link href={localizeHref("/contatti#form-contatti", locale)} className={ui.btnPrimary} title={linkTitles.consulenza(locale)}>
-          {copy.requestConsultation}
-        </Link>
-        <Link
-          href={localizeHref("/servizi#progettazione-strutturale", locale)}
-          className={ui.btnOutline}
-          title={linkTitles.servizio(locale === "en" ? "Structural design" : "Progettazione strutturale", locale)}
-        >
-          {copy.discoverServices}
-        </Link>
-      </div>
-    </>
-  );
-
   return (
     <section className={className}>
-      {plain ? inner : <div className="home-plate home-plate--well">{inner}</div>}
+      <div className="border-t border-[#1c1e21]/12 pt-8 sm:pt-10">
+        <h2 className={`font-display ${ui.sectionHeadingAccent} mb-3`}>{resolvedTitle}</h2>
+        <p className={`max-w-[36rem] ${ui.bodyMuted}`}>{resolvedDescription}</p>
+        <p className="mt-4">
+          <Link href={localizeHref("/contatti#form-contatti", locale)} className="link-accent" title={linkTitles.consulenza(locale)}>
+            {copy.writeUs}
+          </Link>
+        </p>
+      </div>
     </section>
   );
 }

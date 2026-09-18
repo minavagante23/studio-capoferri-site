@@ -105,7 +105,7 @@ export function ContactForm({
 
   if (status === "success") {
     return (
-      <p className="w-full rounded-lg border border-[#2a3f54]/20 bg-white/60 px-4 py-6 text-[#2a3f54]" role="status">
+      <p className="w-full rounded-lg border border-[#1c1e21]/20 bg-white/60 px-4 py-6 text-[#1c1e21]" role="status">
         {successMessage ?? copy.success}
       </p>
     );
@@ -198,7 +198,7 @@ export function ContactForm({
           checked={privacy}
           onChange={(e) => setPrivacy(e.target.checked)}
           onBlur={onBlur("privacy")}
-          className="mt-0.5 h-5 w-5 shrink-0 accent-[#2a3f54] sm:mt-1"
+          className="mt-0.5 h-5 w-5 shrink-0 accent-[#b01010] sm:mt-1"
           aria-invalid={!!errors.privacy}
           aria-describedby={errors.privacy ? "err-privacy" : undefined}
         />

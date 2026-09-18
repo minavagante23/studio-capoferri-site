@@ -61,7 +61,6 @@ export const chromeCopy = {
       closeMenu: "Chiudi menu",
       menuShort: "Menu",
       closeShort: "Chiudi",
-      navIndex: "Indice",
       languageSwitcher: "Cambia lingua",
       languageItalian: "Versione italiana",
       languageEnglish: "Versione inglese",
@@ -103,11 +102,9 @@ export const chromeCopy = {
       noSubject: "(nessun oggetto)",
     },
     cta: {
-      defaultTitle: "Hai un progetto in mente?",
-      defaultDescription:
-        "Raccontaci la tua esigenza: analizziamo fattibilità, costi e tempi e ti proponiamo la soluzione strutturale più adatta.",
-      requestConsultation: "Richiedi una consulenza",
-      discoverServices: "Scopri i servizi",
+      defaultTitle: "Per un incarico",
+      defaultDescription: "Oggetto, tempi e vincoli dell'intervento.",
+      writeUs: "Scrivici",
     },
     hero: {
       introLabel: "Introduzione",
@@ -136,7 +133,6 @@ export const chromeCopy = {
       closeMenu: "Close menu",
       menuShort: "Menu",
       closeShort: "Close",
-      navIndex: "Index",
       languageSwitcher: "Change language",
       languageItalian: "Italian version",
       languageEnglish: "English version",
@@ -178,11 +174,9 @@ export const chromeCopy = {
       noSubject: "(no subject)",
     },
     cta: {
-      defaultTitle: "Do you have a project in mind?",
-      defaultDescription:
-        "Tell us what you need: we assess feasibility, costs and timeline, then propose the most suitable structural solution.",
-      requestConsultation: "Request a consultation",
-      discoverServices: "Explore services",
+      defaultTitle: "To start a brief",
+      defaultDescription: "Scope, programme and constraints of the work.",
+      writeUs: "Write to us",
     },
     hero: {
       introLabel: "Introduction",

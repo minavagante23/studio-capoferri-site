@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useLocale } from "@/components/LocaleProvider";
-import { ContactCtaSection } from "@/components/ContactCtaSection";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
@@ -25,7 +24,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Percorso di navigazione">
-              <Link href="/progetti" title={linkTitles.breadcrumbProgetti("it")} className="font-medium text-[#2a3f54] hover:underline">
+              <Link href="/progetti" title={linkTitles.breadcrumbProgetti("it")} className="font-medium text-[#1c1e21] hover:underline">
                 Progetti
               </Link>
               <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
@@ -45,7 +44,6 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
                 </div>
               ))}
             </div>
-            <ContactCtaSection locale="it" />
           </div>
         </div>
       </main>
@@ -57,7 +55,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Breadcrumb">
-            <Link href={localizeHref("/progetti", locale)} title={linkTitles.breadcrumbProgetti(locale)} className="font-medium text-[#2a3f54] hover:underline">
+            <Link href={localizeHref("/progetti", locale)} title={linkTitles.breadcrumbProgetti(locale)} className="font-medium text-[#1c1e21] hover:underline">
               {shared.breadcrumbProjects}
             </Link>
             <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
@@ -88,7 +86,6 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
               );
             })}
           </div>
-          <ContactCtaSection locale={locale} />
         </div>
       </div>
     </main>

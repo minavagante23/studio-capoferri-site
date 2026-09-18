@@ -29,35 +29,33 @@ export const projectCategories: Record<
   residenziali: {
     metaTitle: "Progetti in ambito residenziale",
     metaDescription:
-      "Progettazione strutturale residenziale: abitazioni unifamiliari, complessi e soluzioni innovative — Studio Capoferri.",
+      "Ville, case e complessi in acciaio e misto, progettazione strutturale Studio Capoferri.",
     heading: "Strutture residenziali",
     intro: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          La progettazione strutturale in ambito residenziale richiede armonia tra comfort, funzionalità e integrazione architettonica.
-          Realizziamo strutture per abitazioni unifamiliari, complessi residenziali e edifici multipiano, con attenzione alla qualità della vita e
-          alle norme su sicurezza, sostenibilità ed efficienza energetica.
+          Ville, case, complessi, edifici a più piani. Acciaio, cemento armato, misto.
         </p>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Ogni intervento è studiato sul contesto e sull&apos;identità architettonica desiderata, con un approccio personalizzato.
+          Il telaio, le luci, le fondazioni e il montaggio si definiscono insieme all&apos;architettura, sul lotto.
         </p>
       </>
     ),
     cases: [
       {
         slug: "villa-acciaio-pollenza",
-        title: "Residenza privata — Pollenza (MC)",
-        caption: "Residenza privata — Pollenza (MC)",
+        title: "Residenza privata, Pollenza (MC)",
+        caption: "Residenza privata, Pollenza (MC)",
         cover: "/assets/residenza-privata-acciaio.webp",
-        alt: "Residenza privata in acciaio a Pollenza (MC) — progettazione strutturale Studio Capoferri",
+        alt: "Residenza privata in acciaio a Pollenza (MC), progettazione strutturale Studio Capoferri",
         href: "/progetti/residenziali/villa-acciaio-pollenza",
       },
       {
         slug: "villa-acciaio-salsomaggiore",
-        title: "Villa in acciaio — Salsomaggiore Terme (PR)",
+        title: "Villa in acciaio, Salsomaggiore Terme (PR)",
         caption: "Villa in acciaio - Salsomaggiore Terme (PR)",
         cover: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
-        alt: "Montaggio del telaio in carpenteria metallica — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Montaggio del telaio in carpenteria metallica, villa in acciaio a Salsomaggiore Terme (PR)",
         href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
       },
     ],
@@ -65,51 +63,48 @@ export const projectCategories: Record<
   industriali: {
     metaTitle: "Progetti in ambito industriale",
     metaDescription:
-      "Progetti industriali in acciaio, capannoni e logistica — progettazione strutturale Studio Capoferri.",
+      "Capannoni, logistica, carroponte, grandi luci, progettazione strutturale Studio Capoferri.",
     heading: "Progetti industriali",
     intro: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          In ambito industriale la progettazione richiede soluzioni robuste e ad alte prestazioni. Affrontiamo edifici per produzione, stoccaggio e
-          logistica, con tempi di esecuzione rapidi e ottimizzazione degli spazi. L&apos;acciaio è spesso il materiale strategico per resistenza,
-          montaggio e adattamento a esigenze funzionali complesse.
+          Capannoni, logistica, produzione, sopraelevazioni. Carichi da carroponte, grandi luci, tempi di montaggio.
         </p>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Ogni progetto nasce dall&apos;analisi delle necessità operative del cliente e si sviluppa con soluzioni su misura, pensate per durare e
-          accompagnare la crescita dell&apos;attività.
+          L&apos;acciaio è spesso il materiale giusto: resistenza, officina, adattamento all&apos;impianto esistente.
         </p>
       </>
     ),
     cases: [
       {
         slug: "centro-raccolta-rifiuti-chiuduno",
-        title: "Centro raccolta rifiuti — Chiuduno (BG)",
+        title: "Centro raccolta rifiuti, Chiuduno (BG)",
         caption: "Centro raccolta rifiuti - Chiuduno (BG)",
         cover:
           "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
-        alt: "Struttura reticolare in acciaio del centro raccolta rifiuti a Chiuduno (BG) — Studio Capoferri",
+        alt: "Struttura reticolare in acciaio del centro raccolta rifiuti a Chiuduno (BG) - Studio Capoferri",
         href: "/progetti/industriali/centro-raccolta-rifiuti-chiuduno",
       },
       {
         slug: "copertura-edificio-verniciatura-maranello",
-        title: "Tettoia reticolare a grande luce — Maranello (MO)",
+        title: "Tettoia reticolare a grande luce, Maranello (MO)",
         caption: "Tettoia reticolare - Maranello (MO)",
         cover:
           "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
-        alt: "Tettoia reticolare in acciaio a grande luce a Maranello (MO) — Studio Capoferri",
+        alt: "Tettoia reticolare in acciaio a grande luce a Maranello (MO) - Studio Capoferri",
         href: "/progetti/industriali/copertura-edificio-verniciatura-maranello",
       },
       {
         slug: "capannone-erbusco",
-        title: "Capannone industriale — Erbusco (BS)",
+        title: "Capannone industriale, Erbusco (BS)",
         caption: "Capannone industriale - Erbusco (BS)",
         cover: "/assets/industriale/capannone-erbusco/progettazione-strutture-adro.webp",
-        alt: "Capannone industriale in acciaio a Erbusco (BS) — progettazione strutturale Studio Capoferri",
+        alt: "Capannone industriale in acciaio a Erbusco (BS), progettazione strutturale Studio Capoferri",
         href: "/progetti/industriali/capannone-erbusco",
       },
       {
         slug: "ampliamento-complesso-zootecnico",
-        title: "Complesso zootecnico — Castegnato (BS)",
+        title: "Complesso zootecnico, Castegnato (BS)",
         caption: "Complesso zootecnico - Castegnato (BS)",
         cover: "/assets/industriale/ampliamento-complesso-zootecnico/vista-aerea-ampliamento-complesso-zootecnico.webp",
         alt: "Vista aerea delle capriate metalliche per l'ampliamento di un complesso zootecnico a Castegnato (BS)",
@@ -117,19 +112,19 @@ export const projectCategories: Record<
       },
       {
         slug: "centro-direzionale-provaglio-diseo",
-        title: "Centro direzionale — Provaglio d'Iseo (BS)",
+        title: "Centro direzionale, Provaglio d'Iseo (BS)",
         caption: "Centro direzionale - Provaglio d'Iseo (BS)",
         cover: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp",
-        alt: "Soppalco in carpenteria metallica in fase di montaggio — centro direzionale a Provaglio d'Iseo (BS)",
+        alt: "Soppalco in carpenteria metallica in fase di montaggio, centro direzionale a Provaglio d'Iseo (BS)",
         href: "/progetti/industriali/centro-direzionale-provaglio-diseo",
       },
       {
         slug: "lamiere-da-getto-spinelli",
-        title: "Lamiere da getto in acciaio — Adro (BS)",
+        title: "Lamiere da getto in acciaio, Adro (BS)",
         caption: "Lamiere da getto - Adro (BS)",
         cover:
           "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
-        alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante — Adro (BS)",
+        alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante, Adro (BS)",
         href: "/progetti/industriali/lamiere-da-getto-spinelli",
       },
     ],
@@ -137,34 +132,33 @@ export const projectCategories: Record<
   ricettivi: {
     metaTitle: "Progetti ricettivi e spazi pubblici",
     metaDescription:
-      "Progetti per spazi pubblici, ricettivo e manifestazioni — Superstudio e interventi strutturali Studio Capoferri.",
-    heading: "Strutture per spazi pubblici",
+      "Mostre, seminari, spazi per eventi. Superstudio e altri interventi Studio Capoferri.",
+    heading: "Strutture per eventi",
     intro: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Per i luoghi aperti al pubblico cerchiamo un equilibrio tra estetica, funzionalità e comfort. Le strutture che realizziamo pongono attenzione
-          all&apos;esperienza degli utenti e alle norme di sicurezza e accessibilità.
+          Mostre, seminari, convegni, spazi per eventi.
         </p>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Sviluppiamo soluzioni flessibili e innovative, studiate sull&apos;uso degli spazi e sull&apos;identità del luogo.
+          Sale e padiglioni, anche in edifici esistenti riconvertiti.
         </p>
       </>
     ),
     cases: [
       {
         slug: "superstudio-village",
-        title: "Superstudio Village — Milano Bovisa",
+        title: "Superstudio Village, Milano Bovisa",
         caption: "Superstudio Village - Milano Bovisa",
         cover: "/assets/progetto-superstudio.webp",
-        alt: "Superstudio Village a Milano Bovisa — progettazione strutturale del complesso edilizio",
+        alt: "Superstudio Village a Milano Bovisa, progettazione strutturale del complesso edilizio",
         href: "/progetti/ricettivi/superstudio-village",
       },
       {
         slug: "superstudio-maxi",
-        title: "Superstudio Maxi — Famagosta",
+        title: "Superstudio Maxi, Famagosta",
         caption: "Superstudio Maxi - Famagosta",
         cover: "/assets/superstudio-maxi/antincendio-adro.webp",
-        alt: "Superstudio Maxi a Milano Famagosta — recupero strutturale di capannone industriale",
+        alt: "Superstudio Maxi a Milano Famagosta, recupero strutturale di capannone industriale",
         href: "/progetti/ricettivi/superstudio-maxi",
       },
     ],
@@ -185,10 +179,10 @@ export const projectCaseStudies: Record<
   }
 > = {
   "industriali/centro-raccolta-rifiuti-chiuduno": {
-    metaTitle: "Centro raccolta rifiuti — Chiuduno (BG)",
+    metaTitle: "Centro raccolta rifiuti, Chiuduno (BG)",
     metaDescription:
-      "Centro raccolta rifiuti urbani differenziati a Chiuduno (BG): progettazione strutturale di fondazioni, opere in c.a. e strutture in acciaio — Studio Capoferri.",
-    heading: "Centro raccolta rifiuti — Chiuduno (BG)",
+      "Centro raccolta rifiuti urbani differenziati a Chiuduno (BG): progettazione strutturale di fondazioni, opere in c.a. e strutture in acciaio - Studio Capoferri.",
+    heading: "Centro raccolta rifiuti, Chiuduno (BG)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -198,9 +192,9 @@ export const projectCaseStudies: Record<
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Allo studio è stata affidata la parte strutturale dell&apos;intervento: il calcolo delle{" "}
-          <strong>fondazioni</strong>, la progettazione delle <strong>opere in cemento armato</strong> (basamenti e murature
-          perimetrali) e delle <strong>strutture in acciaio</strong> — colonne a traliccio e travature reticolari di
-          copertura — fino ai dettagli necessari al montaggio in cantiere.
+          <strong>fondazioni</strong>, la progettazione delle <strong>opere in cemento armato</strong>: basamenti e murature
+          perimetrali) e delle <strong>strutture in acciaio</strong>: colonne a traliccio e travature reticolari di
+          copertura, fino ai dettagli necessari al montaggio in cantiere.
         </p>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           L&apos;insieme di cemento armato e carpenteria metallica definisce un impianto leggero e leggibile, adatto a un
@@ -211,77 +205,74 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
-        alt: "Travature reticolari in acciaio della copertura — centro raccolta rifiuti Chiuduno (BG)",
+        alt: "Travature reticolari in acciaio della copertura, centro raccolta rifiuti Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-intradosso-travature-reticolari-chiuduno.jpeg",
-        alt: "Intradosso delle travature reticolari in acciaio e pannelli di copertura — Chiuduno (BG)",
+        alt: "Intradosso delle travature reticolari in acciaio e pannelli di copertura, Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-tiranti-e-colonne-reticolari-chiuduno.jpeg",
-        alt: "Dettaglio di tiranti e colonne reticolari in acciaio — centro raccolta Chiuduno (BG)",
+        alt: "Dettaglio di tiranti e colonne reticolari in acciaio, centro raccolta Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-nodo-strutturale-acciaio-chiuduno.jpeg",
-        alt: "Nodo strutturale in acciaio con piastra di giunzione triangolare — Chiuduno (BG)",
+        alt: "Nodo strutturale in acciaio con piastra di giunzione triangolare, Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.jpeg",
-        alt: "Colonne reticolari in acciaio zincato in fase di montaggio — Chiuduno (BG)",
+        alt: "Colonne reticolari in acciaio zincato in fase di montaggio, Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.jpeg",
-        alt: "Cantiere con gru e montaggio della carpenteria metallica — Chiuduno (BG)",
+        alt: "Cantiere con gru e montaggio della carpenteria metallica, Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/gru-montaggio-carpenteria-chiuduno.jpeg",
-        alt: "Sollevamento e assemblaggio delle travature in acciaio — isola ecologica Chiuduno (BG)",
+        alt: "Sollevamento e assemblaggio delle travature in acciaio, isola ecologica Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/travature-reticolari-e-piattaforma-chiuduno.jpeg",
-        alt: "Maglia reticolare di copertura con piattaforma aerea in opera — Chiuduno (BG)",
+        alt: "Maglia reticolare di copertura con piattaforma aerea in opera, Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/muratura-ca-e-struttura-acciaio-chiuduno.jpeg",
-        alt: "Parete in cemento armato e sovrastruttura in acciaio — centro raccolta Chiuduno (BG)",
+        alt: "Parete in cemento armato e sovrastruttura in acciaio, centro raccolta Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.jpeg",
-        alt: "Vista interna delle travature reticolari e ombre a terra — Chiuduno (BG)",
+        alt: "Vista interna delle travature reticolari e ombre a terra, Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-parete-ca-chiuduno.jpeg",
-        alt: "Interno del telaio in acciaio con parete in c.a. sullo sfondo — Chiuduno (BG)",
+        alt: "Interno del telaio in acciaio con parete in c.a. sullo sfondo, Chiuduno (BG)",
       },
       {
         src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-esterna-cantiere-e-paesaggio-chiuduno.jpeg",
-        alt: "Vista esterna del cantiere con struttura in acciaio e colline — Chiuduno (BG)",
+        alt: "Vista esterna del cantiere con struttura in acciaio e colline, Chiuduno (BG)",
       },
     ],
   },
   "residenziali/villa-acciaio-pollenza": {
-    metaTitle: "Residenza privata — Pollenza (MC)",
+    metaTitle: "Residenza privata, Pollenza (MC)",
     metaDescription:
-      "Residenza privata in acciaio a Pollenza (MC): progettazione strutturale e architettonica integrata — Studio Capoferri.",
-    heading: "Residenza privata — Pollenza (MC)",
+      "Residenza privata in acciaio a Pollenza (MC): progettazione strutturale e architettonica integrata. Studio Capoferri.",
+    heading: "Residenza privata, Pollenza (MC)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Abbiamo progettato una villa che unisce innovazione, efficienza e design moderno. La struttura in acciaio garantisce resistenza, durata e
-          sostenibilità, con ingegneria avanzata applicata all&apos;architettura residenziale.
+          Residenza in acciaio a Pollenza (MC). Telaio metallico, grandi luci, montaggio in cantiere. Struttura e
+          architettura sviluppate insieme, sul lotto.
         </p>
         <p className="copy-rhythm mb-6 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Il progetto mostra come la struttura possa integrarsi con la progettazione architettonica per un edificio funzionale e inserito nel paesaggio.
+          Il telaio definisce i volumi e i tempi di costruzione; i dettagli di officina seguono la sequenza di montaggio.
         </p>
         <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Struttura in acciaio</strong> — resistenza, leggerezza e tempi di costruzione contenuti.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Struttura in acciaio</strong>: telaio, luci, tempi di montaggio.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Progettazione integrata</strong> — spazi ottimizzati per vivibilità e integrazione paesaggistica.
-          </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Sostenibilità</strong> — efficienza energetica e standard ambientali elevati.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Cantiere</strong>: carpenteria e sequenza di posa coordinate con l&apos;architettura.
           </li>
         </ul>
       </>
@@ -305,7 +296,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/residenziale/progettazione-strutture-acciaio-franciacorta.webp",
-        alt: "Dettaglio costruttivo della struttura portante in acciaio — residenza a Pollenza (MC)",
+        alt: "Dettaglio costruttivo della struttura portante in acciaio, residenza a Pollenza (MC)",
       },
       {
         src: "/assets/residenziale/strutture-acciaio-bergamo.webp",
@@ -322,10 +313,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "residenziali/villa-acciaio-salsomaggiore": {
-    metaTitle: "Villa in acciaio — Salsomaggiore Terme (PR)",
+    metaTitle: "Villa in acciaio, Salsomaggiore Terme (PR)",
     metaDescription:
-      "Villa in acciaio a Salsomaggiore Terme (PR): fondazioni su pali, struttura mista in cemento armato e acciaio, sistemi a secco — Studio Capoferri.",
-    heading: "Villa in acciaio — Salsomaggiore Terme (PR)",
+      "Villa in acciaio a Salsomaggiore Terme (PR): fondazioni su pali, struttura mista in cemento armato e acciaio, sistemi a secco. Studio Capoferri.",
+    heading: "Villa in acciaio, Salsomaggiore Terme (PR)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -339,20 +330,20 @@ export const projectCaseStudies: Record<
           piano primo e della copertura, progettata per accogliere una superficie integrale di pannelli fotovoltaici.
         </p>
         <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Fondazioni su pali</strong>: soluzione strutturale specifica per un terreno con caratteristiche scadenti.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Carpenteria metallica</strong>: travi e pilastri definiscono i volumi con precisione millimetrica, unendo solidità e leggerezza.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Sistemi a secco</strong>: pareti con lana minerale ad alta densità per velocità d&apos;esecuzione e prestazioni termiche
             d&apos;eccellenza.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Efficienza energetica</strong>: copertura predisposta per l&apos;impianto fotovoltaico, cuore energetico dell&apos;abitazione.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Progettazione integrata</strong>: impianti e finiture eseguiti in parallelo, riducendo tempi morti e imprevisti di cantiere.
           </li>
         </ul>
@@ -361,47 +352,47 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/scavo-fondazioni-villa-acciaio-salsomaggiore.webp",
-        alt: "Scavo e preparazione del terreno per le fondazioni — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Scavo e preparazione del terreno per le fondazioni, villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/fondazioni-su-pali-villa-acciaio.webp",
-        alt: "Getto di calcestruzzo delle fondazioni su pali — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Getto di calcestruzzo delle fondazioni su pali (villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/murature-cemento-armato-seminterrato.webp",
-        alt: "Murature in cemento armato del piano seminterrato e nucleo scala — Salsomaggiore Terme (PR)",
+        alt: "Murature in cemento armato del piano seminterrato e nucleo scala, Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/cantiere-villa-acciaio-salsomaggiore.webp",
-        alt: "Vista del cantiere con fondazioni in cemento armato — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Vista del cantiere con fondazioni in cemento armato (villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
-        alt: "Montaggio del telaio portante in carpenteria metallica — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Montaggio del telaio portante in carpenteria metallica, villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/struttura-acciaio-copertura-fotovoltaico.webp",
-        alt: "Struttura in acciaio della copertura predisposta per pannelli fotovoltaici — Salsomaggiore Terme (PR)",
+        alt: "Struttura in acciaio della copertura predisposta per pannelli fotovoltaici, Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/pareti-a-secco-lana-minerale-villa.webp",
-        alt: "Posa delle pareti a secco con isolamento in lana minerale — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Posa delle pareti a secco con isolamento in lana minerale, villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-interne-cartongesso-villa-acciaio.webp",
-        alt: "Finiture interne in cartongesso con posa impianti — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Finiture interne in cartongesso con posa impianti (villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp",
-        alt: "Finiture esterne e tracciature sul terrazzo a sbalzo — villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Finiture esterne e tracciature sul terrazzo a sbalzo, villa in acciaio a Salsomaggiore Terme (PR)",
       },
     ],
   },
   "industriali/lamiere-da-getto-spinelli": {
-    metaTitle: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
+    metaTitle: "Lamiere da getto in acciaio, Spinelli S.r.l., Adro (BS)",
     metaDescription:
-      "Revisione e progettazione di lamiere da getto in acciaio per Spinelli S.r.l. a Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata — Studio Capoferri.",
-    heading: "Lamiere da getto in acciaio — Spinelli S.r.l., Adro (BS)",
+      "Revisione e progettazione di lamiere da getto in acciaio per Spinelli S.r.l. a Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata. Studio Capoferri.",
+    heading: "Lamiere da getto in acciaio, Spinelli S.r.l., Adro (BS)",
     externalBrand: {
       href: "https://spinellisrl.eu/",
       imageSrc: "/assets/spinelli-logo.png",
@@ -419,7 +410,7 @@ export const projectCaseStudies: Record<
           >
             Spinelli S.r.l.
           </a>
-          , produttore di lamiere grecate con sede operativa a <strong>Adro (BS)</strong>, lo studio ha curato la revisione
+         , produttore di lamiere grecate con sede operativa a <strong>Adro (BS)</strong>, lo studio ha curato la revisione
           delle lamiere da getto esistenti e la progettazione di nuove soluzioni in acciaio, attraverso un percorso
           integrato di analisi strutturale e prove sperimentali.
         </p>
@@ -429,15 +420,15 @@ export const projectCaseStudies: Record<
           valutazione della capacità portante.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Analisi strutturale</strong> — revisione delle lamiere esistenti e definizione di nuove soluzioni in
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Analisi strutturale</strong>: revisione delle lamiere esistenti e definizione di nuove soluzioni in
             acciaio.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Prove sperimentali</strong> — comportamento delle lamiere senza getto e con solaio collaborante.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Prove sperimentali</strong>: comportamento delle lamiere senza getto e con solaio collaborante.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Tabelle di portata</strong> — riferimento tecnico per le diverse configurazioni e condizioni di carico.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Tabelle di portata</strong>: riferimento tecnico per le diverse configurazioni e condizioni di carico.
           </li>
         </ul>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -450,11 +441,11 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
-        alt: "Prova di carico su lamiera da getto Spinelli con solaio in calcestruzzo — Adro (BS)",
+        alt: "Prova di carico su lamiera da getto Spinelli con solaio in calcestruzzo, Adro (BS)",
       },
       {
         src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-solaia-collaborante.jpeg",
-        alt: "Allestimento della prova di carico su solaio collaborante in laboratorio — Spinelli S.r.l.",
+        alt: "Allestimento della prova di carico su solaio collaborante in laboratorio, Spinelli S.r.l.",
       },
       {
         src: "/assets/industriale/lamiere-da-getto-spinelli/strumentazione-prova-carico-solaio.jpeg",
@@ -487,10 +478,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/copertura-edificio-verniciatura-maranello": {
-    metaTitle: "Tettoia reticolare a grande luce — Maranello (MO)",
+    metaTitle: "Tettoia reticolare a grande luce, Maranello (MO)",
     metaDescription:
-      "Tettoia in carpenteria metallica a Maranello (MO): luce libera circa 40 m, unica capriata reticolare in profili tubolari — Studio Capoferri.",
-    heading: "Tettoia reticolare a grande luce — Maranello (MO)",
+      "Tettoia in carpenteria metallica a Maranello (MO): luce libera circa 40 m, unica capriata reticolare in profili tubolari. Studio Capoferri.",
+    heading: "Tettoia reticolare a grande luce, Maranello (MO)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -504,17 +495,17 @@ export const projectCaseStudies: Record<
           estetica dell&apos;insieme.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Grande luce libera</strong> — circa 40 metri senza sostegni intermedi tra i due edifici.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Grande luce libera</strong>: circa 40 metri senza sostegni intermedi tra i due edifici.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Capriata reticolare unica</strong> — geometria spaziale in profili tubolari a sezione circolare.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Capriata reticolare unica</strong>: geometria spaziale in profili tubolari a sezione circolare.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Sollevamento e montaggio</strong> — le esigenze esecutive integrate nelle scelte progettuali fin dalle prime fasi.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Sollevamento e montaggio</strong>: le esigenze esecutive integrate nelle scelte progettuali fin dalle prime fasi.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Qualità estetica</strong> — profili e finitura coerenti con lo standard di un impianto di verniciatura ad alte prestazioni.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Qualità estetica</strong>: profili e finitura coerenti con lo standard di un impianto di verniciatura ad alte prestazioni.
           </li>
         </ul>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -526,27 +517,27 @@ export const projectCaseStudies: Record<
     gallery: [
       {
         src: "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
-        alt: "Capriata reticolare in profili tubolari a grande luce — tettoia edificio verniciatura Maranello (MO)",
+        alt: "Capriata reticolare in profili tubolari a grande luce, tettoia edificio verniciatura Maranello (MO)",
       },
       {
         src: "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.jpeg",
-        alt: "Fasi di sollevamento e montaggio della copertura metallica — Maranello (MO)",
+        alt: "Fasi di sollevamento e montaggio della copertura metallica, Maranello (MO)",
       },
       {
         src: "/assets/industriale/copertura-edificio-verniciatura-maranello/cantiere-copertura-industriale-verniciatura-maranello.jpeg",
-        alt: "Tettoia in carpenteria metallica a copertura di edifici prefabbricati — cantiere Maranello (MO)",
+        alt: "Tettoia in carpenteria metallica a copertura di edifici prefabbricati, cantiere Maranello (MO)",
       },
       {
         src: "/assets/industriale/copertura-edificio-verniciatura-maranello/vista-interna-copertura-metallica-verniciatura-maranello.jpeg",
-        alt: "Vista interna della capriata reticolare in tubolari a sezione circolare — Maranello (MO)",
+        alt: "Vista interna della capriata reticolare in tubolari a sezione circolare, Maranello (MO)",
       },
     ],
   },
   "industriali/capannone-erbusco": {
-    metaTitle: "Capannone industriale — Erbusco (BS)",
+    metaTitle: "Capannone industriale, Erbusco (BS)",
     metaDescription:
-      "Ampliamento zona produttiva per carpenteria metallica: struttura in acciaio, carroponti, pannelli sandwich — Studio Capoferri.",
-    heading: "Capannone industriale — Erbusco (BS)",
+      "Ampliamento zona produttiva per carpenteria metallica: struttura in acciaio, carroponti, pannelli sandwich - Studio Capoferri.",
+    heading: "Capannone industriale, Erbusco (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -558,20 +549,20 @@ export const projectCaseStudies: Record<
           è stato concepito per carichi pesanti e flussi di lavoro complessi.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Struttura portante in acciaio</strong> — resistenza e affidabilità per l&apos;ambiente industriale.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Struttura portante in acciaio</strong>: resistenza e affidabilità per l&apos;ambiente industriale.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Progettazione esecutiva</strong> — disegni costruttivi d&apos;officina per la realizzazione in acciaio.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Progettazione esecutiva</strong>: disegni costruttivi d&apos;officina per la realizzazione in acciaio.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Integrazione carroponti</strong> — struttura calcolata per due carroponti e movimentazione dei pezzi.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Integrazione carroponti</strong>: struttura calcolata per due carroponti e movimentazione dei pezzi.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Efficienza e isolamento</strong> — pannelli sandwich per isolamento termico e acustico.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Efficienza e isolamento</strong>: pannelli sandwich per isolamento termico e acustico.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Gestione globale</strong> — urbanistica, architettura e calcoli strutturali esecutivi.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Gestione globale</strong>: urbanistica, architettura e calcoli strutturali esecutivi.
           </li>
         </ul>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -586,7 +577,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/industriale/capannone-erbusco/progettazione-strutture-adro.webp",
-        alt: "Progettazione strutturale del capannone con carpenteria metallica — Erbusco (BS)",
+        alt: "Progettazione strutturale del capannone con carpenteria metallica, Erbusco (BS)",
       },
       {
         src: "/assets/industriale/capannone-erbusco/strutture-industriali-erbusco.webp",
@@ -594,7 +585,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/industriale/capannone-erbusco/vista-capannone-erbusco.webp",
-        alt: "Panoramica dell'ampliamento produttivo in acciaio — capannone a Erbusco (BS)",
+        alt: "Panoramica dell'ampliamento produttivo in acciaio, capannone a Erbusco (BS)",
       },
       {
         src: "/assets/industriale/capannone-erbusco/strutture-industriali.webp",
@@ -602,15 +593,15 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/industriale/capannone-erbusco/ingegneria-civile-adro.webp",
-        alt: "Interno del capannone industriale con struttura calcolata per carroponti — Erbusco (BS)",
+        alt: "Interno del capannone industriale con struttura calcolata per carroponti, Erbusco (BS)",
       },
     ],
   },
   "industriali/ampliamento-complesso-zootecnico": {
-    metaTitle: "Complesso zootecnico — Castegnato (BS)",
+    metaTitle: "Complesso zootecnico, Castegnato (BS)",
     metaDescription:
-      "Ampliamento con capriate metalliche a luce libera di quasi 16 metri: progettazione strutturale per complesso zootecnico a Castegnato (BS) — Studio Capoferri.",
-    heading: "Complesso zootecnico — Castegnato (BS)",
+      "Ampliamento con capriate metalliche a luce libera di quasi 16 metri: progettazione strutturale per complesso zootecnico a Castegnato (BS). Studio Capoferri.",
+    heading: "Complesso zootecnico, Castegnato (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -623,45 +614,44 @@ export const projectCaseStudies: Record<
           <strong>16 metri</strong>. L&apos;assenza di sostegni intermedi permette di ottimizzare gli spazi per le esigenze operative del settore.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Efficienza</strong>: grandi luci coperte con profili ottimizzati.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Velocità</strong>: tempi di montaggio ridotti per limitare l&apos;impatto sul sito.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
-            <strong>Durabilità</strong>: soluzioni idonee a un contesto ambientale aggressivo.
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+            <strong>Durabilità</strong>: profili e protezioni per un ambiente aggressivo.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Integrazione</strong>: perfetto innesto delle nuove opere sulle strutture preesistenti.
           </li>
         </ul>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          La progettazione strutturale non è solo calcolo. È lo strumento per trasformare le necessità del committente in soluzioni costruttive
-          concrete.
+          Le capriate da 16 m coprono la luce senza appoggi intermedi, come richiesto dall&apos;uso dell&apos;impianto.
         </p>
       </>
     ),
     gallery: [
       {
         src: "/assets/industriale/ampliamento-complesso-zootecnico/capriate-metalliche-grande-luce-complesso-zootecnico.webp",
-        alt: "Capriate metalliche a grande luce in fase di montaggio — complesso zootecnico Castegnato (BS)",
+        alt: "Capriate metalliche a grande luce in fase di montaggio, complesso zootecnico Castegnato (BS)",
       },
       {
         src: "/assets/industriale/ampliamento-complesso-zootecnico/carpenteria-metallica-basamento-cemento-zootecnico.webp",
-        alt: "Carpenteria metallica su basamento in cemento armato — complesso zootecnico Castegnato (BS)",
+        alt: "Carpenteria metallica su basamento in cemento armato, complesso zootecnico Castegnato (BS)",
       },
       {
         src: "/assets/industriale/ampliamento-complesso-zootecnico/vista-aerea-ampliamento-complesso-zootecnico.webp",
-        alt: "Vista aerea delle nuove capriate metalliche integrate con le strutture preesistenti — Castegnato (BS)",
+        alt: "Vista aerea delle nuove capriate metalliche integrate con le strutture preesistenti, Castegnato (BS)",
       },
     ],
   },
   "industriali/centro-direzionale-provaglio-diseo": {
-    metaTitle: "Centro direzionale — Provaglio d'Iseo (BS)",
+    metaTitle: "Centro direzionale, Provaglio d'Iseo (BS)",
     metaDescription:
-      "Riqualificazione di edificio industriale a Provaglio d'Iseo (BS) come sede principale di un'importante azienda elettronica quotata in borsa — soppalco metallico oltre 5.000 mq.",
-    heading: "Centro direzionale — Provaglio d'Iseo (BS)",
+      "Riqualificazione di edificio industriale a Provaglio d'Iseo (BS) come sede principale di un'importante azienda elettronica quotata in borsa, soppalco metallico oltre 5.000 mq.",
+    heading: "Centro direzionale, Provaglio d'Iseo (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -670,60 +660,60 @@ export const projectCaseStudies: Record<
           lavoro.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Il progetto è partito da una base definitiva sviluppata dal progettista generale. Lo Studio Capoferri ha concentrato il proprio contributo su
-          un&apos;ottimizzazione a 360°, adattando le soluzioni progettuali alle reali dinamiche costruttive del cantiere.
+          Il progetto è partito da una base definitiva del progettista generale. Lo Studio ha adattato carpenterie e dettagli
+          alle condizioni di cantiere.
         </p>
         <p className="copy-rhythm mb-6 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Il cuore dell&apos;intervento è un soppalco in carpenteria metallica di oltre <strong>5.000 mq</strong>, integrato nella struttura esistente
           per ampliarne la superficie utile. L&apos;attività ha riguardato:
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Ottimizzazione strutturale e geometrica</strong> delle carpenterie.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Coordinamento</strong> con le condizioni dell&apos;edificio preesistente.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Sviluppo dei dettagli costruttivi ed esecutivi</strong> necessari alla produzione.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
             <strong>Razionalizzazione delle fasi di montaggio</strong> per garantire fluidità operativa.
           </li>
         </ul>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Il confronto costante tra progettazione e costruzione ha permesso di sviluppare soluzioni efficienti e coerenti con la realtà del cantiere.
+          Il confronto tra disegno e montaggio ha tenuto il soppalco allineato alle condizioni reali di cantiere.
         </p>
       </>
     ),
     gallery: [
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp",
-        alt: "Vista generale del soppalco in carpenteria metallica integrato nell'edificio esistente — Provaglio d'Iseo (BS)",
+        alt: "Vista generale del soppalco in carpenteria metallica integrato nell'edificio esistente, Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/carpenteria-metallica-soppalco-provaglio-diseo.webp",
-        alt: "Montaggio del soppalco in acciaio con connessioni strutturali e lamiera grecata — centro direzionale Provaglio d'Iseo (BS)",
+        alt: "Montaggio del soppalco in acciaio con connessioni strutturali e lamiera grecata, centro direzionale Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/progettazione-strutture-acciaio-industriali.jpeg",
-        alt: "Apertura in copertura e carpenteria metallica sul piano del soppalco — centro direzionale Provaglio d'Iseo (BS)",
+        alt: "Apertura in copertura e carpenteria metallica sul piano del soppalco, centro direzionale Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/strutture-in-acciaio-soppalco-direzionale.jpeg",
-        alt: "Travi e capriate in acciaio integrate nella struttura preesistente — soppalco Provaglio d'Iseo (BS)",
+        alt: "Travi e capriate in acciaio integrate nella struttura preesistente, soppalco Provaglio d'Iseo (BS)",
       },
       {
         src: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-copertura-progettazione-acciaio.jpeg",
-        alt: "Vista dal basso dell'orditura metallica in fase di montaggio — centro direzionale Provaglio d'Iseo (BS)",
+        alt: "Vista dal basso dell'orditura metallica in fase di montaggio, centro direzionale Provaglio d'Iseo (BS)",
       },
     ],
   },
   "ricettivi/superstudio-village": {
-    metaTitle: "Superstudio Village — Milano Bovisa",
+    metaTitle: "Superstudio Village, Milano Bovisa",
     metaDescription:
-      "Progettazione strutturale per complesso a Milano Bovisa: consolidamenti, demolizioni e ricostruzioni in acciaio e misto — Studio Capoferri.",
-    heading: "Superstudio Village — Milano Bovisa",
+      "Progettazione strutturale per complesso a Milano Bovisa: consolidamenti, demolizioni e ricostruzioni in acciaio e misto. Studio Capoferri.",
+    heading: "Superstudio Village, Milano Bovisa",
     externalBrand: {
       href: "https://www.superstudioevents.com/it/",
       imageSrc: "/assets/superstudio_logo.svg",
@@ -740,7 +730,7 @@ export const projectCaseStudies: Record<
         >
           Superstudio Events S.r.l.
         </a>
-        , costituito da sei edifici con differenti tipologie di intervento. I lavori sono iniziati nel <strong>2023</strong>. In due edifici sono stati previsti interventi
+       , costituito da sei edifici con differenti tipologie di intervento. I lavori sono iniziati nel <strong>2023</strong>. In due edifici sono stati previsti interventi
         di consolidamento strutturale di volte e copertura. Un edificio è stato demolito e ricostruito con nuova struttura in acciaio (altezza massima
         circa <strong>16 m</strong>). Un altro è stato ricostruito con struttura mista in cemento armato e muratura portante; un ulteriore fabbricato con muratura
         portante e copertura collaborante; infine un adeguamento sismico su uno stabile esistente.
@@ -753,7 +743,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/superstudio-village-struttura-acciaio.webp",
-        alt: "Dettaglio della struttura in acciaio pre-fabbricata — Superstudio Village Milano",
+        alt: "Dettaglio della struttura in acciaio pre-fabbricata, Superstudio Village Milano",
       },
       {
         src: "/assets/superstudio-village-vista-della-struttura.webp",
@@ -761,7 +751,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/superstudio-village-pavimentazione-interni.webp",
-        alt: "Pavimentazione e finitura degli spazi interni — Superstudio Village Milano",
+        alt: "Pavimentazione e finitura degli spazi interni, Superstudio Village Milano",
       },
       {
         src: "/assets/superstudio-village-ricerca-innovazione.webp",
@@ -769,11 +759,11 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/superstudio-village-innovazione-tecnologica.webp",
-        alt: "Sala proiezioni con struttura portante — Superstudio Village Milano",
+        alt: "Sala proiezioni con struttura portante, Superstudio Village Milano",
       },
       {
         src: "/assets/superstudio-village-acciaio-pre-fabbricato.webp",
-        alt: "Montaggio della struttura interna in acciaio — Superstudio Village Milano",
+        alt: "Montaggio della struttura interna in acciaio, Superstudio Village Milano",
       },
       {
         src: "/assets/superstudio-village-eventi.webp",
@@ -781,15 +771,15 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/superstudio-village-sala-proiezione.webp",
-        alt: "Sala proiezione con copertura e struttura in acciaio — Superstudio Village Milano",
+        alt: "Sala proiezione con copertura e struttura in acciaio, Superstudio Village Milano",
       },
     ],
   },
   "ricettivi/superstudio-maxi": {
-    metaTitle: "Superstudio Maxi — Famagosta",
+    metaTitle: "Superstudio Maxi, Famagosta",
     metaDescription:
-      "Recupero capannone industriale a Milano Famagosta: adeguamento sismico, strutture in acciaio e sicurezza — Studio Capoferri.",
-    heading: "Superstudio Maxi — Famagosta",
+      "Recupero capannone industriale a Milano Famagosta: adeguamento sismico, strutture in acciaio e sicurezza. Studio Capoferri.",
+    heading: "Superstudio Maxi, Famagosta",
     externalBrand: {
       href: "https://www.superstudioevents.com/it/venues/superstudio-maxi/",
       imageSrc: "/assets/superstudio_logo.svg",
@@ -810,15 +800,15 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/superstudio-maxi/strutture-acciaio-lombardia.webp",
-        alt: "Vista esterna del recupero del capannone industriale — Superstudio Maxi Famagosta",
+        alt: "Vista esterna del recupero del capannone industriale, Superstudio Maxi Famagosta",
       },
       {
         src: "/assets/superstudio-maxi/ingegneria-urbanistica-franciacorta.webp",
-        alt: "Area interna con strutture consolidate — Superstudio Maxi Milano",
+        alt: "Area interna con strutture consolidate, Superstudio Maxi Milano",
       },
       {
         src: "/assets/superstudio-maxi/progettazione-industriale-ricettivo.webp",
-        alt: "Pavimentazione degli spazi espositivi — Superstudio Maxi Famagosta",
+        alt: "Pavimentazione degli spazi espositivi, Superstudio Maxi Famagosta",
       },
       {
         src: "/assets/superstudio-maxi/sicurezza-cantieri-franciacorta.webp",
@@ -826,7 +816,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/superstudio-maxi/strutture-acciaio-milano.webp",
-        alt: "Sala proiezioni con nuova struttura in acciaio — Superstudio Maxi Milano",
+        alt: "Sala proiezioni con nuova struttura in acciaio, Superstudio Maxi Milano",
       },
       {
         src: "/assets/superstudio-maxi/studio-ingegneria-brescia.webp",
@@ -834,7 +824,7 @@ export const projectCaseStudies: Record<
       },
       {
         src: "/assets/superstudio-maxi/strutture-acciaio-milano-brescia.webp",
-        alt: "Sala eventi con copertura in acciaio — Superstudio Maxi Famagosta",
+        alt: "Sala eventi con copertura in acciaio, Superstudio Maxi Famagosta",
       },
       {
         src: "/assets/superstudio-maxi/architettura-urbanistica-brescia.webp",
