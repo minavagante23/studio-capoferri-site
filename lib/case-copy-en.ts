@@ -145,17 +145,3 @@ export const caseCopyEn = {
     bullets: [] as [string, string][],
   },
 } as const;
-
-/** Short EN blurbs for project area cards (outcome-focused, not title duplicates). */
-export const caseCardCaptionEn: Record<string, string> = {
-  "residenziali/villa-acciaio-pollenza": "Integrated steel villa with landscape-led structure",
-  "residenziali/villa-acciaio-salsomaggiore": "Piled foundations, steel frame, PV-ready roof",
-  "industriali/centro-raccolta-rifiuti-chiuduno": "Structural design: foundations, RC and steel lattice",
-  "industriali/copertura-edificio-verniciatura-maranello": "About 40 m clear-span tubular space-truss canopy",
-  "industriali/lamiere-da-getto-spinelli": "Load tables from structural analysis and lab testing",
-  "industriali/capannone-erbusco": "Heavy fabrication hall, dual cranes and shop drawings",
-  "industriali/ampliamento-complesso-zootecnico": "Large-span steel trusses in Castegnato (BS)",
-  "industriali/centro-direzionale-provaglio-diseo": "5,000 m² steel mezzanine for corporate HQ",
-  "ricettivi/superstudio-village": "Six-building complex: new steel and seismic upgrade",
-  "ricettivi/superstudio-maxi": "Industrial shed recovery with seismic strengthening",
-};

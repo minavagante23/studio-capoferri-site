@@ -5,7 +5,7 @@ import { useLocale } from "@/components/LocaleProvider";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
-import { caseCopyEn, caseCardCaptionEn } from "@/lib/case-copy-en";
+import { caseCopyEn } from "@/lib/case-copy-en";
 import { areaCopy } from "@/lib/project-area-copy";
 import { projectCategories, type ProjectArea } from "@/lib/projects";
 import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
@@ -72,13 +72,12 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
             {cases.map((p) => {
               const caseKey = `${area}/${p.slug}` as keyof typeof caseCopyEn;
               const enTitle = caseKey in caseCopyEn ? caseCopyEn[caseKey].heading : p.title;
-              const enCaption = caseCardCaptionEn[`${area}/${p.slug}`] ?? enTitle;
               return (
               <div key={p.slug} className="reveal-block">
                 <ProjectPreviewCard
                   href={localizeHref(p.href, locale)}
                   title={enTitle}
-                  caption={enCaption}
+                  caption={enTitle}
                   image={p.cover}
                   alt={locale === "en" ? enTitle : p.alt}
                 />
