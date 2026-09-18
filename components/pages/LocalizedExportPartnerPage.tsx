@@ -80,7 +80,7 @@ export function LocalizedExportPartnerPage() {
                     Vedi{" "}
                     <Link
                       href={localizeHref("/progetti/industriali/copertura-edificio-verniciatura-maranello", locale)}
-                      title={linkTitles.progetto("Tettoia reticolare a grande luce, Maranello (MO)", locale)}
+                      title={linkTitles.progetto("Tettoia reticolare a grande luce - Maranello (MO)", locale)}
                       className="link-accent"
                     >
                       tettoia Maranello (MO)

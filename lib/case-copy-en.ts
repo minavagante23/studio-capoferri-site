@@ -1,6 +1,6 @@
 export const caseCopyEn = {
   "residenziali/villa-acciaio-pollenza": {
-    heading: "Private residence, Pollenza (MC)",
+    heading: "Private residence - Pollenza (MC)",
     metaDescription:
       "Steel house in Pollenza (MC): steel frame, long spans, shop drawings and erection. Studio Capoferri.",
     body: [
@@ -30,7 +30,7 @@ export const caseCopyEn = {
     ],
   },
   "industriali/centro-raccolta-rifiuti-chiuduno": {
-    heading: "Waste collection centre, Chiuduno (BG)",
+    heading: "Waste collection centre - Chiuduno (BG)",
     metaDescription:
       "Urban separate-waste collection centre in Chiuduno (BG): Studio Capoferri handled structural design of foundations, reinforced-concrete works and steel structures.",
     body: [
@@ -41,7 +41,7 @@ export const caseCopyEn = {
     bullets: [] as [string, string][],
   },
   "industriali/lamiere-da-getto-spinelli": {
-    heading: "Steel decking for concrete slabs - Spinelli S.r.l., Adro (BS)",
+    heading: "Steel decking for concrete slabs - Spinelli S.r.l. - Adro (BS)",
     metaDescription:
       "Review and design of steel decking for concrete slabs for Spinelli S.r.l. in Adro (BS): structural analysis, experimental testing and load tables.",
     body: [

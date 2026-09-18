@@ -44,15 +44,15 @@ export const projectCategories: Record<
     cases: [
       {
         slug: "villa-acciaio-pollenza",
-        title: "Residenza privata, Pollenza (MC)",
-        caption: "Residenza privata, Pollenza (MC)",
+        title: "Residenza privata - Pollenza (MC)",
+        caption: "Residenza privata - Pollenza (MC)",
         cover: "/assets/residenza-privata-acciaio.webp",
         alt: "Residenza privata in acciaio a Pollenza (MC), progettazione strutturale Studio Capoferri",
         href: "/progetti/residenziali/villa-acciaio-pollenza",
       },
       {
         slug: "villa-acciaio-salsomaggiore",
-        title: "Villa in acciaio, Salsomaggiore Terme (PR)",
+        title: "Villa in acciaio - Salsomaggiore Terme (PR)",
         caption: "Villa in acciaio - Salsomaggiore Terme (PR)",
         cover: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
         alt: "Montaggio del telaio in carpenteria metallica, villa in acciaio a Salsomaggiore Terme (PR)",
@@ -78,7 +78,7 @@ export const projectCategories: Record<
     cases: [
       {
         slug: "centro-raccolta-rifiuti-chiuduno",
-        title: "Centro raccolta rifiuti, Chiuduno (BG)",
+        title: "Centro raccolta rifiuti - Chiuduno (BG)",
         caption: "Centro raccolta rifiuti - Chiuduno (BG)",
         cover:
           "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
@@ -87,8 +87,8 @@ export const projectCategories: Record<
       },
       {
         slug: "copertura-edificio-verniciatura-maranello",
-        title: "Tettoia reticolare a grande luce, Maranello (MO)",
-        caption: "Tettoia reticolare - Maranello (MO)",
+        title: "Tettoia reticolare a grande luce - Maranello (MO)",
+        caption: "Tettoia reticolare a grande luce - Maranello (MO)",
         cover:
           "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
         alt: "Tettoia reticolare in acciaio a grande luce a Maranello (MO) - Studio Capoferri",
@@ -96,7 +96,7 @@ export const projectCategories: Record<
       },
       {
         slug: "capannone-erbusco",
-        title: "Capannone industriale, Erbusco (BS)",
+        title: "Capannone industriale - Erbusco (BS)",
         caption: "Capannone industriale - Erbusco (BS)",
         cover: "/assets/industriale/capannone-erbusco/progettazione-strutture-adro.webp",
         alt: "Capannone industriale in acciaio a Erbusco (BS), progettazione strutturale Studio Capoferri",
@@ -104,7 +104,7 @@ export const projectCategories: Record<
       },
       {
         slug: "ampliamento-complesso-zootecnico",
-        title: "Complesso zootecnico, Castegnato (BS)",
+        title: "Complesso zootecnico - Castegnato (BS)",
         caption: "Complesso zootecnico - Castegnato (BS)",
         cover: "/assets/industriale/ampliamento-complesso-zootecnico/vista-aerea-ampliamento-complesso-zootecnico.webp",
         alt: "Vista aerea delle capriate metalliche per l'ampliamento di un complesso zootecnico a Castegnato (BS)",
@@ -112,7 +112,7 @@ export const projectCategories: Record<
       },
       {
         slug: "centro-direzionale-provaglio-diseo",
-        title: "Centro direzionale, Provaglio d'Iseo (BS)",
+        title: "Centro direzionale - Provaglio d'Iseo (BS)",
         caption: "Centro direzionale - Provaglio d'Iseo (BS)",
         cover: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp",
         alt: "Soppalco in carpenteria metallica in fase di montaggio, centro direzionale a Provaglio d'Iseo (BS)",
@@ -120,8 +120,8 @@ export const projectCategories: Record<
       },
       {
         slug: "lamiere-da-getto-spinelli",
-        title: "Lamiere da getto in acciaio, Adro (BS)",
-        caption: "Lamiere da getto - Adro (BS)",
+        title: "Lamiere da getto in acciaio - Adro (BS)",
+        caption: "Lamiere da getto in acciaio - Adro (BS)",
         cover:
           "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
         alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante, Adro (BS)",
@@ -147,7 +147,7 @@ export const projectCategories: Record<
     cases: [
       {
         slug: "superstudio-village",
-        title: "Superstudio Village, Milano Bovisa",
+        title: "Superstudio Village - Milano Bovisa",
         caption: "Superstudio Village - Milano Bovisa",
         cover: "/assets/progetto-superstudio.webp",
         alt: "Superstudio Village a Milano Bovisa, progettazione strutturale del complesso edilizio",
@@ -155,7 +155,7 @@ export const projectCategories: Record<
       },
       {
         slug: "superstudio-maxi",
-        title: "Superstudio Maxi, Famagosta",
+        title: "Superstudio Maxi - Famagosta",
         caption: "Superstudio Maxi - Famagosta",
         cover: "/assets/superstudio-maxi/antincendio-adro.webp",
         alt: "Superstudio Maxi a Milano Famagosta, recupero strutturale di capannone industriale",
@@ -179,10 +179,10 @@ export const projectCaseStudies: Record<
   }
 > = {
   "industriali/centro-raccolta-rifiuti-chiuduno": {
-    metaTitle: "Centro raccolta rifiuti, Chiuduno (BG)",
+    metaTitle: "Centro raccolta rifiuti - Chiuduno (BG)",
     metaDescription:
       "Centro raccolta rifiuti urbani differenziati a Chiuduno (BG): progettazione strutturale di fondazioni, opere in c.a. e strutture in acciaio - Studio Capoferri.",
-    heading: "Centro raccolta rifiuti, Chiuduno (BG)",
+    heading: "Centro raccolta rifiuti - Chiuduno (BG)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -254,10 +254,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "residenziali/villa-acciaio-pollenza": {
-    metaTitle: "Residenza privata, Pollenza (MC)",
+    metaTitle: "Residenza privata - Pollenza (MC)",
     metaDescription:
       "Residenza privata in acciaio a Pollenza (MC): progettazione strutturale e architettonica integrata. Studio Capoferri.",
-    heading: "Residenza privata, Pollenza (MC)",
+    heading: "Residenza privata - Pollenza (MC)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -313,10 +313,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "residenziali/villa-acciaio-salsomaggiore": {
-    metaTitle: "Villa in acciaio, Salsomaggiore Terme (PR)",
+    metaTitle: "Villa in acciaio - Salsomaggiore Terme (PR)",
     metaDescription:
       "Villa in acciaio a Salsomaggiore Terme (PR): fondazioni su pali, struttura mista in cemento armato e acciaio, sistemi a secco. Studio Capoferri.",
-    heading: "Villa in acciaio, Salsomaggiore Terme (PR)",
+    heading: "Villa in acciaio - Salsomaggiore Terme (PR)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -389,10 +389,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/lamiere-da-getto-spinelli": {
-    metaTitle: "Lamiere da getto in acciaio, Spinelli S.r.l., Adro (BS)",
+    metaTitle: "Lamiere da getto in acciaio - Spinelli S.r.l. - Adro (BS)",
     metaDescription:
       "Revisione e progettazione di lamiere da getto in acciaio per Spinelli S.r.l. a Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata. Studio Capoferri.",
-    heading: "Lamiere da getto in acciaio, Spinelli S.r.l., Adro (BS)",
+    heading: "Lamiere da getto in acciaio - Spinelli S.r.l. - Adro (BS)",
     externalBrand: {
       href: "https://spinellisrl.eu/",
       imageSrc: "/assets/spinelli-logo.png",
@@ -478,10 +478,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/copertura-edificio-verniciatura-maranello": {
-    metaTitle: "Tettoia reticolare a grande luce, Maranello (MO)",
+    metaTitle: "Tettoia reticolare a grande luce - Maranello (MO)",
     metaDescription:
       "Tettoia in carpenteria metallica a Maranello (MO): luce libera circa 40 m, unica capriata reticolare in profili tubolari. Studio Capoferri.",
-    heading: "Tettoia reticolare a grande luce, Maranello (MO)",
+    heading: "Tettoia reticolare a grande luce - Maranello (MO)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -534,10 +534,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/capannone-erbusco": {
-    metaTitle: "Capannone industriale, Erbusco (BS)",
+    metaTitle: "Capannone industriale - Erbusco (BS)",
     metaDescription:
       "Ampliamento zona produttiva per carpenteria metallica: struttura in acciaio, carroponti, pannelli sandwich - Studio Capoferri.",
-    heading: "Capannone industriale, Erbusco (BS)",
+    heading: "Capannone industriale - Erbusco (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -598,10 +598,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/ampliamento-complesso-zootecnico": {
-    metaTitle: "Complesso zootecnico, Castegnato (BS)",
+    metaTitle: "Complesso zootecnico - Castegnato (BS)",
     metaDescription:
       "Ampliamento con capriate metalliche a luce libera di quasi 16 metri: progettazione strutturale per complesso zootecnico a Castegnato (BS). Studio Capoferri.",
-    heading: "Complesso zootecnico, Castegnato (BS)",
+    heading: "Complesso zootecnico - Castegnato (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -648,10 +648,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "industriali/centro-direzionale-provaglio-diseo": {
-    metaTitle: "Centro direzionale, Provaglio d'Iseo (BS)",
+    metaTitle: "Centro direzionale - Provaglio d'Iseo (BS)",
     metaDescription:
       "Riqualificazione di edificio industriale a Provaglio d'Iseo (BS) come sede principale di un'importante azienda elettronica quotata in borsa, soppalco metallico oltre 5.000 mq.",
-    heading: "Centro direzionale, Provaglio d'Iseo (BS)",
+    heading: "Centro direzionale - Provaglio d'Iseo (BS)",
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -710,10 +710,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "ricettivi/superstudio-village": {
-    metaTitle: "Superstudio Village, Milano Bovisa",
+    metaTitle: "Superstudio Village - Milano Bovisa",
     metaDescription:
       "Progettazione strutturale per complesso a Milano Bovisa: consolidamenti, demolizioni e ricostruzioni in acciaio e misto. Studio Capoferri.",
-    heading: "Superstudio Village, Milano Bovisa",
+    heading: "Superstudio Village - Milano Bovisa",
     externalBrand: {
       href: "https://www.superstudioevents.com/it/",
       imageSrc: "/assets/superstudio_logo.svg",
@@ -776,10 +776,10 @@ export const projectCaseStudies: Record<
     ],
   },
   "ricettivi/superstudio-maxi": {
-    metaTitle: "Superstudio Maxi, Famagosta",
+    metaTitle: "Superstudio Maxi - Famagosta",
     metaDescription:
       "Recupero capannone industriale a Milano Famagosta: adeguamento sismico, strutture in acciaio e sicurezza. Studio Capoferri.",
-    heading: "Superstudio Maxi, Famagosta",
+    heading: "Superstudio Maxi - Famagosta",
     externalBrand: {
       href: "https://www.superstudioevents.com/it/venues/superstudio-maxi/",
       imageSrc: "/assets/superstudio_logo.svg",

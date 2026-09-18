@@ -105,7 +105,7 @@ export function SiteHeader() {
               title={linkTitles.home(locale)}
             >
               <Image
-                src="/assets/logo-studio-ingegneria-removebg-preview.png"
+                src="/assets/logo-studio-ingegneria.webp"
                 alt={
                   locale === "en"
                     ? "Studio Capoferri - structural engineering and design"
@@ -114,7 +114,6 @@ export function SiteHeader() {
                 width={220}
                 height={70}
                 className="h-11 w-auto sm:h-12 md:h-[70px]"
-                priority
               />
             </Link>
 

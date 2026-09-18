@@ -72,7 +72,7 @@ const localBusinessJsonLd = {
   email: site.email,
   vatID: `IT${site.piva}`,
   image: `${site.url}${defaultOgImage}`,
-  logo: `${site.url}/assets/logo-studio-ingegneria-removebg-preview.png`,
+  logo: `${site.url}/assets/logo-studio-ingegneria.webp`,
   address: {
     "@type": "PostalAddress",
     streetAddress: site.address.street,
