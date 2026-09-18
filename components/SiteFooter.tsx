@@ -94,13 +94,19 @@ export function SiteFooter() {
             <div>
               <p className={`font-display mb-3 text-lg font-medium tracking-tight sm:mb-4 sm:text-xl`}>{copy.contacts}</p>
               <ul className="space-y-0.5 text-sm text-white/82">
-                <li className="py-1.5">{site.addressLine}</li>
+                <li className="py-1.5">
+                  <address className="not-italic">
+                    {locale === "en" ? "Address" : "Indirizzo"}: {site.addressLine}
+                  </address>
+                </li>
                 <li>
+                  {locale === "en" ? "Phone" : "Telefono"}:{" "}
                   <a className={ui.footerLink} href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, locale)}>
                     {site.phoneDisplay}
                   </a>
                 </li>
                 <li>
+                  Email:{" "}
                   <a className={ui.footerLink} href={`mailto:${site.email}`} title={linkTitles.email(site.email, locale)}>
                     {site.email}
                   </a>
@@ -130,7 +136,9 @@ export function SiteFooter() {
               </Link>
             </p>
             <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-white/85">{footerTagline}</p>
-            <p className="mt-1">P.IVA {site.piva}</p>
+            <p className="mt-1">
+              {locale === "en" ? "VAT" : "P.IVA"} IT{site.piva}
+            </p>
           </div>
         </div>
       </div>

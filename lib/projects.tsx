@@ -81,7 +81,7 @@ export const projectCategories: Record<
         title: "Centro raccolta rifiuti - Chiuduno (BG)",
         caption: "Centro raccolta rifiuti - Chiuduno (BG)",
         cover:
-          "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
+          "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.webp",
         alt: "Struttura reticolare in acciaio del centro raccolta rifiuti a Chiuduno (BG) - Studio Capoferri",
         href: "/progetti/industriali/centro-raccolta-rifiuti-chiuduno",
       },
@@ -90,7 +90,7 @@ export const projectCategories: Record<
         title: "Tettoia reticolare a grande luce - Maranello (MO)",
         caption: "Tettoia reticolare a grande luce - Maranello (MO)",
         cover:
-          "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
+          "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.webp",
         alt: "Tettoia reticolare in acciaio a grande luce a Maranello (MO) - Studio Capoferri",
         href: "/progetti/industriali/copertura-edificio-verniciatura-maranello",
       },
@@ -123,7 +123,7 @@ export const projectCategories: Record<
         title: "Lamiere da getto in acciaio - Adro (BS)",
         caption: "Lamiere da getto in acciaio - Adro (BS)",
         cover:
-          "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
+          "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.webp",
         alt: "Prova di carico su lamiera da getto in acciaio con solaio collaborante, Adro (BS)",
         href: "/progetti/industriali/lamiere-da-getto-spinelli",
       },
@@ -204,51 +204,51 @@ export const projectCaseStudies: Record<
     ),
     gallery: [
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.webp",
         alt: "Travature reticolari in acciaio della copertura, centro raccolta rifiuti Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-intradosso-travature-reticolari-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-intradosso-travature-reticolari-chiuduno.webp",
         alt: "Intradosso delle travature reticolari in acciaio e pannelli di copertura, Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-tiranti-e-colonne-reticolari-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-tiranti-e-colonne-reticolari-chiuduno.webp",
         alt: "Dettaglio di tiranti e colonne reticolari in acciaio, centro raccolta Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-nodo-strutturale-acciaio-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-nodo-strutturale-acciaio-chiuduno.webp",
         alt: "Nodo strutturale in acciaio con piastra di giunzione triangolare, Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.webp",
         alt: "Colonne reticolari in acciaio zincato in fase di montaggio, Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.webp",
         alt: "Cantiere con gru e montaggio della carpenteria metallica, Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/gru-montaggio-carpenteria-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/gru-montaggio-carpenteria-chiuduno.webp",
         alt: "Sollevamento e assemblaggio delle travature in acciaio, isola ecologica Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/travature-reticolari-e-piattaforma-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/travature-reticolari-e-piattaforma-chiuduno.webp",
         alt: "Maglia reticolare di copertura con piattaforma aerea in opera, Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/muratura-ca-e-struttura-acciaio-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/muratura-ca-e-struttura-acciaio-chiuduno.webp",
         alt: "Parete in cemento armato e sovrastruttura in acciaio, centro raccolta Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.webp",
         alt: "Vista interna delle travature reticolari e ombre a terra, Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-parete-ca-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-parete-ca-chiuduno.webp",
         alt: "Interno del telaio in acciaio con parete in c.a. sullo sfondo, Chiuduno (BG)",
       },
       {
-        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-esterna-cantiere-e-paesaggio-chiuduno.jpeg",
+        src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-esterna-cantiere-e-paesaggio-chiuduno.webp",
         alt: "Vista esterna del cantiere con struttura in acciaio e colline, Chiuduno (BG)",
       },
     ],
@@ -440,39 +440,39 @@ export const projectCaseStudies: Record<
     ),
     gallery: [
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.webp",
         alt: "Prova di carico su lamiera da getto Spinelli con solaio in calcestruzzo, Adro (BS)",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-solaia-collaborante.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-solaia-collaborante.webp",
         alt: "Allestimento della prova di carico su solaio collaborante in laboratorio, Spinelli S.r.l.",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/strumentazione-prova-carico-solaio.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/strumentazione-prova-carico-solaio.webp",
         alt: "Strumentazione di misura durante la prova di carico sul solaio collaborante",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/campione-sg110-prova-sperimentale.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/campione-sg110-prova-sperimentale.webp",
         alt: "Campione di prova SG110 etichettato Ditta Spinelli in laboratorio strutturale",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/dettaglio-pressa-getto-calcestruzzo.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/dettaglio-pressa-getto-calcestruzzo.webp",
         alt: "Dettaglio della pressa idraulica sul getto di calcestruzzo durante la prova",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/laboratorio-pressa-prove-strutturali.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/laboratorio-pressa-prove-strutturali.webp",
         alt: "Laboratorio prove strutturali con pressa e stazione di acquisizione dati",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/preparazione-lamiere-grecate-armatura.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/preparazione-lamiere-grecate-armatura.webp",
         alt: "Preparazione delle lamiere grecate con armatura prima del getto di calcestruzzo",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/campioni-collaboranti-area-esterna.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/campioni-collaboranti-area-esterna.webp",
         alt: "Campioni di solaio collaborante gettati in area esterna presso lo stabilimento",
       },
       {
-        src: "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.jpeg",
+        src: "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.webp",
         alt: "Getto di calcestruzzo sui campioni di prova nello stabilimento Spinelli a Adro (BS)",
       },
     ],
@@ -516,19 +516,19 @@ export const projectCaseStudies: Record<
     ),
     gallery: [
       {
-        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg",
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.webp",
         alt: "Capriata reticolare in profili tubolari a grande luce, tettoia edificio verniciatura Maranello (MO)",
       },
       {
-        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.jpeg",
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.webp",
         alt: "Fasi di sollevamento e montaggio della copertura metallica, Maranello (MO)",
       },
       {
-        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/cantiere-copertura-industriale-verniciatura-maranello.jpeg",
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/cantiere-copertura-industriale-verniciatura-maranello.webp",
         alt: "Tettoia in carpenteria metallica a copertura di edifici prefabbricati, cantiere Maranello (MO)",
       },
       {
-        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/vista-interna-copertura-metallica-verniciatura-maranello.jpeg",
+        src: "/assets/industriale/copertura-edificio-verniciatura-maranello/vista-interna-copertura-metallica-verniciatura-maranello.webp",
         alt: "Vista interna della capriata reticolare in tubolari a sezione circolare, Maranello (MO)",
       },
     ],
@@ -696,15 +696,15 @@ export const projectCaseStudies: Record<
         alt: "Montaggio del soppalco in acciaio con connessioni strutturali e lamiera grecata, centro direzionale Provaglio d'Iseo (BS)",
       },
       {
-        src: "/assets/industriale/centro-direzionale-provaglio-diseo/progettazione-strutture-acciaio-industriali.jpeg",
+        src: "/assets/industriale/centro-direzionale-provaglio-diseo/progettazione-strutture-acciaio-industriali.webp",
         alt: "Apertura in copertura e carpenteria metallica sul piano del soppalco, centro direzionale Provaglio d'Iseo (BS)",
       },
       {
-        src: "/assets/industriale/centro-direzionale-provaglio-diseo/strutture-in-acciaio-soppalco-direzionale.jpeg",
+        src: "/assets/industriale/centro-direzionale-provaglio-diseo/strutture-in-acciaio-soppalco-direzionale.webp",
         alt: "Travi e capriate in acciaio integrate nella struttura preesistente, soppalco Provaglio d'Iseo (BS)",
       },
       {
-        src: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-copertura-progettazione-acciaio.jpeg",
+        src: "/assets/industriale/centro-direzionale-provaglio-diseo/vista-copertura-progettazione-acciaio.webp",
         alt: "Vista dal basso dell'orditura metallica in fase di montaggio, centro direzionale Provaglio d'Iseo (BS)",
       },
     ],

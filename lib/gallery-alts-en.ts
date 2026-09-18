@@ -17,37 +17,37 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/residenziale/villa-acciaio-salsomaggiore/pareti-a-secco-lana-minerale-villa.webp": "Dry-wall installation with mineral-wool insulation, steel villa in Salsomaggiore Terme (PR)",
   "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-interne-cartongesso-villa-acciaio.webp": "Interior plasterboard finishes with services installation, steel villa in Salsomaggiore Terme (PR)",
   "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp": "External finishes and setting-out on the cantilever terrace, steel villa in Salsomaggiore Terme (PR)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.webp":
     "Steel lattice roof trusses, waste collection centre in Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-intradosso-travature-reticolari-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-intradosso-travature-reticolari-chiuduno.webp":
     "Underside of steel lattice trusses and roof panels, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-tiranti-e-colonne-reticolari-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-tiranti-e-colonne-reticolari-chiuduno.webp":
     "Detail of steel tension rods and lattice columns, Chiuduno recycling centre (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-nodo-strutturale-acciaio-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/dettaglio-nodo-strutturale-acciaio-chiuduno.webp":
     "Steel structural node with triangular gusset plate, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/montaggio-colonne-reticolari-acciaio-chiuduno.webp":
     "Galvanised lattice steel columns during erection, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/cantiere-montaggio-struttura-acciaio-chiuduno.webp":
     "Site with crane and steel frame assembly, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/gru-montaggio-carpenteria-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/gru-montaggio-carpenteria-chiuduno.webp":
     "Lifting and assembly of steel trusses, Chiuduno recycling centre (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/travature-reticolari-e-piattaforma-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/travature-reticolari-e-piattaforma-chiuduno.webp":
     "Roof lattice grid with aerial work platform, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/muratura-ca-e-struttura-acciaio-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/muratura-ca-e-struttura-acciaio-chiuduno.webp":
     "Reinforced-concrete wall and steel superstructure, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.webp":
     "Interior view of lattice trusses casting shadows on the ground, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-parete-ca-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-parete-ca-chiuduno.webp":
     "Interior steel frame with reinforced-concrete wall beyond, Chiuduno (BG)",
-  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-esterna-cantiere-e-paesaggio-chiuduno.jpeg":
+  "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-esterna-cantiere-e-paesaggio-chiuduno.webp":
     "Exterior site view with steel frame and hillside, Chiuduno (BG)",
-  "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.jpeg":
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.webp":
     "Tubular circular-section space truss with large clear span, paint shop canopy in Maranello (MO)",
-  "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.jpeg":
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.webp":
     "Lifting and erection of the steel canopy, paint shop construction site in Maranello (MO)",
-  "/assets/industriale/copertura-edificio-verniciatura-maranello/cantiere-copertura-industriale-verniciatura-maranello.jpeg":
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/cantiere-copertura-industriale-verniciatura-maranello.webp":
     "Steel canopy covering two prefabricated buildings, Maranello (MO) construction site",
-  "/assets/industriale/copertura-edificio-verniciatura-maranello/vista-interna-copertura-metallica-verniciatura-maranello.jpeg":
+  "/assets/industriale/copertura-edificio-verniciatura-maranello/vista-interna-copertura-metallica-verniciatura-maranello.webp":
     "Interior view of the circular hollow-section space truss, Maranello (MO)",
   "/assets/industriale/capannone-erbusco/capannone-industriale-erbusco.webp": "Exterior view of the industrial steel building in Erbusco (BS)",
   "/assets/industriale/capannone-erbusco/progettazione-strutture-adro.webp": "Structural design of the steel-framed industrial building, Erbusco (BS)",
@@ -55,23 +55,23 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/industriale/capannone-erbusco/vista-capannone-erbusco.webp": "Overview of the steel production extension, industrial building in Erbusco (BS)",
   "/assets/industriale/capannone-erbusco/strutture-industriali.webp": "Detail of beams and structural connections in the Erbusco (BS) industrial building",
   "/assets/industriale/capannone-erbusco/ingegneria-civile-adro.webp": "Interior of the industrial building with structure designed for overhead cranes, Erbusco (BS)",
-  "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-lamiera-getto-spinelli.webp":
     "Load test on Spinelli steel decking with concrete composite slab, Adro (BS)",
-  "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-solaia-collaborante.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/prova-carico-solaia-collaborante.webp":
     "Composite slab load-test setup in the structural laboratory, Spinelli S.r.l.",
-  "/assets/industriale/lamiere-da-getto-spinelli/strumentazione-prova-carico-solaio.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/strumentazione-prova-carico-solaio.webp":
     "Instrumentation during the composite slab load test",
-  "/assets/industriale/lamiere-da-getto-spinelli/campione-sg110-prova-sperimentale.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/campione-sg110-prova-sperimentale.webp":
     "SG110 test specimen labelled Ditta Spinelli in the structural laboratory",
-  "/assets/industriale/lamiere-da-getto-spinelli/dettaglio-pressa-getto-calcestruzzo.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/dettaglio-pressa-getto-calcestruzzo.webp":
     "Detail of the hydraulic press on the concrete topping during the test",
-  "/assets/industriale/lamiere-da-getto-spinelli/laboratorio-pressa-prove-strutturali.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/laboratorio-pressa-prove-strutturali.webp":
     "Structural testing laboratory with press and data-acquisition station",
-  "/assets/industriale/lamiere-da-getto-spinelli/preparazione-lamiere-grecate-armatura.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/preparazione-lamiere-grecate-armatura.webp":
     "Preparation of profiled steel sheets with reinforcement before concrete casting",
-  "/assets/industriale/lamiere-da-getto-spinelli/campioni-collaboranti-area-esterna.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/campioni-collaboranti-area-esterna.webp":
     "Composite slab specimens cast in the outdoor area of the plant",
-  "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.jpeg":
+  "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.webp":
     "Concrete casting on test specimens at the Spinelli plant in Adro (BS)",
   "/assets/industriale/ampliamento-complesso-zootecnico/capriate-metalliche-grande-luce-complesso-zootecnico.webp":
     "Long-span steel trusses under erection, livestock complex in Castegnato (BS)",
@@ -81,9 +81,9 @@ export const galleryAltEnBySrc: Record<string, string> = {
     "Aerial view of new steel trusses integrated with existing structures, Castegnato (BS)",
   "/assets/industriale/centro-direzionale-provaglio-diseo/vista-generale-soppalco-centro-direzionale-provaglio-diseo.webp": "Overall view of the steel mezzanine integrated into the existing building, Provaglio d'Iseo (BS)",
   "/assets/industriale/centro-direzionale-provaglio-diseo/carpenteria-metallica-soppalco-provaglio-diseo.webp": "Steel mezzanine erection with structural connections and metal decking, Provaglio d'Iseo office centre (BS)",
-  "/assets/industriale/centro-direzionale-provaglio-diseo/progettazione-strutture-acciaio-industriali.jpeg": "Roof opening and steelwork on the mezzanine level, Provaglio d'Iseo office centre (BS)",
-  "/assets/industriale/centro-direzionale-provaglio-diseo/strutture-in-acciaio-soppalco-direzionale.jpeg": "Steel beams and trusses integrated into the existing structure, Provaglio d'Iseo mezzanine (BS)",
-  "/assets/industriale/centro-direzionale-provaglio-diseo/vista-copertura-progettazione-acciaio.jpeg": "Underside view of the steel framing under erection, Provaglio d'Iseo office centre (BS)",
+  "/assets/industriale/centro-direzionale-provaglio-diseo/progettazione-strutture-acciaio-industriali.webp": "Roof opening and steelwork on the mezzanine level, Provaglio d'Iseo office centre (BS)",
+  "/assets/industriale/centro-direzionale-provaglio-diseo/strutture-in-acciaio-soppalco-direzionale.webp": "Steel beams and trusses integrated into the existing structure, Provaglio d'Iseo mezzanine (BS)",
+  "/assets/industriale/centro-direzionale-provaglio-diseo/vista-copertura-progettazione-acciaio.webp": "Underside view of the steel framing under erection, Provaglio d'Iseo office centre (BS)",
   "/assets/superstudio-village-entrata-esterno.webp": "External entrance of the Superstudio Village complex in Milan Bovisa",
   "/assets/superstudio-village-struttura-acciaio.webp": "Detail of the prefabricated steel structure, Superstudio Village Milan",
   "/assets/superstudio-village-vista-della-struttura.webp": "Facade and volumes of the Superstudio Village complex in Milan Bovisa",

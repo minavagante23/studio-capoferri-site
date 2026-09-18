@@ -13,12 +13,12 @@ import { site } from "@/lib/site";
 import "./globals.css";
 
 const siteDescription =
-  "Studio di ingegneria e progettazione a Brescia e provincia: strutture in acciaio, architettura e consulenza strutturale da Adro (BS). Oltre 40 anni di esperienza.";
+  "Studio di ingegneria a Brescia e provincia: strutture in acciaio, architettura ad Adro (BS). Oltre 40 anni di esperienza.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Studio Capoferri - Studio di ingegneria a Brescia e provincia",
+    default: "Studio Capoferri - Ingegneria a Brescia e provincia",
     template: `${site.name} - %s`,
   },
   description: siteDescription,
@@ -78,7 +78,7 @@ const localBusinessJsonLd = {
     streetAddress: site.address.street,
     postalCode: site.address.postalCode,
     addressLocality: site.address.locality,
-    addressRegion: site.address.province,
+    addressRegion: site.address.region,
     addressCountry: site.address.country,
   },
   geo: {

@@ -23,7 +23,8 @@ export const site = {
   email: "info@studiocapoferri.eu",
   phoneDisplay: "+39 030 7357263",
   phoneTel: "+390307357263",
-  addressLine: "Via Piave 35 – 25030 Adro (BS), Italia",
+  /** Comma-separated NAP line (ASCII) so local-SEO crawlers parse street + city reliably. */
+  addressLine: "Via Piave 35, 25030 Adro (BS), Italia",
   address: {
     street: "Via Piave 35",
     postalCode: "25030",

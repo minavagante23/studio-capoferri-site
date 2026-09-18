@@ -5,9 +5,9 @@ import type { Locale } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Studio di ingegneria a Brescia e provincia",
+  title: "Ingegneria a Brescia e provincia",
   description:
-    "Studio di ingegneria e progettazione a Brescia e provincia: strutture in acciaio, architettura e consulenza strutturale da Adro (BS). Oltre 40 anni di esperienza.",
+    "Studio di ingegneria a Brescia e provincia: strutture in acciaio, architettura ad Adro (BS). Oltre 40 anni di esperienza.",
   path: "/",
 });
 

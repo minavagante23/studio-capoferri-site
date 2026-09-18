@@ -32,7 +32,10 @@ export function LocalizedContactsPageContent() {
                   {site.gmbName}
                 </p>
                 <ul className="space-y-2 text-[0.95rem] text-[#333] sm:space-y-3 sm:text-[1.03rem]">
-                  <li><strong>Indirizzo:</strong> {site.addressLine}</li>
+                  <li>
+                    <strong>Indirizzo:</strong>{" "}
+                    <address className="inline not-italic">{site.addressLine}</address>
+                  </li>
                   <li><strong>Telefono:</strong> <a href={`tel:${site.phoneTel}`} title={linkTitles.telefono(site.phoneDisplay, "it")} className="inline-block min-h-[44px] py-1 text-[#333] underline-offset-2 hover:underline">{site.phoneDisplay}</a></li>
                   <li><strong>Email:</strong> <a href={`mailto:${site.email}`} title={linkTitles.email(site.email, "it")} className="inline-block min-h-[44px] py-1 text-[#333] underline-offset-2 hover:underline">{site.email}</a></li>
                   <li><strong>Orari:</strong> {site.openingHoursDisplay}</li>
@@ -94,7 +97,8 @@ export function LocalizedContactsPageContent() {
               </p>
               <ul className="space-y-2 text-[0.95rem] text-[#333] sm:space-y-3 sm:text-[1.03rem]">
                 <li>
-                  <strong>{isEn ? "Address" : "Indirizzo"}:</strong> {site.addressLine}
+                  <strong>{isEn ? "Address" : "Indirizzo"}:</strong>{" "}
+                  <address className="inline not-italic">{site.addressLine}</address>
                 </li>
                 <li>
                   <strong>{isEn ? "Phone" : "Telefono"}:</strong>{" "}
