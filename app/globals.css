@@ -412,6 +412,15 @@ body {
   transform: rotate(-45deg);
 }
 
+.site-header {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.site-header.is-hidden {
+  transform: translate3d(0, -100%, 0);
+  pointer-events: none;
+}
+
 /* Overlay mobile: lastra grafite, niente griglia da tavola */
 .mobile-nav {
   position: fixed;
@@ -478,6 +487,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .site-header,
   .site-header-burger span,
   .mobile-nav,
   .mobile-nav.is-open {

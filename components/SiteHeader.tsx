@@ -21,15 +21,47 @@ export function SiteHeader() {
   const copy = chromeCopy[locale].header;
   const hero = chromeCopy[locale].hero;
   const [open, setOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const lastFocusedRef = useRef<HTMLElement | null>(null);
+  const lastScrollY = useRef(0);
 
   const closeMenu = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
     setOpen(false);
+    setHidden(false);
   }, [pathname]);
+
+  useEffect(() => {
+    if (open) {
+      setHidden(false);
+      return;
+    }
+
+    lastScrollY.current = window.scrollY;
+    let ticking = false;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        const y = Math.max(0, window.scrollY);
+        const delta = y - lastScrollY.current;
+        lastScrollY.current = y;
+
+        if (y < 16) setHidden(false);
+        else if (delta > 8) setHidden(true);
+        else if (delta < -8) setHidden(false);
+
+        ticking = false;
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [open]);
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 768px)");
@@ -96,7 +128,10 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-[1000] bg-[var(--background)]">
+      <header
+        className={`site-header sticky top-0 z-[1000] bg-[var(--background)]${hidden ? " is-hidden" : ""}`}
+        inert={hidden || undefined}
+      >
         <div className={layoutGutterXClass}>
           <div className={`relative flex h-[var(--header-h)] items-center justify-between ${layoutContentMaxClass}`}>
             <Link
