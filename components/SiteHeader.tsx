@@ -53,7 +53,6 @@ export function SiteHeader() {
 
         if (y < 16) setHidden(false);
         else if (delta > 8) setHidden(true);
-        else if (delta < -8) setHidden(false);
 
         ticking = false;
       });
