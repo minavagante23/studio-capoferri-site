@@ -25,13 +25,11 @@ export function SiteHeader() {
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const lastFocusedRef = useRef<HTMLElement | null>(null);
-  const lastScrollY = useRef(0);
 
   const closeMenu = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
     setOpen(false);
-    setHidden(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -40,27 +38,31 @@ export function SiteHeader() {
       return;
     }
 
-    lastScrollY.current = window.scrollY;
-    let ticking = false;
+    const headerH = () => {
+      const n = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--header-h"));
+      return Number.isFinite(n) ? n : 64;
+    };
 
+    const syncHidden = () => {
+      const y = window.scrollY;
+      if (y < 16) setHidden(false);
+      else if (y >= headerH()) setHidden(true);
+    };
+
+    let ticking = false;
     const onScroll = () => {
       if (ticking) return;
       ticking = true;
       window.requestAnimationFrame(() => {
-        const y = Math.max(0, window.scrollY);
-        const delta = y - lastScrollY.current;
-        lastScrollY.current = y;
-
-        if (y < 16) setHidden(false);
-        else if (delta > 8) setHidden(true);
-
+        syncHidden();
         ticking = false;
       });
     };
 
+    syncHidden();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [open]);
+  }, [open, pathname]);
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 768px)");
