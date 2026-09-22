@@ -38,15 +38,10 @@ export function SiteHeader() {
       return;
     }
 
-    const headerH = () => {
-      const n = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--header-h"));
-      return Number.isFinite(n) ? n : 64;
-    };
-
     const syncHidden = () => {
-      const y = window.scrollY;
-      if (y < 16) setHidden(false);
-      else if (y >= headerH()) setHidden(true);
+      // Hide as soon as the page leaves the top so the sticky bar never sits
+      // half-over the hero. Show again only when back near the top.
+      setHidden(window.scrollY >= 16);
     };
 
     let ticking = false;
