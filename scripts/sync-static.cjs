@@ -36,6 +36,20 @@ for (const extra of ["favicon.ico", "llms.txt", "CNAME"]) {
   }
 }
 
+// Keep Next App Router favicon + Apple touch icons aligned to the steel-truss mark.
+const rootFavicon = path.join(root, "favicon.ico");
+if (fs.existsSync(rootFavicon)) {
+  fs.copyFileSync(rootFavicon, path.join(root, "app", "favicon.ico"));
+  console.log("[sync-static] favicon.ico → app/favicon.ico");
+}
+
+const appleTouchSrc = path.join(root, "assets", "apple-touch-icon.png");
+if (fs.existsSync(appleTouchSrc)) {
+  fs.copyFileSync(appleTouchSrc, path.join(root, "public", "apple-touch-icon.png"));
+  fs.copyFileSync(appleTouchSrc, path.join(root, "app", "apple-icon.png"));
+  console.log("[sync-static] apple-touch-icon.png → public/ + app/apple-icon.png");
+}
+
 // Redirect dei vecchi URL .html: su GitHub Pages (export statico) i redirects()
 // di next.config.ts non funzionano, quindi generiamo pagine-ponte statiche.
 const SITE_URL = "https://www.studiocapoferri.eu";

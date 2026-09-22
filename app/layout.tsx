@@ -50,7 +50,9 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
   },
   icons: {
-    apple: "/assets/apple-touch-icon.png",
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
   },
   robots: { index: true, follow: true },
   verification: { google: "DMhu8zo7VvJIGjVKh3LMDhcxJs174oNCUb41rzZNTCA" },
