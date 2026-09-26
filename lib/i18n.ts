@@ -67,7 +67,7 @@ export const chromeCopy = {
     },
     footer: {
       services: "Servizi",
-      company: "Azienda",
+      company: "Studio",
       contacts: "Contatti",
       rights: "Tutti i diritti riservati",
       followLinkedin: "Seguici su LinkedIn - Studio Capoferri",
@@ -139,7 +139,7 @@ export const chromeCopy = {
     },
     footer: {
       services: "Services",
-      company: "Company",
+      company: "Studio",
       contacts: "Contact",
       rights: "All rights reserved",
       followLinkedin: "Follow us on LinkedIn - Studio Capoferri",

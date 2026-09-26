@@ -89,7 +89,7 @@ export const homeProgettiIntro =
   "Capannoni, ville in acciaio, sopraelevazioni, carpenterie. Una selezione per ambito: residenziale, industriale, eventi.";
 
 export const progettiIndexIntro =
-  "Opere in acciaio e miste, suddivise per destinazione: residenziale, industriale, eventi.";
+  "Progetti dello studio: strutture in acciaio, da sole o insieme a cemento armato e muratura, e incarichi su prodotti in acciaio, come le lamiere da getto. Sono raggruppati per ambito: case e ville, industria, spazi per mostre e convegni.";
 
 export const certificationsIntro =
   "Tutte le attività sono svolte da professionisti in possesso delle abilitazioni richieste dalla normativa di settore.";

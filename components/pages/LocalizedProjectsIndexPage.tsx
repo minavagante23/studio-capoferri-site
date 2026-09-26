@@ -51,7 +51,7 @@ export function LocalizedProjectsPageContent() {
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
             <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>
               {isEn
-                ? "Selected steel and structural work across Northern Italy: residences, industrial buildings and event venues."
+                ? "Work from the studio: steel structures, on their own or combined with reinforced concrete and masonry, and commissions on steel products such as decking for concrete slabs. Grouped by field: houses and villas, industry, and spaces for exhibitions and conferences."
                 : progettiIndexIntro}
             </p>
           </div>
