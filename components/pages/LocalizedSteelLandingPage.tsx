@@ -14,7 +14,7 @@ import { ui } from "@/lib/ui";
 
 const landingCopy = {
   en: {
-    heroTitle: (city: string) => `Steel structure design in ${city} and across Lombardy`,
+    heroTitle: (city: string) => `Structural engineer in ${city} for steel buildings`,
     process:
       "From structural calculations in accordance with NTC 2018 and Eurocodes to fabrication shop drawings, site supervision and final testing, we follow every phase of the project, from the initial idea through to the construction site.",
     consultation: "Request a consultation",
@@ -29,7 +29,7 @@ const landingCopy = {
     scopeTitle: "What we design: from residential to industrial",
     scopeLead:
       "We design steel structures for every intended use: villas and private residences, multi-storey buildings, industrial sheds with overhead cranes, commercial buildings and event spaces. Some recent projects include:",
-    faqTitle: "Frequently asked questions about steel structure design",
+    faqTitle: "Questions for a structural engineer",
     ctaText:
       "Tell us about your idea: we analyse feasibility, costs and timing, then propose the most efficient structural solution.",
     contactNow: "Contact us now",
@@ -92,7 +92,7 @@ const landingCopy = {
     },
     faqFixed: [
       [
-        "How much does steel structure design cost?",
+        "How much does a structural engineer charge for a steel building?",
         "Costs depend on size, complexity and the intended use of the building. After an initial inspection or technical call, we provide a detailed, no-obligation quotation for structural design, fabrication drawings and site supervision.",
       ],
       [
@@ -114,6 +114,7 @@ const landingCopy = {
 export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConfig }) {
   const locale = useLocale();
   const isEn = locale === "en";
+  const cityLabel = isEn && config.city === "Milano" ? "Milan" : config.city;
   const steelPath = `/progettazione-strutture-acciaio-${config.slug}`;
   const absolutePageUrl = seoPageUrl(steelPath, locale);
   const cityCopy = isEn ? landingCopy.en.cities[config.slug as keyof typeof landingCopy.en.cities] : null;
@@ -137,8 +138,8 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `${absolutePageUrl}#service`,
-    name: isEn ? "Steel structure design" : "Progettazione strutture in acciaio",
-    serviceType: isEn ? "Structural design of steel structures" : "Progettazione strutturale di strutture in acciaio",
+    name: isEn ? `Structural engineer in ${cityLabel}` : "Progettazione strutture in acciaio",
+    serviceType: isEn ? "Structural engineering for steel buildings" : "Progettazione strutturale di strutture in acciaio",
     description: isEn ? (getEnglishSteelDescription(config.slug) ?? config.metaDescription) : config.metaDescription,
     provider: { "@id": organizationId() },
     areaServed: [
@@ -277,7 +278,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
           <div className="mx-auto w-full max-w-[900px]">
             <article className="reveal-block home-plate home-plate--well">
               <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>
-                {landingCopy.en.heroTitle(config.city)}
+                {landingCopy.en.heroTitle(cityLabel)}
               </h1>
               <p className={`mb-4 ${ui.bodyMuted}`}>{cityCopy?.introLead}</p>
               <p className={`mb-6 ${ui.bodyMuted}`}>{landingCopy.en.process}</p>

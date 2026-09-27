@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 /** Shared English About copy used by homepage and /chi-siamo|/en/about. */
 export const chiSiamoEnParagraphs: ReactNode[] = [
   <>
-    <strong>Studio Capoferri</strong> is a civil and structural engineering practice based in Adro, near Brescia, Italy.
+    <strong>Studio Capoferri</strong> is a practice of structural engineers in Adro, near Brescia, Italy.
     For more than forty years we have designed steel, reinforced-concrete and masonry structures for contractors,
     architects and engineering offices: houses and villas, industrial halls, vertical extensions, specialist steelwork and
     interventions on existing buildings. Most of our work is across Franciacorta and Northern and North-Central Italy,

@@ -10,13 +10,13 @@ export const linkTitles = {
   nav: (label: string, locale: SeoLocale = "it") => linkTitle(locale === "en" ? `Go to ${label}` : `Vai a ${label}`, "Studio Capoferri"),
   servizio: (name: string, locale: SeoLocale = "it") => linkTitle(name, locale === "en" ? "Studio Capoferri Services" : "Servizi Studio Capoferri"),
   acciaio: (city: string, locale: SeoLocale = "it") =>
-    linkTitle(locale === "en" ? `Steel structure design in ${city}` : `Progettazione strutture in acciaio a ${city}`, "Studio Capoferri"),
+    linkTitle(locale === "en" ? `Structural engineer in ${city}` : `Progettazione strutture in acciaio a ${city}`, "Studio Capoferri"),
   pagina: (name: string) => linkTitle(name, "Studio Capoferri"),
   progetto: (name: string, locale: SeoLocale = "it") => linkTitle(locale === "en" ? `Project: ${name}` : `Progetto: ${name}`, "Studio Capoferri"),
   consulenza: (locale: SeoLocale = "it") => (locale === "en" ? "Write to us - Studio Capoferri Contact" : "Scrivici - Contatti Studio Capoferri"),
   contatti: (locale: SeoLocale = "it") => (locale === "en" ? "Contact us - Studio Capoferri" : "Contattaci - Studio Capoferri"),
   international: (locale: SeoLocale = "it") =>
-    locale === "en" ? "International clients - Studio Capoferri" : "Clienti internazionali - Studio Capoferri",
+    locale === "en" ? "Structural engineers for projects in Italy - Studio Capoferri" : "Clienti internazionali - Studio Capoferri",
   scopriServizi: (locale: SeoLocale = "it") => (locale === "en" ? "All services - Studio Capoferri" : "Tutti i servizi - Studio Capoferri"),
   tuttiProgetti: (locale: SeoLocale = "it") => (locale === "en" ? "All projects - Studio Capoferri" : "Tutti i progetti - Studio Capoferri"),
   formContatti: (locale: SeoLocale = "it") => (locale === "en" ? "Write to us using the contact form - Studio Capoferri" : "Scrivici dal form contatti - Studio Capoferri"),

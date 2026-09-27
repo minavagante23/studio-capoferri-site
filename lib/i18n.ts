@@ -186,8 +186,8 @@ export const chromeCopy = {
       line2: "from feasibility to site",
       line2a: "from feasibility",
       line2b: "to site",
-      support: "Steel structure design, civil engineering and architecture.",
-      supportMobile: "Steel structures · civil engineering · architecture",
+      support: "Structural engineers for steel in Northern Italy.",
+      supportMobile: "Structural engineers · steel · Northern Italy",
     },
   },
 } as const;

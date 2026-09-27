@@ -86,7 +86,7 @@ export function LocalizedContactsPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well mb-6 max-w-[780px] sm:mb-8">
-            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>Contact</h1>
+            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>Contact structural engineers in Italy</h1>
           </div>
 
           <div className="grid gap-5 sm:gap-8 lg:grid-cols-[1.02fr_1.28fr] lg:items-stretch">

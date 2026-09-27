@@ -10,7 +10,7 @@ import { ui } from "@/lib/ui";
 
 export function LocalizedAboutPageContent() {
   const isEn = useLocale() === "en";
-  const title = isEn ? "About" : chiSiamoPage.title;
+  const title = isEn ? "Structural engineers near Brescia" : chiSiamoPage.title;
   const paragraphs = isEn ? chiSiamoEnParagraphs : chiSiamoPage.paragraphs;
   const alt = isEn ? chiSiamoPageImage.altEn : chiSiamoPageImage.alt;
 

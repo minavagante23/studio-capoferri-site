@@ -154,8 +154,8 @@ export const servicesCopy = {
     ctaDescription: "Oggetto, tempi e vincoli dell'intervento.",
   },
   en: {
-    title: "Services",
-    lead: "Studio Capoferri designs steel, reinforced-concrete and masonry structures. From Adro we stay on the job from the model to the site: analysis, shop drawings, construction supervision. Architecture, planning, Italian filings, site safety and property support when the brief needs them.",
+    title: "Structural design and shop drawings",
+    lead: "Structural engineers in Adro, near Brescia. We design steel, reinforced-concrete and masonry structures and stay on the job from the model to the site: analysis, fabrication shop drawings, construction supervision. Architecture, planning, Italian filings, site safety and property support when the brief needs them.",
     internationalNote: "Overseas partners work with us in English. See",
     sections: [
       {

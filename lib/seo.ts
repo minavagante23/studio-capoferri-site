@@ -75,92 +75,89 @@ export function buildPageMetadata({
 
 const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "": {
-    title: "Steel structures and site support in Northern Italy",
+    title: "Structural engineers in Northern Italy",
     description:
-      "Studio Capoferri in Adro, near Brescia, Italy: steel structures, shop drawings and site support for projects in Northern Italy. Talk to our engineers in English.",
+      "Structural engineers in Adro, near Brescia, for steel buildings in Northern Italy: calculations, fabrication shop drawings and site support. Project discussions in English.",
     path: "/",
     keywords: [
       "structural engineer Northern Italy",
-      "steel structure design Italy",
-      "English speaking engineer Brescia",
-      "shop drawings Italy",
-      "steel fabrication drawings EU",
+      "structural engineer Italy",
+      "shop drawings steel structures",
+      "fabrication drawings structural steel",
+      "steel buildings Lombardy",
     ],
   },
   "chi-siamo": {
-    title: "About",
+    title: "Structural engineering practice near Brescia",
     description:
-      "Studio Capoferri: structural and steel engineering practice in Adro near Brescia. English project talks with our engineers for international and EU partners.",
+      "Studio Capoferri is a structural engineering practice in Adro, near Brescia. Steel buildings, shop drawings and site support for projects in Northern Italy, with engineers who work in English.",
     path: "/chi-siamo",
     keywords: [
-      "Studio Capoferri",
-      "structural engineering firm Italy",
-      "English speaking structural engineer",
+      "structural engineering practice Italy",
+      "structural engineer Brescia",
       "steel engineering Northern Italy",
     ],
   },
   servizi: {
-    title: "Engineering and design services",
+    title: "Structural design and shop drawings",
     description:
-      "Steel structures, FEM and BIM, fabrication shop drawings, construction supervision and site safety for projects in Northern Italy, English-speaking engineering team.",
+      "Structural engineers in Northern Italy: steel design to NTC and Eurocodes, fabrication shop drawings, construction supervision and site safety.",
     path: "/servizi",
     keywords: [
-      "steel structure design services Italy",
-      "fabrication shop drawings Italy",
-      "structural engineering Eurocodes",
+      "structural engineer Italy",
+      "fabrication shop drawings",
+      "shop drawings steel structures",
+      "Eurocode structural design Italy",
       "construction supervision Northern Italy",
-      "BIM FEM structural design",
     ],
   },
   progetti: {
-    title: "Projects",
+    title: "Steel projects in Northern Italy",
     description:
-      "Selected Studio Capoferri projects: steel residences, industrial halls and public venues across Lombardy and Northern Italy.",
+      "Projects by structural engineers in Northern Italy: steel houses, industrial halls, crane buildings and event venues across Lombardy.",
     path: "/progetti",
     keywords: [
-      "steel structure projects Italy",
+      "structural engineer Italy projects",
       "industrial steel building Northern Italy",
       "steel villa Italy",
-      "seismic upgrade steel structure Milan",
+      "steel structure Milan",
     ],
   },
   contatti: {
-    title: "Contact",
+    title: "Contact structural engineers in Italy",
     description:
-      "Contact Studio Capoferri in English for a technical first reply: quotations, shop-drawing scope and site support for projects in Italy.",
+      "Contact structural engineers in Adro, near Brescia, for steel design, fabrication shop drawings and site support on projects in Italy.",
     path: "/contatti",
     keywords: [
-      "contact structural engineer Italy",
-      "steel design quote Northern Italy",
-      "English speaking engineer Adro Brescia",
+      "structural engineer Italy",
+      "contact structural engineer Northern Italy",
+      "shop drawings quote Italy",
     ],
   },
   "clienti-internazionali": {
-    title: "International clients, steel engineering in Italy",
+    title: "Structural engineers for projects in Italy",
     description:
-      "English-speaking structural engineers in Northern Italy for EU partners: steel structures, shop drawings, Eurocodes/NTC and site support for projects built in Italy.",
+      "Structural engineers in Northern Italy for partners building in Italy: steel structures, fabrication shop drawings, Eurocodes, NTC and site support.",
     path: "/clienti-internazionali",
     keywords: [
-      "international structural engineer Italy",
-      "English speaking structural engineer Italy",
-      "steel shop drawings Italy EU fabricator",
+      "structural engineer Italy",
+      "structural engineer Northern Italy",
+      "shop drawings steel structures",
+      "fabrication drawings Italy",
       "Eurocode steel design Italy",
-      "steel structure design Northern Italy",
     ],
   },
   "progettazione-strutturale-acciaio-italia": {
-    title: "Structural steel design services in Italy for EU partners",
+    title: "Structural engineers in Italy for fabricators",
     description:
-      "Outsource structural steel design and shop drawings to an English-speaking engineering partner in Northern Italy, for contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy.",
+      "Structural engineers in Northern Italy for contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy: steel design, fabrication shop drawings, Eurocodes and NTC.",
     path: "/progettazione-strutturale-acciaio-italia",
     keywords: [
-      "structural steel design services Italy",
-      "outsource steel detailing Europe",
-      "engineering partner Italy steel",
-      "steel shop drawings Germany Netherlands Belgium Denmark",
+      "structural engineer Italy",
+      "shop drawings steel structures",
+      "fabrication drawings structural steel",
+      "structural engineer for fabricators Italy",
       "Eurocode structural engineer Italy",
-      "English speaking steel engineer Northern Italy",
-      "hire structural engineer Italy EU project",
     ],
   },
   "privacy-policy": {
@@ -169,66 +166,65 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     path: "/privacy-policy",
   },
   "progettazione-strutture-acciaio-brescia": {
-    title: "Steel structure design in Brescia and Lombardy",
+    title: "Structural engineer in Brescia",
     description:
-      "Structural engineering practice specialised in steel structures in Brescia and across Lombardy: steel villas, industrial sheds, vertical extensions and fabrication drawings. English project coordination available.",
+      "Structural engineer in Brescia and Lombardy for steel buildings: villas, industrial halls, vertical extensions and fabrication shop drawings. Based in Adro, province of Brescia.",
     path: "/progettazione-strutture-acciaio-brescia",
     keywords: [
-      "steel structure design Brescia",
+      "structural engineer Brescia",
       "structural engineer Brescia Italy",
-      "steel villa Lombardy",
-      "industrial steel building Brescia",
+      "steel buildings Brescia",
       "shop drawings Brescia",
-      "English speaking engineer Brescia",
+      "industrial steel building Brescia",
     ],
   },
   "progettazione-strutture-acciaio-bergamo": {
-    title: "Steel structure design in Bergamo and Lombardy",
+    title: "Structural engineer in Bergamo",
     description:
-      "Steel structure design in Bergamo and its province: villas, industrial buildings, vertical extensions and steelwork engineering by Studio Capoferri. English-speaking engineers for international partners.",
+      "Structural engineer in Bergamo and Lombardy for steel buildings: villas, industrial halls, vertical extensions and fabrication shop drawings. Office in Adro, near Bergamo.",
     path: "/progettazione-strutture-acciaio-bergamo",
     keywords: [
-      "steel structure design Bergamo",
+      "structural engineer Bergamo",
       "structural engineer Bergamo Italy",
-      "industrial steel Bergamo",
+      "steel buildings Bergamo",
       "shop drawings Bergamo",
-      "English speaking engineer Bergamo",
+      "industrial steel Bergamo",
     ],
   },
   "progettazione-strutture-acciaio-milano": {
-    title: "Steel structure design in Milan and Lombardy",
+    title: "Structural engineer in Milan",
     description:
-      "Steel structure design in Milan and its metropolitan area: residential buildings, industrial sheds, event venues and steelwork engineering by Studio Capoferri. English project talks available.",
+      "Structural engineer in Milan for steel buildings: residences, industrial halls, event venues and fabrication shop drawings across the metropolitan area.",
     path: "/progettazione-strutture-acciaio-milano",
     keywords: [
-      "steel structure design Milan",
+      "structural engineer Milan",
       "structural engineer Milan Italy",
-      "event venue steel structure Milan",
+      "steel buildings Milan",
       "shop drawings Milan",
-      "English speaking engineer Milan",
+      "event venue steel structure Milan",
     ],
   },
 };
 
 const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
   residenziali: {
-    title: "Residential structures",
+    title: "Residential steel structures in Northern Italy",
     description:
-      "Residential structural design by Studio Capoferri: private homes, steel villas, residential complexes and multi-storey buildings in Lombardy and Northern Italy.",
+      "Structural engineers for houses and steel villas in Lombardy and Northern Italy: frames, foundations and fabrication drawings.",
     path: "/progetti/residenziali",
     keywords: ["steel villa Italy", "residential steel structure Northern Italy", "steel house design Lombardy"],
   },
   industriali: {
-    title: "Industrial projects",
+    title: "Industrial steel buildings in Northern Italy",
     description:
-      "Industrial steel projects, production buildings, logistics facilities and high-performance structural design by Studio Capoferri.",
+      "Structural engineers for industrial halls, crane buildings and logistics structures in Northern Italy, including fabrication shop drawings.",
     path: "/progetti/industriali",
     keywords: ["industrial steel building Italy", "steel warehouse design Northern Italy", "crane steel structure design"],
   },
   ricettivi: {
-    title: "Structures for events",
+    title: "Event venue structures in Milan",
     description:
-      "Structural design for exhibition halls, seminar rooms and event venues in Northern Italy.",
+      "Structural engineers for exhibition halls, seminar rooms and event venues in Milan and Northern Italy.",
     path: "/progetti/ricettivi",
     keywords: ["event venue steel structure Milan", "exhibition hall structural design Italy", "seminar venue structure Italy"],
   },

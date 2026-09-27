@@ -41,9 +41,9 @@ export const exportPartnerCopy = {
       "Allegati, vincoli, tempi e paese di provenienza del team: rispondiamo con una valutazione tecnica preliminare.",
   },
   en: {
-    title: "Structural steel design services in Italy for EU partners",
+    title: "Structural engineers in Italy for EU fabricators",
     lead:
-      "Studio Capoferri is an English-speaking structural engineering practice in Northern Italy. We design steel structures, issue fabrication shop drawings and support erection for partners in Germany, the Netherlands, Belgium, Denmark and across the EU building projects in Italy.",
+      "Structural engineers in Northern Italy for fabricators and contractors building in Italy. We design steel structures, issue fabrication shop drawings and support erection for partners in Germany, the Netherlands, Belgium, Denmark and across the EU.",
     sections: [
       {
         id: "who",

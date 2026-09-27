@@ -9,9 +9,9 @@ import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
 const englishProjectCards = [
-  ["Residential structures", "Steel villas and homes, concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
-  ["Industrial projects", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
-  ["Structures for events", "Exhibitions, seminars and conferences", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
+  ["Residential steel structures", "Steel villas and homes, concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
+  ["Industrial steel buildings", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
+  ["Event venue structures", "Exhibitions, seminars and conferences", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
 ] as const;
 
 export function LocalizedProjectsPageContent() {
@@ -48,7 +48,7 @@ export function LocalizedProjectsPageContent() {
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well mb-8 sm:mb-14">
-            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Completed projects" : "Progetti realizzati"}</h1>
+            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Steel projects in Northern Italy" : "Progetti realizzati"}</h1>
             <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>
               {isEn
                 ? "Work from the studio: steel structures, on their own or combined with reinforced concrete and masonry, and commissions on steel products such as decking for concrete slabs. Grouped by field: houses and villas, industry, and spaces for exhibitions and conferences."

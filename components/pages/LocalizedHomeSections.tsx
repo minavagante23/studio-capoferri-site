@@ -62,7 +62,7 @@ const copy = {
       {
         text: (
           <>
-            <strong>Studio Capoferri</strong> is a civil and structural engineering practice in Adro (Brescia), Italy.
+            <strong>Studio Capoferri</strong> is a practice of structural engineers in Adro, near Brescia, Italy.
             For more than forty years we have designed steel, reinforced-concrete and masonry structures across
             Franciacorta and Northern and North-Central Italy. Calculation, shop drawings, site supervision.
             Architecture and planning when the commission needs them.
@@ -70,7 +70,7 @@ const copy = {
         ),
         textMobile: (
           <>
-            <strong>Studio Capoferri</strong> is a civil and structural engineering practice in Adro (Brescia), Italy.
+            <strong>Studio Capoferri</strong> is a practice of structural engineers in Adro, near Brescia, Italy.
             For more than forty years we have designed steel, reinforced-concrete and masonry structures across
             Franciacorta and Northern and North-Central Italy.
           </>
@@ -90,7 +90,7 @@ const copy = {
     ] as AboutBlock[],
     servicesTitle: "Services",
     servicesIntro:
-      "Steel and structural design, BIM modelling, shop drawings and site supervision first. Architecture, planning and Italian permits when the project needs them.",
+      "Structural engineers for steel buildings: calculations, shop drawings and site supervision. Architecture, planning and Italian permits when the project needs them.",
     serviceCards: [
       ["Structural design", "Steel structures, reinforced concrete and masonry. FEM analysis, BIM modelling, seismic checks and fire design.", "/servizi#progettazione-strutturale"],
       ["Construction supervision", "Technical supervision, site support, structural assessments and technical reports.", "/servizi#direzione-lavori"],

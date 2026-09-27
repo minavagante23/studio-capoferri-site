@@ -9,9 +9,9 @@ const areaLabels: Record<SeoLocale, Record<ProjectArea, string>> = {
     ricettivi: "Strutture per eventi",
   },
   en: {
-    residenziali: "Residential structures",
-    industriali: "Industrial projects",
-    ricettivi: "Structures for events",
+    residenziali: "Residential steel structures",
+    industriali: "Industrial steel buildings",
+    ricettivi: "Event venue structures",
   },
 };
 
@@ -272,7 +272,7 @@ export function contactPageJsonLd(locale: SeoLocale = "it") {
     name: locale === "en" ? "Contact Studio Capoferri" : "Contatti Studio Capoferri",
     description:
       locale === "en"
-        ? "Contact Studio Capoferri in Adro (Brescia, Italy) for steel structure design, shop drawings and site support. English-speaking engineering team."
+        ? "Contact structural engineers in Adro, near Brescia, for steel buildings, fabrication shop drawings and site support in Italy."
         : "Contatta Studio Capoferri ad Adro (BS) per progettazione strutture in acciaio, disegni d'officina e supporto in cantiere.",
     inLanguage: locale === "en" ? "en" : "it",
     isPartOf: { "@id": `${site.url}/#website` },
@@ -287,10 +287,10 @@ export function servicesPageJsonLd(locale: SeoLocale = "it") {
     "@type": "CollectionPage",
     "@id": `${pageUrl("/servizi", locale)}#services`,
     url: pageUrl("/servizi", locale),
-    name: locale === "en" ? "Engineering and design services" : "Servizi di ingegneria e progettazione",
+    name: locale === "en" ? "Structural design and shop drawings" : "Servizi di ingegneria e progettazione",
     description:
       locale === "en"
-        ? "Structural design, construction supervision, site safety, architecture and technical services by Studio Capoferri."
+        ? "Structural engineers in Northern Italy: steel design, fabrication shop drawings, construction supervision and site safety."
         : "Progettazione strutturale, direzione lavori, sicurezza cantieri, architettura e servizi tecnici di Studio Capoferri.",
     inLanguage: locale === "en" ? "en" : "it",
     isPartOf: { "@id": `${site.url}/#website` },

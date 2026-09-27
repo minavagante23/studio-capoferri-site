@@ -45,9 +45,9 @@ export const internationalHub = {
       "Raccontaci il progetto: ti rispondiamo con una valutazione preliminare su fattibilità, tempi e percorso tecnico.",
   },
   en: {
-    title: "International clients",
+    title: "Structural engineers for projects in Italy",
     lead:
-      "English-speaking structural engineering in Northern Italy for partners in Germany, the Netherlands, Belgium, Denmark and across the EU, steel structures, shop drawings and site support for projects built in Italy.",
+      "Structural engineers in Northern Italy for partners in Germany, the Netherlands, Belgium, Denmark and across the EU. Steel structures, fabrication shop drawings and site support for projects built in Italy.",
     sections: [
       {
         id: "who",
