@@ -13,18 +13,13 @@ function entry(
   priority: number,
   changefreq: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly"
 ): MetadataRoute.Sitemap[number] {
+  // No xhtml:link alternates here: hreflang stays on each page via metadata.
+  // A plain urlset matches what Google Search Console already accepts on our other sites.
   return {
     url: pageUrl(path, locale),
     lastModified,
     changeFrequency: changefreq,
     priority,
-    alternates: {
-      languages: {
-        it: pageUrl(path, "it"),
-        en: pageUrl(path, "en"),
-        "x-default": pageUrl(path, "en"),
-      },
-    },
   };
 }
 
