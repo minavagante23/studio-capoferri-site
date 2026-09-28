@@ -4,8 +4,10 @@ import { projectAreas, projectCategories } from "@/lib/projects";
 
 export const dynamic = "force-static";
 
-/** Aggiornato a ogni build statico / deploy (evita lastmod stale). */
-const lastModified = new Date();
+/** Date-only lastmod (YYYY-MM-DD), same shape as our other sites that GSC accepts. */
+function today(): string {
+  return new Date().toISOString().slice(0, 10);
+}
 
 function entry(
   path: string,
@@ -13,11 +15,9 @@ function entry(
   priority: number,
   changefreq: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly"
 ): MetadataRoute.Sitemap[number] {
-  // No xhtml:link alternates here: hreflang stays on each page via metadata.
-  // A plain urlset matches what Google Search Console already accepts on our other sites.
   return {
     url: pageUrl(path, locale),
-    lastModified,
+    lastModified: today(),
     changeFrequency: changefreq,
     priority,
   };
@@ -37,10 +37,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/contatti", "en", 0.8),
     entry("/privacy-policy", "it", 0.3, "yearly"),
     entry("/privacy-policy", "en", 0.3, "yearly"),
-    entry("/clienti-internazionali", "it", 0.85),
+    entry("/clienti-internazionali", "it", 0.8),
     entry("/clienti-internazionali", "en", 0.9),
-    entry("/progettazione-strutturale-acciaio-italia", "it", 0.85),
-    entry("/progettazione-strutturale-acciaio-italia", "en", 0.95),
+    entry("/progettazione-strutturale-acciaio-italia", "it", 0.8),
+    entry("/progettazione-strutturale-acciaio-italia", "en", 0.9),
     ...steelLandingSlugs.flatMap((slug) => [
       entry(`/progettazione-strutture-acciaio-${slug}`, "it", 0.8),
       entry(`/progettazione-strutture-acciaio-${slug}`, "en", 0.8),
