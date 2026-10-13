@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Studio Capoferri">
+  <rect width="512" height="512" fill="#b01010"/>
+  <g fill="none" stroke="#ffffff" stroke-width="52" stroke-linejoin="miter" stroke-linecap="butt">
+    <!-- Top and bottom chords -->
+    <path d="M68 128 H444"/>
+    <path d="M98 384 H414"/>
+    <!-- Structural M / double truss (peaks up; bottom chord slightly inset = corner notches) -->
+    <path d="M68 360 L178 154 L256 330 L334 154 L444 360"/>
+  </g>
+</svg>
