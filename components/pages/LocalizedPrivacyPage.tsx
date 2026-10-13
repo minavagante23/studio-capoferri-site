@@ -37,7 +37,7 @@ export function LocalizedPrivacyPageContent() {
             </p>
 
             <h2 className={h2}>{isEn ? "Data we process" : "Dati trattati"}</h2>
-            <ul className={`list-disc space-y-2 pl-5 ${ui.body}`}>
+            <ul className={`list-none space-y-2 pl-0 ${ui.body}`}>
               <li>
                 {isEn
                   ? "Browsing data: IP address, date/time, pages visited, device/browser information, collected via Google Analytics only after cookie consent."
@@ -56,7 +56,7 @@ export function LocalizedPrivacyPageContent() {
             </ul>
 
             <h2 className={h2}>{isEn ? "Purposes and legal bases" : "Finalità e basi giuridiche"}</h2>
-            <ul className={`list-disc space-y-2 pl-5 ${ui.body}`}>
+            <ul className={`list-none space-y-2 pl-0 ${ui.body}`}>
               <li>
                 {isEn
                   ? "Replying to contact requests: legal basis: your consent (Art. 6(1)(a) GDPR) and/or steps prior to a contract (Art. 6(1)(b))."
@@ -85,7 +85,7 @@ export function LocalizedPrivacyPageContent() {
                 ? "Data may be processed by providers acting as processors or independent controllers, in particular:"
                 : "I dati possono essere trattati da fornitori che agiscono come responsabili del trattamento o titolari autonomi, in particolare:"}
             </p>
-            <ul className={`mt-3 list-disc space-y-2 pl-5 ${ui.body}`}>
+            <ul className={`mt-3 list-none space-y-2 pl-0 ${ui.body}`}>
               <li>
                 {isEn
                   ? "Formspree: receives contact-form submissions so we can read and reply to messages."
@@ -111,7 +111,7 @@ export function LocalizedPrivacyPageContent() {
             </p>
 
             <h2 className={h2}>{isEn ? "Retention" : "Conservazione"}</h2>
-            <ul className={`list-disc space-y-2 pl-5 ${ui.body}`}>
+            <ul className={`list-none space-y-2 pl-0 ${ui.body}`}>
               <li>
                 {isEn
                   ? "Contact messages: kept for the time needed to handle the request and related follow-up, then deleted or anonymised unless longer retention is required by law or ongoing dealings."

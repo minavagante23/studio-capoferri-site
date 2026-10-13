@@ -278,10 +278,10 @@ export const projectCaseStudies: Record<
           Il telaio definisce i volumi e i tempi di costruzione; i dettagli di officina seguono la sequenza di montaggio.
         </p>
         <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Struttura in acciaio</strong>: telaio, luci, tempi di montaggio.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Cantiere</strong>: carpenteria e sequenza di posa coordinate con l&apos;architettura.
           </li>
         </ul>
@@ -340,20 +340,20 @@ export const projectCaseStudies: Record<
           piano primo e della copertura, progettata per accogliere una superficie integrale di pannelli fotovoltaici.
         </p>
         <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Fondazioni su pali</strong>: soluzione strutturale specifica per un terreno con caratteristiche scadenti.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Carpenteria metallica</strong>: travi e pilastri definiscono i volumi con precisione millimetrica, unendo solidità e leggerezza.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Sistemi a secco</strong>: pareti con lana minerale ad alta densità per velocità d&apos;esecuzione e prestazioni termiche
             d&apos;eccellenza.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Efficienza energetica</strong>: copertura predisposta per l&apos;impianto fotovoltaico, cuore energetico dell&apos;abitazione.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Progettazione integrata</strong>: impianti e finiture eseguiti in parallelo, riducendo tempi morti e imprevisti di cantiere.
           </li>
         </ul>
@@ -430,14 +430,14 @@ export const projectCaseStudies: Record<
           valutazione della capacità portante.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Analisi strutturale</strong>: revisione delle lamiere esistenti e definizione di nuove soluzioni in
             acciaio.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Prove sperimentali</strong>: comportamento delle lamiere senza getto e con solaio collaborante.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Tabelle di portata</strong>: riferimento tecnico per le diverse configurazioni e condizioni di carico.
           </li>
         </ul>
@@ -505,16 +505,16 @@ export const projectCaseStudies: Record<
           estetica dell&apos;insieme.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Grande luce libera</strong>: circa 40 metri senza sostegni intermedi tra i due edifici.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Capriata reticolare unica</strong>: geometria spaziale in profili tubolari a sezione circolare.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Sollevamento e montaggio</strong>: le esigenze esecutive integrate nelle scelte progettuali fin dalle prime fasi.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Qualità estetica</strong>: profili e finitura coerenti con lo standard di un impianto di verniciatura ad alte prestazioni.
           </li>
         </ul>
@@ -559,19 +559,19 @@ export const projectCaseStudies: Record<
           è stato concepito per carichi pesanti e flussi di lavoro complessi.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Struttura portante in acciaio</strong>: resistenza e affidabilità per l&apos;ambiente industriale.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Progettazione esecutiva</strong>: disegni costruttivi d&apos;officina per la realizzazione in acciaio.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Integrazione carroponti</strong>: struttura calcolata per due carroponti e movimentazione dei pezzi.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Efficienza e isolamento</strong>: pannelli sandwich per isolamento termico e acustico.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Gestione globale</strong>: urbanistica, architettura e calcoli strutturali esecutivi.
           </li>
         </ul>
@@ -624,16 +624,16 @@ export const projectCaseStudies: Record<
           <strong>16 metri</strong>. L&apos;assenza di sostegni intermedi permette di ottimizzare gli spazi per le esigenze operative del settore.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Efficienza</strong>: grandi luci coperte con profili ottimizzati.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Velocità</strong>: tempi di montaggio ridotti per limitare l&apos;impatto sul sito.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Durabilità</strong>: profili e protezioni per un ambiente aggressivo.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Integrazione</strong>: perfetto innesto delle nuove opere sulle strutture preesistenti.
           </li>
         </ul>
@@ -678,16 +678,16 @@ export const projectCaseStudies: Record<
           per ampliarne la superficie utile. L&apos;attività ha riguardato:
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Ottimizzazione strutturale e geometrica</strong> delle carpenterie.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Coordinamento</strong> con le condizioni dell&apos;edificio preesistente.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Sviluppo dei dettagli costruttivi ed esecutivi</strong> necessari alla produzione.
           </li>
-          <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+          <li>
             <strong>Razionalizzazione delle fasi di montaggio</strong> per garantire fluidità operativa.
           </li>
         </ul>

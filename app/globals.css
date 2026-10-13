@@ -81,6 +81,12 @@ body {
   font-family: var(--font-title), ui-serif, Georgia, serif;
 }
 
+/* Content lists: keep structure, no bullets */
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Scroll verticale: niente barra sul bordo destro su mobile (lo scroll resta attivo) */
 @media (max-width: 767px) {
   html,

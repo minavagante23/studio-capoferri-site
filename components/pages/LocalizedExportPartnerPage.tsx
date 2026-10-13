@@ -14,8 +14,6 @@ export function LocalizedExportPartnerPage() {
   const isEn = locale === "en";
   const copy = exportPartnerCopy[isEn ? "en" : "it"];
   const sectionHeading = `font-display ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
-  const bullet =
-    "relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]";
 
   return (
     <main id="main-content" className="section-shell">
@@ -38,7 +36,7 @@ export function LocalizedExportPartnerPage() {
                 {"items" in section && section.items ? (
                   <ul className="mt-2 list-none space-y-3 pl-0">
                     {section.items.map(([title, text]) => (
-                      <li key={title} className={bullet}>
+                      <li key={title}>
                         <strong>{title}</strong>: {text}
                       </li>
                     ))}

@@ -188,11 +188,11 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                   <h2 className={`font-display ${ui.sectionHeadingAccent} mb-5`}>Perché scegliere una struttura in acciaio</h2>
                   <div className="home-plate home-plate--well">
                     <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
-                      <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Resistenza sismica</strong> — leggerezza e duttilità rendono l&apos;acciaio ideale nelle zone sismiche della Lombardia.</li>
-                      <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Tempi di cantiere ridotti</strong> — la carpenteria metallica viene prefabbricata in officina e montata a secco in cantiere.</li>
-                      <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Libertà architettonica</strong> — grandi luci, sbalzi e volumi aperti senza pilastri intermedi.</li>
-                      <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Sopraelevazioni</strong> — il peso contenuto consente di ampliare in altezza edifici esistenti.</li>
-                      <li className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>Sostenibilità</strong> — materiale riciclabile al 100%, perfetto per involucri ad alta efficienza energetica e coperture fotovoltaiche.</li>
+                      <li><strong>Resistenza sismica</strong> — leggerezza e duttilità rendono l&apos;acciaio ideale nelle zone sismiche della Lombardia.</li>
+                      <li><strong>Tempi di cantiere ridotti</strong> — la carpenteria metallica viene prefabbricata in officina e montata a secco in cantiere.</li>
+                      <li><strong>Libertà architettonica</strong> — grandi luci, sbalzi e volumi aperti senza pilastri intermedi.</li>
+                      <li><strong>Sopraelevazioni</strong> — il peso contenuto consente di ampliare in altezza edifici esistenti.</li>
+                      <li><strong>Sostenibilità</strong> — materiale riciclabile al 100%, perfetto per involucri ad alta efficienza energetica e coperture fotovoltaiche.</li>
                     </ul>
                   </div>
                 </section>
@@ -203,7 +203,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                     <p className={`mb-4 ${ui.bodyMuted}`}>Progettiamo strutture in acciaio per ogni destinazione d&apos;uso: ville e residenze private, edifici multipiano, capannoni industriali con carroponte, edifici commerciali e spazi per eventi. Alcuni progetti recenti:</p>
                     <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                       {config.featuredProjects.map((p) => (
-                        <li key={p.href} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+                        <li key={p.href}>
                           <Link href={p.href} title={linkTitles.progetto(p.title, "it")} className="link-accent">{p.title}</Link> — {p.description}
                         </li>
                       ))}
@@ -295,7 +295,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                 <div className="home-plate home-plate--well">
                   <ul className="list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                     {landingCopy.en.whyBullets.map(([title, text]) => (
-                      <li key={title} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]"><strong>{title}</strong> - {text}</li>
+                      <li key={title}><strong>{title}</strong> - {text}</li>
                     ))}
                   </ul>
                 </div>
@@ -312,7 +312,7 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
                           description: cityCopy.featuredProjects[index]?.[1] ?? p.description,
                         }))
                       : config.featuredProjects).map((p) => (
-                      <li key={p.href} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#2a3f54]">
+                      <li key={p.href}>
                         <Link href={localizeHref(p.href, locale)} title={linkTitles.progetto(p.title, locale)} className="link-accent">{p.title}</Link> - {p.description}
                       </li>
                     ))}

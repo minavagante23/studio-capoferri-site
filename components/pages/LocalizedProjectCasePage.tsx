@@ -138,7 +138,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                     {body.bullets.length ? (
                       <ul className="mt-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
                         {body.bullets.map(([title, text]) => (
-                          <li key={title} className="relative pl-5 before:absolute before:left-0 before:top-[0.55em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#1c1e21]">
+                          <li key={title}>
                             <strong>{title}</strong> - {text}
                           </li>
                         ))}
