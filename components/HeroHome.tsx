@@ -15,7 +15,6 @@ const heroImage = {
   altEn: "Industrial interior with steel structure and natural light - Studio Capoferri project",
 } as const;
 
-const heroMinHeight = "calc(100dvh - var(--header-h, 64px))";
 /** Editorial ease: soft settle, no bounce. */
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -68,8 +67,11 @@ export function HeroHome() {
           />
         </motion.div>
 
-        {/* Base readability scrim */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/20 md:bg-[linear-gradient(to_top,rgba(0,0,0,0.58)_0%,rgba(0,0,0,0.22)_42%,rgba(0,0,0,0.18)_100%),linear-gradient(to_left,rgba(0,0,0,0.42)_0%,rgba(0,0,0,0.12)_48%,transparent_78%)]" aria-hidden />
+        {/* Base readability scrim — stronger bottom-right plate for type contrast */}
+        <div
+          className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.82)_0%,rgba(0,0,0,0.45)_38%,rgba(0,0,0,0.22)_62%,rgba(0,0,0,0.18)_100%),linear-gradient(to_left,rgba(0,0,0,0.55)_0%,rgba(0,0,0,0.2)_42%,transparent_72%)] md:bg-[linear-gradient(to_top,rgba(0,0,0,0.68)_0%,rgba(0,0,0,0.28)_42%,rgba(0,0,0,0.16)_100%),linear-gradient(to_left,rgba(0,0,0,0.48)_0%,rgba(0,0,0,0.14)_48%,transparent_78%)]"
+          aria-hidden
+        />
         {/* Scroll: plate darkens slightly: depth without zoom */}
         <motion.div
           className="absolute inset-0 bg-black pointer-events-none"
@@ -79,41 +81,45 @@ export function HeroHome() {
       </div>
 
       <div
-        className={`hero-home__content relative z-10 mx-auto flex flex-col justify-end px-5 pb-12 pt-24 sm:px-5 sm:pb-12 sm:pt-24 md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
+        className={`hero-home__content relative z-10 mx-auto flex flex-col justify-end px-5 pb-10 pt-20 sm:px-5 sm:pb-12 sm:pt-24 md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
         style={{ minHeight: heroMinHeight }}
       >
         <motion.div
-          className="w-full max-w-[22rem] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
+          className="w-full max-w-[20rem] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
           style={enableScrollFx ? { y: copyY, opacity: copyOpacity } : undefined}
         >
           <motion.p
-            className="eyebrow mb-3.5 inline-flex max-w-full items-center gap-2.5 text-[0.68rem] tracking-[0.14em] text-white/55 sm:mb-3 sm:gap-3 sm:text-[0.74rem] sm:tracking-[0.12em] md:ml-auto md:flex-row-reverse"
+            className="eyebrow mb-3 inline-flex max-w-full items-center gap-2.5 text-[0.68rem] tracking-[0.14em] text-white/85 sm:mb-3 sm:gap-3 sm:text-[0.74rem] sm:tracking-[0.12em] sm:text-white/80 md:ml-auto md:flex-row-reverse"
             initial={reduceMotion ? false : { opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease, delay: reduceMotion ? 0 : 0.08 }}
           >
-            <span className="h-px w-6 shrink-0 bg-white/40 sm:w-8" aria-hidden />
-            <span className="min-w-0 sm:hidden">{copy.locationMobile}</span>
-            <span className="hidden min-w-0 sm:inline">{copy.location}</span>
+            <span className="h-px w-6 shrink-0 bg-white/70 sm:w-8 sm:bg-white/55" aria-hidden />
+            <span className="min-w-0 drop-shadow-[0_1px_10px_rgba(0,0,0,0.55)] sm:hidden">{copy.locationMobile}</span>
+            <span className="hidden min-w-0 drop-shadow-[0_1px_10px_rgba(0,0,0,0.45)] sm:inline">{copy.location}</span>
           </motion.p>
 
           <motion.h1
-            className="font-display section-title text-[clamp(1.8rem,7vw,2.1rem)] leading-[1.15] tracking-[-0.022em] text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.7)] sm:text-[clamp(2.45rem,8vw,4.6rem)] sm:leading-[1.04] sm:tracking-[-0.03em]"
+            className="font-display section-title text-[clamp(1.55rem,6.2vw,1.85rem)] leading-[1.12] tracking-[-0.022em] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.75)] sm:text-[clamp(2.45rem,8vw,4.6rem)] sm:leading-[1.04] sm:tracking-[-0.03em]"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, ease, delay: reduceMotion ? 0 : 0.16 }}
           >
             <span className="block text-pretty sm:whitespace-nowrap">{copy.line1}</span>
-            <span className="mt-1.5 block text-pretty sm:mt-1 sm:whitespace-nowrap">{copy.line2}</span>
+            <span className="mt-1 block text-pretty sm:hidden">
+              <span className="block">{copy.line2a}</span>
+              <span className="block">{copy.line2b}</span>
+            </span>
+            <span className="mt-1.5 hidden text-pretty sm:mt-1 sm:block sm:whitespace-nowrap">{copy.line2}</span>
           </motion.h1>
 
           <motion.p
-            className="mt-5 max-w-[20rem] border-t border-white/25 pt-3.5 text-[0.8125rem] leading-[1.45] text-white/70 sm:mt-4 sm:max-w-none sm:whitespace-nowrap sm:pt-3 sm:text-[0.9rem] sm:leading-snug md:ml-auto md:border-t-0 md:border-r md:border-white/25 md:pr-3.5 md:pt-0 md:text-[1rem]"
+            className="mt-4 max-w-[18.5rem] border-t border-white/40 pt-3 text-[0.78rem] leading-[1.4] text-white/90 sm:mt-4 sm:max-w-none sm:whitespace-nowrap sm:border-white/30 sm:pt-3 sm:text-[0.9rem] sm:leading-snug sm:text-white/80 md:ml-auto md:border-t-0 md:border-r md:border-white/30 md:pr-3.5 md:pt-0 md:text-[1rem]"
             initial={reduceMotion ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, ease, delay: reduceMotion ? 0 : 0.28 }}
           >
-            <span className="sm:hidden">{copy.supportMobile}</span>
+            <span className="drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:hidden">{copy.supportMobile}</span>
             <span className="hidden sm:inline">{copy.support}</span>
           </motion.p>
         </motion.div>

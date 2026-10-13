@@ -357,7 +357,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
               className="group relative aspect-[4/3] w-[min(78vw,320px)] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-white text-left transition hover:border-[#1c1e21]/28 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1e21]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
-              <span className="reveal-beam absolute inset-0">
+              <span className="photo-alive reveal-beam absolute inset-0">
                 <Image
                   src={img.src}
                   alt=""
@@ -380,7 +380,7 @@ export function ProjectImageLightbox({ images, className = "" }: Props) {
               className="group relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-sm border border-[#1c1e21]/10 bg-[#fafbfc] text-left transition hover:border-[#1c1e21]/28 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1e21]"
               aria-label={`${copy.open}: ${img.alt}`}
             >
-              <span className="reveal-beam absolute inset-0">
+              <span className="photo-alive reveal-beam absolute inset-0">
                 <Image
                   src={img.src}
                   alt=""

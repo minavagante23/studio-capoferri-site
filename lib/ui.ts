@@ -32,8 +32,8 @@ export const ui = {
   /** H2 sezioni home su sfondo scuro (Progetti, Statistiche) */
   homeSectionTitleInverted: "section-title home-section-title home-section-title--inverted reveal-title",
 
-  /** H2 sezione lunga (servizi, privacy, landing) */
-  sectionHeadingAccent: "section-title text-2xl text-[#2a2a2a]",
+  /** H2 sezione lunga (servizi, privacy, landing) — filetto brand via .section-heading-accent */
+  sectionHeadingAccent: "section-title section-heading-accent text-2xl text-[#2a2a2a]",
 
   /** H2 galleria, “Progetti in evidenza” */
   gallerySectionTitle: "section-title text-xl text-[#2a2a2a] sm:text-2xl",
@@ -41,8 +41,8 @@ export const ui = {
   /** H2 in card chiare (Recapiti, Dove siamo) */
   cardHeading: "section-title text-xl text-[#2a2a2a] sm:text-2xl",
 
-  /** Foto di contenuto (editoriale: angolo vivo, filetto leggero) */
-  contentImage: "relative overflow-hidden rounded-sm border border-[#1c1e21]/10",
+  /** Foto di contenuto (editoriale: angolo vivo, filetto leggero; .photo-alive rinvigorisce tono) */
+  contentImage: "photo-alive relative overflow-hidden rounded-sm border border-[#1c1e21]/10",
 
   /** Link inline (grafite → rosso logo al hover) */
   linkAccent: "link-accent",

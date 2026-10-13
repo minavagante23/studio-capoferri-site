@@ -38,13 +38,25 @@ export function ProjectPreviewCard({
     <Link
       href={href}
       title={linkTitles.progetto(title, locale)}
-      className={`${dark ? ui.projectCardDark : ui.projectCardLight} ${className}`}
+      className={`group ${dark ? ui.projectCardDark : ui.projectCardLight} ${className}`}
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Image src={image} alt={alt} fill className="object-cover" sizes="(min-width:1024px) 33vw, 100vw" />
+        <Image
+          src={image}
+          alt={alt}
+          fill
+          className="photo-alive object-cover transition-[transform,filter] duration-500 ease-out group-hover:scale-[1.04] group-hover:[filter:brightness(1.06)_contrast(1.09)_saturate(1.16)] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+          sizes="(min-width:1024px) 33vw, 100vw"
+        />
       </div>
       <div className="pt-3">
-        <span className={`font-display block text-base font-medium tracking-tight sm:text-lg ${dark ? "text-white" : "text-[#1c1e21]"}`}>
+        <span
+          className={`font-display block text-base font-medium tracking-tight transition-colors duration-200 sm:text-lg ${
+            dark
+              ? "text-white group-hover:text-[#f0b4b4]"
+              : "text-[#1c1e21] group-hover:text-[#b01010]"
+          }`}
+        >
           {title}
         </span>
         {showCaption ? (

@@ -68,6 +68,15 @@ body {
   min-height: calc(100svh - var(--header-h, 64px));
 }
 
+/* Mobile: taller plate so the structure shot dominates before type */
+@media (max-width: 639px) {
+  .hero-home,
+  .hero-home__content {
+    min-height: calc(100svh - var(--header-h, 64px) + 2.5rem);
+    min-height: calc(100dvh - var(--header-h, 64px) + 2.5rem);
+  }
+}
+
 .font-display {
   font-family: var(--font-title), ui-serif, Georgia, serif;
 }
@@ -110,16 +119,23 @@ body {
   outline-offset: 2px;
 }
 
-/* Link inline: grafite di base, rosso logo al hover */
+/* Link inline: grafite di base, rosso logo al hover / focus / active */
 .link-accent {
   color: var(--primary);
   text-decoration: underline;
   text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
   font-weight: 600;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
-.link-accent:hover {
+.link-accent:hover,
+.link-accent:focus-visible {
   color: var(--brand);
+  text-decoration-color: var(--brand);
+}
+.link-accent:active {
+  color: var(--brand-dark);
+  text-decoration-color: var(--brand-dark);
 }
 
 .scroll-anchor {
@@ -232,11 +248,21 @@ body {
 }
 
 .home-section-title {
+  position: relative;
   font-size: clamp(1.65rem, 1.15rem + 1.35vw, 2.35rem);
   line-height: 1.12;
   letter-spacing: -0.03em;
   color: #2a2a2a;
   text-wrap: balance;
+}
+
+.home-section-title::after {
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 2px;
+  margin-top: 0.7rem;
+  background: var(--brand);
 }
 
 /* Lastre: filetto statico, niente hover-kit */
@@ -253,7 +279,7 @@ body {
   top: 0;
   width: 2px;
   height: 1.4rem;
-  background: var(--primary);
+  background: var(--brand);
 }
 
 .home-plate--well {
@@ -297,6 +323,24 @@ body {
   color: #f8fafc;
 }
 
+.home-section-title--inverted::after {
+  background: rgba(240, 180, 180, 0.85);
+}
+
+/* Brand thread on long-form section H2s */
+.section-heading-accent {
+  position: relative;
+}
+
+.section-heading-accent::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2px;
+  margin-top: 0.55rem;
+  background: var(--brand);
+}
+
 .home-section-muted {
   font-size: 0.82rem;
   line-height: 1.65;
@@ -319,6 +363,12 @@ body {
   inset: 0;
   pointer-events: none;
   background: linear-gradient(180deg, transparent 40%, rgba(20, 28, 36, 0.14));
+}
+
+/* Case / gallery photos: slightly more contrast and colour (no re-export) */
+.photo-alive img,
+img.photo-alive {
+  filter: brightness(1.04) contrast(1.07) saturate(1.12);
 }
 
 /* ─── touch-target: WCAG 2.2 minimum 44×44px ─── */
