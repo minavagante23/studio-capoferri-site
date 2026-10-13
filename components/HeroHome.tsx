@@ -46,7 +46,6 @@ export function HeroHome() {
     <section
       ref={sectionRef}
       className="hero-home relative"
-      style={{ minHeight: heroMinHeight }}
       aria-label={copy.introLabel}
     >
       <div className={`absolute inset-0 ${ui.brandGradient}`} aria-hidden />
@@ -82,7 +81,6 @@ export function HeroHome() {
 
       <div
         className={`hero-home__content relative z-10 mx-auto flex flex-col justify-end px-5 pb-10 pt-20 sm:px-5 sm:pb-12 sm:pt-24 md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
-        style={{ minHeight: heroMinHeight }}
       >
         <motion.div
           className="w-full max-w-[20rem] text-left sm:max-w-[36rem] md:ml-auto md:max-w-[46rem] md:text-right"
