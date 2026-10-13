@@ -17,6 +17,14 @@ export const linkTitles = {
   contatti: (locale: SeoLocale = "it") => (locale === "en" ? "Contact us - Studio Capoferri" : "Contattaci - Studio Capoferri"),
   international: (locale: SeoLocale = "it") =>
     locale === "en" ? "Structural engineers for projects in Italy - Studio Capoferri" : "Clienti internazionali - Studio Capoferri",
+  exportPartner: (locale: SeoLocale = "it") =>
+    locale === "en"
+      ? "Structural engineers in Italy for EU fabricators - Studio Capoferri"
+      : "Acciaio per partner UE - Studio Capoferri",
+  generalContractor: (locale: SeoLocale = "it") =>
+    locale === "en"
+      ? "Structural design for general contractors in Northern Italy - Studio Capoferri"
+      : "Progettazione strutturale per general contractor - Studio Capoferri",
   scopriServizi: (locale: SeoLocale = "it") => (locale === "en" ? "All services - Studio Capoferri" : "Tutti i servizi - Studio Capoferri"),
   tuttiProgetti: (locale: SeoLocale = "it") => (locale === "en" ? "All projects - Studio Capoferri" : "Tutti i progetti - Studio Capoferri"),
   formContatti: (locale: SeoLocale = "it") => (locale === "en" ? "Write to us using the contact form - Studio Capoferri" : "Scrivici dal form contatti - Studio Capoferri"),

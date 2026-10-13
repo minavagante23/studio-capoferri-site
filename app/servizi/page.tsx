@@ -5,8 +5,14 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Servizi di progettazione e ingegneria",
   description:
-    "Progettazione strutturale, direzione lavori, consulenze tecniche, sicurezza cantieri e assistenza immobiliare a Brescia e provincia.",
+    "Progettazione strutturale per imprese generali e general contractor: direzione lavori, disegni d'officina, sicurezza cantieri a Brescia e in Lombardia.",
   path: "/servizi",
+  keywords: [
+    "progettazione strutturale imprese generali",
+    "general contractor Brescia",
+    "disegni d'officina Lombardia",
+    "direzione lavori strutturale Brescia",
+  ],
 });
 
 export default function ServiziPage() {

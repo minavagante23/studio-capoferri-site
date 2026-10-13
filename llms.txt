@@ -78,14 +78,20 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 ## Thematic pages / Pagine tematiche
 
 ### Italian
+- [Structural design for general contractors](https://www.studiocapoferri.eu/progettazione-strutturale-per-general-contractor/)
 - [Steel structure design in Brescia](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-brescia/)
 - [Steel structure design in Bergamo](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-bergamo/)
 - [Steel structure design in Milan](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-milano/)
+- [Structural steel design for EU partners](https://www.studiocapoferri.eu/progettazione-strutturale-acciaio-italia/)
+- [International clients](https://www.studiocapoferri.eu/clienti-internazionali/)
 
 ### English
+- [Structural design for general contractors](https://www.studiocapoferri.eu/en/structural-design-for-general-contractors/)
 - [Structural engineer in Brescia](https://www.studiocapoferri.eu/en/structural-engineer-brescia/)
 - [Structural engineer in Bergamo](https://www.studiocapoferri.eu/en/structural-engineer-bergamo/)
 - [Structural engineer in Milan](https://www.studiocapoferri.eu/en/structural-engineer-milan/)
+- [Structural engineers in Italy for fabricators](https://www.studiocapoferri.eu/en/structural-steel-design-italy/)
+- [International clients](https://www.studiocapoferri.eu/en/international-clients/)
 
 ## Case studies / Casi studio
 
@@ -100,7 +106,6 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 - [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/)
 - [Superstudio Village in Milan Bovisa](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/)
 - [Superstudio Maxi in Famagosta](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/)
-- [Structural steel design for EU partners](https://www.studiocapoferri.eu/progettazione-strutturale-acciaio-italia/)
 
 ### English
 - [Steel villa in Pollenza (MC)](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-pollenza/)
@@ -113,7 +118,6 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 - [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/)
 - [Superstudio Village in Milan Bovisa](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-village/)
 - [Superstudio Maxi in Famagosta](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-maxi/)
-- [Structural engineers in Italy for fabricators](https://www.studiocapoferri.eu/en/structural-steel-design-italy/)
 
 ## Snapshot / Dati sintetici
 

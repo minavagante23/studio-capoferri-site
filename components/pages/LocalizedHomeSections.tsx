@@ -146,13 +146,21 @@ const copy = {
     ),
     zoneFooter: (
       <>
-        International contractors and EU partners: speak with our engineers in English on scope, drawings and site issues.{" "}
+        General contractors in Northern Italy:{" "}
+        <Link
+          href={localizeHref("/progettazione-strutturale-per-general-contractor", "en")}
+          title={linkTitles.generalContractor("en")}
+          className="link-accent"
+        >
+          structural design for general contractors
+        </Link>
+        . EU partners: speak with our engineers in English —{" "}
         <Link href={localizeHref("/clienti-internazionali", "en")} title={linkTitles.international("en")} className="link-accent">
-          International clients
+          international clients
         </Link>{" "}
         ·{" "}
         <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="link-accent">
-          Get in touch
+          get in touch
         </Link>
         .
       </>

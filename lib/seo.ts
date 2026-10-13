@@ -90,21 +90,23 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "chi-siamo": {
     title: "Structural engineering practice near Brescia",
     description:
-      "Studio Capoferri is a structural engineering practice in Adro, near Brescia. Steel buildings, shop drawings and site support for projects in Northern Italy, with engineers who work in English.",
+      "Studio Capoferri works with general contractors, architects and engineering offices from Adro near Brescia: steel buildings, shop drawings and site support in Northern Italy.",
     path: "/chi-siamo",
     keywords: [
       "structural engineering practice Italy",
       "structural engineer Brescia",
+      "general contractors Northern Italy",
       "steel engineering Northern Italy",
     ],
   },
   servizi: {
     title: "Structural design and shop drawings",
     description:
-      "Structural engineers in Northern Italy: steel design to NTC and Eurocodes, fabrication shop drawings, construction supervision and site safety.",
+      "Structural engineers in Northern Italy for general contractors: steel design to NTC and Eurocodes, fabrication shop drawings, construction supervision and site safety.",
     path: "/servizi",
     keywords: [
       "structural engineer Italy",
+      "general contractors structural design",
       "fabrication shop drawings",
       "shop drawings steel structures",
       "Eurocode structural design Italy",
@@ -160,6 +162,19 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
       "fabrication drawings structural steel",
       "structural engineer for fabricators Italy",
       "Eurocode structural engineer Italy",
+    ],
+  },
+  "progettazione-strutturale-per-general-contractor": {
+    title: "Structural design for general contractors",
+    description:
+      "Structural engineers in Northern Italy for general contractors and main contractors: steel design, fabrication shop drawings and construction supervision in Lombardy.",
+    path: "/progettazione-strutturale-per-general-contractor",
+    keywords: [
+      "general contractor Brescia",
+      "structural design for general contractors Italy",
+      "shop drawings for general contractors",
+      "structural engineer Lombardy contractors",
+      "main contractor structural engineer Italy",
     ],
   },
   "privacy-policy": {

@@ -1,13 +1,15 @@
 export const servicesCopy = {
   it: {
     title: "Servizi",
-    lead: "Studio Capoferri progetta strutture in acciaio, cemento armato e muratura. Dalla sede di Adro seguiamo il lavoro dal modello al cantiere: calcolo, disegni d'officina, direzione lavori. Architettura, urbanistica, pratiche, sicurezza di cantiere e assistenza immobiliare quando l'incarico lo richiede.",
+    lead: "Studio Capoferri progetta strutture in acciaio, cemento armato e muratura per imprese generali, general contractor e committenze tecniche. Dalla sede di Adro seguiamo il lavoro dal modello al cantiere: calcolo, disegni d'officina, direzione lavori. Architettura, urbanistica, pratiche, sicurezza di cantiere e assistenza immobiliare quando l'incarico lo richiede.",
+    gcNote: "Per general contractor e imprese generali in Lombardia vedi",
+    internationalNote: "Per partner UE e clienti esteri vedi",
     sections: [
       {
         id: "progettazione-strutturale",
         heading: "Progettazione strutturale",
         paragraphs: [
-          "Progettiamo edifici e carpenterie per commesse civili e industriali: ville, capannoni, sopraelevazioni, ampliamenti, interventi su esistenti. Il riferimento normativo è NTC ed Eurocodici.",
+          "Progettiamo edifici e carpenterie per imprese generali e committenze civili e industriali: ville, capannoni, sopraelevazioni, ampliamenti, interventi su esistenti. Il riferimento normativo è NTC ed Eurocodici.",
         ],
         items: [
           [
@@ -155,8 +157,9 @@ export const servicesCopy = {
   },
   en: {
     title: "Structural design and shop drawings",
-    lead: "Structural engineers in Adro, near Brescia. We design steel, reinforced-concrete and masonry structures and stay on the job from the model to the site: analysis, fabrication shop drawings, construction supervision. Architecture, planning, Italian filings, site safety and property support when the brief needs them.",
-    internationalNote: "Overseas partners work with us in English. See",
+    lead: "Structural engineers in Adro, near Brescia. We design steel, reinforced-concrete and masonry structures for general contractors and technical clients, and stay on the job from the model to the site: analysis, fabrication shop drawings, construction supervision. Architecture, planning, Italian filings, site safety and property support when the brief needs them.",
+    gcNote: "For general contractors working in Northern Italy, see",
+    internationalNote: "Overseas partners and EU fabricators work with us in English. See",
     sections: [
       {
         id: "progettazione-strutturale",

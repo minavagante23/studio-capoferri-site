@@ -104,11 +104,19 @@ export function LocalizedExportPartnerPage() {
             </section>
 
             <p className={`mt-10 ${ui.bodyMuted}`}>
-              {isEn ? (
+                {isEn ? (
                 <>
                   Also see{" "}
                   <Link href={localizeHref("/clienti-internazionali", locale)} title={linkTitles.international(locale)} className="link-accent">
                     international clients
+                  </Link>
+                  ,{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                    title={linkTitles.generalContractor(locale)}
+                    className="link-accent"
+                  >
+                    general contractors in Northern Italy
                   </Link>{" "}
                   and{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
@@ -121,6 +129,14 @@ export function LocalizedExportPartnerPage() {
                   Vedi anche{" "}
                   <Link href={localizeHref("/clienti-internazionali", locale)} title={linkTitles.international(locale)} className="link-accent">
                     clienti internazionali
+                  </Link>
+                  ,{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                    title={linkTitles.generalContractor(locale)}
+                    className="link-accent"
+                  >
+                    general contractor in Italia
                   </Link>{" "}
                   e{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">

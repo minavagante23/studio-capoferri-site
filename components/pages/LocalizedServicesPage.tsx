@@ -24,12 +24,26 @@ export function LocalizedServicesPageContent() {
           <article className="home-plate home-plate--well max-w-[860px]">
             <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
             <p className={ui.body}>{copy.lead}</p>
+            {"gcNote" in copy && copy.gcNote ? (
+              <p className={`mt-4 ${ui.body}`}>
+                {copy.gcNote}{" "}
+                <Link
+                  href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                  title={linkTitles.generalContractor(locale)}
+                  className="link-accent"
+                >
+                  {locale === "en" ? "structural design for general contractors" : "progettazione strutturale per general contractor"}
+                </Link>
+                .
+              </p>
+            ) : null}
             {"internationalNote" in copy && copy.internationalNote ? (
               <p className={`mt-4 ${ui.body}`}>
                 {copy.internationalNote}{" "}
                 <Link href={localizeHref("/clienti-internazionali", locale)} title={linkTitles.international(locale)} className="link-accent">
                   {locale === "en" ? "International clients" : "Clienti internazionali"}
-                </Link>.
+                </Link>
+                .
               </p>
             ) : null}
 

@@ -82,8 +82,17 @@ export function SiteFooter() {
                 <li>
                   <Link
                     className={ui.footerLink}
+                    href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                    title={linkTitles.generalContractor(locale)}
+                  >
+                    {locale === "en" ? "For general contractors" : "Per general contractor"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={ui.footerLink}
                     href={localizeHref("/progettazione-strutturale-acciaio-italia", locale)}
-                    title={locale === "en" ? "Structural engineers in Italy for fabricators" : "Progettazione strutturale acciaio per partner europei"}
+                    title={linkTitles.exportPartner(locale)}
                   >
                     {locale === "en" ? "Structural engineers for EU fabricators" : "Acciaio per partner UE"}
                   </Link>

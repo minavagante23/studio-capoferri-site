@@ -46,6 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/clienti-internazionali", "en", 0.9),
     entry("/progettazione-strutturale-acciaio-italia", "it", 0.85),
     entry("/progettazione-strutturale-acciaio-italia", "en", 0.95),
+    entry("/progettazione-strutturale-per-general-contractor", "it", 0.9),
+    entry("/progettazione-strutturale-per-general-contractor", "en", 0.85),
     ...steelLandingSlugs.flatMap((slug) => [
       entry(`/progettazione-strutture-acciaio-${slug}`, "it", 0.8),
       entry(`/progettazione-strutture-acciaio-${slug}`, "en", 0.8),

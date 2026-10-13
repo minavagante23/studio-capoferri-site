@@ -32,9 +32,10 @@ export const homeChiSiamo: { title: string; blocks: homeChiSiamoBlock[] } = {
     {
       text: (
         <>
-          Lavoriamo soprattutto sul residenziale e sull&apos;industriale: ville e case in acciaio, capannoni, sopraelevazioni,
-          carpenterie, interventi su esistenti. Sede ad Adro; commesse in Lombardia (Brescia, Bergamo, Milano) e nelle
-          regioni vicine. Progettazione antincendio quando il brief lo chiede.
+          Lavoriamo con imprese generali, general contractor, architetti e studi tecnici soprattutto sul residenziale e
+          sull&apos;industriale: ville e case in acciaio, capannoni, sopraelevazioni, carpenterie, interventi su esistenti.
+          Sede ad Adro; commesse in Lombardia (Brescia, Bergamo, Milano) e nelle regioni vicine. Progettazione antincendio
+          quando il brief lo chiede.
         </>
       ),
       textMobile: (
@@ -49,7 +50,7 @@ export const homeChiSiamo: { title: string; blocks: homeChiSiamoBlock[] } = {
 };
 
 export const homeServiziIntro =
-  "Acciaio, cemento armato, muratura. Calcolo, disegni d'officina, direzione lavori. Architettura, pratiche e sicurezza di cantiere quando l'incarico lo richiede.";
+  "Acciaio, cemento armato, muratura per imprese generali e committenze tecniche. Calcolo, disegni d'officina, direzione lavori. Architettura, pratiche e sicurezza di cantiere quando l'incarico lo richiede.";
 
 export const homeServiceCards = [
   {
@@ -150,9 +151,17 @@ export const zoneDescription = (
 
 export const zoneFooter = (
   <>
-    Accettiamo commesse in Italia e all&apos;estero.{" "}
+    Per imprese generali e general contractor in Lombardia:{" "}
+    <Link
+      href="/progettazione-strutturale-per-general-contractor"
+      title="Progettazione strutturale per general contractor - Studio Capoferri"
+      className="link-accent"
+    >
+      progettazione strutturale dedicata
+    </Link>
+    . Accettiamo anche commesse all&apos;estero:{" "}
     <Link href="/contatti#form-contatti" title="Contattaci - Studio Capoferri" className="link-accent">
-      Contattaci
+      contattaci
     </Link>
     .
   </>
@@ -163,10 +172,10 @@ export const chiSiamoPage = {
   paragraphs: [
     <>
       <strong>Studio Capoferri</strong> è uno studio di ingegneria civile ad Adro (Brescia), Italia. Da oltre quarant&apos;anni
-      progettiamo strutture in acciaio, cemento armato e muratura per imprese, architetti e studi tecnici: ville e case,
-      capannoni, sopraelevazioni, carpenterie speciali e interventi su edifici esistenti. Lavoriamo soprattutto in
-      Franciacorta e nel Nord e Centro Italia, con sedi operative e cantieri che richiedono risposta rapida e continuità
-      sul progetto.
+      progettiamo strutture in acciaio, cemento armato e muratura per imprese generali, general contractor, architetti e
+      studi tecnici: ville e case, capannoni, sopraelevazioni, carpenterie speciali e interventi su edifici esistenti.
+      Lavoriamo soprattutto in Franciacorta e nel Nord e Centro Italia, con sedi operative e cantieri che richiedono
+      risposta rapida e continuità sul progetto.
     </>,
     <>
       Restiamo sul lavoro dal modello al cantiere. Il calcolo strutturale segue NTC ed Eurocodici; produciamo disegni

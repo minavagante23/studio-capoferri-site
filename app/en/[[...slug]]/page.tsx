@@ -9,6 +9,7 @@ import ProgettiPage from "@/app/progetti/page";
 import ProjectAreaPage from "@/app/progetti/[area]/page";
 import ProjectCasePage from "@/app/progetti/[area]/[slug]/page";
 import ProgettazioneStrutturaleAcciaioItaliaPage from "@/app/progettazione-strutturale-acciaio-italia/page";
+import ProgettazioneStrutturalePerGeneralContractorPage from "@/app/progettazione-strutturale-per-general-contractor/page";
 import { SteelLandingPage, steelLandingBergamo, steelLandingBrescia, steelLandingMilano } from "@/lib/steel-landing";
 import ServiziPage from "@/app/servizi/page";
 import { englishStaticParams, resolveEnglishSlug } from "@/lib/locale-paths";
@@ -47,6 +48,8 @@ export default async function EnglishMirrorPage({ params }: Props) {
           return <ClientiInternazionaliPage />;
         case "progettazione-strutturale-acciaio-italia":
           return <ProgettazioneStrutturaleAcciaioItaliaPage />;
+        case "progettazione-strutturale-per-general-contractor":
+          return <ProgettazioneStrutturalePerGeneralContractorPage />;
         case "progettazione-strutture-acciaio-brescia":
           return <SteelLandingPage config={steelLandingBrescia} />;
         case "progettazione-strutture-acciaio-bergamo":

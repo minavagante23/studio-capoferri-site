@@ -11,6 +11,7 @@ export const itToEnPath: Record<string, string> = {
   "/privacy-policy": "/privacy-policy",
   "/clienti-internazionali": "/international-clients",
   "/progettazione-strutturale-acciaio-italia": "/structural-steel-design-italy",
+  "/progettazione-strutturale-per-general-contractor": "/structural-design-for-general-contractors",
   "/progettazione-strutture-acciaio-brescia": "/structural-engineer-brescia",
   "/progettazione-strutture-acciaio-bergamo": "/structural-engineer-bergamo",
   "/progettazione-strutture-acciaio-milano": "/structural-engineer-milan",
@@ -121,6 +122,8 @@ export function resolveEnglishSlug(slug: string[]): EnglishRoute | null {
         return { kind: "static", key: "clienti-internazionali" };
       case "structural-steel-design-italy":
         return { kind: "static", key: "progettazione-strutturale-acciaio-italia" };
+      case "structural-design-for-general-contractors":
+        return { kind: "static", key: "progettazione-strutturale-per-general-contractor" };
       case "structural-engineer-brescia":
         return { kind: "static", key: "progettazione-strutture-acciaio-brescia" };
       case "structural-engineer-bergamo":

@@ -63,15 +63,25 @@ export const projectCategories: Record<
   industriali: {
     metaTitle: "Progetti in ambito industriale",
     metaDescription:
-      "Capannoni, logistica, carroponte, grandi luci, progettazione strutturale Studio Capoferri.",
+      "Capannoni e opere industriali per imprese generali e general contractor: carroponte, grandi luci, disegni d'officina. Studio Capoferri.",
     heading: "Progetti industriali",
     intro: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Capannoni, logistica, produzione, sopraelevazioni. Carichi da carroponte, grandi luci, tempi di montaggio.
+          Capannoni, logistica, produzione, sopraelevazioni. Carichi da carroponte, grandi luci, tempi di montaggio:
+          committenze tipiche di imprese generali e general contractor.
         </p>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          L&apos;acciaio è spesso il materiale giusto: resistenza, officina, adattamento all&apos;impianto esistente.
+          L&apos;acciaio è spesso il materiale giusto: resistenza, officina, adattamento all&apos;impianto esistente. Per
+          il percorso tecnico dedicato vedi{" "}
+          <a
+            href="/progettazione-strutturale-per-general-contractor"
+            title="Progettazione strutturale per general contractor - Studio Capoferri"
+            className="link-accent"
+          >
+            progettazione strutturale per general contractor
+          </a>
+          .
         </p>
       </>
     ),

@@ -53,10 +53,18 @@ export function LocalizedInternationalPageContent() {
                   For steel design and shop-drawing outsourcing, see{" "}
                   <Link
                     href={localizeHref("/progettazione-strutturale-acciaio-italia", locale)}
-                    title="Structural steel design services in Italy"
+                    title={linkTitles.exportPartner(locale)}
                     className="link-accent"
                   >
-                    structural steel design services in Italy
+                    structural steel design for EU partners
+                  </Link>
+                  . For local general contractors in Northern Italy, see{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                    title={linkTitles.generalContractor(locale)}
+                    className="link-accent"
+                  >
+                    structural design for general contractors
                   </Link>
                   . Explore{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
@@ -73,10 +81,18 @@ export function LocalizedInternationalPageContent() {
                   Per partner UE su design e shop drawings:{" "}
                   <Link
                     href={localizeHref("/progettazione-strutturale-acciaio-italia", locale)}
-                    title="Progettazione strutturale acciaio Italia"
+                    title={linkTitles.exportPartner(locale)}
                     className="link-accent"
                   >
                     progettazione strutturale in acciaio per partner europei
+                  </Link>
+                  . Per imprese generali e general contractor in Italia:{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                    title={linkTitles.generalContractor(locale)}
+                    className="link-accent"
+                  >
+                    progettazione strutturale per general contractor
                   </Link>
                   . Approfondisci{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
