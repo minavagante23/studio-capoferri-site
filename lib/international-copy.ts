@@ -4,13 +4,13 @@ export const internationalHub = {
   it: {
     title: "Clienti internazionali",
     lead:
-      "Partner esteri e imprese UE che realizzano progetti in Italia: progettazione strutturale, strutture in acciaio, disegni d'officina e supporto in cantiere, con confronti tecnici in inglese.",
+      "General contractor, imprese generali e partner UE che realizzano progetti in Italia: progettazione strutturale, strutture in acciaio, disegni d'officina e supporto in cantiere, con confronti tecnici in inglese.",
     sections: [
       {
         id: "per-chi",
         heading: "Per chi lavoriamo",
         body: [
-          "Ingegneri e architetti stranieri, general contractor e fabricator europei, in particolare da Germania, Paesi Bassi, Belgio e Danimarca, che devono coordinare opere in Italia e cercano uno studio strutturale di riferimento sul territorio.",
+          "Ingegneri e architetti stranieri, general contractor, imprese generali e fabricator europei, in particolare da Germania, Paesi Bassi, Belgio e Danimarca, che devono coordinare opere in Italia e cercano uno studio strutturale di riferimento sul territorio.",
           "Interveniamo spesso su carpenterie in capannoni e edifici industriali esistenti a Milano e nel Nord Italia: strutture secondarie, soppalchi e piattaforme per logistica, produzione, data center, clean room e altri fit-out tecnici.",
           "I confronti di progetto possono svolgersi in inglese direttamente con i nostri ingegneri, non solo con un referente commerciale.",
         ],

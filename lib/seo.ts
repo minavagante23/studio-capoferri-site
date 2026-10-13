@@ -137,9 +137,10 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "clienti-internazionali": {
     title: "Structural engineers for projects in Italy",
     description:
-      "Structural engineers in Northern Italy for partners building in Italy: steel structures, fabrication shop drawings, Eurocodes, NTC and site support.",
+      "Structural engineers in Northern Italy for general contractors and EU partners building in Italy: steel structures, fabrication shop drawings, Eurocodes, NTC and site support.",
     path: "/clienti-internazionali",
     keywords: [
+      "general contractors Italy",
       "structural engineer Italy",
       "structural engineer Northern Italy",
       "shop drawings steel structures",
@@ -150,9 +151,10 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutturale-acciaio-italia": {
     title: "Structural engineers in Italy for fabricators",
     description:
-      "Structural engineers in Northern Italy for contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy: steel design, fabrication shop drawings, Eurocodes and NTC.",
+      "Structural engineers in Northern Italy for general contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy: steel design, fabrication shop drawings, Eurocodes and NTC.",
     path: "/progettazione-strutturale-acciaio-italia",
     keywords: [
+      "general contractors Italy",
       "structural engineer Italy",
       "shop drawings steel structures",
       "fabrication drawings structural steel",

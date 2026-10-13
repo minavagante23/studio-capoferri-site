@@ -4,13 +4,13 @@ export const exportPartnerCopy = {
   it: {
     title: "Progettazione strutturale in acciaio per partner europei",
     lead:
-      "Studio Capoferri progetta strutture in acciaio, disegni d'officina e supporto al montaggio per imprese e progettisti di Germania, Paesi Bassi, Belgio, Danimarca e altri paesi UE che realizzano opere in Italia.",
+      "Studio Capoferri progetta strutture in acciaio, disegni d'officina e supporto al montaggio per general contractor, imprese generali e progettisti di Germania, Paesi Bassi, Belgio, Danimarca e altri paesi UE che realizzano opere in Italia.",
     sections: [
       {
         id: "per-chi",
         heading: "Per chi è questa pagina",
         body: [
-          "General contractor, fabricator e studi di ingegneria del Nord Europa che devono coordinare progetti in Italia e cercano un partner strutturale locale, operativo sugli Eurocodici e sulle NTC italiane.",
+          "General contractor, imprese generali, fabricator e studi di ingegneria del Nord Europa che devono coordinare progetti in Italia e cercano un partner strutturale locale, operativo sugli Eurocodici e sulle NTC italiane.",
           "I confronti tecnici avvengono in inglese direttamente con i nostri ingegneri.",
         ],
       },
