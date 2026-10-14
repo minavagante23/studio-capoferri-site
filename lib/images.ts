@@ -6,15 +6,15 @@ export const heroFirstImageSrc = "/assets/hero-struttura-new.webp";
 export const homeChiSiamoImages = {
   struttura: {
     src: "/assets/home-chi-siamo-struttura-acciaio-chiuduno.webp",
-    alt: "Intradosso delle travature reticolari in acciaio a Chiuduno, progettazione strutturale Studio Capoferri",
+    alt: "Intradosso delle travature reticolari in acciaio a Chiuduno (BG), progettazione strutturale Studio Capoferri",
     altEn:
-      "Underside of steel lattice trusses in Chiuduno, structural design by Studio Capoferri",
+      "Underside of steel lattice trusses in Chiuduno (BG), structural steel design by Studio Capoferri",
   },
   cantiere: {
     src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/vista-interna-travature-ombre-chiuduno.webp",
-    alt: "Vista interna con travature reticolari e ombre a Chiuduno, progettazione strutturale Studio Capoferri",
+    alt: "Vista interna con travature reticolari in acciaio e ombre a Chiuduno (BG), progettazione strutturale Studio Capoferri",
     altEn:
-      "Interior view of steel lattice trusses and shadows in Chiuduno, structural design by Studio Capoferri",
+      "Interior view of steel lattice trusses and shadows in Chiuduno (BG), structural steel design by Studio Capoferri",
   },
 } as const;
 

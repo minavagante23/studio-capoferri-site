@@ -174,14 +174,50 @@ const copy = {
 
 const previews = {
   it: [
-    ["Strutture per il residenziale", "Ville e case in acciaio", "/assets/progetti-ambito-residenziale.webp", "Progetto residenziale con struttura in acciaio", "/progetti/residenziali"],
-    ["Progetti per l'industria", "Capannoni, carichi da carroponte, disegni d'officina", "/assets/progetto2.webp", "Capannone industriale con struttura portante in acciaio", "/progetti/industriali"],
-    ["Strutture per eventi", "Mostre, seminari, convegni", "/assets/progetto-ricettivo.webp", "Spazio per eventi con progettazione strutturale", "/progetti/ricettivi"],
+    [
+      "Strutture per il residenziale",
+      "Ville e case in acciaio",
+      "/assets/progetti-ambito-residenziale.webp",
+      "Progetto residenziale con struttura in acciaio - Studio Capoferri, progettazione strutturale in Lombardia",
+      "/progetti/residenziali",
+    ],
+    [
+      "Progetti per l'industria",
+      "Capannoni, carichi da carroponte, disegni d'officina",
+      "/assets/progetto2.webp",
+      "Capannone industriale con struttura portante in acciaio, progetti industriali Studio Capoferri in provincia di Brescia",
+      "/progetti/industriali",
+    ],
+    [
+      "Strutture per eventi",
+      "Mostre, seminari, convegni",
+      "/assets/progetto-ricettivo.webp",
+      "Spazio per eventi Superstudio a Milano, progettazione strutturale per mostre e convegni, Studio Capoferri",
+      "/progetti/ricettivi",
+    ],
   ],
   en: [
-    ["Residential structures", "Steel villas and homes, concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
-    ["Industrial projects", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
-    ["Structures for events", "Exhibitions, seminars and conferences", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
+    [
+      "Residential structures",
+      "Steel villas and homes, concept to erection support",
+      "/assets/progetti-ambito-residenziale.webp",
+      "Residential steel structure project - Studio Capoferri structural engineers in Lombardy",
+      "/progetti/residenziali",
+    ],
+    [
+      "Industrial projects",
+      "Production halls, crane loads and shop drawings",
+      "/assets/progetto2.webp",
+      "Industrial steel building with load-bearing frame, Studio Capoferri projects in the province of Brescia",
+      "/progetti/industriali",
+    ],
+    [
+      "Structures for events",
+      "Exhibitions, seminars and conferences",
+      "/assets/progetto-ricettivo.webp",
+      "Superstudio event venue in Milan, structural design for exhibitions and conferences, Studio Capoferri",
+      "/progetti/ricettivi",
+    ],
   ],
 } as const;
 

@@ -11,8 +11,8 @@ import { ui } from "@/lib/ui";
 /** Single full-bleed plate: strongest structure shot for first impression. */
 const heroImage = {
   src: "/assets/hero-struttura-new.webp",
-  altIt: "Interno industriale con struttura in acciaio e luce naturale, progetto Studio Capoferri",
-  altEn: "Industrial interior with steel structure and natural light - Studio Capoferri project",
+  altIt: "Interno industriale con struttura in acciaio e luce naturale, progetto Studio Capoferri - progettazione strutturale in Lombardia",
+  altEn: "Industrial interior with steel structure and natural light - Studio Capoferri structural engineers, Lombardy",
 } as const;
 
 /** Editorial ease: soft settle, no bounce. */

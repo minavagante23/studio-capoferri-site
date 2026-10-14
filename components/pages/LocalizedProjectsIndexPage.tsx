@@ -9,9 +9,27 @@ import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
 const englishProjectCards = [
-  ["Residential steel structures", "Steel villas and homes, concept to erection support", "/assets/progetti-ambito-residenziale.webp", "Residential steel structure project", "/progetti/residenziali"],
-  ["Industrial steel buildings", "Production halls, crane loads and shop drawings", "/assets/progetto2.webp", "Industrial building with steel structure", "/progetti/industriali"],
-  ["Event venue structures", "Exhibitions, seminars and conferences", "/assets/progetto-ricettivo.webp", "Event venue structural design project", "/progetti/ricettivi"],
+  [
+    "Residential steel structures",
+    "Steel villas and homes, concept to erection support",
+    "/assets/progetti-ambito-residenziale.webp",
+    "Residential steel structure project - Studio Capoferri structural engineers in Lombardy",
+    "/progetti/residenziali",
+  ],
+  [
+    "Industrial steel buildings",
+    "Production halls, crane loads and shop drawings",
+    "/assets/progetto2.webp",
+    "Industrial steel building with load-bearing frame, Studio Capoferri projects in the province of Brescia",
+    "/progetti/industriali",
+  ],
+  [
+    "Event venue structures",
+    "Exhibitions, seminars and conferences",
+    "/assets/progetto-ricettivo.webp",
+    "Superstudio event venue in Milan, structural design for exhibitions and conferences, Studio Capoferri",
+    "/progetti/ricettivi",
+  ],
 ] as const;
 
 export function LocalizedProjectsPageContent() {

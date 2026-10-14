@@ -2,9 +2,9 @@
 
 Studio Capoferri is a practice of structural engineers in Adro, near Brescia, Italy. For over 40 years it has designed steel buildings across Northern and North-Central Italy, with fabrication shop drawings and site support. Coverage is strongest in Lombardy (Brescia, Bergamo, Milan), and also Veneto, Piedmont, Emilia-Romagna and Tuscany.
 
-Contractors and fabricators in Germany, the Netherlands, Belgium, Denmark and the rest of the EU can speak with the engineers in English about steel design, fabrication shop drawings and site support for projects built in Italy.
+It works with general contractors and main contractors in Northern Italy, and with EU fabricators and overseas partners (Germany, the Netherlands, Belgium, Denmark and neighbouring countries) who need a local structural engineer for projects built in Italy. Technical discussions can be held in English.
 
-Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urbanistica con sede ad Adro (BS). Opera da oltre 40 anni nel Nord e Centro Nord Italia (Lombardia, Veneto, Piemonte, Emilia-Romagna, Toscana), con focus su Brescia, Bergamo e Milano. Specializzato in strutture in acciaio, progettazione strutturale, disegni d'officina, direzione lavori e sicurezza cantieri.
+Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urbanistica con sede ad Adro (BS). Opera da oltre 40 anni nel Nord e Centro Nord Italia (Lombardia, Veneto, Piemonte, Emilia-Romagna, Toscana), con focus su Brescia, Bergamo e Milano. Specializzato in strutture in acciaio, progettazione strutturale, disegni d'officina, direzione lavori e sicurezza cantieri. Lavora con imprese generali, general contractor e studi tecnici in Lombardia, e con partner UE che realizzano opere in Italia.
 
 ## Official website / Sito ufficiale
 
@@ -52,6 +52,8 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 - Industrial buildings and sheds / Capannoni e edifici industriali
 - Vertical extensions / Sopraelevazioni
 - Steel fabrication engineering / Carpenteria metallica
+- Shop drawings for fabricators and general contractors / Disegni d'officina per carpenterie e imprese generali
+- Structural design for general contractors / Progettazione strutturale per general contractor
 - Seismic upgrading / Miglioramento sismico
 - Fire safety / Sicurezza antincendio
 - NTC 2018 and Eurocodes
@@ -61,7 +63,8 @@ Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urba
 - Regions: Lombardy, Veneto, Piedmont, Emilia-Romagna, Tuscany
 - Main provinces: Brescia, Bergamo, Milan
 - Frequent areas: Franciacorta, Lake Iseo, Adro, Erbusco (BS)
-- Also: EU project partners needing Italian steel design and site interface
+- Italian general contractors and main contractors needing structural engineering and shop drawings
+- EU project partners needing Italian steel design, NTC/Eurocodes and site interface
 
 ## Project categories / Categorie progetti
 
