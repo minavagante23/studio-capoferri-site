@@ -54,7 +54,7 @@ export const servicesCopy = {
         id: "urbanistica-architettura",
         heading: "Urbanistica e architettura",
         paragraphs: [
-          "Quando il brief è integrato, teniamo insieme progetto architettonico e strumenti urbanistici.",
+          "Se il progetto lo richiede, curiamo insieme l'architettura e le pratiche urbanistiche, così l'edificio e le regole del piano restano allineati.",
         ],
         items: [
           [
@@ -210,7 +210,7 @@ export const servicesCopy = {
         id: "urbanistica-architettura",
         heading: "Planning and architecture",
         paragraphs: [
-          "When the brief is integrated, we hold architectural design and planning procedures together.",
+          "When the project needs it, we handle architecture and planning procedures together, so the building and the local plan stay aligned.",
         ],
         items: [
           [
