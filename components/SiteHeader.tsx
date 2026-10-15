@@ -161,8 +161,8 @@ export function SiteHeader() {
                       <li key={item.href}>
                         <Link
                           href={localizeHref(item.href, locale)}
-                          className={`focus-ring inline-flex min-h-[44px] items-center justify-center px-1 py-2 text-[0.95rem] font-medium tracking-normal transition-colors duration-200 lg:text-[1rem] ${
-                            active ? "text-[#b01010]" : "text-[#2a2a2a] hover:text-[#b01010]"
+                          className={`focus-ring inline-flex min-h-[44px] items-center justify-center px-1 py-2 text-[0.95rem] font-normal tracking-normal transition-colors duration-200 lg:text-[1rem] ${
+                            active ? "text-[#b01010]" : "text-[#1c1e21] hover:text-[#b01010]"
                           }`}
                           aria-current={active ? "page" : undefined}
                           title={linkTitles.nav(label, locale)}
