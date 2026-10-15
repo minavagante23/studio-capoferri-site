@@ -13,10 +13,10 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const HERO_FULL = "/assets/hero-struttura-new.webp";
-const HERO_MOBILE = "/assets/hero-struttura-new-960.webp";
+const HERO_MOBILE = "/assets/hero-struttura-new-720.webp";
 
 export default function HomePage({ locale = "it" }: { locale?: Locale }) {
-  // LCP hint: mobile gets the 960 plate, desktop the full plate (static export = no Next optimizer).
+  // LCP hint: mobile gets the 720 plate, desktop the full plate (static export = no Next optimizer).
   preload(HERO_MOBILE, {
     as: "image",
     type: "image/webp",

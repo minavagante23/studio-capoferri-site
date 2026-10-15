@@ -145,6 +145,8 @@ export function SiteHeader() {
                 width={220}
                 height={70}
                 className="h-11 w-auto sm:h-12 md:h-[70px]"
+                fetchPriority="low"
+                priority={false}
               />
             </Link>
 

@@ -196,7 +196,8 @@ main ul {
   font-size: 0.74rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-weight: 600;
+  /* 400 only in critical font set — avoid requesting a 600 face on LCP */
+  font-weight: 400;
 }
 
 .section-title {
