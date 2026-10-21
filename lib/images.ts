@@ -18,13 +18,6 @@ export const homeChiSiamoImages = {
   },
 } as const;
 
-export const chiSiamoPageImage = {
-  src: "/assets/ingegneria-civile-e-ambientale-adro-chi-siamo.webp",
-  alt: "Facciata di edificio con serramento a tutta altezza, progetto seguito da Studio Capoferri ad Adro, Brescia",
-  altEn:
-    "Building façade with full-height glazing on a project overseen by Studio Capoferri in Adro, Brescia",
-} as const;
-
 export const projectPreview = [
   {
     href: "/progetti/residenziali",
