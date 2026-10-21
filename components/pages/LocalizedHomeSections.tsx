@@ -228,46 +228,40 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
     <>
       <section id="chi-siamo" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
-          <div className="home-split-header reveal-block">
-            <div className="home-split-header__left">
-              <h2 className={titleCls}>{t.aboutTitle}</h2>
-            </div>
-            <div className="home-split-header__right space-y-4 sm:space-y-5">
-              {t.aboutBlocks.map((block, idx) => (
-                <p key={idx}>
-                  {block.textMobile ? (
-                    <>
-                      <span className="md:hidden">{block.textMobile}</span>
-                      <span className="hidden md:block">{block.text}</span>
-                    </>
-                  ) : (
-                    block.text
-                  )}
-                </p>
-              ))}
+          <div className="reveal-block">
+            <h2 className={titleCls}>{t.aboutTitle}</h2>
+            <div className="mt-8 grid grid-cols-1 items-start gap-8 md:mt-10 md:grid-cols-2 md:gap-x-[clamp(2rem,4vw,3.5rem)] md:gap-y-0">
+              <figure className="m-0 order-2 md:order-1">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1]">
+                  <Image
+                    src={homeChiSiamoImages.cantiere.src}
+                    alt={locale === "en" ? homeChiSiamoImages.cantiere.altEn : homeChiSiamoImages.cantiere.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width:768px) 50vw, 100vw"
+                    unoptimized
+                  />
+                </div>
+                <figcaption className="mt-2.5 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
+                  {locale === "en" ? "Steel structures" : "Strutture in acciaio"}
+                </figcaption>
+              </figure>
+              <div className="home-split-header__right order-1 space-y-4 md:order-2 sm:space-y-5">
+                {t.aboutBlocks.map((block, idx) => (
+                  <p key={idx} className="m-0">
+                    {block.textMobile ? (
+                      <>
+                        <span className="md:hidden">{block.textMobile}</span>
+                        <span className="hidden md:block">{block.text}</span>
+                      </>
+                    ) : (
+                      block.text
+                    )}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
-          <figure className="m-0">
-            <div className="grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#1c1e21]/25 sm:grid-cols-2">
-              {(["struttura", "cantiere"] as const).map((key) => {
-                const img = homeChiSiamoImages[key];
-                return (
-                  <div key={key} className="relative aspect-[4/3] bg-[#e8e6e1] sm:aspect-[5/4]">
-                    <Image
-                      src={img.src}
-                      alt={locale === "en" ? img.altEn : img.alt}
-                      fill
-                      className="object-cover"
-                      sizes="(min-width:640px) 50vw, 100vw"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-            <figcaption className="mt-2.5 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
-              {locale === "en" ? "Steel structures" : "Strutture in acciaio"}
-            </figcaption>
-          </figure>
         </div>
       </section>
 

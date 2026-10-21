@@ -78,7 +78,7 @@ body {
 }
 
 .font-display {
-  font-family: var(--font-title), ui-serif, Georgia, serif;
+  font-family: var(--font-body), system-ui, sans-serif;
 }
 
 /* Content lists: keep structure, no bullets */

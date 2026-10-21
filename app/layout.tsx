@@ -6,7 +6,7 @@ import { LocalePreferenceRedirect } from "@/components/LocalePreferenceRedirect"
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SkipLink } from "@/components/SkipLink";
-import { fontDisplay, fontSans } from "@/lib/fonts";
+import { fontSans } from "@/lib/fonts";
 import { offerCatalogJsonLd, organizationId } from "@/lib/jsonld";
 import { defaultOgImage } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -173,7 +173,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${fontSans.variable} ${fontDisplay.variable} ${fontSans.className} antialiased`}>
+      <body className={`${fontSans.variable} ${fontSans.className} antialiased`}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
         <script
           type="application/ld+json"

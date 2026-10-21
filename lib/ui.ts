@@ -7,7 +7,7 @@ export const ui = {
   brandGradient: "bg-[#1c1e21]",
   /** Compatto, stesso grafite (privacy / barre) */
   brandGradientCompact: "bg-[#1c1e21]",
-  /** Card progetto su sfondo chiaro — foto a vivo, titolo sotto */
+  /** Card progetto su sfondo chiaro ÔÇö foto a vivo, titolo sotto */
   projectCardLight:
     "group block overflow-hidden rounded-sm",
   /** Card progetto su sfondo scuro */
@@ -27,15 +27,15 @@ export const ui = {
   /** H1 case study / progetto singolo */
   caseStudyTitle: "section-title text-[1.9rem] text-[#2a2a2a] sm:text-4xl md:text-5xl",
 
-  /** H2 sezioni home (Chi siamo, Servizi, Contatti, …) — comporre con font-display */
+  /** H2 sezioni home (Chi siamo, Servizi, Contatti, ÔÇª) ÔÇö comporre con font-display */
   homeSectionTitle: "section-title home-section-title reveal-title",
   /** H2 sezioni home su sfondo scuro (Progetti, Statistiche) */
   homeSectionTitleInverted: "section-title home-section-title home-section-title--inverted reveal-title",
 
-  /** H2 sezione lunga (servizi, privacy, landing) — filetto brand via .section-heading-accent */
+  /** H2 sezione lunga (servizi, privacy, landing) ÔÇö filetto brand via .section-heading-accent */
   sectionHeadingAccent: "section-title section-heading-accent text-2xl text-[#2a2a2a]",
 
-  /** H2 galleria, “Progetti in evidenza” */
+  /** H2 galleria, ÔÇ£Progetti in evidenzaÔÇØ */
   gallerySectionTitle: "section-title text-xl text-[#2a2a2a] sm:text-2xl",
 
   /** H2 in card chiare (Recapiti, Dove siamo) */
@@ -44,10 +44,10 @@ export const ui = {
   /** Foto di contenuto (editoriale: angolo vivo, filetto leggero; .photo-alive rinvigorisce tono) */
   contentImage: "photo-alive relative overflow-hidden rounded-sm border border-[#1c1e21]/10",
 
-  /** Link inline (grafite → rosso logo al hover) */
+  /** Link inline (grafite ÔåÆ rosso logo al hover) */
   linkAccent: "link-accent",
 
-  /** Pulsante primario — grafite. Rosso solo su nav, hover testo, focus. */
+  /** Pulsante primario ÔÇö grafite. Rosso solo su nav, hover testo, focus. */
   btnPrimary:
     "inline-flex min-h-[48px] items-center justify-center rounded-sm bg-[#1c1e21] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#121416] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(176,16,16,0.55)] disabled:opacity-60",
 
@@ -63,7 +63,7 @@ export const ui = {
   btnOnDark:
     "inline-flex min-h-[48px] w-full items-center justify-center rounded-sm border border-white/25 bg-white px-8 py-3 text-sm font-semibold text-[#1c1e21] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgba(176,16,16,0.7)] sm:w-auto",
 
-  /** Cookie: accetta / rifiuta — stessi pesi visivi (pari dignità Garante) */
+  /** Cookie: accetta / rifiuta ÔÇö stessi pesi visivi (pari dignit├á Garante) */
   cookieAccept:
     "min-h-[48px] flex-1 rounded-md bg-white px-5 py-3 text-sm font-semibold text-[#1c1e21] transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:flex-none sm:min-w-[8.5rem] sm:px-6",
 
