@@ -327,9 +327,9 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-10 lg:grid-cols-4">
             {t.certifications.map(([title, text]) => (
-              <article key={title} className="home-plate reveal-block text-left">
+              <article key={title} className="home-plate reveal-block">
                 <h3 className={`font-display mb-2 text-base font-medium tracking-tight text-[#1c1e21] sm:mb-3 sm:text-lg md:text-xl`}>{title}</h3>
-                <p className="text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem] md:text-base">{text}</p>
+                <p className="copy-rhythm text-[0.88rem] text-[#444] sm:text-[0.95rem] md:text-base">{text}</p>
               </article>
             ))}
           </div>

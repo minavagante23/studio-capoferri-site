@@ -190,6 +190,10 @@ main ul {
 .copy-rhythm {
   line-height: 1.78;
   letter-spacing: normal;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .eyebrow {
@@ -231,7 +235,10 @@ main ul {
   letter-spacing: normal;
   color: var(--copy-body);
   font-weight: 400;
-  text-wrap: pretty;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .home-split-header__right--inverted {
@@ -295,6 +302,10 @@ main ul {
 
 .home-section-body {
   color: var(--copy-body);
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .home-section-body strong,
@@ -308,7 +319,10 @@ main ul {
   line-height: 1.75;
   letter-spacing: normal;
   color: var(--copy-body);
-  text-wrap: pretty;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 @media (min-width: 640px) {

@@ -45,7 +45,7 @@ export function LocalizedProjectsPageContent() {
           <div className={layoutContentMaxClass}>
             <div className="home-plate home-plate--well mb-8 sm:mb-14">
               <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>Progetti realizzati</h1>
-              <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>{progettiIndexIntro}</p>
+              <p className={`reveal-block max-w-none ${ui.bodyMuted}`}>{progettiIndexIntro}</p>
             </div>
             <div className="fine-divider mb-6 sm:mb-10" />
             <div className="lazy-section grid gap-6 sm:gap-10 md:grid-cols-3">
@@ -67,7 +67,7 @@ export function LocalizedProjectsPageContent() {
         <div className={layoutContentMaxClass}>
           <div className="home-plate home-plate--well mb-8 sm:mb-14">
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{isEn ? "Steel projects in Northern Italy" : "Progetti realizzati"}</h1>
-            <p className={`reveal-block max-w-none text-pretty ${ui.bodyMuted}`}>
+            <p className={`reveal-block max-w-none ${ui.bodyMuted}`}>
               {isEn
                 ? "Case histories from the studio: steel structures, also combined with reinforced concrete and masonry, and commissions on steel products such as decking for concrete slabs. Grouped by field: houses and villas, industry, and spaces for exhibitions and conferences."
                 : progettiIndexIntro}

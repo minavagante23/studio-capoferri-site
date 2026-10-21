@@ -33,7 +33,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
 
             <div className="reveal-block home-plate home-plate--well mb-12">
               <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{c.heading}</h1>
-              <div className={`${ui.bodyMuted} text-pretty`}>{c.intro}</div>
+              <div className={ui.bodyMuted}>{c.intro}</div>
             </div>
 
             <h2 className={`font-display reveal-title ${ui.gallerySectionTitle} mb-6`}>Progetti in evidenza</h2>
@@ -63,7 +63,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
           </nav>
           <div className="reveal-block home-plate home-plate--well mb-12">
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{t.heading}</h1>
-            <div className={`${ui.bodyMuted} text-pretty`}>
+            <div className={ui.bodyMuted}>
               {t.intro.map((p) => <p key={p} className="mb-4 last:mb-0">{p}</p>)}
             </div>
           </div>
