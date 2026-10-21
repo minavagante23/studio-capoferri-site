@@ -50,12 +50,13 @@ export function HeroHome() {
       <div className="absolute inset-0 overflow-hidden">
         {/* LCP image: no motion wrapper, sync decode, eager */}
         <picture className="absolute inset-0 block h-full w-full">
-          <source media="(max-width: 639px)" srcSet={heroImage.srcMobile} type="image/webp" />
+          {/* Desktop first in <source>; <img src> stays mobile so LCP never pulls the 1920 plate on phones. */}
+          <source media="(min-width: 640px)" srcSet={heroImage.src} type="image/webp" />
           <img
-            src={heroImage.src}
+            src={heroImage.srcMobile}
             alt={alt}
-            width={1920}
-            height={1080}
+            width={720}
+            height={405}
             className="absolute inset-0 h-full w-full object-cover object-center"
             fetchPriority="high"
             decoding="sync"
