@@ -68,6 +68,21 @@ body {
   min-height: calc(100svh - var(--header-h, 64px));
 }
 
+/* Hero copy: always right-side block, flush-right lines */
+.hero-home__content {
+  align-items: flex-end;
+}
+
+.hero-home__copy {
+  margin-left: auto;
+  text-align: right;
+}
+
+.hero-home__copy h1,
+.hero-home__copy p {
+  text-align: right;
+}
+
 /* Mobile: taller plate so the structure shot dominates before type */
 @media (max-width: 639px) {
   .hero-home,
