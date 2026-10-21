@@ -36,7 +36,7 @@ for (const extra of ["favicon.ico", "llms.txt", "CNAME"]) {
   }
 }
 
-// Keep Next App Router favicon + Apple touch icons aligned to the steel-truss mark.
+// Keep Next App Router favicon + Apple touch icons aligned to the SC monogram.
 const rootFavicon = path.join(root, "favicon.ico");
 if (fs.existsSync(rootFavicon)) {
   fs.copyFileSync(rootFavicon, path.join(root, "app", "favicon.ico"));
