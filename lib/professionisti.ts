@@ -30,8 +30,8 @@ export const professionisti: Professionista[] = [
   {
     id: "chiara-rebessi",
     name: "Ing. Chiara Rebessi",
-    roleIt: "Ingegnere",
-    roleEn: "Engineer",
+    roleIt: "Ingegnere edile",
+    roleEn: "Building engineer",
     bioIt:
       "Ingegnere edile dal 2016. Segue la progettazione edilizia e strutturale, la modellazione 3D delle strutture e la produzione dei disegni di officina. Formazione in Ingegneria Edile-Architettura all'Università degli Studi di Brescia.",
     bioEn:
