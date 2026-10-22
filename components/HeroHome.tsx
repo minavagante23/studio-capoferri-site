@@ -35,7 +35,7 @@ export function HeroHome() {
   // Image stays static (LCP). Only copy + scrim move after mount.
   const scrimOpacity = useTransform(scrollYProgress, [0, 0.55], [0, 0.28]);
   const copyY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"]);
-  const copyOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0.35]);
+  const copyOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0.78]);
   const enableScrollFx = motionReady && !reduceMotion;
   const alt = locale === "en" ? heroImage.altEn : heroImage.altIt;
 
