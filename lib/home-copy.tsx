@@ -1,0 +1,243 @@
+import Link from "next/link";
+import type { ReactNode } from "react";
+import {
+  certifications as originalCertifications,
+  certificationsIntro as originalCertificationsIntro,
+  homeChiSiamo,
+  homeProgettiIntro,
+  homeServiceCards,
+  homeServiziIntro,
+  zoneContent,
+  zoneDescription as originalZoneDescription,
+  zoneFooter as originalZoneFooter,
+} from "@/lib/content";
+import { homeChiSiamoImages } from "@/lib/images";
+import { localizeHref, type Locale } from "@/lib/i18n";
+import { linkTitles } from "@/lib/link-seo";
+
+export type AboutBlock = {
+  text: ReactNode;
+  textMobile?: ReactNode;
+  image: keyof typeof homeChiSiamoImages;
+};
+
+export const homeCopy = {
+  it: {
+    aboutTitle: homeChiSiamo.title,
+    aboutBlocks: homeChiSiamo.blocks.map((block) => ({
+      text: block.text,
+      textMobile: block.textMobile,
+      image: block.image,
+    })) as AboutBlock[],
+    servicesTitle: "Servizi",
+    servicesIntro: homeServiziIntro,
+    serviceCards: homeServiceCards.map((card) => [card.title, card.description, card.href]) as [
+      string,
+      string,
+      string,
+    ][],
+    allServices: "Tutti i servizi",
+    projectsTitle: "Progetti",
+    projectsIntro: homeProgettiIntro,
+    projectsCta: "Tutti i progetti",
+    certificationsTitle: "Abilitazioni professionali",
+    certificationsIntro: originalCertificationsIntro,
+    certifications: originalCertifications.map((item) => [item.title, item.text]) as [string, string][],
+    zoneTitle: zoneContent.title,
+    zoneHeading: zoneContent.heading,
+    zoneDescription: originalZoneDescription,
+    zoneFooter: originalZoneFooter,
+    contactsTitle: "Contatti",
+    office: "Sede",
+    phone: "Telefono",
+    writeUs: "Scrivici",
+  },
+  en: {
+    aboutTitle: "About",
+    aboutBlocks: [
+      {
+        text: (
+          <>
+            <strong>Studio Capoferri</strong> is a practice of structural engineers in Adro, near Brescia, Italy. For
+            more than forty years we have designed steel, reinforced-concrete and masonry structures across Franciacorta
+            and Northern and North-Central Italy. Calculation, shop drawings, site supervision. Architecture and planning
+            when the commission needs them.
+          </>
+        ),
+        textMobile: (
+          <>
+            <strong>Studio Capoferri</strong> is a practice of structural engineers in Adro, near Brescia, Italy. For
+            more than forty years we have designed steel, reinforced-concrete and masonry structures across Franciacorta
+            and Northern and North-Central Italy.
+          </>
+        ),
+        image: "struttura",
+      },
+      {
+        text: (
+          <>
+            Mostly residential and industrial work: steel houses and villas, halls, silos, vertical extensions, steelwork
+            and interventions on existing buildings. Based in Adro; commissions across Lombardy (Brescia, Bergamo, Milan)
+            and neighbouring regions. Fire design when the brief asks for it.
+          </>
+        ),
+        image: "cantiere",
+      },
+    ] as AboutBlock[],
+    servicesTitle: "Services",
+    servicesIntro:
+      "Structural engineers for steel buildings: calculations, shop drawings and site supervision. Architecture, planning and Italian permits when the project needs them.",
+    serviceCards: [
+      [
+        "Structural design",
+        "Steel structures, reinforced concrete and masonry. FEM analysis, BIM modelling, seismic checks and fire design.",
+        "/servizi#progettazione-strutturale",
+      ],
+      [
+        "Construction supervision",
+        "Technical supervision, site support, structural assessments and technical reports.",
+        "/servizi#direzione-lavori",
+      ],
+      ["Site safety", "Safety coordination (CSP/CSE), safety plans and risk management.", "/servizi#sicurezza-cantieri"],
+      [
+        "Planning and architecture",
+        "Architectural design, implementation plans, planning amendments and compliance analysis.",
+        "/servizi#urbanistica-architettura",
+      ],
+      [
+        "Italy-based technical services",
+        "Building permits (SCIA/CILA), cadastral filings and related Italian procedures.",
+        "/servizi#servizi-tecnici",
+      ],
+      [
+        "Property support",
+        "Technical support for transactions, appraisals, valuations and due diligence.",
+        "/servizi#assistenza-immobiliare",
+      ],
+    ] as [string, string, string][],
+    allServices: "All services",
+    projectsTitle: "Projects",
+    projectsIntro: "Industrial halls, steel houses, vertical extensions and specialist steelwork, selected by sector.",
+    projectsCta: "All projects",
+    certificationsTitle: "Professional qualifications",
+    certificationsIntro:
+      "All activities are carried out by professionals holding the qualifications required by sector regulations.",
+    certifications: [
+      ["CSP/CSE qualification", "Qualified professionals for the CSP and CSE safety coordination roles on site"],
+      [
+        "Fire prevention",
+        "Professionals listed by the Italian Ministry of the Interior under article 16 of Legislative Decree no. 139 of March 8, 2006",
+      ],
+      ["Energy certification", "Energy certification services for issuing Building Energy Performance Certificates (APE)"],
+      ["Professional software", "CAD, FEM analysis, structural calculation, BIM modelling."],
+    ] as [string, string][],
+    zoneTitle: "Where we work",
+    zoneHeading: "Northern Italy",
+    zoneDescription: (
+      <>
+        We operate throughout Northern and North-Central Italy (Lombardy, Veneto, Piedmont, Emilia-Romagna and Tuscany),
+        with a particular focus on the provinces of{" "}
+        <Link
+          href={localizeHref("/progettazione-strutture-acciaio-brescia", "en")}
+          title={linkTitles.acciaio("Brescia", "en")}
+          className="link-accent"
+        >
+          Brescia
+        </Link>
+        ,{" "}
+        <Link
+          href={localizeHref("/progettazione-strutture-acciaio-bergamo", "en")}
+          title={linkTitles.acciaio("Bergamo", "en")}
+          className="link-accent"
+        >
+          Bergamo
+        </Link>{" "}
+        and{" "}
+        <Link
+          href={localizeHref("/progettazione-strutture-acciaio-milano", "en")}
+          title={linkTitles.acciaio("Milan", "en")}
+          className="link-accent"
+        >
+          Milan
+        </Link>
+        . Based in Adro, near Brescia.
+      </>
+    ),
+    zoneFooter: (
+      <>
+        General contractors in Northern Italy:{" "}
+        <Link
+          href={localizeHref("/progettazione-strutturale-per-general-contractor", "en")}
+          title={linkTitles.generalContractor("en")}
+          className="link-accent"
+        >
+          structural design for general contractors
+        </Link>
+        . EU partners: speak with our engineers in English —{" "}
+        <Link href={localizeHref("/clienti-internazionali", "en")} title={linkTitles.international("en")} className="link-accent">
+          international clients
+        </Link>{" "}
+        ·{" "}
+        <Link href={localizeHref("/contatti#form-contatti", "en")} title={linkTitles.contatti("en")} className="link-accent">
+          get in touch
+        </Link>
+        .
+      </>
+    ),
+    contactsTitle: "Contact",
+    office: "Office",
+    phone: "Phone",
+    writeUs: "Write to us",
+  },
+} as const;
+
+export const homeProjectPreviews = {
+  it: [
+    [
+      "Strutture per il residenziale",
+      "Ville e case in acciaio",
+      "/assets/progetti-ambito-residenziale.webp",
+      "Progetto residenziale con struttura in acciaio - Studio Capoferri, progettazione strutturale in Lombardia",
+      "/progetti/residenziali",
+    ],
+    [
+      "Progetti per l'industria",
+      "Capannoni, carichi da carroponte, disegni d'officina",
+      "/assets/progetto2.webp",
+      "Capannone industriale con struttura portante in acciaio, progetti industriali Studio Capoferri in provincia di Brescia",
+      "/progetti/industriali",
+    ],
+    [
+      "Strutture per eventi",
+      "Mostre, seminari, convegni",
+      "/assets/progetto-ricettivo.webp",
+      "Spazio per eventi Superstudio a Milano, progettazione strutturale per mostre e convegni, Studio Capoferri",
+      "/progetti/ricettivi",
+    ],
+  ],
+  en: [
+    [
+      "Residential structures",
+      "Steel villas and homes, concept to erection support",
+      "/assets/progetti-ambito-residenziale.webp",
+      "Residential steel structure project - Studio Capoferri structural engineers in Lombardy",
+      "/progetti/residenziali",
+    ],
+    [
+      "Industrial projects",
+      "Production halls, crane loads and shop drawings",
+      "/assets/progetto2.webp",
+      "Industrial steel building with load-bearing frame, Studio Capoferri projects in the province of Brescia",
+      "/progetti/industriali",
+    ],
+    [
+      "Structures for events",
+      "Exhibitions, seminars and conferences",
+      "/assets/progetto-ricettivo.webp",
+      "Superstudio event venue in Milan, structural design for exhibitions and conferences, Studio Capoferri",
+      "/progetti/ricettivi",
+    ],
+  ],
+} as const;
+
+export type HomeCopy = (typeof homeCopy)[Locale];
