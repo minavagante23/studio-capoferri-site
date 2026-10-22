@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ContactCtaSection } from "@/components/ContactCtaSection";
+import { ContactForm } from "@/components/ContactForm";
 import { FeatureList } from "@/components/FeatureList";
 import { useLocale } from "@/components/LocaleProvider";
 import { internationalHub } from "@/lib/international-copy";
@@ -99,7 +99,23 @@ export function LocalizedInternationalPageContent() {
             </p>
           </article>
 
-          <ContactCtaSection locale={isEn ? "en" : "it"} title={copy.ctaTitle} description={copy.ctaDescription} />
+          <section id="form-contatti" className={`mt-10 sm:mt-14 ${scrollAnchorClass}`}>
+            <div className="reveal-block home-plate home-plate--well">
+              <h2 className={`font-display ${ui.sectionHeadingAccent} mb-2 sm:mb-3`}>{copy.ctaTitle}</h2>
+              <p className={`mb-6 w-full sm:mb-8 ${ui.bodyMuted}`}>{copy.ctaDescription}</p>
+              <ContactForm
+                formId="form-international-clients"
+                defaultSubject={
+                  isEn ? "International client — project in Italy" : "Cliente internazionale — progetto in Italia"
+                }
+                messagePlaceholder={
+                  isEn
+                    ? "Scope, location in Italy, drawings available, programme…"
+                    : "Scope, località in Italia, elaborati disponibili, tempi…"
+                }
+              />
+            </div>
+          </section>
         </div>
       </div>
     </main>
