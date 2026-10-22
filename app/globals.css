@@ -407,14 +407,9 @@ img.photo-alive {
   filter: brightness(1.04) contrast(1.07) saturate(1.12);
 }
 
-/* Team portraits: strong gelatin-silver B/W on hover (overrides .photo-alive) */
+/* Team portraits: gelatin-silver B/W on hover — desktop only (no sticky hover on touch) */
 .portrait-mann {
   transition: filter 0.55s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.group:hover .photo-alive img.portrait-mann,
-.group:hover img.portrait-mann {
-  /* Soft gelatin-silver — lighter than full print contrast */
-  filter: grayscale(1) contrast(1.22) brightness(0.94) sepia(0.16) saturate(0.45);
 }
 .portrait-mann-wash {
   pointer-events: none;
@@ -425,23 +420,32 @@ img.photo-alive {
   opacity: 0;
   transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), background 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.group:hover .portrait-mann-wash {
-  opacity: 1;
-  background:
-    radial-gradient(ellipse at 50% 40%, transparent 45%, rgba(28, 30, 33, 0.22) 100%),
-    linear-gradient(180deg, rgba(45, 42, 38, 0.06), rgba(20, 22, 24, 0.14));
+@media (hover: hover) and (pointer: fine) {
+  .group:hover .photo-alive img.portrait-mann,
+  .group:hover img.portrait-mann {
+    /* Soft gelatin-silver — lighter than full print contrast */
+    filter: grayscale(1) contrast(1.22) brightness(0.94) sepia(0.16) saturate(0.45);
+  }
+  .group:hover .portrait-mann-wash {
+    opacity: 1;
+    background:
+      radial-gradient(ellipse at 50% 40%, transparent 45%, rgba(28, 30, 33, 0.22) 100%),
+      linear-gradient(180deg, rgba(45, 42, 38, 0.06), rgba(20, 22, 24, 0.14));
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .portrait-mann,
   .portrait-mann-wash {
     transition: none;
   }
-  .group:hover .photo-alive img.portrait-mann,
-  .group:hover img.portrait-mann {
-    filter: brightness(1.04) contrast(1.07) saturate(1.12);
-  }
-  .group:hover .portrait-mann-wash {
-    opacity: 0;
+  @media (hover: hover) and (pointer: fine) {
+    .group:hover .photo-alive img.portrait-mann,
+    .group:hover img.portrait-mann {
+      filter: brightness(1.04) contrast(1.07) saturate(1.12);
+    }
+    .group:hover .portrait-mann-wash {
+      opacity: 0;
+    }
   }
 }
 
