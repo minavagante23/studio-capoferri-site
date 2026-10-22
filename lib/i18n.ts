@@ -114,8 +114,8 @@ export const chromeCopy = {
       line1: "Progettazione integrata",
       line2: "dalla fattibilità al cantiere",
       support: "Progettazione strutture in acciaio, ingegneria civile e architettura.",
-      supportMobileLine1: "Strutture in acciaio -",
-      supportMobileLine2: "ingegneria civile - architettura",
+      /** Single line on mobile (nowrap in HeroHome). */
+      supportMobile: "Strutture in acciaio - ingegneria civile - architettura",
     },
   },
   en: {
@@ -183,8 +183,7 @@ export const chromeCopy = {
       line1: "Integrated design",
       line2: "from feasibility to site",
       support: "Structural engineers for steel in Northern Italy.",
-      supportMobileLine1: "Structural engineers -",
-      supportMobileLine2: "steel - Northern Italy",
+      supportMobile: "Structural engineers - steel - Northern Italy",
     },
   },
 } as const;

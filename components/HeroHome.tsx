@@ -97,9 +97,8 @@ export function HeroHome() {
           </h1>
 
           <p className="mt-3 text-[0.78rem] leading-[1.4] text-white/90 sm:mt-4 sm:whitespace-nowrap sm:text-[0.9rem] sm:leading-snug sm:text-white/80 md:text-[1rem]">
-            <span className="drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:hidden">
-              <span className="block">{copy.supportMobileLine1}</span>
-              <span className="block">{copy.supportMobileLine2}</span>
+            <span className="block whitespace-nowrap text-[0.7rem] tracking-[-0.015em] drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:hidden">
+              {copy.supportMobile}
             </span>
             <span className="hidden sm:inline">{copy.support}</span>
           </p>

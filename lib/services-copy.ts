@@ -23,7 +23,7 @@ export const servicesCopy = {
           ],
           [
             "Modellazione FEM",
-            "Analisi agli elementi finiti per valutazioni statiche e dinamiche di strutture complesse.",
+            "Analisi agli elementi finiti per valutazioni statiche e dinamiche, anche su componenti di dettaglio come piastre di ancoraggio per shock transmitter.",
           ],
           [
             "Modellazione BIM",
@@ -180,7 +180,7 @@ export const servicesCopy = {
           ],
           [
             "FEM modelling",
-            "Finite-element analysis for static and dynamic assessment of complex structures.",
+            "Finite-element analysis for static and dynamic assessment, including detail components such as shock-transmitter anchor plates.",
           ],
           [
             "BIM modelling",
