@@ -45,7 +45,7 @@ export function ProjectPreviewCard({
           src={image}
           alt={alt}
           fill
-          className="photo-alive object-cover transition-[transform,filter] duration-500 ease-out group-hover:scale-[1.04] group-hover:[filter:brightness(1.06)_contrast(1.09)_saturate(1.16)] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+          className="photo-alive object-cover transition-[filter] duration-400 ease-out group-hover:[filter:brightness(1.03)_contrast(1.04)] motion-reduce:transition-none motion-reduce:group-hover:[filter:none]"
           sizes="(min-width:1024px) 33vw, 100vw"
         />
       </div>
