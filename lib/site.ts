@@ -51,7 +51,13 @@ export const site = {
   piva: "04732710985",
   /** Spaced so crawlers do not treat the VAT as a phone number. */
   pivaDisplay: "IT 0473 2710 985",
+  /**
+   * Formspree — account login: info@studiocapoferri.eu
+   * Contatti → info@ + luigi.capoferri@
+   * Carpenterie → info@ + luigi.capoferri@ + chiara.rebessi@
+   */
   formspreeId: "mqapdvrr",
+  formspreeCarpenterieId: "mljgyokz",
   /** Google Analytics 4 measurement ID (loaded only after cookie consent). */
   gaMeasurementId: "G-53HR1FFCQC",
 } as const;

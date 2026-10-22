@@ -25,6 +25,10 @@ export const linkTitles = {
     locale === "en"
       ? "Structural design for general contractors in Northern Italy - Studio Capoferri"
       : "Progettazione strutturale per general contractor - Studio Capoferri",
+  fabricators: (locale: SeoLocale = "it") =>
+    locale === "en"
+      ? "Structural design for steel fabricators - Studio Capoferri"
+      : "Progettazione strutturale per carpenterie metalliche - Studio Capoferri",
   scopriServizi: (locale: SeoLocale = "it") => (locale === "en" ? "All services - Studio Capoferri" : "Tutti i servizi - Studio Capoferri"),
   tuttiProgetti: (locale: SeoLocale = "it") => (locale === "en" ? "All projects - Studio Capoferri" : "Tutti i progetti - Studio Capoferri"),
   formContatti: (locale: SeoLocale = "it") => (locale === "en" ? "Write to us using the contact form - Studio Capoferri" : "Scrivici dal form contatti - Studio Capoferri"),

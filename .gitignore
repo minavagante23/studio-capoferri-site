@@ -44,3 +44,15 @@ WhatsApp\ Image*.jpeg
 
 # legacy scaffold folder (optional remove)
 next-scaffold/
+
+# Raw shop-drawing sources (packaged anonymized zip lives in assets/downloads/)
+DISEGNI COSTRUTTIVI/
+DISEGNI OFFICINA/
+assets/downloads/_anon-pdfs/
+assets/downloads/_anon-preview/
+assets/downloads/_pack/
+
+# Raw portrait dumps (processed into assets/professionisti/)
+_MG_*.png
+_MG_*.jpg
+

@@ -82,6 +82,19 @@ export function SiteFooter() {
                 <li>
                   <Link
                     className={ui.footerLink}
+                    href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
+                    title={
+                      locale === "en"
+                        ? "Structural design for steel fabricators"
+                        : "Progettazione strutturale per carpenterie"
+                    }
+                  >
+                    {locale === "en" ? "For steel fabricators" : "Per carpenterie"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={ui.footerLink}
                     href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
                     title={linkTitles.generalContractor(locale)}
                   >

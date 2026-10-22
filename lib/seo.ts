@@ -177,6 +177,19 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
       "main contractor structural engineer Italy",
     ],
   },
+  "progettazione-strutturale-per-carpenterie": {
+    title: "Structural design for steel fabricators",
+    description:
+      "Studio Capoferri partners with EN 1090 steel workshops: analysis, 3D/Tekla and fabrication drawings. Download sample shop drawings and request a quote.",
+    path: "/progettazione-strutturale-per-carpenterie",
+    keywords: [
+      "structural engineer for steel fabricators Italy",
+      "shop drawings steel workshop",
+      "EN 1090 structural design partner",
+      "Tekla fabrication drawings Italy",
+      "steel canopy stair shop drawings",
+    ],
+  },
   "privacy-policy": {
     title: "Privacy policy",
     description: "Privacy and cookie information for Studio Capoferri SRL STP.",
