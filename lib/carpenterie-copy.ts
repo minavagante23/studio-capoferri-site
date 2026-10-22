@@ -14,11 +14,11 @@ export const carpenterieCopy = {
     downloadHeading: "Esempi di elaborati d'officina",
     downloadBody:
       "Esempi di tavole d'officina consegnate dallo studio. Solo a scopo di valutazione dello standard elaborati, non per uso costruttivo.",
-    downloadHint: "Il pacchetto ZIP si ottiene compilando e inviando la",
+    downloadHint: "Il pacchetto ZIP è disponibile a seguito della",
     downloadHintLink: "richiesta qui sotto",
     formHeading: "Richiesta di preventivo",
     formLead:
-      "Compilate il modulo: la richiesta arriva allo studio e, a conferma, potete scaricare gli esempi elaborati.",
+      "A seguito del completamento del modulo, la richiesta viene inviata allo studio e parte il download degli esempi di elaborati.",
     sections: [
       {
         id: "cosa-facciamo",
@@ -93,11 +93,11 @@ export const carpenterieCopy = {
     downloadHeading: "Sample fabrication drawings",
     downloadBody:
       "Examples of shop drawings delivered by the practice. For evaluation of drawing standard only, not for construction use.",
-    downloadHint: "Sample drawings download when you submit the",
+    downloadHint: "The ZIP pack is available after completing the",
     downloadHintLink: "enquiry form below",
     formHeading: "Quote enquiry",
     formLead:
-      "Submit the form: we are notified, and the sample drawings download is offered on the confirmation screen.",
+      "Upon completion of the form, the enquiry is sent to the studio and the sample drawings download starts.",
     sections: [
       {
         id: "what-we-do",
