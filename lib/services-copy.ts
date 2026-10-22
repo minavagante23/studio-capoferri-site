@@ -157,8 +157,8 @@ export const servicesCopy = {
     ctaDescription: "Oggetto, tempi e vincoli dell'intervento.",
   },
   en: {
-    title: "Structural design and shop drawings",
-    lead: "Structural design (steel, reinforced concrete, masonry: FEM, BIM, shop drawings, testing), planning and architecture, construction supervision and consultancy, building and cadastral filings, site safety (CSP/CSE), property support.",
+    title: "Structural engineers for steel design and shop drawings",
+    lead: "Structural engineers in Northern Italy for steel, reinforced concrete and masonry: FEM, BIM, shop drawings, testing, planning and architecture, construction supervision, Italian filings, site safety (CSP/CSE) and property support.",
     fabricatorsNote: "For steel fabricators and EN 1090 workshops, see",
     gcNote: "For general contractors working in Northern Italy, see",
     internationalNote: "For overseas partners and EU fabricators, see",

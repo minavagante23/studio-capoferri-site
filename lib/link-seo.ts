@@ -23,11 +23,11 @@ export const linkTitles = {
       : "Acciaio per partner UE - Studio Capoferri",
   generalContractor: (locale: SeoLocale = "it") =>
     locale === "en"
-      ? "Structural design for general contractors in Northern Italy - Studio Capoferri"
+      ? "Structural engineers for general contractors in Italy - Studio Capoferri"
       : "Progettazione strutturale per general contractor - Studio Capoferri",
   fabricators: (locale: SeoLocale = "it") =>
     locale === "en"
-      ? "Structural design for steel fabricators - Studio Capoferri"
+      ? "Structural engineers for EN 1090 steel fabricators - Studio Capoferri"
       : "Progettazione strutturale per carpenterie metalliche - Studio Capoferri",
   scopriServizi: (locale: SeoLocale = "it") => (locale === "en" ? "All services - Studio Capoferri" : "Tutti i servizi - Studio Capoferri"),
   tuttiProgetti: (locale: SeoLocale = "it") => (locale === "en" ? "All projects - Studio Capoferri" : "Tutti i progetti - Studio Capoferri"),

@@ -12,7 +12,7 @@ import { ui } from "@/lib/ui";
 export function LocalizedAboutPageContent() {
   const locale = useLocale();
   const isEn = locale === "en";
-  const title = isEn ? "Structural engineers near Brescia" : chiSiamoPage.title;
+  const title = isEn ? "Structural engineers in Northern Italy" : chiSiamoPage.title;
   const paragraphs = isEn ? chiSiamoEnParagraphs : chiSiamoPage.paragraphs;
   const peopleTitle = isEn ? "Engineers" : "Professionisti";
   const linkedinLabel = isEn ? "LinkedIn profile" : "Profilo LinkedIn";

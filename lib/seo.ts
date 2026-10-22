@@ -88,9 +88,9 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   "chi-siamo": {
-    title: "Structural engineering practice near Brescia",
+    title: "Structural engineers in Northern Italy",
     description:
-      "Studio Capoferri works with general contractors, architects and engineering offices from Adro near Brescia: steel buildings, shop drawings and site support in Northern Italy.",
+      "Studio Capoferri works with general contractors, architects and engineering offices from Adro near Brescia: steel buildings, shop drawings and site support across Northern Italy.",
     path: "/chi-siamo",
     keywords: [
       "structural engineering practice Italy",
@@ -100,7 +100,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   servizi: {
-    title: "Structural design and shop drawings",
+    title: "Structural engineers for steel design and shop drawings",
     description:
       "Structural engineers in Northern Italy for general contractors: steel design to NTC and Eurocodes, fabrication shop drawings, construction supervision and site safety.",
     path: "/servizi",
@@ -114,7 +114,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   progetti: {
-    title: "Steel projects in Northern Italy",
+    title: "Steel structure projects in Northern Italy",
     description:
       "Projects by structural engineers in Northern Italy: steel houses, industrial halls, crane buildings and event venues across Lombardy.",
     path: "/progetti",
@@ -126,9 +126,9 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   contatti: {
-    title: "Contact structural engineers in Italy",
+    title: "Contact our structural engineers in Italy",
     description:
-      "Contact structural engineers in Adro, near Brescia, for steel design, fabrication shop drawings and site support on projects in Italy.",
+      "Write to structural engineers in Adro, near Brescia, for steel design, fabrication shop drawings and site support on projects in Italy.",
     path: "/contatti",
     keywords: [
       "structural engineer Italy",
@@ -165,7 +165,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   "progettazione-strutturale-per-general-contractor": {
-    title: "Structural design for general contractors",
+    title: "Structural engineers for general contractors in Italy",
     description:
       "Structural engineers in Northern Italy for general contractors and main contractors: steel design, fabrication shop drawings and construction supervision in Lombardy.",
     path: "/progettazione-strutturale-per-general-contractor",
@@ -178,9 +178,9 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   "progettazione-strutturale-per-carpenterie": {
-    title: "Structural design for steel fabricators",
+    title: "Structural engineers for EN 1090 steel fabricators",
     description:
-      "Studio Capoferri partners with EN 1090 steel workshops: analysis, 3D/Tekla and fabrication drawings. Download sample shop drawings and request a quote.",
+      "Structural engineers in Northern Italy for EN 1090 workshops: analysis, 3D/Tekla and fabrication drawings. Request a quote — sample shop drawings download with the form.",
     path: "/progettazione-strutturale-per-carpenterie",
     keywords: [
       "structural engineer for steel fabricators Italy",
@@ -238,7 +238,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
 
 const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
   residenziali: {
-    title: "Residential steel structures in Northern Italy",
+    title: "Steel houses and residential structures in Northern Italy",
     description:
       "Structural engineers for houses and steel villas in Lombardy and Northern Italy: frames, foundations and fabrication drawings.",
     path: "/progetti/residenziali",
@@ -247,12 +247,12 @@ const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
   industriali: {
     title: "Industrial steel buildings in Northern Italy",
     description:
-      "Structural engineers for industrial halls, crane buildings and logistics structures in Northern Italy, including fabrication shop drawings.",
+      "Structural engineers for industrial halls, crane buildings, silos and logistics structures in Northern Italy, including fabrication shop drawings.",
     path: "/progetti/industriali",
     keywords: ["industrial steel building Italy", "steel warehouse design Northern Italy", "crane steel structure design"],
   },
   ricettivi: {
-    title: "Event venue structures in Milan",
+    title: "Structures for exhibitions and events in Northern Italy",
     description:
       "Structural engineers for exhibition halls, seminar rooms and event venues in Milan and Northern Italy.",
     path: "/progetti/ricettivi",

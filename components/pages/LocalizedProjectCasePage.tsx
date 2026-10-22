@@ -85,6 +85,41 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 <article className={`reveal-block home-plate home-plate--well ${ui.bodyMuted}`}>{cs.body}</article>
 
                 <ProjectImageLightbox images={cs.gallery} className="mt-10" />
+                <p className={`reveal-block mt-8 ${ui.bodyMuted}`}>
+                  {area === "industriali" ? (
+                    <>
+                      Per carpenterie metalliche e imprese generali vedi anche{" "}
+                      <Link
+                        href="/progettazione-strutturale-per-carpenterie"
+                        title={linkTitles.fabricators("it")}
+                        className="link-accent"
+                      >
+                        progettazione per carpenterie
+                      </Link>{" "}
+                      e{" "}
+                      <Link
+                        href="/progettazione-strutturale-per-general-contractor"
+                        title={linkTitles.generalContractor("it")}
+                        className="link-accent"
+                      >
+                        progettazione per general contractor
+                      </Link>
+                      .
+                    </>
+                  ) : (
+                    <>
+                      Per imprese generali e general contractor vedi anche{" "}
+                      <Link
+                        href="/progettazione-strutturale-per-general-contractor"
+                        title={linkTitles.generalContractor("it")}
+                        className="link-accent"
+                      >
+                        progettazione strutturale per general contractor
+                      </Link>
+                      .
+                    </>
+                  )}
+                </p>
                 <ContactCtaSection locale="it" title="Un intervento simile" description="Stesso tipo di opera, o un vincolo analogo." />
               </div>
             </div>
@@ -145,6 +180,41 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 )}
               </article>
               <ProjectImageLightbox images={gallery} className="mt-10" />
+              <p className={`reveal-block mt-8 ${ui.bodyMuted}`}>
+                {area === "industriali" ? (
+                  <>
+                    For steel fabricators and general contractors, see also{" "}
+                    <Link
+                      href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
+                      title={linkTitles.fabricators(locale)}
+                      className="link-accent"
+                    >
+                      structural engineers for EN 1090 fabricators
+                    </Link>{" "}
+                    and{" "}
+                    <Link
+                      href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                      title={linkTitles.generalContractor(locale)}
+                      className="link-accent"
+                    >
+                      structural engineers for general contractors
+                    </Link>
+                    .
+                  </>
+                ) : (
+                  <>
+                    For general contractors, see also{" "}
+                    <Link
+                      href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                      title={linkTitles.generalContractor(locale)}
+                      className="link-accent"
+                    >
+                      structural engineers for general contractors in Italy
+                    </Link>
+                    .
+                  </>
+                )}
+              </p>
               <ContactCtaSection
                 locale={locale}
                 title={locale === "en" ? "A similar brief" : "Un intervento simile"}

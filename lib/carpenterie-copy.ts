@@ -14,12 +14,11 @@ export const carpenterieCopy = {
     downloadHeading: "Esempi di elaborati d'officina",
     downloadBody:
       "Esempi di tavole d'officina consegnate dallo studio. Solo a scopo di valutazione dello standard elaborati, non per uso costruttivo.",
-    downloadHint:
-      "Il pacchetto ZIP si scarica automaticamente compilando e inviando la",
+    downloadHint: "Il pacchetto ZIP si ottiene compilando e inviando la",
     downloadHintLink: "richiesta qui sotto",
     formHeading: "Richiesta di preventivo",
     formLead:
-      "Compilate il modulo: all'invio parte il download degli esempi elaborati e la richiesta arriva allo studio.",
+      "Compilate il modulo: la richiesta arriva allo studio e, a conferma, potete scaricare gli esempi elaborati.",
     sections: [
       {
         id: "cosa-facciamo",
@@ -43,7 +42,7 @@ export const carpenterieCopy = {
     faq: [
       [
         "Potete mandare esempi di tavole d'officina?",
-        "Sì: all'invio della richiesta parte in automatico il download di un pacchetto ZIP con tavole tipologiche (casa, scala, soppalco).",
+        "Sì: dopo l'invio della richiesta potete scaricare un pacchetto ZIP con tavole tipologiche (casa, scala, soppalco).",
       ],
       [
         "Lavorate con Tekla?",
@@ -57,7 +56,7 @@ export const carpenterieCopy = {
     form: {
       successTitle: "Richiesta inviata",
       successBody:
-        "Vi risponderemo al più presto. Il download degli esempi di elaborati parte in automatico; se serve, potete ripeterlo dal pulsante qui sotto.",
+        "Vi risponderemo al più presto. Se il download degli esempi non parte da solo, usate il pulsante qui sotto.",
       successDownload: "Scarica esempi elaborati (ZIP)",
       successDownloadStarted: "Download avviato…",
       company: "Azienda",
@@ -88,17 +87,17 @@ export const carpenterieCopy = {
     },
   },
   en: {
-    title: "Structural design for steel fabricators",
+    title: "Structural engineers for EN 1090 steel fabricators",
     lead:
-      "Design partner for EN 1090-certified workshops: analysis and digitally signed deliverables, 3D models and fabrication drawings (general arrangement, assemblies and NC files for numerical control). Site supervision and filings, where needed, are agreed case by case.",
+      "Structural engineers in Northern Italy for EN 1090-certified workshops: analysis and digitally signed deliverables, 3D models and fabrication drawings (general arrangement, assemblies and NC files for numerical control). Site supervision and filings, where needed, are agreed case by case.",
     downloadHeading: "Sample fabrication drawings",
     downloadBody:
       "Examples of shop drawings delivered by the practice. For evaluation of drawing standard only, not for construction use.",
-    downloadHint: "The ZIP pack downloads automatically when you submit the",
+    downloadHint: "Sample drawings download when you submit the",
     downloadHintLink: "enquiry form below",
     formHeading: "Quote enquiry",
     formLead:
-      "Submit the form: the sample drawings download starts automatically, and the studio is notified.",
+      "Submit the form: we are notified, and the sample drawings download is offered on the confirmation screen.",
     sections: [
       {
         id: "what-we-do",
@@ -122,7 +121,7 @@ export const carpenterieCopy = {
     faq: [
       [
         "Can you send sample shop drawings?",
-        "Yes — when you submit the enquiry, a ZIP with typical drawings (house, stair, mezzanine) downloads automatically.",
+        "Yes — after you submit the enquiry you can download a ZIP with typical drawings (house, stair, mezzanine).",
       ],
       [
         "Do you work in Tekla?",
@@ -136,7 +135,7 @@ export const carpenterieCopy = {
     form: {
       successTitle: "Enquiry sent",
       successBody:
-        "We will get back to you shortly. The sample drawings download starts automatically; you can repeat it from the button below if needed.",
+        "We will get back to you shortly. If the sample drawings download does not start on its own, use the button below.",
       successDownload: "Download sample drawings (ZIP)",
       successDownloadStarted: "Download started…",
       company: "Company",

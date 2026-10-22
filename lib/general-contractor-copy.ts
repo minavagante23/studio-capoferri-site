@@ -75,9 +75,9 @@ export const generalContractorCopy = {
       "Oggetto dell'opera, tempi e vincoli: ti rispondiamo con una valutazione preliminare su fattibilità e percorso tecnico.",
   },
   en: {
-    title: "Structural design for general contractors in Northern Italy",
+    title: "Structural engineers for general contractors in Italy",
     lead:
-      "Studio Capoferri works with general contractors and main contractors on projects in Lombardy (Brescia, Bergamo, Milan) and Northern Italy: structural design, fabrication shop drawings, construction supervision and clear site interfaces.",
+      "Structural engineers in Northern Italy for general contractors and main contractors in Lombardy (Brescia, Bergamo, Milan) and beyond: steel design, fabrication shop drawings, construction supervision and clear site interfaces.",
     sections: [
       {
         id: "who",

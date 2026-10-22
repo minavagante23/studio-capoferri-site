@@ -90,11 +90,11 @@ export function LocalizedContactsPageContent() {
           <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
             <div className="reveal-block home-plate home-plate--well">
               <h2 className={`font-display ${ui.sectionHeadingAccent} mb-2 sm:mb-3`}>
-                {isEn ? "Contact us" : "Contattaci"}
+                {isEn ? "Speak with our engineers" : "Contattaci"}
               </h2>
               <p className={`mb-6 w-full sm:mb-8 ${ui.bodyMuted}`}>
                 {isEn
-                  ? "Scope, programme and constraints. We reply in English."
+                  ? "Tell us about scope, programme and constraints. We reply in English."
                   : "Compila il form con i dettagli del tuo intervento. Riceverai un riscontro tecnico puntuale dal nostro team."}
               </p>
               <ContactForm />

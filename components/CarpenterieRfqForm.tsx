@@ -16,8 +16,8 @@ import { ui } from "@/lib/ui";
 type FieldErrors = Partial<Record<"name" | "email" | "message" | "privacy", string>>;
 
 const SAMPLES_ZIP_NAME = "studio-capoferri-esempi-elaborati-officina.zip";
-/** After auto-download, wait before allowing a manual re-download. */
-const DOWNLOAD_COOLDOWN_MS = 20_000;
+/** Brief pause after a manual click so a double-tap does not fire twice. */
+const MANUAL_DOWNLOAD_COOLDOWN_MS = 8_000;
 
 function triggerSamplesDownload() {
   if (!carpenterieDownloadHref || typeof document === "undefined") return;
@@ -43,14 +43,9 @@ export function CarpenterieRfqForm() {
   const [privacy, setPrivacy] = useState(false);
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  /** Always true after success so blocked auto-downloads still have a clickable fallback. */
   const [downloadReady, setDownloadReady] = useState(true);
   const cooldownTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  const armDownloadCooldown = useCallback(() => {
-    setDownloadReady(false);
-    if (cooldownTimer.current) clearTimeout(cooldownTimer.current);
-    cooldownTimer.current = setTimeout(() => setDownloadReady(true), DOWNLOAD_COOLDOWN_MS);
-  }, []);
 
   useEffect(
     () => () => {
@@ -59,17 +54,17 @@ export function CarpenterieRfqForm() {
     [],
   );
 
-  const runSamplesDownload = useCallback(
-    (linkText: string) => {
-      triggerSamplesDownload();
-      trackEvent("file_download", {
-        file_name: SAMPLES_ZIP_NAME,
-        link_text: linkText,
-      });
-      armDownloadCooldown();
-    },
-    [armDownloadCooldown],
-  );
+  const runSamplesDownload = useCallback((linkText: string, withCooldown: boolean) => {
+    triggerSamplesDownload();
+    trackEvent("file_download", {
+      file_name: SAMPLES_ZIP_NAME,
+      link_text: linkText,
+    });
+    if (!withCooldown) return;
+    setDownloadReady(false);
+    if (cooldownTimer.current) clearTimeout(cooldownTimer.current);
+    cooldownTimer.current = setTimeout(() => setDownloadReady(true), MANUAL_DOWNLOAD_COOLDOWN_MS);
+  }, []);
 
   const toggle = (list: string[], id: string, set: (v: string[]) => void) => {
     set(list.includes(id) ? list.filter((x) => x !== id) : [...list, id]);
@@ -133,7 +128,9 @@ export function CarpenterieRfqForm() {
             form_id: "carpenterie-rfq",
           });
           if (carpenterieDownloadHref) {
-            runSamplesDownload(copy.successDownload);
+            // Best-effort auto start (may be blocked after await); button stays ready as fallback.
+            runSamplesDownload(copy.successDownload, false);
+            setDownloadReady(true);
           }
           setStatus("success");
         } else {
@@ -172,7 +169,7 @@ export function CarpenterieRfqForm() {
               type="button"
               disabled={!downloadReady}
               className={`${ui.btnPrimary} disabled:pointer-events-none disabled:opacity-50`}
-              onClick={() => runSamplesDownload(copy.successDownload)}
+              onClick={() => runSamplesDownload(copy.successDownload, true)}
             >
               {downloadReady ? copy.successDownload : copy.successDownloadStarted}
             </button>

@@ -26,21 +26,21 @@ export const areaCopy = {
   },
   en: {
     residenziali: {
-      heading: "Residential steel structures",
+      heading: "Steel houses and residential structures",
       intro: [
         "Houses, villas, complexes, multi-storey buildings. Steel, reinforced concrete, mixed frames.",
         "The frame, spans, foundations and erection are set with the architecture, on the plot.",
       ],
     },
     industriali: {
-      heading: "Industrial steel buildings",
+      heading: "Industrial steel buildings in Northern Italy",
       intro: [
         "Halls, logistics, production, agricultural and industrial silos, vertical extensions. Crane loads, long spans, erection time — typical general-contractor commissions.",
         "Steel is often the right material: strength, shop fabrication, fit to an existing plant.",
       ],
     },
     ricettivi: {
-      heading: "Event venue structures",
+      heading: "Structures for exhibitions and events",
       intro: [
         "Exhibitions, seminars, conferences and event venues.",
         "Halls and pavilions, including conversions of existing buildings.",
