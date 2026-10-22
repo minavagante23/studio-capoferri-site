@@ -39,14 +39,14 @@ export function LocalizedAboutPageContent() {
                   const bio = isEn ? person.bioEn : person.bioIt;
                   return (
                     <li key={person.id} className="reveal-block min-w-0">
-                      <figure className="m-0 w-full">
-                        <div className={`${ui.contentImage} relative aspect-[3/4] w-full max-w-[23rem] bg-[#e4e6eb]`}>
+                      <figure className="m-0 w-full max-w-[21rem]">
+                        <div className={`${ui.contentImage} relative aspect-[3/4] w-full bg-[#e4e6eb]`}>
                           <Image
                             src={person.src}
                             alt={isEn ? person.altEn : person.altIt}
                             fill
                             className="object-cover object-top"
-                            sizes="(min-width:640px) 23rem, 92vw"
+                            sizes="(min-width:640px) 21rem, 88vw"
                             unoptimized={person.src.endsWith(".svg")}
                           />
                         </div>
