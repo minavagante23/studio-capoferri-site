@@ -17,7 +17,7 @@ export const carpenterieCopy = {
     downloadHint:
       "Il pacchetto ZIP si scarica automaticamente compilando e inviando la",
     downloadHintLink: "richiesta qui sotto",
-    formHeading: "Richiesta di preventivo o collaborazione",
+    formHeading: "Richiesta di preventivo",
     formLead:
       "Compilate il modulo: all'invio parte il download degli esempi elaborati e la richiesta arriva allo studio.",
     sections: [
@@ -96,7 +96,7 @@ export const carpenterieCopy = {
       "Examples of shop drawings delivered by the practice. For evaluation of drawing standard only, not for construction use.",
     downloadHint: "The ZIP pack downloads automatically when you submit the",
     downloadHintLink: "enquiry form below",
-    formHeading: "Quote or collaboration enquiry",
+    formHeading: "Quote enquiry",
     formLead:
       "Submit the form: the sample drawings download starts automatically, and the studio is notified.",
     sections: [
