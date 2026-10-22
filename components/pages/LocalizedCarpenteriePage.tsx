@@ -66,6 +66,20 @@ export function LocalizedCarpenteriePage() {
     url: absolutePageUrl,
   };
 
+  const renderSection = (section: (typeof copy.sections)[number]) => (
+    <section key={section.id} id={section.id} className={scrollAnchorClass}>
+      <h2 className={sectionHeading}>{section.heading}</h2>
+      {"body" in section && section.body
+        ? section.body.map((p) => (
+            <p key={p} className={`mb-4 last:mb-0 ${ui.bodyMuted}`}>
+              {p}
+            </p>
+          ))
+        : null}
+      {"items" in section && section.items ? <FeatureList items={section.items} /> : null}
+    </section>
+  );
+
   return (
     <main id="main-content" className="section-shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
@@ -76,19 +90,7 @@ export function LocalizedCarpenteriePage() {
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
             <p className={ui.body}>{copy.lead}</p>
 
-            {copy.sections.map((section) => (
-              <section key={section.id} id={section.id} className={scrollAnchorClass}>
-                <h2 className={sectionHeading}>{section.heading}</h2>
-                {"body" in section && section.body
-                  ? section.body.map((p) => (
-                      <p key={p} className={`mb-4 last:mb-0 ${ui.bodyMuted}`}>
-                        {p}
-                      </p>
-                    ))
-                  : null}
-                {"items" in section && section.items ? <FeatureList items={section.items} /> : null}
-              </section>
-            ))}
+            {copy.sections.slice(0, 1).map(renderSection)}
 
             <section id="esempi-elaborati" className={scrollAnchorClass}>
               <h2 className={sectionHeading}>{copy.downloadHeading}</h2>
@@ -119,6 +121,8 @@ export function LocalizedCarpenteriePage() {
                 </p>
               )}
             </section>
+
+            {copy.sections.slice(1).map(renderSection)}
 
             <section id="faq" className={scrollAnchorClass}>
               <h2 className={sectionHeading}>{copy.faqHeading}</h2>
