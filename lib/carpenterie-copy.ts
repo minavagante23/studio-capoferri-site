@@ -13,7 +13,7 @@ export const carpenterieCopy = {
       "Partner di progettazione per officine certificate EN 1090: dal calcolo agli elaborati firmati, al modello 3D e ai disegni d'officina (disegni di montaggio, assemblaggi e file NC per controllo numerico). Direzione lavori e pratiche, se richieste, si definiscono caso per caso.",
     downloadHeading: "Esempi di elaborati d'officina",
     downloadBody:
-      "Pacchetto con tavole tipologiche d'officina (casa, scala antincendio, soppalco): piante, montaggi e particolari. Solo a scopo di valutazione dello standard elaborati, non per uso costruttivo.",
+      "Esempi di tavole d'officina consegnate dallo studio. Solo a scopo di valutazione dello standard elaborati, non per uso costruttivo.",
     downloadLocked:
       "Potete scaricare gli esempi di elaborati compilando la",
     downloadCta: "Esempi elaborati (ZIP)",
@@ -93,7 +93,7 @@ export const carpenterieCopy = {
       "Design partner for EN 1090-certified workshops: analysis and digitally signed deliverables, 3D models and fabrication drawings (general arrangement, assemblies and NC files for numerical control). Site supervision and filings, where needed, are agreed case by case.",
     downloadHeading: "Sample fabrication drawings",
     downloadBody:
-      "A pack of typical fabrication drawings (house, fire stair, mezzanine): plans, GA and details. For evaluation of drawing standard only, not for construction use.",
+      "Examples of shop drawings delivered by the practice. For evaluation of drawing standard only, not for construction use.",
     downloadLocked: "You can download the sample drawings by completing the",
     downloadCta: "Sample drawings (ZIP)",
     downloadSoon: "Pack in preparation",

@@ -88,7 +88,11 @@ export function LocalizedCarpenteriePage() {
         <div className={layoutContentMaxClass}>
           <article className={`reveal-block home-plate home-plate--well ${ui.articleMax}`}>
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
-            <p className={ui.body}>{copy.lead}</p>
+            <p className={ui.body}>
+              {copy.lead.split(/(EN 1090)/).map((part, i) =>
+                part === "EN 1090" ? <strong key={i}>EN 1090</strong> : part
+              )}
+            </p>
 
             {copy.sections.slice(0, 1).map(renderSection)}
 
