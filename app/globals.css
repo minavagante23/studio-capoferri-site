@@ -413,8 +413,8 @@ img.photo-alive {
 }
 .group:hover .photo-alive img.portrait-mann,
 .group:hover img.portrait-mann {
-  /* Deep blacks, lifted midtones, faint warm silver — not a flat CSS grayscale */
-  filter: grayscale(1) contrast(1.42) brightness(0.84) sepia(0.28) saturate(0.35);
+  /* Soft gelatin-silver — lighter than full print contrast */
+  filter: grayscale(1) contrast(1.22) brightness(0.94) sepia(0.16) saturate(0.45);
 }
 .portrait-mann-wash {
   pointer-events: none;
@@ -428,8 +428,8 @@ img.photo-alive {
 .group:hover .portrait-mann-wash {
   opacity: 1;
   background:
-    radial-gradient(ellipse at 50% 40%, transparent 35%, rgba(28, 30, 33, 0.45) 100%),
-    linear-gradient(180deg, rgba(45, 42, 38, 0.12), rgba(20, 22, 24, 0.28));
+    radial-gradient(ellipse at 50% 40%, transparent 45%, rgba(28, 30, 33, 0.22) 100%),
+    linear-gradient(180deg, rgba(45, 42, 38, 0.06), rgba(20, 22, 24, 0.14));
 }
 @media (prefers-reduced-motion: reduce) {
   .portrait-mann,

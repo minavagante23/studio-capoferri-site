@@ -1,18 +1,14 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
 import { CarpenterieRfqForm } from "@/components/CarpenterieRfqForm";
 import { FaqList } from "@/components/FaqList";
 import { FeatureList } from "@/components/FeatureList";
 import { useLocale } from "@/components/LocaleProvider";
-import { trackEvent } from "@/lib/analytics";
-import { carpenterieCopy, carpenterieDownloadHref } from "@/lib/carpenterie-copy";
+import { carpenterieCopy } from "@/lib/carpenterie-copy";
 import { organizationId } from "@/lib/jsonld";
 import { pageUrl } from "@/lib/seo";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
-
-const UNLOCK_KEY = "carpenterie-samples-unlocked";
 
 export function LocalizedCarpenteriePage() {
   const locale = useLocale();
@@ -20,24 +16,6 @@ export function LocalizedCarpenteriePage() {
   const copy = carpenterieCopy[isEn ? "en" : "it"];
   const sectionHeading = ui.longFormSectionHeading;
   const absolutePageUrl = pageUrl("/progettazione-strutturale-per-carpenterie", locale);
-  const [unlocked, setUnlocked] = useState(false);
-
-  useEffect(() => {
-    try {
-      setUnlocked(sessionStorage.getItem(UNLOCK_KEY) === "1");
-    } catch {
-      /* private mode */
-    }
-  }, []);
-
-  const unlock = useCallback(() => {
-    try {
-      sessionStorage.setItem(UNLOCK_KEY, "1");
-    } catch {
-      /* private mode */
-    }
-    setUnlocked(true);
-  }, []);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -99,31 +77,13 @@ export function LocalizedCarpenteriePage() {
             <section id="esempi-elaborati" className={scrollAnchorClass}>
               <h2 className={sectionHeading}>{copy.downloadHeading}</h2>
               <p className={ui.bodyMuted}>{copy.downloadBody}</p>
-              {unlocked && carpenterieDownloadHref ? (
-                <p className="mt-5">
-                  <a
-                    href={carpenterieDownloadHref}
-                    className={ui.btnPrimary}
-                    download
-                    onClick={() =>
-                      trackEvent("file_download", {
-                        file_name: "studio-capoferri-esempi-elaborati-officina.zip",
-                        link_text: copy.downloadCta,
-                      })
-                    }
-                  >
-                    {copy.downloadCta}
-                  </a>
-                </p>
-              ) : (
-                <p className={`mt-5 ${ui.bodyMuted}`}>
-                  {copy.downloadLocked}{" "}
-                  <a href="#richiesta" className="link-accent">
-                    {copy.formHeading}
-                  </a>
-                  .
-                </p>
-              )}
+              <p className={`mt-5 ${ui.bodyMuted}`}>
+                {copy.downloadHint}{" "}
+                <a href="#richiesta" className="link-accent">
+                  {copy.downloadHintLink}
+                </a>
+                .
+              </p>
             </section>
 
             {copy.sections.slice(1).map(renderSection)}
@@ -136,7 +96,7 @@ export function LocalizedCarpenteriePage() {
             <section id="richiesta" className={scrollAnchorClass}>
               <h2 className={sectionHeading}>{copy.formHeading}</h2>
               <p className={`mb-6 ${ui.bodyMuted}`}>{copy.formLead}</p>
-              <CarpenterieRfqForm onUnlocked={unlock} />
+              <CarpenterieRfqForm />
             </section>
           </article>
         </div>

@@ -14,13 +14,12 @@ export const carpenterieCopy = {
     downloadHeading: "Esempi di elaborati d'officina",
     downloadBody:
       "Esempi di tavole d'officina consegnate dallo studio. Solo a scopo di valutazione dello standard elaborati, non per uso costruttivo.",
-    downloadLocked:
-      "Potete scaricare gli esempi di elaborati compilando la",
-    downloadCta: "Esempi elaborati (ZIP)",
-    downloadSoon: "Pacchetto in preparazione",
+    downloadHint:
+      "Il pacchetto ZIP si scarica automaticamente compilando e inviando la",
+    downloadHintLink: "richiesta qui sotto",
     formHeading: "Richiesta di preventivo o collaborazione",
     formLead:
-      "Compilate il modulo: dopo l'invio si sblocca il download degli esempi elaborati e la richiesta arriva allo studio.",
+      "Compilate il modulo: all'invio parte il download degli esempi elaborati e la richiesta arriva allo studio.",
     sections: [
       {
         id: "cosa-facciamo",
@@ -44,7 +43,7 @@ export const carpenterieCopy = {
     faq: [
       [
         "Potete mandare esempi di tavole d'officina?",
-        "Sì: dopo l'invio della richiesta si sblocca il download di un pacchetto ZIP con tavole tipologiche (casa, scala, soppalco).",
+        "Sì: all'invio della richiesta parte in automatico il download di un pacchetto ZIP con tavole tipologiche (casa, scala, soppalco).",
       ],
       [
         "Lavorate con Tekla?",
@@ -95,12 +94,11 @@ export const carpenterieCopy = {
     downloadHeading: "Sample fabrication drawings",
     downloadBody:
       "Examples of shop drawings delivered by the practice. For evaluation of drawing standard only, not for construction use.",
-    downloadLocked: "You can download the sample drawings by completing the",
-    downloadCta: "Sample drawings (ZIP)",
-    downloadSoon: "Pack in preparation",
+    downloadHint: "The ZIP pack downloads automatically when you submit the",
+    downloadHintLink: "enquiry form below",
     formHeading: "Quote or collaboration enquiry",
     formLead:
-      "Submit the form: the sample drawings download unlocks on screen, and the studio is notified.",
+      "Submit the form: the sample drawings download starts automatically, and the studio is notified.",
     sections: [
       {
         id: "what-we-do",
@@ -124,7 +122,7 @@ export const carpenterieCopy = {
     faq: [
       [
         "Can you send sample shop drawings?",
-        "Yes — after you send the enquiry, a ZIP download unlocks with typical drawings (house, stair, mezzanine).",
+        "Yes — when you submit the enquiry, a ZIP with typical drawings (house, stair, mezzanine) downloads automatically.",
       ],
       [
         "Do you work in Tekla?",

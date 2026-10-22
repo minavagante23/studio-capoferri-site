@@ -15,11 +15,6 @@ import { ui } from "@/lib/ui";
 
 type FieldErrors = Partial<Record<"name" | "email" | "message" | "privacy", string>>;
 
-type Props = {
-  /** Called after a successful submit so the page can unlock the samples download. */
-  onUnlocked?: () => void;
-};
-
 const SAMPLES_ZIP_NAME = "studio-capoferri-esempi-elaborati-officina.zip";
 /** After auto-download, wait before allowing a manual re-download. */
 const DOWNLOAD_COOLDOWN_MS = 20_000;
@@ -35,7 +30,7 @@ function triggerSamplesDownload() {
   a.remove();
 }
 
-export function CarpenterieRfqForm({ onUnlocked }: Props) {
+export function CarpenterieRfqForm() {
   const locale = useLocale();
   const copy = carpenterieCopy[locale].form;
   const [company, setCompany] = useState("");
@@ -137,7 +132,6 @@ export function CarpenterieRfqForm({ onUnlocked }: Props) {
             locale,
             form_id: "carpenterie-rfq",
           });
-          onUnlocked?.();
           if (carpenterieDownloadHref) {
             runSamplesDownload(copy.successDownload);
           }
@@ -157,7 +151,6 @@ export function CarpenterieRfqForm({ onUnlocked }: Props) {
       location,
       message,
       name,
-      onUnlocked,
       phone,
       runSamplesDownload,
       scopes,
