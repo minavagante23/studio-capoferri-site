@@ -38,13 +38,13 @@ export function LocalizedAboutPageContent() {
                 return (
                   <li key={person.id} className="reveal-block min-w-0">
                     <figure className="m-0 w-full">
-                      <div className={`${ui.contentImage} relative aspect-[3/4] w-full bg-[#e4e6eb]`}>
+                      <div className={`${ui.contentImage} relative aspect-[3/4] w-full max-w-[23rem] bg-[#e4e6eb]`}>
                         <Image
                           src={person.src}
                           alt={isEn ? person.altEn : person.altIt}
                           fill
                           className="object-cover object-top"
-                          sizes="(min-width:640px) 26rem, 100vw"
+                          sizes="(min-width:640px) 23rem, 92vw"
                           unoptimized={person.src.endsWith(".svg")}
                         />
                       </div>

@@ -83,10 +83,9 @@ export function HeroHome() {
           className="hero-home__copy w-fit max-w-full"
           style={enableScrollFx ? { y: copyY, opacity: copyOpacity } : undefined}
         >
-          <p className="eyebrow mb-3 inline-flex max-w-full flex-row-reverse items-center gap-2.5 text-[0.68rem] tracking-[0.14em] text-white/85 sm:mb-3 sm:gap-3 sm:text-[0.74rem] sm:tracking-[0.12em] sm:text-white/80">
-            <span className="h-px w-6 shrink-0 bg-white/70 sm:w-8 sm:bg-white/55" aria-hidden />
-            <span className="min-w-0 drop-shadow-[0_1px_10px_rgba(0,0,0,0.55)] sm:hidden">{copy.locationMobile}</span>
-            <span className="hidden min-w-0 drop-shadow-[0_1px_10px_rgba(0,0,0,0.45)] sm:inline">{copy.location}</span>
+          <p className="eyebrow mb-3 text-[0.68rem] tracking-[0.14em] text-white/85 sm:mb-3 sm:text-[0.74rem] sm:tracking-[0.12em] sm:text-white/80">
+            <span className="drop-shadow-[0_1px_10px_rgba(0,0,0,0.55)] sm:hidden">{copy.locationMobile}</span>
+            <span className="hidden drop-shadow-[0_1px_10px_rgba(0,0,0,0.45)] sm:inline">{copy.location}</span>
           </p>
 
           <h1 className="font-display section-title text-[clamp(1.55rem,6.2vw,1.85rem)] leading-[1.12] tracking-[-0.022em] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.75)] sm:text-[clamp(2.45rem,8vw,4.6rem)] sm:leading-[1.04] sm:tracking-[-0.03em]">
@@ -98,8 +97,11 @@ export function HeroHome() {
             <span className="mt-1.5 hidden sm:mt-1 sm:block sm:whitespace-nowrap">{copy.line2}</span>
           </h1>
 
-          <p className="mt-4 border-t border-white/40 pt-3 text-[0.78rem] leading-[1.4] text-white/90 sm:mt-4 sm:whitespace-nowrap sm:border-t-0 sm:border-r sm:border-white/30 sm:pr-3.5 sm:pt-0 sm:text-[0.9rem] sm:leading-snug sm:text-white/80 md:text-[1rem]">
-            <span className="drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:hidden">{copy.supportMobile}</span>
+          <p className="mt-3 text-[0.78rem] leading-[1.4] text-white/90 sm:mt-4 sm:whitespace-nowrap sm:text-[0.9rem] sm:leading-snug sm:text-white/80 md:text-[1rem]">
+            <span className="drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:hidden">
+              <span className="block">{copy.supportMobileLine1}</span>
+              <span className="block">{copy.supportMobileLine2}</span>
+            </span>
             <span className="hidden sm:inline">{copy.support}</span>
           </p>
         </motion.div>
