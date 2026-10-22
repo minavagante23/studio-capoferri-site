@@ -45,15 +45,11 @@ export function LocalizedAboutPageContent() {
                             src={person.src}
                             alt={isEn ? person.altEn : person.altIt}
                             fill
-                            className="object-cover object-top transition-[filter] duration-500 ease-out group-hover:[filter:grayscale(1)_contrast(1.08)_brightness(0.92)] motion-reduce:transition-none motion-reduce:group-hover:[filter:none]"
+                            className="portrait-mann object-cover object-top"
                             sizes="(min-width:640px) 21rem, 88vw"
                             unoptimized={person.src.endsWith(".svg")}
                           />
-                          {/* Soft graphite wash — professional, no zoom */}
-                          <span
-                            aria-hidden
-                            className="pointer-events-none absolute inset-0 bg-[#1c1e21]/0 mix-blend-color transition-colors duration-500 ease-out group-hover:bg-[#1c1e21]/35 motion-reduce:transition-none motion-reduce:group-hover:bg-transparent"
-                          />
+                          <span aria-hidden className="portrait-mann-wash" />
                         </div>
                         <figcaption className="mt-4 w-full">
                           <p className="font-display text-xl font-medium tracking-tight text-[#1c1e21] transition-colors duration-300 group-hover:text-[#b01010] motion-reduce:transition-none sm:text-2xl">

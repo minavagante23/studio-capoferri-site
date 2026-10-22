@@ -407,6 +407,44 @@ img.photo-alive {
   filter: brightness(1.04) contrast(1.07) saturate(1.12);
 }
 
+/* Team portraits: strong gelatin-silver B/W on hover (overrides .photo-alive) */
+.portrait-mann {
+  transition: filter 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .photo-alive img.portrait-mann,
+.group:hover img.portrait-mann {
+  /* Deep blacks, lifted midtones, faint warm silver — not a flat CSS grayscale */
+  filter: grayscale(1) contrast(1.42) brightness(0.84) sepia(0.28) saturate(0.35);
+}
+.portrait-mann-wash {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), background 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .portrait-mann-wash {
+  opacity: 1;
+  background:
+    radial-gradient(ellipse at 50% 40%, transparent 35%, rgba(28, 30, 33, 0.45) 100%),
+    linear-gradient(180deg, rgba(45, 42, 38, 0.12), rgba(20, 22, 24, 0.28));
+}
+@media (prefers-reduced-motion: reduce) {
+  .portrait-mann,
+  .portrait-mann-wash {
+    transition: none;
+  }
+  .group:hover .photo-alive img.portrait-mann,
+  .group:hover img.portrait-mann {
+    filter: brightness(1.04) contrast(1.07) saturate(1.12);
+  }
+  .group:hover .portrait-mann-wash {
+    opacity: 0;
+  }
+}
+
 /* ─── touch-target: WCAG 2.2 minimum 44×44px ─── */
 .touch-target {
   position: relative;
