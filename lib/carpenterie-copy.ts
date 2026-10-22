@@ -18,7 +18,7 @@ export const carpenterieCopy = {
     downloadHintLink: "richiesta qui sotto",
     formHeading: "Richiesta di preventivo",
     formLead:
-      "A seguito del completamento del modulo, la richiesta viene inviata allo studio e parte il download degli esempi di elaborati.",
+      "A seguito del completamento del modulo, la richiesta viene inviata allo studio e parte il download degli elaborati forniti dallo studio al cliente.",
     sections: [
       {
         id: "cosa-facciamo",
