@@ -33,15 +33,16 @@ export const homeChiSiamo: { title: string; blocks: homeChiSiamoBlock[] } = {
       text: (
         <>
           Lavoriamo con imprese generali, general contractor, architetti e studi tecnici soprattutto sul residenziale e
-          sull&apos;industriale: ville e case in acciaio, capannoni, sopraelevazioni, carpenterie, interventi su esistenti.
+          sull&apos;industriale: ville e case in acciaio, capannoni, silos, sopraelevazioni, carpenterie, interventi su
+          esistenti.
           Sede ad Adro; commesse in Lombardia (Brescia, Bergamo, Milano) e nelle regioni vicine. Progettazione antincendio
           quando il brief lo chiede.
         </>
       ),
       textMobile: (
         <>
-          Residenziale e industriale: ville in acciaio, capannoni, sopraelevazioni, carpenterie. Lombardia e Nord-Centro
-          Italia. Antincendio quando serve.
+          Residenziale e industriale: ville in acciaio, capannoni, silos, sopraelevazioni, carpenterie. Lombardia e
+          Nord-Centro Italia. Antincendio quando serve.
         </>
       ),
       image: "cantiere",
@@ -87,7 +88,7 @@ export const homeServiceCards = [
 ] as const;
 
 export const homeProgettiIntro =
-  "Capannoni, ville in acciaio, sopraelevazioni, carpenterie. Una selezione per ambito: residenziale, industriale, eventi.";
+  "Capannoni, silos, ville in acciaio, sopraelevazioni, carpenterie. Una selezione per ambito: residenziale, industriale, eventi.";
 
 export const progettiIndexIntro =
   "Case history dello studio: strutture in acciaio, anche in abbinamento a cemento armato e muratura, e incarichi su prodotti in acciaio come le lamiere da getto. Raggruppate per ambito: case e ville, industria, spazi per mostre e convegni.";
@@ -173,7 +174,8 @@ export const chiSiamoPage = {
     <>
       <strong>Studio Capoferri</strong> è uno studio di ingegneria civile ad Adro (Brescia), Italia. Da oltre quarant&apos;anni
       progettiamo strutture in acciaio, cemento armato e muratura per imprese generali, general contractor, architetti e
-      studi tecnici: ville e case, capannoni, sopraelevazioni, carpenterie speciali e interventi su edifici esistenti.
+      studi tecnici: ville e case, capannoni, silos agricoli e industriali, sopraelevazioni, carpenterie speciali e
+      interventi su edifici esistenti.
       Lavoriamo soprattutto in Franciacorta e nel Nord e Centro Italia, con sedi operative e cantieri che richiedono
       risposta rapida e continuità sul progetto.
     </>,

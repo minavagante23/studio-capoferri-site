@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { ClientsStrip } from "@/components/home/ClientsStrip";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { StatsSection } from "@/components/home/StatsSection";
 import {
@@ -80,8 +81,8 @@ const copy = {
       {
         text: (
           <>
-            Mostly residential and industrial work: steel houses and villas, halls, vertical extensions, steelwork and
-            interventions on existing buildings. Based in Adro; commissions across Lombardy (Brescia, Bergamo, Milan)
+            Mostly residential and industrial work: steel houses and villas, halls, silos, vertical extensions, steelwork
+            and interventions on existing buildings. Based in Adro; commissions across Lombardy (Brescia, Bergamo, Milan)
             and neighbouring regions. Fire design when the brief asks for it.
           </>
         ),
@@ -264,6 +265,8 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           </div>
         </div>
       </section>
+
+      <ClientsStrip locale={locale} />
 
       <section id="servizi" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>

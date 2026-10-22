@@ -10,7 +10,7 @@ export const servicesCopy = {
         id: "progettazione-strutturale",
         heading: "Progettazione strutturale",
         paragraphs: [
-          "Progettiamo edifici e carpenterie per imprese generali e committenze civili e industriali: ville, capannoni, sopraelevazioni, ampliamenti, interventi su esistenti. Il riferimento normativo è NTC ed Eurocodici.",
+          "Progettiamo edifici e carpenterie per imprese generali e committenze civili e industriali: ville, capannoni, silos agricoli e industriali, sopraelevazioni, ampliamenti, interventi su esistenti. Il riferimento normativo è NTC ed Eurocodici.",
         ],
         items: [
           [
@@ -19,7 +19,7 @@ export const servicesCopy = {
           ],
           [
             "Strutture civili e industriali",
-            "Edifici residenziali, commerciali, industriali e infrastrutture: luci, carichi, sequenza di montaggio.",
+            "Edifici residenziali, commerciali, industriali e infrastrutture — anche silos per mangimi o impianti chimici: luci, carichi, sequenza di montaggio.",
           ],
           [
             "Modellazione FEM",
@@ -167,7 +167,7 @@ export const servicesCopy = {
         id: "progettazione-strutturale",
         heading: "Structural design",
         paragraphs: [
-          "We design buildings and steelwork for civil and industrial commissions: houses, halls, vertical extensions, additions, work on existing fabric. Design is to NTC and Eurocodes.",
+          "We design buildings and steelwork for civil and industrial commissions: houses, halls, agricultural and industrial silos, vertical extensions, additions, work on existing fabric. Design is to NTC and Eurocodes.",
         ],
         items: [
           [
@@ -176,7 +176,7 @@ export const servicesCopy = {
           ],
           [
             "Civil and industrial structures",
-            "Houses, commercial and industrial buildings, infrastructure: spans, loads, erection sequence.",
+            "Houses, commercial and industrial buildings, infrastructure — including feed and chemical-plant silos: spans, loads, erection sequence.",
           ],
           [
             "FEM modelling",

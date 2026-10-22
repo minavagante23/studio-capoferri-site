@@ -10,7 +10,7 @@ export const areaCopy = {
     industriali: {
       heading: "Progetti industriali",
       intro: [
-        "Capannoni, logistica, produzione, sopraelevazioni. Carichi da carroponte, grandi luci, tempi di montaggio: committenze tipiche di imprese generali e general contractor.",
+        "Capannoni, logistica, produzione, silos agricoli e industriali, sopraelevazioni. Carichi da carroponte, grandi luci, tempi di montaggio: committenze tipiche di imprese generali e general contractor.",
         "L'acciaio è spesso il materiale giusto: resistenza, officina, adattamento all'impianto esistente.",
       ],
     },
@@ -35,7 +35,7 @@ export const areaCopy = {
     industriali: {
       heading: "Industrial steel buildings",
       intro: [
-        "Halls, logistics, production, vertical extensions. Crane loads, long spans, erection time — typical general-contractor commissions.",
+        "Halls, logistics, production, agricultural and industrial silos, vertical extensions. Crane loads, long spans, erection time — typical general-contractor commissions.",
         "Steel is often the right material: strength, shop fabrication, fit to an existing plant.",
       ],
     },

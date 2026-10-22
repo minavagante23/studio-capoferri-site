@@ -13,7 +13,7 @@ export const generalContractorCopy = {
         id: "per-chi",
         heading: "Per chi è questa pagina",
         body: [
-          "General contractor e imprese generali di costruzione che devono affidare la parte strutturale a uno studio locale affidabile: nuove opere, ampliamenti, capannoni, carpenterie e interventi su esistenti.",
+          "General contractor e imprese generali di costruzione che devono affidare la parte strutturale a uno studio locale affidabile: nuove opere, ampliamenti, capannoni, silos, carpenterie e interventi su esistenti.",
           "Rispondiamo su fattibilità, carichi, sequenza di montaggio e deliverable (calcolo, shop drawings, assistenza in cantiere) senza passare da intermediari commerciali.",
         ],
       },
@@ -83,7 +83,7 @@ export const generalContractorCopy = {
         id: "who",
         heading: "Who this page is for",
         body: [
-          "General contractors and main contractors that need a reliable local structural engineer in Italy: new works, extensions, industrial halls, steelwork and interventions on existing buildings.",
+          "General contractors and main contractors that need a reliable local structural engineer in Italy: new works, extensions, industrial halls, silos, steelwork and interventions on existing buildings.",
           "We discuss feasibility, loads, erection sequence and deliverables (analysis, shop drawings, site support) directly with your technical team.",
         ],
       },
