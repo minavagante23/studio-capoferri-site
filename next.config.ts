@@ -70,6 +70,18 @@ if (isStaticExport) {
     { source: "/progetti/residenziali/villa-acciaio-veneto/", destination: "/progetti/residenziali/villa-acciaio-pollenza/", permanent: true },
     { source: "/en/projects/residential/steel-villa-veneto", destination: "/en/projects/residential/steel-villa-pollenza", permanent: true },
     { source: "/en/projects/residential/steel-villa-veneto/", destination: "/en/projects/residential/steel-villa-pollenza/", permanent: true },
+    { source: "/en/contacts", destination: "/en/contact/", permanent: true },
+    { source: "/en/contacts/", destination: "/en/contact/", permanent: true },
+    {
+      source: "/en/civil-and-environmental-engineering-studio",
+      destination: "/en/about/",
+      permanent: true,
+    },
+    {
+      source: "/en/civil-and-environmental-engineering-studio/",
+      destination: "/en/about/",
+      permanent: true,
+    },
     ...Object.entries(legacyRedirectMap).map(([source, destination]) => ({
       source: `/${source}`,
       destination,

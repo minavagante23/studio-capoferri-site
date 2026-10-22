@@ -51,7 +51,7 @@ export const generalContractorCopy = {
     proofHeading: "Esempi di lavoro su committenza industriale",
     proofBody:
       "Su opere industriali e carpenterie speciali consegniamo calcolo, disegni d'officina e supporto al montaggio con tempi e interfacce tipiche dell'impresa generale: tettoia reticolare a grande luce a Maranello (MO), capannone a Erbusco (BS) e altri interventi in Lombardia.",
-    faqTitle: "Domande frequenti",
+    faqHeading: "Domande frequenti",
     faq: [
       [
         "Lavorate con general contractor e imprese generali a Brescia?",
@@ -121,7 +121,7 @@ export const generalContractorCopy = {
     proofHeading: "Industrial commissions we support",
     proofBody:
       "On industrial and specialist steelwork we deliver calculation, shop drawings and erection support with the interfaces main contractors expect: a large-span space-truss canopy in Maranello (MO), an industrial hall in Erbusco (BS) and further works across Lombardy.",
-    faqTitle: "FAQ",
+    faqHeading: "FAQ",
     faq: [
       [
         "Do you work with general contractors in Brescia?",

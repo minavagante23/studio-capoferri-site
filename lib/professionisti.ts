@@ -38,7 +38,7 @@ export const professionisti: Professionista[] = [
       "Building engineer since 2016. She works on building and structural design, 3D structural modelling and fabrication shop drawings. Degree in Building Engineering–Architecture from the University of Brescia.",
     linkedin: "https://www.linkedin.com/in/chiara-rebessi-80b298b7",
     src: "/assets/professionisti/ingegner-chiara-rebessi.webp",
-    altIt: "Ing. Chiara Rebessi, Studio Capoferri",
-    altEn: "Building engineer Chiara Rebessi - Studio Capoferri",
+    altIt: "Ing. Chiara Rebessi, ingegnere edile - Studio Capoferri",
+    altEn: "Eng. Chiara Rebessi, building engineer - Studio Capoferri",
   },
 ];

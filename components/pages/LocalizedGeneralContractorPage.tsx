@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useLocale } from "@/components/LocaleProvider";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
+import { FaqList } from "@/components/FaqList";
+import { FeatureList } from "@/components/FeatureList";
+import { useLocale } from "@/components/LocaleProvider";
 import { generalContractorCopy } from "@/lib/general-contractor-copy";
 import { localizeHref } from "@/lib/i18n";
 import { organizationId } from "@/lib/jsonld";
@@ -15,7 +17,7 @@ export function LocalizedGeneralContractorPage() {
   const locale = useLocale();
   const isEn = locale === "en";
   const copy = generalContractorCopy[isEn ? "en" : "it"];
-  const sectionHeading = `font-display ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
+  const sectionHeading = ui.longFormSectionHeading;
   const absolutePageUrl = pageUrl("/progettazione-strutturale-per-general-contractor", locale);
 
   const faqJsonLd = {
@@ -53,8 +55,8 @@ export function LocalizedGeneralContractorPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <article className="home-plate home-plate--well max-w-[860px]">
-            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
+          <article className={`reveal-block home-plate home-plate--well ${ui.articleMax}`}>
+            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
             <p className={ui.body}>{copy.lead}</p>
 
             {copy.sections.map((section) => (
@@ -67,15 +69,7 @@ export function LocalizedGeneralContractorPage() {
                       </p>
                     ))
                   : null}
-                {"items" in section && section.items ? (
-                  <ul className="mt-2 list-none space-y-3 pl-0">
-                    {section.items.map(([title, text]) => (
-                      <li key={title}>
-                        <strong>{title}</strong>: {text}
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
+                {"items" in section && section.items ? <FeatureList items={section.items} /> : null}
               </section>
             ))}
 
@@ -136,15 +130,8 @@ export function LocalizedGeneralContractorPage() {
             </section>
 
             <section id="faq" className={scrollAnchorClass}>
-              <h2 className={sectionHeading}>{copy.faqTitle}</h2>
-              <dl className="space-y-5">
-                {copy.faq.map(([q, a]) => (
-                  <div key={q}>
-                    <dt className={`font-semibold text-[#1c1e21] ${ui.body}`}>{q}</dt>
-                    <dd className={`mt-1 ${ui.bodyMuted}`}>{a}</dd>
-                  </div>
-                ))}
-              </dl>
+              <h2 className={sectionHeading}>{copy.faqHeading}</h2>
+              <FaqList items={copy.faq} />
             </section>
 
             <p className={`mt-10 ${ui.bodyMuted}`}>
@@ -161,6 +148,14 @@ export function LocalizedGeneralContractorPage() {
                     className="link-accent"
                   >
                     steel design for EU partners
+                  </Link>
+                  . Workshops:{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
+                    title="Structural design for steel fabricators"
+                    className="link-accent"
+                  >
+                    for steel fabricators
                   </Link>
                   . Also{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
@@ -182,6 +177,14 @@ export function LocalizedGeneralContractorPage() {
                   >
                     acciaio per partner UE
                   </Link>
+                  . Carpenterie:{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
+                    title="Progettazione strutturale per carpenterie"
+                    className="link-accent"
+                  >
+                    per carpenterie metalliche
+                  </Link>
                   . Vedi anche{" "}
                   <Link href={localizeHref("/servizi", locale)} title={linkTitles.scopriServizi(locale)} className="link-accent">
                     servizi
@@ -192,7 +195,7 @@ export function LocalizedGeneralContractorPage() {
             </p>
           </article>
 
-          <ContactCtaSection locale={locale} title={copy.ctaTitle} description={copy.ctaDescription} className="mt-12" />
+          <ContactCtaSection locale={locale} title={copy.ctaTitle} description={copy.ctaDescription} />
         </div>
       </div>
     </main>

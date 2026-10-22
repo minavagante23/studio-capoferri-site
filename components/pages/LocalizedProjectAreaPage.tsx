@@ -31,12 +31,12 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
               <span className="text-[#444]">{c.heading}</span>
             </nav>
 
-            <div className="reveal-block home-plate home-plate--well mb-12">
+            <div className={`reveal-block home-plate home-plate--well mb-8 ${ui.articleMax} sm:mb-14`}>
               <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{c.heading}</h1>
               <div className={ui.bodyMuted}>{c.intro}</div>
             </div>
-
-            <h2 className={`font-display reveal-title ${ui.gallerySectionTitle} mb-6`}>Progetti in evidenza</h2>
+            <div className="fine-divider mb-6 sm:mb-10" />
+            <h2 className={`font-display reveal-title ${ui.sectionHeadingAccent} mb-6`}>Progetti in evidenza</h2>
             <div className="lazy-section grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {c.cases.map((p) => (
                 <div key={p.slug} className="reveal-block">
@@ -61,13 +61,14 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
             <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
             <span className="text-[#444]">{t.heading}</span>
           </nav>
-          <div className="reveal-block home-plate home-plate--well mb-12">
+          <div className={`reveal-block home-plate home-plate--well mb-8 ${ui.articleMax} sm:mb-14`}>
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{t.heading}</h1>
             <div className={ui.bodyMuted}>
               {t.intro.map((p) => <p key={p} className="mb-4 last:mb-0">{p}</p>)}
             </div>
           </div>
-          <h2 className={`font-display reveal-title ${ui.gallerySectionTitle} mb-6`}>{shared.featured}</h2>
+          <div className="fine-divider mb-6 sm:mb-10" />
+          <h2 className={`font-display reveal-title ${ui.sectionHeadingAccent} mb-6`}>{shared.featured}</h2>
           <div className="lazy-section grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cases.map((p) => {
               const caseKey = `${area}/${p.slug}` as keyof typeof caseCopyEn;

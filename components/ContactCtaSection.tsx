@@ -21,10 +21,10 @@ export function ContactCtaSection({
   const resolvedDescription = description ?? copy.defaultDescription;
 
   return (
-    <section className={className}>
+    <section className={`${className} ${ui.articleMax}`}>
       <div className="border-t border-[#1c1e21]/12 pt-8 sm:pt-10">
         <h2 className={`font-display ${ui.sectionHeadingAccent} mb-3`}>{resolvedTitle}</h2>
-        <p className={`max-w-[36rem] ${ui.bodyMuted}`}>{resolvedDescription}</p>
+        <p className={ui.bodyMuted}>{resolvedDescription}</p>
         <p className="mt-4">
           <Link href={localizeHref("/contatti#form-contatti", locale)} className="link-accent" title={linkTitles.consulenza(locale)}>
             {copy.writeUs}

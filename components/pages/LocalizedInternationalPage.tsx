@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useLocale } from "@/components/LocaleProvider";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
+import { FeatureList } from "@/components/FeatureList";
+import { useLocale } from "@/components/LocaleProvider";
 import { internationalHub } from "@/lib/international-copy";
 import { localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
@@ -13,14 +14,14 @@ export function LocalizedInternationalPageContent() {
   const locale = useLocale();
   const isEn = locale === "en";
   const copy = internationalHub[isEn ? "en" : "it"];
-  const sectionHeading = `font-display ${ui.sectionHeadingAccent} mb-4 mt-14 ${scrollAnchorClass}`;
+  const sectionHeading = ui.longFormSectionHeading;
 
   return (
     <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <article className="home-plate home-plate--well max-w-[860px]">
-            <h1 className={`font-display ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
+          <article className={`reveal-block home-plate home-plate--well ${ui.articleMax}`}>
+            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
             <p className={ui.body}>{copy.lead}</p>
 
             {copy.sections.map((section) => (
@@ -33,15 +34,7 @@ export function LocalizedInternationalPageContent() {
                       </p>
                     ))
                   : null}
-                {"items" in section && section.items ? (
-                  <ul className="mt-2 list-none space-y-3 pl-0">
-                    {section.items.map(([title, text]) => (
-                      <li key={title}>
-                        <strong>{title}</strong>: {text}
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
+                {"items" in section && section.items ? <FeatureList items={section.items} /> : null}
               </section>
             ))}
 
@@ -106,7 +99,7 @@ export function LocalizedInternationalPageContent() {
             </p>
           </article>
 
-          <ContactCtaSection locale={isEn ? "en" : "it"} title={copy.ctaTitle} description={copy.ctaDescription} className="mt-10 sm:mt-14" />
+          <ContactCtaSection locale={isEn ? "en" : "it"} title={copy.ctaTitle} description={copy.ctaDescription} />
         </div>
       </div>
     </main>
