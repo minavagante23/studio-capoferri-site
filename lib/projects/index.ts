@@ -4,6 +4,7 @@ export {
   type ProjectArea,
   type ProjectCasePreview,
   type CaseStudyKey,
+  type CaseStudyEnCopy,
   type ProjectCaseStudy,
 } from "./types";
 export { projectCategories } from "./categories";

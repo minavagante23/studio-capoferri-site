@@ -6,6 +6,19 @@ export const residenzialiCaseStudies = {
     metaDescription:
       "Residenza privata in acciaio a Pollenza (MC): progettazione strutturale e architettonica integrata. Studio Capoferri.",
     heading: "Residenza privata - Pollenza (MC)",
+    en: {
+      heading: "Private residence - Pollenza (MC)",
+      metaDescription:
+        "Steel house in Pollenza (MC): steel frame, long spans, shop drawings and erection. Studio Capoferri.",
+      body: [
+        "Steel house in Pollenza (MC). Steel frame, long spans, erection on site. Structure and architecture set together, on the plot.",
+        "The frame sets the volumes and the construction sequence; shop details follow the erection order.",
+      ],
+      bullets: [
+        ["Steel structure", "frame, spans, erection time."],
+        ["Site", "steelwork sequenced with the architecture."],
+      ],
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -65,6 +78,23 @@ export const residenzialiCaseStudies = {
     metaDescription:
       "Villa in acciaio a Salsomaggiore Terme (PR): fondazioni su pali, struttura mista in cemento armato e acciaio, sistemi a secco. Studio Capoferri.",
     heading: "Villa in acciaio - Salsomaggiore Terme (PR)",
+    en: {
+      heading: "Steel villa - Salsomaggiore Terme (PR)",
+      metaDescription:
+        "Steel villa in Salsomaggiore Terme (PR) with piled foundations, mixed reinforced-concrete and steel structure, dry construction systems and photovoltaic-ready roof.",
+      body: [
+        "Studio Capoferri handled the structural side of a steel residential building in Salsomaggiore Terme (PR), from the design stage through construction.",
+        "Poor ground conditions required a dedicated solution from the very beginning: a system of piled foundations defined from the early stages in line with the mixed reinforced-concrete and steel structure planned above ground.",
+        "Above the concrete base, with a partially buried lower floor and the stair core, rises the steel frame of the first floor and the roof, designed to accommodate a complete surface of photovoltaic panels.",
+      ],
+      bullets: [
+        ["Piled foundations", "a targeted solution for poor soil conditions."],
+        ["Steel frame", "beams and columns defining the volumes with precision, strength and lightness."],
+        ["Dry construction systems", "high-density mineral wool walls for execution speed and strong thermal performance."],
+        ["Energy efficiency", "roof prepared for a full photovoltaic installation."],
+        ["Integrated design", "services and finishes coordinated in parallel to reduce delays and on-site uncertainty."],
+      ],
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">

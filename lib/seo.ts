@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { caseCopyEn } from "@/lib/case-copy-en";
 import { itAreaByEn, itCaseByEn, localizedPathname, toItalianPath } from "@/lib/locale-paths";
+import { projectCaseStudies } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 export const defaultOgImage = "/assets/superstudio-village-acciaio-pre-fabbricato.webp";
@@ -261,14 +261,14 @@ const englishProjectAreaMetadata: Record<string, BaseMetadataInput> = {
 };
 
 const englishProjectCaseMetadata: Record<string, BaseMetadataInput> = Object.fromEntries(
-  Object.entries(caseCopyEn).map(([key, copy]) => [
+  Object.entries(projectCaseStudies).map(([key, cs]) => [
     key,
     {
-      title: copy.heading,
-      description: copy.metaDescription,
+      title: cs.en.heading,
+      description: cs.en.metaDescription,
       path: `/progetti/${key}`,
     },
-  ])
+  ]),
 );
 
 export function getEnglishCaseMetadata(area: string, slug: string): BaseMetadataInput | undefined {

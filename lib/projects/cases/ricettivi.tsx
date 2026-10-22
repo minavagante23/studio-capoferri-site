@@ -6,6 +6,17 @@ export const ricettiviCaseStudies = {
     metaDescription:
       "Progettazione strutturale per complesso a Milano Bovisa: consolidamenti, demolizioni e ricostruzioni in acciaio e misto. Studio Capoferri.",
     heading: "Superstudio Village - Milano Bovisa",
+    en: {
+      heading: "Superstudio Village - Milan Bovisa",
+      metaDescription:
+        "Structural design for a six-building complex in Milan Bovisa, including steel reconstruction, strengthening works and seismic upgrading.",
+      body: [
+        "The structural design work concerned a building complex in Milan Bovisa for Superstudio Events, made up of six buildings with different types of intervention.",
+        "Works began in 2023. Two buildings required structural strengthening of vaults and roofs. One building was demolished and rebuilt with a new steel structure reaching a maximum height of about 16 metres.",
+        "Another building was reconstructed with a mixed reinforced-concrete and load-bearing masonry structure; a further building with load-bearing masonry and a composite roof system; and finally one existing building underwent seismic upgrading.",
+      ],
+      bullets: [],
+    },
     externalBrand: {
       href: "https://www.superstudioevents.com/it/",
       imageSrc: "/assets/superstudio_logo.svg",
@@ -72,6 +83,18 @@ export const ricettiviCaseStudies = {
     metaDescription:
       "Recupero capannone industriale a Milano Famagosta: adeguamento sismico, strutture in acciaio e sicurezza. Studio Capoferri.",
     heading: "Superstudio Maxi - Famagosta",
+    en: {
+      heading: "Superstudio Maxi - Famagosta",
+      metaDescription:
+        "Recovery of a disused industrial shed in Milan Famagosta with seismic upgrading, strengthening of existing steel structures and new event spaces.",
+      body: [
+        "The structural intervention concerned the recovery of a disused industrial shed, once used for steel fabrication, in the Famagosta district of Milan.",
+        "The building, converted into an event venue with about 7,200 square metres of covered space and 3,000 square metres of yard, underwent seismic upgrading and strengthening of the existing steel structures.",
+        "New steel structures were created for congress, exhibition and multimedia functions.",
+        "The intervention enhanced the site's industrial-archaeology identity while adapting it to its new use.",
+      ],
+      bullets: [],
+    },
     externalBrand: {
       href: "https://www.superstudioevents.com/it/venues/superstudio-maxi/",
       imageSrc: "/assets/superstudio_logo.svg",

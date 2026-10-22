@@ -18,10 +18,20 @@ export type ProjectCasePreview = {
 
 export type CaseStudyKey = `${ProjectArea}/${string}`;
 
+/** English case copy co-located with the IT case study (one place to update). */
+export type CaseStudyEnCopy = {
+  heading: string;
+  metaDescription: string;
+  body: string[];
+  bullets: [string, string][];
+};
+
 export type ProjectCaseStudy = {
   metaTitle: string;
   metaDescription: string;
   heading: string;
+  /** EN page body + SEO description (IT JSX stays in `body`). */
+  en: CaseStudyEnCopy;
   body: ReactNode;
   gallery: { src: string; alt: string }[];
   externalBrand?: { href: string; imageSrc: string; imageAlt: string };

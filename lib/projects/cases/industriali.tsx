@@ -6,6 +6,17 @@ export const industrialiCaseStudies = {
     metaDescription:
       "Centro raccolta rifiuti urbani differenziati a Chiuduno (BG): progettazione strutturale di fondazioni, opere in c.a. e strutture in acciaio - Studio Capoferri.",
     heading: "Centro raccolta rifiuti - Chiuduno (BG)",
+    en: {
+      heading: "Waste collection centre - Chiuduno (BG)",
+      metaDescription:
+        "Urban separate-waste collection centre in Chiuduno (BG): Studio Capoferri handled structural design of foundations, reinforced-concrete works and steel structures.",
+      body: [
+        "For the Municipality of Chiuduno (BG), Studio Capoferri handled the structural design of the new urban separate-waste collection centre (recycling island), built under a public contract with Servizi Comunali SpA as client.",
+        "The studio was responsible for the structural scope of the works: foundation design, reinforced-concrete elements (bases and perimeter walls) and the steel frame: lattice columns and roof trusses, through to the detailing needed for site erection.",
+        "Together, the reinforced concrete and steelwork form a clear, lightweight facility suited to a municipal service and to the peri-urban Bergamo setting.",
+      ],
+      bullets: [],
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -81,6 +92,21 @@ export const industrialiCaseStudies = {
     metaDescription:
       "Revisione e progettazione di lamiere da getto in acciaio per Spinelli S.r.l. a Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata. Studio Capoferri.",
     heading: "Lamiere da getto in acciaio - Spinelli S.r.l. - Adro (BS)",
+    en: {
+      heading: "Steel decking for concrete slabs - Spinelli S.r.l. - Adro (BS)",
+      metaDescription:
+        "Review and design of steel decking for concrete slabs for Spinelli S.r.l. in Adro (BS): structural analysis, experimental testing and load tables.",
+      body: [
+        "For Spinelli S.r.l., a manufacturer of profiled steel sheets with an operating base in Adro (BS), the studio reviewed the existing steel decking range and designed new steel solutions through an integrated programme of structural analysis and experimental testing.",
+        "The testing campaign investigated the behaviour of the sheets both without concrete and with a concrete topping, producing the parameters needed for design and for assessing load-bearing capacity.",
+        "Combining experimental results with calculation analysis led to the preparation of load tables, providing a technical reference for using the sheets in the different configurations and load conditions required.",
+      ],
+      bullets: [
+        ["Structural analysis", "review of the existing sheets and definition of new steel solutions."],
+        ["Experimental testing", "behaviour of the sheets without concrete and as a composite slab."],
+        ["Load tables", "technical reference for the different configurations and load conditions."],
+      ],
+    },
     externalBrand: {
       href: "https://spinellisrl.eu/",
       imageSrc: "/assets/spinelli-logo.png",
@@ -170,6 +196,22 @@ export const industrialiCaseStudies = {
     metaDescription:
       "Tettoia in carpenteria metallica a Maranello (MO): luce libera circa 40 m, unica capriata reticolare in profili tubolari. Studio Capoferri.",
     heading: "Tettoia reticolare a grande luce - Maranello (MO)",
+    en: {
+      heading: "Space-truss canopy - Maranello (MO)",
+      metaDescription:
+        "Steel canopy in Maranello (MO) with about 40 m clear span: single tubular circular-section space truss covering two prefabricated buildings. Studio Capoferri.",
+      body: [
+        "In Maranello (MO), at the heart of a world-renowned automotive district, Studio Capoferri handled the structural design of a steel canopy covering two prefabricated buildings within a paint shop facility for a luxury car manufacturing plant.",
+        "The canopy has a clear span of about 40 metres. The structure is defined by a single space truss made of circular hollow sections, chosen also for the overall aesthetic quality.",
+        "Particular attention was given to lifting and erection phases, integrating construction requirements into the design choices from the outset.",
+      ],
+      bullets: [
+        ["Large clear span", "about 40 metres without intermediate supports between the two buildings."],
+        ["Single space truss", "spatial geometry in circular hollow-section tubes."],
+        ["Lifting and erection", "construction requirements integrated into the design from the early stages."],
+        ["Aesthetic quality", "profiles and finish consistent with a high-performance paint shop facility."],
+      ],
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -226,6 +268,23 @@ export const industrialiCaseStudies = {
     metaDescription:
       "Ampliamento zona produttiva per carpenteria metallica: struttura in acciaio, carroponti, pannelli sandwich - Studio Capoferri.",
     heading: "Capannone industriale - Erbusco (BS)",
+    en: {
+      heading: "Industrial building - Erbusco (BS)",
+      metaDescription:
+        "Extension of a heavy steel fabrication production area in Erbusco (BS): steel structure, overhead cranes, sandwich panels and fabrication drawings.",
+      body: [
+        "Studio Capoferri handled the structural, architectural and planning design for the extension of the production area of a major heavy steel fabrication company in Erbusco (BS).",
+        "This was an advanced industrial engineering project aimed at maximising operational efficiency and safety in an intensive production environment. The building was conceived for heavy loads and complex workflows.",
+        "The extension delivers a more efficient and durable production area, in line with the requirements of the local industrial context.",
+      ],
+      bullets: [
+        ["Steel primary structure", "strength and reliability for heavy industrial use."],
+        ["Executive design", "shop drawings and construction detailing for steel fabrication."],
+        ["Crane integration", "the structure was calculated for two overhead travelling cranes and internal handling flows."],
+        ["Envelope efficiency", "sandwich panels providing thermal and acoustic insulation."],
+        ["Integrated scope", "planning, architecture and executive structural design managed together."],
+      ],
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -290,6 +349,22 @@ export const industrialiCaseStudies = {
     metaDescription:
       "Ampliamento con capriate metalliche a luce libera di quasi 16 metri: progettazione strutturale per complesso zootecnico a Castegnato (BS). Studio Capoferri.",
     heading: "Complesso zootecnico - Castegnato (BS)",
+    en: {
+      heading: "Livestock complex - Castegnato (BS)",
+      metaDescription:
+        "Structural design for a livestock complex extension in Castegnato (BS) with large-span steel trusses, fast erection and precise integration with the existing buildings.",
+      body: [
+        "Working on existing structures requires a balance between structural constraints, logistics and continuity of operations. In the extension of this livestock complex in Castegnato (BS), the objective was to increase the covered area while ensuring maximum internal flexibility.",
+        "The solution focuses on the development of new steel trusses with a clear span of almost 16 metres. The absence of intermediate supports makes it possible to optimise the space for the operational needs of the sector.",
+        "Structural design is not only calculation. It is the tool that transforms the client's requirements into practical construction solutions.",
+      ],
+      bullets: [
+        ["Efficiency", "large clear spans covered with optimised profiles."],
+        ["Speed", "reduced assembly time to limit disruption on site."],
+        ["Durability", "solutions suited to an aggressive operating environment."],
+        ["Integration", "precise connection between the new works and the existing structures."],
+      ],
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -340,6 +415,23 @@ export const industrialiCaseStudies = {
     metaDescription:
       "Riqualificazione di edificio industriale a Provaglio d'Iseo (BS) come sede principale di un'importante azienda elettronica quotata in borsa, soppalco metallico oltre 5.000 mq.",
     heading: "Centro direzionale - Provaglio d'Iseo (BS)",
+    en: {
+      heading: "Headquarters - Provaglio d'Iseo (BS)",
+      metaDescription:
+        "Redevelopment of an industrial building in Provaglio d'Iseo (BS) as the main headquarters of a major listed electronics company: steel mezzanine of more than 5,000 square metres.",
+      body: [
+        "The project concerns the redevelopment of an industrial building in Provaglio d'Iseo (BS), converted into the main headquarters of a major listed electronics company, with offices, laboratories and workspaces.",
+        "It started from an approved base scheme developed by the lead designer. Studio Capoferri focused its contribution on full optimisation, adapting the design solutions to the real construction dynamics of the site.",
+        "The core of the intervention is a steel mezzanine of more than 5,000 square metres, integrated into the existing structure to expand the usable floor area.",
+        "Constant dialogue between design and construction made it possible to develop solutions that are efficient and consistent with site reality.",
+      ],
+      bullets: [
+        ["Structural and geometric optimisation", "of the steelwork package."],
+        ["Coordination", "with the conditions of the existing building."],
+        ["Executive detailing", "required for fabrication and production."],
+        ["Assembly sequencing", "rationalised to maintain operational continuity on site."],
+      ],
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">

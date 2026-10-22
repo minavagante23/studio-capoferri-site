@@ -9,7 +9,6 @@ import { ProjectImageLightbox } from "@/components/projects/ProjectImageLightbox
 import { localizeHref } from "@/lib/i18n";
 import { caseStudyJsonLd } from "@/lib/jsonld";
 import { linkTitles } from "@/lib/link-seo";
-import { caseCopyEn } from "@/lib/case-copy-en";
 import { areaCopy } from "@/lib/project-area-copy";
 import { projectCaseStudies, projectCategories, type ProjectArea } from "@/lib/projects";
 import { galleryAltEnBySrc } from "@/lib/gallery-alts-en";
@@ -19,12 +18,11 @@ import { ui } from "@/lib/ui";
 
 export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; slug: string }) {
   const locale = useLocale();
-  const key = `${area}/${slug}` as keyof typeof caseCopyEn;
   const cs = projectCaseStudies[`${area}/${slug}` as keyof typeof projectCaseStudies];
   const enMeta = getEnglishCaseMetadata(area, slug);
-  const heading = locale === "en" && key in caseCopyEn ? caseCopyEn[key].heading : cs.heading;
+  const heading = locale === "en" ? cs.en.heading : cs.heading;
   const catHeading = locale === "en" ? areaCopy.en[area].heading : projectCategories[area].heading;
-  const body = locale === "en" && key in caseCopyEn ? caseCopyEn[key] : null;
+  const body = locale === "en" ? cs.en : null;
   const gallery =
     locale === "en"
       ? cs.gallery.map((img) => ({

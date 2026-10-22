@@ -5,9 +5,8 @@ import { useLocale } from "@/components/LocaleProvider";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
-import { caseCopyEn } from "@/lib/case-copy-en";
 import { areaCopy } from "@/lib/project-area-copy";
-import { projectCategories, type ProjectArea } from "@/lib/projects";
+import { getCaseStudyKey, projectCaseStudies, projectCategories, type ProjectArea } from "@/lib/projects";
 import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
@@ -71,8 +70,8 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
           <h2 className={`font-display reveal-title ${ui.sectionHeadingAccent} mb-6`}>{shared.featured}</h2>
           <div className="lazy-section grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cases.map((p) => {
-              const caseKey = `${area}/${p.slug}` as keyof typeof caseCopyEn;
-              const enTitle = caseKey in caseCopyEn ? caseCopyEn[caseKey].heading : p.title;
+              const caseKey = getCaseStudyKey(area, p.slug);
+              const enTitle = caseKey ? projectCaseStudies[caseKey].en.heading : p.title;
               return (
               <div key={p.slug} className="reveal-block">
                 <ProjectPreviewCard
