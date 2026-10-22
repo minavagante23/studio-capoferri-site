@@ -58,8 +58,9 @@ export const carpenterieCopy = {
     form: {
       successTitle: "Richiesta inviata",
       successBody:
-        "Vi risponderemo al più presto. Potete già scaricare gli esempi di elaborati dal pulsante qui sotto.",
+        "Vi risponderemo al più presto. Il download degli esempi di elaborati parte in automatico; se serve, potete ripeterlo dal pulsante qui sotto.",
       successDownload: "Scarica esempi elaborati (ZIP)",
+      successDownloadStarted: "Download avviato…",
       company: "Azienda",
       name: "Nome e cognome",
       email: "Email",
@@ -137,8 +138,9 @@ export const carpenterieCopy = {
     form: {
       successTitle: "Enquiry sent",
       successBody:
-        "We will get back to you shortly. You can already download the sample drawings below.",
+        "We will get back to you shortly. The sample drawings download starts automatically; you can repeat it from the button below if needed.",
       successDownload: "Download sample drawings (ZIP)",
+      successDownloadStarted: "Download started…",
       company: "Company",
       name: "Full name",
       email: "Email",

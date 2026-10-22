@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
 import { trackEvent } from "@/lib/analytics";
 import {
@@ -20,6 +20,21 @@ type Props = {
   onUnlocked?: () => void;
 };
 
+const SAMPLES_ZIP_NAME = "studio-capoferri-esempi-elaborati-officina.zip";
+/** After auto-download, wait before allowing a manual re-download. */
+const DOWNLOAD_COOLDOWN_MS = 20_000;
+
+function triggerSamplesDownload() {
+  if (!carpenterieDownloadHref || typeof document === "undefined") return;
+  const a = document.createElement("a");
+  a.href = carpenterieDownloadHref;
+  a.setAttribute("download", SAMPLES_ZIP_NAME);
+  a.rel = "noopener";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
 export function CarpenterieRfqForm({ onUnlocked }: Props) {
   const locale = useLocale();
   const copy = carpenterieCopy[locale].form;
@@ -33,6 +48,33 @@ export function CarpenterieRfqForm({ onUnlocked }: Props) {
   const [privacy, setPrivacy] = useState(false);
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [downloadReady, setDownloadReady] = useState(true);
+  const cooldownTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const armDownloadCooldown = useCallback(() => {
+    setDownloadReady(false);
+    if (cooldownTimer.current) clearTimeout(cooldownTimer.current);
+    cooldownTimer.current = setTimeout(() => setDownloadReady(true), DOWNLOAD_COOLDOWN_MS);
+  }, []);
+
+  useEffect(
+    () => () => {
+      if (cooldownTimer.current) clearTimeout(cooldownTimer.current);
+    },
+    [],
+  );
+
+  const runSamplesDownload = useCallback(
+    (linkText: string) => {
+      triggerSamplesDownload();
+      trackEvent("file_download", {
+        file_name: SAMPLES_ZIP_NAME,
+        link_text: linkText,
+      });
+      armDownloadCooldown();
+    },
+    [armDownloadCooldown],
+  );
 
   const toggle = (list: string[], id: string, set: (v: string[]) => void) => {
     set(list.includes(id) ? list.filter((x) => x !== id) : [...list, id]);
@@ -96,6 +138,9 @@ export function CarpenterieRfqForm({ onUnlocked }: Props) {
             form_id: "carpenterie-rfq",
           });
           onUnlocked?.();
+          if (carpenterieDownloadHref) {
+            runSamplesDownload(copy.successDownload);
+          }
           setStatus("success");
         } else {
           setStatus("error");
@@ -104,7 +149,20 @@ export function CarpenterieRfqForm({ onUnlocked }: Props) {
         setStatus("error");
       }
     },
-    [company, email, locale, location, message, name, onUnlocked, phone, scopes, valid],
+    [
+      company,
+      copy.successDownload,
+      email,
+      locale,
+      location,
+      message,
+      name,
+      onUnlocked,
+      phone,
+      runSamplesDownload,
+      scopes,
+      valid,
+    ],
   );
 
   if (status === "success") {
@@ -117,19 +175,14 @@ export function CarpenterieRfqForm({ onUnlocked }: Props) {
         <p className={`mt-2 ${ui.bodyMuted}`}>{copy.successBody}</p>
         {carpenterieDownloadHref ? (
           <p className="mt-4">
-            <a
-              href={carpenterieDownloadHref}
-              className={ui.btnPrimary}
-              download
-              onClick={() =>
-                trackEvent("file_download", {
-                  file_name: "studio-capoferri-esempi-elaborati-officina.zip",
-                  link_text: copy.successDownload,
-                })
-              }
+            <button
+              type="button"
+              disabled={!downloadReady}
+              className={`${ui.btnPrimary} disabled:pointer-events-none disabled:opacity-50`}
+              onClick={() => runSamplesDownload(copy.successDownload)}
             >
-              {copy.successDownload}
-            </a>
+              {downloadReady ? copy.successDownload : copy.successDownloadStarted}
+            </button>
           </p>
         ) : null}
       </div>
