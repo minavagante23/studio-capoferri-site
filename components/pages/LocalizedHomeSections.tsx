@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ClientsStrip } from "@/components/home/ClientsStrip";
 import { ProjectPreviewCard } from "@/components/projects/ProjectPreviewCard";
 import { StatsSection } from "@/components/home/StatsSection";
 import {
@@ -265,8 +264,6 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
           </div>
         </div>
       </section>
-
-      <ClientsStrip locale={locale} />
 
       <section id="servizi" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
         <div className={layoutContentMaxClass}>
