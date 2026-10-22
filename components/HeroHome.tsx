@@ -90,11 +90,10 @@ export function HeroHome() {
 
           <h1 className="font-display section-title text-[clamp(1.55rem,6.2vw,1.85rem)] leading-[1.12] tracking-[-0.022em] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.75)] sm:text-[clamp(2.45rem,8vw,4.6rem)] sm:leading-[1.04] sm:tracking-[-0.03em]">
             <span className="block sm:whitespace-nowrap">{copy.line1}</span>
-            <span className="mt-1 block sm:hidden">
-              <span className="block">{copy.line2a}</span>
-              <span className="block">{copy.line2b}</span>
+            {/* One line on mobile too — avoid orphan “al cantiere” on a third row */}
+            <span className="mt-1 block whitespace-nowrap text-[0.9em] tracking-[-0.028em] sm:mt-1.5 sm:text-[length:inherit] sm:tracking-[-0.03em]">
+              {copy.line2}
             </span>
-            <span className="mt-1.5 hidden sm:mt-1 sm:block sm:whitespace-nowrap">{copy.line2}</span>
           </h1>
 
           <p className="mt-3 text-[0.78rem] leading-[1.4] text-white/90 sm:mt-4 sm:whitespace-nowrap sm:text-[0.9rem] sm:leading-snug sm:text-white/80 md:text-[1rem]">

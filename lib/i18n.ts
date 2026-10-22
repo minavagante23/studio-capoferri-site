@@ -113,9 +113,6 @@ export const chromeCopy = {
       locationMobile: "Adro (BS) - Franciacorta",
       line1: "Progettazione integrata",
       line2: "dalla fattibilità al cantiere",
-      /** Second line split for controlled mobile wrap (joined on sm+). */
-      line2a: "dalla fattibilità",
-      line2b: "al cantiere",
       support: "Progettazione strutture in acciaio, ingegneria civile e architettura.",
       supportMobileLine1: "Strutture in acciaio -",
       supportMobileLine2: "ingegneria civile - architettura",
@@ -185,8 +182,6 @@ export const chromeCopy = {
       locationMobile: "Adro (BS) - Franciacorta",
       line1: "Integrated design",
       line2: "from feasibility to site",
-      line2a: "from feasibility",
-      line2b: "to site",
       support: "Structural engineers for steel in Northern Italy.",
       supportMobileLine1: "Structural engineers -",
       supportMobileLine2: "steel - Northern Italy",
