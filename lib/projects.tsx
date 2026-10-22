@@ -97,8 +97,8 @@ export const projectCategories: Record<
       },
       {
         slug: "copertura-edificio-verniciatura-maranello",
-        title: "Tettoia reticolare a grande luce - Maranello (MO)",
-        caption: "Tettoia reticolare a grande luce - Maranello (MO)",
+        title: "Tettoia reticolare - Maranello (MO)",
+        caption: "Tettoia reticolare - Maranello (MO)",
         cover:
           "/assets/industriale/copertura-edificio-verniciatura-maranello/struttura-reticolare-grande-luce-edificio-verniciatura-maranello.webp",
         alt: "Tettoia reticolare in acciaio a grande luce a Maranello (MO) - Studio Capoferri",

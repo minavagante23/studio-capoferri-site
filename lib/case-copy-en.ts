@@ -56,7 +56,7 @@ export const caseCopyEn = {
     ],
   },
   "industriali/copertura-edificio-verniciatura-maranello": {
-    heading: "Large-span space-truss canopy - Maranello (MO)",
+    heading: "Space-truss canopy - Maranello (MO)",
     metaDescription:
       "Steel canopy in Maranello (MO) with about 40 m clear span: single tubular circular-section space truss covering two prefabricated buildings. Studio Capoferri.",
     body: [
