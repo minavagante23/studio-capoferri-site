@@ -14,6 +14,19 @@ export type Professionista = {
 
 export const professionisti: Professionista[] = [
   {
+    id: "enzo-capoferri",
+    name: "Ing. Enzo Capoferri",
+    roleIt: "Ingegnere civile strutturista",
+    roleEn: "Structural civil engineer",
+    bioIt:
+      "Ingegnere civile con specializzazione in ambito strutturale. Si occupa di calcolo strutturale e supporto in cantiere su opere in acciaio, cemento armato e muratura. Svolge inoltre attività di progettazione edilizia e gestione delle relative pratiche autorizzative.",
+    bioEn:
+      "Civil engineer specialised in structural engineering. He works on structural analysis and site support for steel, reinforced-concrete and masonry structures. He also handles building design and related permitting procedures.",
+    src: "/assets/professionisti/ingegner-enzo-capoferri.webp",
+    altIt: "Ing. Enzo Capoferri, strutturista - Studio Capoferri",
+    altEn: "Eng. Enzo Capoferri, structural engineer - Studio Capoferri",
+  },
+  {
     id: "luigi-capoferri",
     name: "Ing. Luigi Capoferri",
     roleIt: "Ingegnere civile strutturista",
