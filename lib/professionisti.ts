@@ -19,12 +19,25 @@ export const professionisti: Professionista[] = [
     roleIt: "Ingegnere civile strutturista",
     roleEn: "Structural civil engineer",
     bioIt:
-      "Ingegnere civile con specializzazione in ambito strutturale. Si occupa di calcolo strutturale e supporto in cantiere su opere in acciaio, cemento armato e muratura. Svolge inoltre attività di progettazione edilizia e gestione delle relative pratiche autorizzative.",
+      "Socio fondatore dello Studio Associato Capoferri. Ingegnere civile con specializzazione in ambito strutturale. Si occupa di calcolo strutturale e supporto in cantiere su opere in acciaio, cemento armato e muratura. Svolge inoltre attività di progettazione edilizia e gestione delle relative pratiche autorizzative.",
     bioEn:
-      "Civil engineer specialised in structural engineering. He works on structural analysis and site support for steel, reinforced-concrete and masonry structures. He also handles building design and related permitting procedures.",
+      "Founding partner of Studio Associato Capoferri. Civil engineer specialised in structural engineering. He works on structural analysis and site support for steel, reinforced-concrete and masonry structures. He also handles building design and related permitting procedures.",
     src: "/assets/professionisti/ingegner-enzo-capoferri.webp",
     altIt: "Ing. Enzo Capoferri, strutturista - Studio Capoferri",
     altEn: "Eng. Enzo Capoferri, structural engineer - Studio Capoferri",
+  },
+  {
+    id: "franco-capoferri",
+    name: "Arch. Franco Capoferri",
+    roleIt: "Architetto",
+    roleEn: "Architect",
+    bioIt:
+      "Socio fondatore dello Studio Associato Capoferri, si occupa principalmente di progettazione architettonica, edilizia e urbanistica. Le sue competenze comprendono anche la progettazione strutturale di opere in cemento armato e muratura.",
+    bioEn:
+      "Founding partner of Studio Associato Capoferri, he focuses mainly on architectural, building and urban design. His expertise also includes structural design of reinforced-concrete and masonry works.",
+    src: "/assets/professionisti/architetto-franco-capoferri.webp",
+    altIt: "Arch. Franco Capoferri, architetto - Studio Capoferri",
+    altEn: "Arch. Franco Capoferri, architect - Studio Capoferri",
   },
   {
     id: "luigi-capoferri",
