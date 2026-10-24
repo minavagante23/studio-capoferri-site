@@ -77,7 +77,7 @@ export function HeroHome() {
       </div>
 
       <div
-        className={`hero-home__content relative z-10 mx-auto flex w-full flex-col justify-end px-5 pb-10 pt-20 sm:px-5 sm:pb-12 sm:pt-24 md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
+        className={`hero-home__content relative z-10 mx-auto flex w-full flex-col justify-end px-5 pb-6 pt-16 sm:px-5 sm:pb-12 sm:pt-24 md:px-5 md:pb-20 md:pt-28 ${layoutContentMaxClass}`}
       >
         <motion.div
           className="hero-home__copy w-fit max-w-full"

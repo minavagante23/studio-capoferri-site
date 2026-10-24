@@ -40,6 +40,19 @@ export const professionisti: Professionista[] = [
     altEn: "Arch. Franco Capoferri, architect - Studio Capoferri",
   },
   {
+    id: "benedetta-capoferri",
+    name: "Ing. Benedetta Capoferri",
+    roleIt: "Ingegnere civile strutturista",
+    roleEn: "Structural civil engineer",
+    bioIt:
+      "Ingegnere civile strutturista in Studio Capoferri. Si occupa di calcolo strutturale e supporto in cantiere su opere in acciaio, cemento armato e muratura, con attenzione al coordinamento tra progetto e realizzazione.",
+    bioEn:
+      "Structural civil engineer at Studio Capoferri. She works on structural analysis and site support for steel, reinforced-concrete and masonry structures, with a focus on coordination between design and construction.",
+    src: "/assets/professionisti/ingegner-benedetta-capoferri.webp",
+    altIt: "Ing. Benedetta Capoferri, strutturista - Studio Capoferri",
+    altEn: "Eng. Benedetta Capoferri, structural engineer - Studio Capoferri",
+  },
+  {
     id: "luigi-capoferri",
     name: "Ing. Luigi Capoferri",
     roleIt: "Ingegnere civile strutturista",

@@ -83,12 +83,12 @@ body {
   text-align: right;
 }
 
-/* Mobile: taller plate so the structure shot dominates before type */
+/* Mobile: fit the visible viewport so hero copy (acciaio / architettura) is on-screen without scrolling */
 @media (max-width: 639px) {
   .hero-home,
   .hero-home__content {
-    min-height: calc(100svh - var(--header-h, 64px) + 2.5rem);
-    min-height: calc(100dvh - var(--header-h, 64px) + 2.5rem);
+    min-height: calc(100svh - var(--header-h, 64px));
+    min-height: calc(100dvh - var(--header-h, 64px));
   }
 }
 
