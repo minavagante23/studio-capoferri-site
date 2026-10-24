@@ -42,15 +42,15 @@ export const professionisti: Professionista[] = [
   {
     id: "benedetta-capoferri",
     name: "Ing. Benedetta Capoferri",
-    roleIt: "Ingegnere civile strutturista",
-    roleEn: "Structural civil engineer",
+    roleIt: "Ingegnere edile",
+    roleEn: "Building engineer",
     bioIt:
-      "Ingegnere civile strutturista in Studio Capoferri. Si occupa di calcolo strutturale e supporto in cantiere su opere in acciaio, cemento armato e muratura, con attenzione al coordinamento tra progetto e realizzazione.",
+      "Ingegnere edile in Studio Capoferri. Supporta la progettazione, la direzione lavori e la sicurezza di cantiere.",
     bioEn:
-      "Structural civil engineer at Studio Capoferri. She works on structural analysis and site support for steel, reinforced-concrete and masonry structures, with a focus on coordination between design and construction.",
+      "Building engineer at Studio Capoferri. She supports design, construction supervision and site safety.",
     src: "/assets/professionisti/ingegner-benedetta-capoferri.webp",
-    altIt: "Ing. Benedetta Capoferri, strutturista - Studio Capoferri",
-    altEn: "Eng. Benedetta Capoferri, structural engineer - Studio Capoferri",
+    altIt: "Ing. Benedetta Capoferri, ingegnere edile - Studio Capoferri",
+    altEn: "Eng. Benedetta Capoferri, building engineer - Studio Capoferri",
   },
   {
     id: "luigi-capoferri",
