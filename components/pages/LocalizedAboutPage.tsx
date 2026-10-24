@@ -59,30 +59,17 @@ export function LocalizedAboutPageContent() {
                             {isEn ? person.roleEn : person.roleIt}
                           </p>
                           {bio ? <p className={`mt-3 ${ui.bodyMuted}`}>{bio}</p> : null}
-                          {person.albo || person.linkedin ? (
-                            <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-                              {person.albo ? (
-                                <a
-                                  href={person.albo.href}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="link-accent"
-                                  title={isEn ? person.albo.titleEn : person.albo.titleIt}
-                                >
-                                  {isEn ? person.albo.labelEn : person.albo.labelIt}
-                                </a>
-                              ) : null}
-                              {person.linkedin ? (
-                                <a
-                                  href={person.linkedin}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="link-accent"
-                                  title={linkedinLabel}
-                                >
-                                  LinkedIn
-                                </a>
-                              ) : null}
+                          {person.linkedin ? (
+                            <p className="mt-3">
+                              <a
+                                href={person.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="link-accent text-sm"
+                                title={linkedinLabel}
+                              >
+                                LinkedIn
+                              </a>
                             </p>
                           ) : null}
                         </figcaption>
